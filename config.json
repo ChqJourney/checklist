@@ -1,0 +1,46 @@
+{
+    "subFolderNames":[
+        "0 Job sheet & Quotation",
+        "1 Application documents",
+        "2 Certificate",
+        "3 Test report",
+        "4 Test record",
+        "5 Technical documents",
+        "6 User Manual(s) & Label",
+        "7 Component Cer",
+        "8 PAH evaluation",
+        "9 Communication file",
+        "10 Subcontract report and log sheet",
+        "11 Photos",
+        "12 To and From certification body",
+        "13 to Client",
+        "14 Other documents"
+    ],
+    "shortcuts_path":"C:\\Users\\patri\\source\\demos\\py_checklist\\shortcuts",
+    
+    "task_list_map":{
+        "job_no":0,
+        "job_creator":1,
+        "engineers":2
+    },
+    "subFolder_map":{
+        "0":0,
+        "1":1,
+        "2":2,
+        "3":3,
+        "4":4,
+        "5":5,
+        "6":6,
+        "7":7,
+        "8":8,
+        "9":9,
+        "10":10,
+        "11":11,
+        "12":12,
+        "13":13,
+        "14":14
+    }
+
+
+
+}
