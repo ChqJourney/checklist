@@ -19,7 +19,7 @@ def get_tasks_from_task_list_excel(excel_file_path, map):
 current_dir = os.getcwd()
 shortcuts_path=""
 subFolderNames=[]
-subFolderMap={}
+subFolder_map={}
 task_list_map={}
 task=[]
 
@@ -28,6 +28,7 @@ with open('config.json', 'r') as f:
     config = json.load(f)
     shortcuts_path = config['shortcuts_path']
     subFolderNames = config['subFolderNames']
+    subFolder_map = config['subFolder_map']
     task_list_map=config['task_list_map']
 # 基于task_list_map读取task list.xlsx,按行读取数据，数据格式为{job_no:str,job_creator:str,engineers:str}
 print(task_list_map)
@@ -40,4 +41,4 @@ for task in tasks:
     else:
         print(f"{task['job_no']}的目录不存在")
     folder_status=detect_folders(target_path, subFolderNames)
-    set_checklist(folder_status)
+    set_checklist(folder_status,folder_status, subFolder_map)
