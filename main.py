@@ -1,7 +1,7 @@
 import os
 import json
 import pandas as pd
-from modify_activex import get_working_folder_path,detect_folders,set_checklist 
+from funcs import get_working_folder_path,detect_folders,set_checklist 
 # 用pandas读取excel文件，返回tasks列表,忽略第一行标题,task数据格式为{job_no:str,job_creator:str,engineers:str}
 def get_tasks_from_task_list_excel(excel_file_path, map):
     tasks = []

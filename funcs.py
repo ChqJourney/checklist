@@ -33,6 +33,34 @@ def set_checklist(target_path,status,map):
     word_doc.Close()
     word.Quit()
 
+# 在word表格某行某列单元格内输入文本
+def set_text_in_cell(table, row_index, column_index, text):
+    """
+    在Word表格的指定单元格内输入文本
+    :param table: Word表格对象
+    :param row_index: 行索引（从1开始）
+    :param column_index: 列索引（从1开始）
+    :param text: 要输入的文本
+    """
+    cell = table.Cell(row_index, column_index)
+    cell.Range.Text = text
+# 在word表格某行某列单元格内插入图片，并设置图片大小
+def insert_image_in_cell(table, row_index, column_index, image_path, width=100, height=40):
+    """
+    在Word表格的指定单元格内插入图片，并设置图片大小
+    :param table: Word表格对象
+    :param row_index: 行索引（从1开始）
+    :param column_index: 列索引（从1开始）
+    :param image_path: 图片文件路径
+    :param width: 图片宽度（默认100）
+    :param height: 图片高度（默认100）
+    """
+    cell = table.Cell(row_index, column_index)
+    cell.Range.InlineShapes.AddPicture(FileName=image_path, LinkToFile=False, SaveWithDocument=True)
+    shape = cell.Range.InlineShapes[-1]
+    shape.Width = width
+    shape.Height = height
+
 def get_only_word_file_path(folder_path):
     for file in os.listdir(folder_path):
         if file.endswith(".docx") and "checklist" in file:
