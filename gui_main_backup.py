@@ -1,0 +1,197 @@
+import webview
+import threading
+import json
+import os
+import sys
+import pandas as pd
+from datetime import datetime
+from funcs import get_working_folder_path, detect_folders, kill_all_word_processes, set_checklist
+from data_manager import data_manager
+
+class ProjectFileChecker:
+    def __init__(self):
+        self.task_file_path = ""
+        self.tasks = []
+        self.is_running = False
+        self.log_callback = None
+        
+        # 加载配置
+        self.load_config()
+    def load_config(self):
+        """加载配置文件"""
+        try:
+            with open('config.json', 'r', encoding='utf-8') as f:
+                config = json.load(f)
+                self.shortcuts_path = config.get('shortcuts_path', '')
+                self.subFolderNames = config.get('subFolderNames', [])
+                self.subFolder_map = config.get('subFolder_map', {})
+                self.task_list_map = config.get('task_list_map', {})
+                print(f"配置加载成功: shortcuts_path={self.shortcuts_path}")
+        except Exception as e:
+            print(f"配置文件加载失败: {e}")
+            # 设置默认值
+            self.shortcuts_path = ""
+            self.subFolderNames = []
+            self.subFolder_map = {}
+            self.task_list_map = {}
+    
+    def log(self, message):
+        """输出日志信息"""
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        log_message = f"[{timestamp}] {message}"
+        print(log_message)
+        if self.log_callback:
+            webview.windows[0].evaluate_js(f'addLog("{log_message.replace(chr(34), chr(39))}")')
+    
+    def select_file(self):
+        """选择Excel文件"""
+        try:
+            file_types = ('Excel Files (*.xlsx;*.xls)', 'All files (*.*)')
+            result = webview.windows[0].create_file_dialog(
+                webview.OPEN_DIALOG,
+                directory=os.getcwd(),
+                allow_multiple=False,
+                file_types=file_types
+            )
+            
+            if result and len(result) > 0:
+                self.task_file_path = result[0]
+                self.log(f"已选择文件: {os.path.basename(self.task_file_path)}")
+                return {
+                    'success': True,
+                    'filename': os.path.basename(self.task_file_path),
+                    'path': self.task_file_path
+                }
+            else:
+                return {'success': False, 'message': '未选择文件'}
+        except Exception as e:
+            self.log(f"文件选择失败: {e}")
+            return {'success': False, 'message': str(e)}
+    
+    def get_tasks_from_excel(self, excel_file_path):
+        """从Excel文件读取任务列表"""
+        tasks = []
+        try:
+            df = pd.read_excel(excel_file_path)
+            for _, row in df.iloc[0:].iterrows():
+                task = {key: str(row.iloc[value]) for key, value in self.task_list_map.items()}
+                tasks.append(task)
+            self.log(f"成功读取 {len(tasks)} 个任务")        except Exception as e:
+            self.log(f"读取Excel文件失败: {e}")
+        return tasks
+    
+    def process_tasks(self):
+        """处理任务"""
+        if not self.task_file_path:
+            self.log("请先选择任务列表文件")
+            return {'success': False, 'message': '请先选择任务列表文件'}
+        
+        if self.is_running:
+            self.log("程序正在运行中...")
+            return {'success': False, 'message': '程序正在运行中'}
+        
+        def run_process():
+            try:
+                self.is_running = True
+                data_manager.clear_results()  # 清空之前的结果
+                data_manager.set_processing_status(True)
+                
+                # 更新按钮状态
+                webview.windows[0].evaluate_js('setRunning(true)')
+                
+                self.log("开始处理任务...")
+                
+                # 读取任务列表
+                self.tasks = self.get_tasks_from_excel(self.task_file_path)
+                data_manager.set_tasks(self.tasks)
+                
+                if not self.tasks:
+                    self.log("没有找到任务数据")
+                    return
+                
+                # 处理每个任务
+                for i, task in enumerate(self.tasks):
+                    self.log(f"处理任务 {i+1}/{len(self.tasks)}: {task['job_no']}")
+                    
+                    # 获取工作目录
+                    target_path = get_working_folder_path(self.shortcuts_path, task['job_no'])
+                    
+                    result = {
+                        'job_no': task['job_no'],
+                        'job_creator': task['job_creator'],
+                        'engineers': task['engineers'],
+                        'target_path': str(target_path) if target_path is not None else None,
+                        'status': '未找到目录' if target_path is None else '已处理',
+                        'folders': {}
+                    }
+                    
+                    if target_path is not None:
+                        self.log(f"找到目录: {target_path}")
+                        # 检测文件夹
+                        folder_status = detect_folders(target_path, self.subFolderNames)
+                        result['folders'] = folder_status
+                        # 结束所有Word进程
+                        self.log("确保文件夹检查不受干扰,结束所有Word进程...")
+                        kill_all_word_processes()
+                        # 设置检查列表
+                        set_checklist(task, target_path, folder_status, self.subFolder_map)
+                        result['status'] = '完成'
+                    else:
+                        self.log(f"未找到目录: {task['job_no']}")
+                    
+                    # 使用数据管理器添加结果
+                    data_manager.add_result(result)
+                    
+                    # 更新表格
+                    webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
+                
+                self.log(f"所有任务处理完成，共处理 {len(self.tasks)} 个任务")
+                
+                # 保存结果到文件
+                data_manager.save_to_file()
+                
+            except Exception as e:
+                self.log(f"处理过程中发生错误: {e}")
+            finally:
+                self.is_running = False
+                data_manager.set_processing_status(False)
+                webview.windows[0].evaluate_js('setRunning(false)')
+        
+        # 在新线程中运行处理过程
+        thread = threading.Thread(target=run_process)
+        thread.daemon = True        thread.start()
+        
+        return {'success': True, 'message': '开始处理任务'}
+    
+    def get_results(self):
+        """获取结果数据"""
+        return data_manager.get_results()
+
+# 创建API实例
+api = ProjectFileChecker()
+
+if __name__ == '__main__':
+    current_dir=os.path.dirname(os.path.abspath(__file__))
+    # 设置当前工作目录为脚本所在目录
+    # 构建前端HTML文件的绝对路径
+    html_path = os.path.join(current_dir, 'static', 'index.html')
+    
+    # 将文件路径转换为url格式
+    html_url = 'file:///' + html_path.replace('\\', '/')
+    
+    # 获取图标路径
+    icon_path = os.path.join(current_dir, 'check.ico')
+    # 创建窗口
+    window = webview.create_window(
+        'Project File Checker',
+        url=html_url,
+        js_api=api,
+        width=1200,
+        height=800,
+        min_size=(1000, 600),
+        resizable=True
+        
+    )
+    
+    # 启动应用
+    webview.start(debug=False,icon=icon_path)

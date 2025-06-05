@@ -1,0 +1,24 @@
+[
+  {
+    "job_no": "250300973HZH",
+    "job_creator": "Sylvia Wang",
+    "engineers": "Jack Bai",
+    "target_path": "C:\\Users\\patri\\Downloads\\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX",
+    "status": "完成",
+    "folders": {
+      "App\\Quotation": false,
+      "App\\Invoice": false,
+      "App": true,
+      "Others": false,
+      "Test record\\Chemical": false,
+      "Test record": false,
+      "Tech\\IM-RL-AW": true,
+      "Tech\\DR": true,
+      "Tech\\Protocol": true,
+      "Tech\\Other": false,
+      "Photo": true,
+      "Report": true,
+      "Subcontract": false
+    }
+  }
+]

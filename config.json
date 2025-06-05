@@ -1,20 +1,20 @@
 {
     "subFolderNames":[
-        "App/Quotation",
-        "App/Invoice",
+        "App\\Quotation",
+        "App\\Invoice",
         "App",
         "Others",
-        "Test record/Chemical",
+        "Test record\\Chemical",
         "Test record",
-        "Tech/IM-RL-AW",
-        "Tech/DR",
-        "Tech/Protocol",
-        "Tech/Other",
+        "Tech\\IM-RL-AW",
+        "Tech\\DR",
+        "Tech\\Protocol",
+        "Tech\\Other",
         "Photo",
         "Report",
         "Subcontract"
     ],
-    "shortcuts_path":"S:\\DATA\\HZ Engineer Documents\\PPT\\2025 Project shortcut",
+    "shortcuts_path":"C:\\Users\\patri\\source\\demos\\py_checklist\\shortcuts",
     
     "task_list_map":{
         "job_no":0,
@@ -22,16 +22,16 @@
         "engineers":2
     },
     "subFolder_map":{
-       "App/Quotation":2,
-        "App/Invoice":3,
+       "App\\Quotation":2,
+        "App\\Invoice":3,
         "App":4,
         "Others":5,
-        "Test record/Chemical":8,
+        "Test record\\Chemical":8,
         "Test record":9,
-        "Tech/IM-RL-AW":10,
-        "Tech/DR":11,
-        "Tech/Protocol":12,
-        "Tech/Other":13,
+        "Tech\\IM-RL-AW":10,
+        "Tech\\DR":11,
+        "Tech\\Protocol":12,
+        "Tech\\Other":13,
         "Photo":14,
         "Report":15,
         "Subcontract":16

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project File Checker</title>
+    <favicon href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Project File Checker</h1>
+        <p>项目文件检查工具</p>
+    </div>
+    
+    <div class="controls">
+        <button class="btn btn-primary" onclick="selectFile()">选择文件</button>
+        <button class="btn btn-success" id="runBtn" onclick="runProcess()" disabled>运行检查</button>
+        <div class="file-info" id="fileInfo">请选择 task list.xlsx 文件</div>
+    </div>
+    
+    <div class="main-content">
+        <div class="log-panel">
+            <div class="log-header">运行日志</div>
+            <div class="log-content" id="logContent">
+                <div class="log-entry">等待开始处理...</div>
+            </div>
+        </div>
+        
+        <div class="results-panel">
+            <div class="results-header">处理结果</div>
+            <div class="results-content" id="resultsContent">
+                <div class="empty-state">运行完成后将在此处显示结果表格</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

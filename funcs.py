@@ -2,6 +2,8 @@ import datetime
 import os
 import win32com.client as win32
 from pathlib import Path
+from urllib.parse import unquote
+from data_manager import data_manager  # 导入全局数据管理器
 
 def kill_all_word_processes():
     """
@@ -14,21 +16,30 @@ def kill_all_word_processes():
     print("所有Word进程已被终止。")
 
 def set_checklist(task,target_path,status,map):
-
+    current_dir = os.getcwd()
     # 启动Word应用程序
     word = win32.Dispatch('Word.Application')
     word.Visible = False  # 让Word可见，方便查看操作过程
     checklist_path = get_only_word_file_path(target_path)
+    print(f"检查清单路径: {checklist_path}")
     # 打开指定的文档
     word_doc = word.Documents.Open(checklist_path)
 
     # 填写基本信息
     table_info = word_doc.Tables[0]
+    #清空单元格
+    table_info.Cell(1,2).Range.Text=""
+    table_info.Cell(2,4).Range.Text=""
+    table_info.Cell(2,2).Range.Text=""
     set_text_in_cell(table_info, 1, 2, task['job_no'])  # 工作号
-    set_text_in_cell(table_info, 2, 2, task['job_creator'])  # 工作创建人
-    set_text_in_cell(table_info, 1, 4, task['engineers'])  # 工程师
-    insert_image_in_cell(table_info, 1, 4, os.path.join(target_path, 'logo.png'), width=100, height=40)  # 插入logo图片
-    set_text_in_cell(table_info, 5, 2, datetime.datetime.now().strftime('%Y-%m-%d'))  # 当前日期
+    set_text_in_cell(table_info, 2, 4, task['job_creator'])  # 工作创建人
+    # set_text_in_cell(table_info, 1, 4, task['engineers'])  # 工程师
+    sign_path= get_signature_image_path_by_name(task['engineers'])
+    if sign_path is not None:
+        insert_image_in_cell(table_info, 1, 4, sign_path)  # 插入logo图片
+    else:
+        print(f"未找到签名图片: {task['engineers']}")
+    set_text_in_cell(table_info, 2, 2, datetime.datetime.now().strftime('%Y-%m-%d'))  # 当前日期
     # 填写文件夹状态，activieX控件设置
     table=word_doc.Tables[1]
     
@@ -39,7 +50,19 @@ def set_checklist(task,target_path,status,map):
     word_doc.Save()
     word_doc.Close()
     word.Quit()
-
+def get_signature_image_path_by_name(name):
+    """
+    根据签名名称获取签名图片的路径
+    :param name: 签名名称
+    :return: 签名图片的完整路径，如果不存在则返回None
+    """
+    current_dir = os.getcwd()
+    image_path = os.path.join(current_dir, 'sign_pics', f'{name}.png')
+    if os.path.exists(image_path):
+        return image_path
+    else:
+        print(f"签名图片不存在: {image_path}")
+        return None
 # 在word表格某行某列单元格内输入文本
 def set_text_in_cell(table, row_index, column_index, text):
     """
@@ -52,7 +75,7 @@ def set_text_in_cell(table, row_index, column_index, text):
     cell = table.Cell(row_index, column_index)
     cell.Range.Text = text
 # 在word表格某行某列单元格内插入图片，并设置图片大小
-def insert_image_in_cell(table, row_index, column_index, image_path, width=100, height=40):
+def insert_image_in_cell(table, row_index, column_index, image_path, width=80, height=20):
     """
     在Word表格的指定单元格内插入图片，并设置图片大小
     :param table: Word表格对象
@@ -62,11 +85,39 @@ def insert_image_in_cell(table, row_index, column_index, image_path, width=100, 
     :param width: 图片宽度（默认100）
     :param height: 图片高度（默认100）
     """
-    cell = table.Cell(row_index, column_index)
-    cell.Range.InlineShapes.AddPicture(FileName=image_path, LinkToFile=False, SaveWithDocument=True)
-    shape = cell.Range.InlineShapes[-1]
-    shape.Width = width
-    shape.Height = height
+    try:
+        # 检查图片文件是否存在
+        if not os.path.exists(image_path):
+            print(f"图片文件不存在: {image_path}")
+            return
+        
+        cell = table.Cell(row_index, column_index)
+        
+        # 添加图片
+        cell.Range.InlineShapes.AddPicture(FileName=image_path, LinkToFile=False, SaveWithDocument=True)        # 检查图片是否成功添加
+        if cell.Range.InlineShapes.Count > 0:
+            inline_shape = cell.Range.InlineShapes[cell.Range.InlineShapes.Count]  # 获取最后一个添加的图片
+            
+            # 将InlineShape转换为Shape以设置文字环绕
+            shape = inline_shape.ConvertToShape()
+            
+            shape.Width = width
+            shape.Height = height
+            # 设置文字环绕类型为环绕型 (wdWrapSquare = 0)
+            shape.WrapFormat.Type = 1  # wdWrapSquare
+            shape.WrapFormat.Side = 1  # wdWrapBoth
+            
+            # 设置图片垂直居中对齐
+            cell.VerticalAlignment = 1  # wdCellAlignVerticalCenter = 1
+            cell.Paragraph.VerticalAlignment=1
+            
+            print(f"成功插入图片: {image_path}")
+        else:
+            print(f"图片插入失败: {image_path}")
+    except Exception as e:
+        print(f"插入图片时发生错误: {str(e)}")
+        print(f"图片路径: {image_path}")
+        print(f"单元格位置: 行{row_index}, 列{column_index}")
 
 def get_only_word_file_path(folder_path):
     for file in os.listdir(folder_path):
@@ -143,6 +194,7 @@ def detect_folders(working_folder_path,sub_folder_names):
     result={}
     for sub_folder_name in sub_folder_names:
         sub_folder_path = os.path.join(working_folder_path, sub_folder_name)
+        print(f"检测文件夹: {sub_folder_path}")
         if not os.path.exists(sub_folder_path):
             raise FileNotFoundError(f"{sub_folder_name} folder not found")
         if detect_folder_has_file(sub_folder_path):
@@ -166,7 +218,9 @@ def get_working_folder_path(shortcuts_path,job_no):
                 print(entry.path)
                 if entry.name.lower().endswith('.lnk') and entry.name.lower().startswith(job_no.lower()):
                     shortcut = shell.CreateShortCut(str(entry.path))
-                    target_path = Path(shortcut.Targetpath)
+                    # Decode URL-encoded characters in the path
+                    decoded_path = unquote(shortcut.Targetpath)
+                    target_path = Path(decoded_path)
                     return target_path
                 # 检查是否为符号链接
                 elif entry.is_symlink() and entry.name.lower().startswith(job_no.lower()):
@@ -241,6 +295,25 @@ def get_activeX_cells(doc_path):
         except:
             pass
     
+
+def update_task_status(job_no: str, status: str):
+    """更新任务状态"""
+    result = data_manager.get_result_by_job_no(job_no)
+    if result:
+        result['status'] = status
+        print(f"更新任务 {job_no} 状态为: {status}")
+
+def log_task_progress(job_no: str, message: str):
+    """记录任务进度"""
+    result = data_manager.get_result_by_job_no(job_no)
+    if result:
+        if 'logs' not in result:
+            result['logs'] = []
+        result['logs'].append({
+            'timestamp': datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            'message': message
+        })
+        print(f"任务 {job_no}: {message}")
 
 if __name__ == "__main__":
     shorts=os.path.join(os.getcwd(), 'shortcuts')
