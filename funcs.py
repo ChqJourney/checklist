@@ -24,7 +24,9 @@ def set_checklist(task,target_path,status,map):
     print(f"检查清单路径: {checklist_path}")
     # 打开指定的文档
     word_doc = word.Documents.Open(checklist_path)
-
+    # 确保文档有表格
+    if word_doc.Tables.Count == 0:
+        raise ValueError("No tables found in the document")
     # 填写基本信息
     table_info = word_doc.Tables[0]
     #清空单元格
@@ -33,12 +35,15 @@ def set_checklist(task,target_path,status,map):
     table_info.Cell(2,2).Range.Text=""
     set_text_in_cell(table_info, 1, 2, task['job_no'])  # 工作号
     set_text_in_cell(table_info, 2, 4, task['job_creator'])  # 工作创建人
-    # set_text_in_cell(table_info, 1, 4, task['engineers'])  # 工程师
-    sign_path= get_signature_image_path_by_name(task['engineers'])
-    if sign_path is not None:
-        insert_image_in_cell(table_info, 1, 4, sign_path)  # 插入logo图片
+    set_text_in_cell(table_info, 1, 4, task['engineers'])  # 工程师
+    # 获取工程师签名图片路径
+    engineer_signature_image = get_engineer_signature_image(task['engineers'])
+    if engineer_signature_image:
+        insert_image_in_cell(table_info, 1, 4, engineer_signature_image, width=80, height=20)  # 插入工程师签名图片
     else:
-        print(f"未找到签名图片: {task['engineers']}")
+        print(f"Signature image for {task['engineers']} not found. Using default logo.")
+        image_path=os.path.join(os.getcwd(), 'signs\\123.png')
+        insert_image_in_cell(table_info, 1, 4, image_path, width=80, height=20)  # 插入默认签名图片
     set_text_in_cell(table_info, 2, 2, datetime.datetime.now().strftime('%Y-%m-%d'))  # 当前日期
     # 填写文件夹状态，activieX控件设置
     table=word_doc.Tables[1]
@@ -50,18 +55,21 @@ def set_checklist(task,target_path,status,map):
     word_doc.Save()
     word_doc.Close()
     word.Quit()
-def get_signature_image_path_by_name(name):
+
+
+# 在signs文件夹里获取engineers签名图片
+def get_engineer_signature_image(engineer_name):
     """
-    根据签名名称获取签名图片的路径
-    :param name: 签名名称
+    获取指定工程师的签名图片路径
+    :param engineer_name: 工程师姓名
     :return: 签名图片的完整路径，如果不存在则返回None
     """
-    current_dir = os.getcwd()
-    image_path = os.path.join(current_dir, 'sign_pics', f'{name}.png')
+    signs_folder = os.path.join(os.getcwd(), 'signs')
+    image_path = os.path.join(signs_folder, f"{engineer_name}.jpg")
     if os.path.exists(image_path):
         return image_path
     else:
-        print(f"签名图片不存在: {image_path}")
+        print(f"Signature image for {engineer_name} not found.")
         return None
 # 在word表格某行某列单元格内输入文本
 def set_text_in_cell(table, row_index, column_index, text):
@@ -76,6 +84,7 @@ def set_text_in_cell(table, row_index, column_index, text):
     cell.Range.Text = text
 # 在word表格某行某列单元格内插入图片，并设置图片大小
 def insert_image_in_cell(table, row_index, column_index, image_path, width=80, height=20):
+def insert_image_in_cell(table, row_index, column_index, image_path, width=80, height=20):
     """
     在Word表格的指定单元格内插入图片，并设置图片大小
     :param table: Word表格对象
@@ -83,42 +92,47 @@ def insert_image_in_cell(table, row_index, column_index, image_path, width=80, h
     :param column_index: 列索引（从1开始）
     :param image_path: 图片文件路径
     :param width: 图片宽度（默认100）
-    :param height: 图片高度（默认100）
+    :param height: 图片高度（默认40）
     """
     try:
-        # 检查图片文件是否存在
+        # Validate parameters
         if not os.path.exists(image_path):
-            print(f"图片文件不存在: {image_path}")
-            return
-        
+            raise FileNotFoundError(f"Image file not found: {image_path}")
+            
+        # Get cell
         cell = table.Cell(row_index, column_index)
         
-        # 添加图片
-        cell.Range.InlineShapes.AddPicture(FileName=image_path, LinkToFile=False, SaveWithDocument=True)        # 检查图片是否成功添加
-        if cell.Range.InlineShapes.Count > 0:
-            inline_shape = cell.Range.InlineShapes[cell.Range.InlineShapes.Count]  # 获取最后一个添加的图片
+        
+         # Set cell alignment properties
+        cell.VerticalAlignment = 1  # 1 = wdAlignVerticalCenter
+        cell.Range.ParagraphFormat.Alignment = 1  # 1 = wdAlignParagraphCenter
+        
+        # Add picture
+        shape = cell.Range.InlineShapes.AddPicture(
+            FileName=image_path,
+            LinkToFile=False,
+            SaveWithDocument=True
             
-            # 将InlineShape转换为Shape以设置文字环绕
-            shape = inline_shape.ConvertToShape()
-            
+        )
+        
+        # Set dimensions
+        if shape:
             shape.Width = width
             shape.Height = height
-            # 设置文字环绕类型为环绕型 (wdWrapSquare = 0)
-            shape.WrapFormat.Type = 1  # wdWrapSquare
-            shape.WrapFormat.Side = 1  # wdWrapBoth
+            # Convert to floating shape for more position control
+            shape = shape.ConvertToShape()
             
-            # 设置图片垂直居中对齐
-            cell.VerticalAlignment = 1  # wdCellAlignVerticalCenter = 1
-            cell.Paragraph.VerticalAlignment=1
-            
-            print(f"成功插入图片: {image_path}")
+            # Set position relative to cell
+            #shape.RelativeHorizontalPosition = 3  # wdRelativeHorizontalPositionColumn
+            shape.RelativeVerticalPosition = 3    # wdRelativeVerticalPositionParagraph
+            shape.Left = 0   # 水平位置
+            shape.Top = 0    # 垂直位置
         else:
-            print(f"图片插入失败: {image_path}")
+            raise Exception("Failed to insert image")
+            
     except Exception as e:
-        print(f"插入图片时发生错误: {str(e)}")
-        print(f"图片路径: {image_path}")
-        print(f"单元格位置: 行{row_index}, 列{column_index}")
-
+        print(f"Error inserting image in cell ({row_index}, {column_index}): {str(e)}")
+        raise
 def get_only_word_file_path(folder_path):
     for file in os.listdir(folder_path):
         if file.endswith(".docx") and "checklist" in file:
@@ -215,7 +229,6 @@ def get_working_folder_path(shortcuts_path,job_no):
         for entry in entries:
             try:
                 # 检查是否为快捷方式(.lnk文件)
-                print(entry.path)
                 if entry.name.lower().endswith('.lnk') and entry.name.lower().startswith(job_no.lower()):
                     shortcut = shell.CreateShortCut(str(entry.path))
                     # Decode URL-encoded characters in the path
