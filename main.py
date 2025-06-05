@@ -41,4 +41,4 @@ for task in tasks:
     else:
         print(f"{task['job_no']}的目录不存在")
     folder_status=detect_folders(target_path, subFolderNames)
-    set_checklist(folder_status,folder_status, subFolder_map)
+    set_checklist(task,target_path,folder_status, subFolder_map)

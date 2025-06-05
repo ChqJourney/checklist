@@ -1,3 +1,4 @@
+import datetime
 import os
 import win32com.client as win32
 from pathlib import Path
@@ -12,9 +13,7 @@ def kill_all_word_processes():
             proc.kill()
     print("所有Word进程已被终止。")
 
-def set_checklist(target_path,status,map):
-    # 获取当前工作目录
-    current_dir = os.getcwd()
+def set_checklist(task,target_path,status,map):
 
     # 启动Word应用程序
     word = win32.Dispatch('Word.Application')
@@ -23,8 +22,16 @@ def set_checklist(target_path,status,map):
     # 打开指定的文档
     word_doc = word.Documents.Open(checklist_path)
 
-    # 遍历文档中的所有表格
-    table=word_doc.Tables[0]
+    # 填写基本信息
+    table_info = word_doc.Tables[0]
+    set_text_in_cell(table_info, 1, 2, task['job_no'])  # 工作号
+    set_text_in_cell(table_info, 2, 2, task['job_creator'])  # 工作创建人
+    set_text_in_cell(table_info, 1, 4, task['engineers'])  # 工程师
+    insert_image_in_cell(table_info, 1, 4, os.path.join(target_path, 'logo.png'), width=100, height=40)  # 插入logo图片
+    set_text_in_cell(table_info, 5, 2, datetime.datetime.now().strftime('%Y-%m-%d'))  # 当前日期
+    # 填写文件夹状态，activieX控件设置
+    table=word_doc.Tables[1]
+    
     set_all_option_cells(table,status, map)
 
 
@@ -67,16 +74,66 @@ def get_only_word_file_path(folder_path):
             return os.path.join(folder_path, file)
     return None  # Return None if no matching file is found
 
-def set_all_option_cells(table, status,map):
-    for row_index, value in map.items():
-        cell = table.Cell(map[row_index], 3)
-        set_option_cell(cell, status[row_index])
+def set_all_option_cells(table, status, map):
+    """
+    Set values for ActiveX controls in table cells
+    :param table: Word表格对象
+    :param status: 状态字典
+    :param map: 行映射字典
+    """
+    try:
+        for folder_name, row_num in map.items():
+            if not isinstance(row_num, int):
+                print(f"Warning: Invalid row number for {folder_name}: {row_num}")
+                continue
+                
+            cell = get_cell_with_activeX_in_row(table, row_num)
+            if cell is None:
+                print(f"No ActiveX control found in row {row_num}")
+                continue
+                
+            if folder_name in status:
+                set_option_cell(cell, status[folder_name])
+            else:
+                print(f"No status found for folder: {folder_name}")
+    except Exception as e:
+        print(f"Error in set_all_option_cells: {str(e)}")
+
+def get_cell_with_activeX_in_row(table, row_index):
+    """
+    获取指定行中包含ActiveX控件的单元格
+    :param table: Word表格对象
+    :param row_index: 行索引（从1开始）
+    :return: 包含ActiveX控件的单元格对象，如果没有找到则返回None
+    """
+    try:
+        # Validate row_index
+        if row_index < 1 or row_index > table.Rows.Count:
+            print(f"Invalid row index: {row_index}. Must be between 1 and {table.Rows.Count}")
+            return None
+
+        for column_index in range(1, table.Columns.Count + 1):
+            try:
+                cell = table.Cell(row_index, column_index)
+                if cell.Range.InlineShapes.Count > 0:
+                    for shape in cell.Range.InlineShapes:
+                        if hasattr(shape, 'OLEFormat') and shape.OLEFormat is not None:
+                            return cell
+            except Exception as e:
+                print(f"Error accessing cell at row {row_index}, column {column_index}: {str(e)}")
+                continue
+                
+        return None
+    except Exception as e:
+        print(f"Error in get_cell_with_activeX_in_row: {str(e)}")
+        return None
 
 def set_option_cell(cell, value):
     if cell.Range.InlineShapes[0].OLEFormat.Object.Value == value and cell.Range.InlineShapes[1].OLEFormat.Object.Value != value:
         return
     cell.Range.InlineShapes[0].OLEFormat.Object.Value =  value
     cell.Range.InlineShapes[1].OLEFormat.Object.Value = not value
+
 def detect_folder_has_file(folder_path):
     # 在folder_path以及子文件夹中查找是否有文件，如果有，返回True，否则返回False
     for root, dirs, files in os.walk(folder_path):
@@ -92,6 +149,9 @@ def detect_folders(working_folder_path,sub_folder_names):
             result[sub_folder_name]=True
         else:
             result[sub_folder_name]=False
+    if result == {}:
+        return None
+    return result
 
 def get_working_folder_path(shortcuts_path,job_no):
     try:
