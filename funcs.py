@@ -84,7 +84,6 @@ def set_text_in_cell(table, row_index, column_index, text):
     cell.Range.Text = text
 # 在word表格某行某列单元格内插入图片，并设置图片大小
 def insert_image_in_cell(table, row_index, column_index, image_path, width=80, height=20):
-def insert_image_in_cell(table, row_index, column_index, image_path, width=80, height=20):
     """
     在Word表格的指定单元格内插入图片，并设置图片大小
     :param table: Word表格对象

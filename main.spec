@@ -5,7 +5,10 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
-       
+        ('static', 'static'),  # 包含静态文件（HTML, CSS, JS）
+        ('check.ico', '.'),    # 包含图标文件
+        ('config.json', '.'),  # 包含配置文件
+        ('task list.xlsx', '.'),  # 包含任务列表文件
     ],
     hiddenimports=[
         'pandas',
@@ -14,6 +17,15 @@ a = Analysis(
         'win32com.client',
         'pywintypes',
         'pythoncom',
+        'webview',   # pywebview核心模块
+        'webview.platforms.winforms',  # Windows平台支持
+        'webview.platforms.edgechromium',  # Edge WebView2支持
+        'webview.platforms.mshtml',  # 备用渲染器
+        'webview.js',  # JavaScript API支持
+        'webview.util',  # 工具模块
+        'threading',
+        'json',
+        'datetime',
     ],
     hookspath=[],
     hooksconfig={},
@@ -22,6 +34,12 @@ a = Analysis(
         'matplotlib',  # 排除不需要的大型库
         'numpy.testing',
         'scipy',
+        'tkinter',     # 如果不使用tkinter，可以排除
+        'PyQt5',       # 排除其他GUI框架
+        'PyQt6',
+        'PySide2',
+        'PySide6',
+        'wx',
     ],
     win_no_prefer_redirects=False,
     win_private_assemblies=False,
@@ -45,11 +63,11 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=True,  # 保持控制台窗口显示输出
+    console=False,  # 设置为False隐藏控制台窗口，GUI应用不需要控制台
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=None,  # 如果有图标文件可以在这里指定
+    icon='check.ico',  # 设置应用程序图标
 )
