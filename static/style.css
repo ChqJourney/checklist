@@ -11,6 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -83,7 +85,9 @@ body {
 .main-content {
     flex: 1;
     display: flex;
+    /* 使用具体的高度计算 */
     height: calc(100vh - 140px);
+    min-height: 0;
 }
 
 .log-panel {
@@ -92,6 +96,9 @@ body {
     border-right: 1px solid #e0e0e0;
     display: flex;
     flex-direction: column;
+    /* 确保面板有具体高度 */
+    height: 100%;
+    min-height: 0;
 }
 
 .log-header {
@@ -104,12 +111,37 @@ body {
 
 .log-content {
     flex: 1;
-    padding: 15px;
-    overflow-y: auto;
+    padding: 15px 15px 100px 15px; /* 底部留出空间以防止内容被遮挡 */
+    overflow-y: scroll !important;
+    overflow-x: hidden;
     font-family: 'Consolas', 'Monaco', monospace;
     font-size: 13px;
     line-height: 1.4;
     background: #fafafa;
+    /* 确保内容区域有正确的高度 */
+    height: calc(100% - 60px); /* 减去header的高度 */
+    box-sizing: border-box;
+    /* 强制显示滚动条 */
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f5f5f5;
+}
+
+/* 自定义滚动条样式 (Webkit) */
+.log-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.log-content::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+.log-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.log-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .log-entry {
@@ -136,23 +168,26 @@ body {
 .results-content {
     flex: 1;
     overflow: auto;
-    padding: 0;
+    padding: 15px 15px 100px 15px; /* 底部留出空间以防止内容被遮挡 */
     position: relative;
 }
 
 .results-table {
-    width: 100%;
     border-collapse: collapse;
     background: white;
+    width: 100%;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* 确保表格单元格不裁剪内容 */
+    table-layout: fixed;
+    /* 确保表格本身也允许溢出 */
+    overflow: visible;
 }
 
 .results-table thead {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 5;
 }
-
 .results-table th {
     background: #667eea;
     color: white;
@@ -162,21 +197,47 @@ body {
     font-size: 14px;
     position: sticky;
     top: 0;
+    height: 48px;
+    min-height: 48px;
+    box-sizing: border-box;
+    vertical-align: middle;
 }
 
 .results-table td {
     padding: 12px;
     border-bottom: 1px solid #f0f0f0;
     font-size: 13px;
+    vertical-align: middle;
+    overflow: visible;
+    height: 48px;
+    min-height: 48px;
+    box-sizing: border-box;
 }
 
-/* 设置表格最后一列的最大宽度 */
-.results-table th:last-child,
-.results-table td:last-child {
-    max-width: 180px;
+/* 设置表格倒数第二列的宽度（目录路径列） */
+.results-table th:nth-child(5),
+.results-table td:nth-child(5) {
+    width: 220px;
+    min-width: 200px;
+    max-width: 300px;
     word-wrap: break-word;
     word-break: break-all;
-    overflow: hidden;
+}
+
+/* 操作列不设置overflow hidden，允许dropdown溢出 */
+.results-table th:nth-child(6),
+.results-table td:nth-child(6) {
+    width: 60px;
+    max-width: 60px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    padding: 12px;
+    vertical-align: middle;
+    height: 48px;
+    min-height: 48px;
+    box-sizing: border-box;
+    line-height: 1.4;
 }
 
 .results-table tr:hover {
@@ -209,3 +270,116 @@ body {
     50% { opacity: 0.5; }
     100% { opacity: 1; }
 }
+
+/* 操作列样式 */
+.action-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    height: 24px;
+    width: 24px;
+    margin: 0 auto;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    line-height: 1;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.action-btn:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.dropdown-menu {
+    position: fixed;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    z-index: 99999;
+    min-width: 120px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    /* 确保dropdown不被表格边界裁剪 */
+    overflow: visible;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 12px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 13px;
+    color: #333;
+    border-radius: 0;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.dropdown-item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dropdown-item:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dropdown-item:hover {
+    background: #f8f9fa;
+}
+
+.dropdown-item svg {
+    color: #666;
+    flex-shrink: 0;
+}
+
+/* 调整操作列宽度 - 移除重复定义，已在上面定义过 */
+
+/* 确保表格容器允许dropdown溢出 */
+.results-content {
+    flex: 1;
+    padding: 0;
+    position: relative;
+    /* 保持滚动但为dropdown留出空间 */
+    overflow-x: auto;
+    overflow-y: auto;
+    /* 为dropdown菜单留出边距 */
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+

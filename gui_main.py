@@ -35,14 +35,20 @@ class ProjectFileChecker:
             self.subFolderNames = []
             self.subFolder_map = {}
             self.task_list_map = {}
-    
     def log(self, message):
         """输出日志信息"""
         timestamp = datetime.now().strftime("%H:%M:%S")
         log_message = f"[{timestamp}] {message}"
         print(log_message)
         if self.log_callback:
-            webview.windows[0].evaluate_js(f'addLog("{log_message.replace(chr(34), chr(39))}")')
+            # 正确处理JavaScript字符串中的特殊字符
+            escaped_message = (log_message
+                             .replace('\\', '\\\\')  # 反斜杠需要双重转义
+                             .replace('"', '\\"')    # 双引号转义
+                             .replace('\n', '\\n')   # 换行符转义
+                             .replace('\r', '\\r')   # 回车符转义
+                             .replace('\t', '\\t'))  # 制表符转义
+            webview.windows[0].evaluate_js(f'addLog("{escaped_message}")')
     
     def select_file(self):
         """选择Excel文件"""
@@ -148,12 +154,12 @@ class ProjectFileChecker:
                         try:
                             set_checklist(task, target_path, folder_status, self.subFolder_map)
                             self.log(f"{task['job_no']}检查列表写入完成")
+                            result['status'] = '完成'
                         except Exception as e:
                             self.log(f"{task['job_no']}设置检查列表失败: {e}")
-                            result['status'] = '检查列表写入失败'
-                            break
-                        result['status'] = '完成'
-                        self.log(f"任务 {task['job_no']} 处理完成")
+                            result['status'] = '失败'
+                            
+                        self.log(f"任务 {task['job_no']} 处理完成:结果为：{result['status']}")
                     else:
                         self.log(f"未找到目录: {task['job_no']}")
                     
@@ -185,6 +191,47 @@ class ProjectFileChecker:
     def get_results(self):
         """获取结果数据"""
         return data_manager.get_results()
+    
+    def open_target_file(self, target_path):
+        """打开target_path对应的文件"""
+        try:
+            if not target_path:
+                return {'success': False, 'message': '路径为空'}
+            
+            # 查找checklist文件
+            from funcs import get_only_word_file_path
+            checklist_file = get_only_word_file_path(target_path)
+            
+            if checklist_file and os.path.exists(checklist_file):
+                os.startfile(checklist_file)
+                self.log(f"已打开文件: {checklist_file}")
+                return {'success': True, 'message': f'已打开文件: {os.path.basename(checklist_file)}'}
+            else:
+                self.log(f"在路径 {target_path} 中未找到checklist文件")
+                return {'success': False, 'message': '未找到checklist文件'}
+                
+        except Exception as e:
+            self.log(f"打开文件失败: {e}")
+            return {'success': False, 'message': str(e)}
+    
+    def open_target_folder(self, target_path):
+        """打开target_path所在的目录"""
+        try:
+            if not target_path:
+                return {'success': False, 'message': '路径为空'}
+            
+            if os.path.exists(target_path):
+                # 使用Windows资源管理器打开目录
+                os.startfile(target_path)
+                self.log(f"已打开目录: {target_path}")
+                return {'success': True, 'message': f'已打开目录: {target_path}'}
+            else:
+                self.log(f"目录不存在: {target_path}")
+                return {'success': False, 'message': '目录不存在'}
+                
+        except Exception as e:
+            self.log(f"打开目录失败: {e}")
+            return {'success': False, 'message': str(e)}
 
 # 创建API实例
 api = ProjectFileChecker()
@@ -212,4 +259,4 @@ if __name__ == '__main__':
     )
     
     # 启动应用
-    webview.start(debug=False, icon=icon_path)
+    webview.start(debug=True, icon=icon_path)

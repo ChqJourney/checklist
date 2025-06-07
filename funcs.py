@@ -42,7 +42,7 @@ def set_checklist(task,target_path,status,map):
         insert_image_in_cell(table_info, 1, 4, engineer_signature_image, width=80, height=20)  # 插入工程师签名图片
     else:
         print(f"Signature image for {task['engineers']} not found. Using default logo.")
-        image_path=os.path.join(os.getcwd(), 'signs\\123.png')
+        image_path=os.path.join(os.getcwd(), 'signs\\default.jpg')
         insert_image_in_cell(table_info, 1, 4, image_path, width=80, height=20)  # 插入默认签名图片
     set_text_in_cell(table_info, 2, 2, datetime.datetime.now().strftime('%Y-%m-%d'))  # 当前日期
     # 填写文件夹状态，activieX控件设置

@@ -7,8 +7,6 @@ a = Analysis(
     datas=[
         ('static', 'static'),  # 包含静态文件（HTML, CSS, JS）
         ('check.ico', '.'),    # 包含图标文件
-        ('config.json', '.'),  # 包含配置文件
-        ('task list.xlsx', '.'),  # 包含任务列表文件
     ],
     hiddenimports=[
         'pandas',
@@ -56,7 +54,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='py_checklist',
+    name='Check list',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
