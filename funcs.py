@@ -1,5 +1,6 @@
 import datetime
 import os
+import shutil
 import psutil
 import win32com.client as win32
 from pathlib import Path
@@ -62,6 +63,7 @@ def set_checklist(task,target_path,status,map):
 
 
         # 保存并关闭文档
+
         word_doc.Save()
         word_doc.Close()
         word.Quit()
@@ -158,9 +160,16 @@ def insert_image_in_cell(table, row_index, column_index, image_path, width=80, h
 def get_only_word_file_path(folder_path):
     for file in os.listdir(folder_path):
         if file.endswith(".docx") and "checklist" in file:
-            return os.path.join(folder_path, file)
-    return None  # Return None if no matching file is found
-
+            return os.path.join(folder_path, file)    # 如果没有找到符合条件的文件，copy the default checklist file to the folder
+    default_checklist_path = Path.cwd() / 'E-filing checklist.docx'
+    if default_checklist_path.exists():
+        # Copy the default checklist file to the target folder
+        target_path = Path(folder_path) / 'E-filing checklist.docx'
+        shutil.copy2(default_checklist_path, target_path)
+        log_info(f"已复制默认检查清单文件到: {target_path}", "WORD")
+        return str(target_path)
+    else:
+        raise FileNotFoundError("Default checklist file not found in the current directory. Please ensure 'E-filing checklist.docx' exists.")
 def set_all_option_cells(table, status, map):
     """
     Set values for ActiveX controls in table cells

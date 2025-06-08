@@ -13,3 +13,32 @@
 [2025-06-08 20:05:54] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：完成
 [2025-06-08 20:05:54] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
 [2025-06-08 20:06:06] [INFO] [GUI] 已打开目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-06-08 20:22:58] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-06-08 20:22:59] [INFO] [GUI] 开始处理任务...
+[2025-06-08 20:22:59] [INFO] [GUI] 成功读取 1 个任务
+[2025-06-08 20:22:59] [INFO] [GUI] 共计 1 个任务
+[2025-06-08 20:22:59] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-06-08 20:22:59] [INFO] [GUI] 找到目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-06-08 20:22:59] [INFO] [GUI] 开始检查子文件夹...
+[2025-06-08 20:22:59] [INFO] [GUI] 子文件夹检查结果: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-06-08 20:22:59] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-06-08 20:23:00] [INFO] [GUI] 250300973HZH开始写入检查列表...
+[2025-06-08 20:23:01] [INFO] [GUI] 250300973HZH设置检查列表失败: 'WindowsPath' object has no attribute 'copy'
+[2025-06-08 20:23:01] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：失败
+[2025-06-08 20:23:01] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-06-08 20:24:34] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-06-08 20:24:35] [INFO] [GUI] 开始处理任务...
+[2025-06-08 20:24:35] [INFO] [GUI] 成功读取 1 个任务
+[2025-06-08 20:24:35] [INFO] [GUI] 共计 1 个任务
+[2025-06-08 20:24:35] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-06-08 20:24:35] [INFO] [GUI] 找到目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-06-08 20:24:35] [INFO] [GUI] 开始检查子文件夹...
+[2025-06-08 20:24:35] [INFO] [GUI] 子文件夹检查结果: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-06-08 20:24:35] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-06-08 20:24:36] [INFO] [GUI] 250300973HZH开始写入检查列表...
+[2025-06-08 20:24:38] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-06-08 20:24:40] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-06-08 20:24:42] [INFO] [GUI] 250300973HZH检查列表写入完成
+[2025-06-08 20:24:42] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：完成
+[2025-06-08 20:24:42] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-06-08 20:25:43] [INFO] [GUI] 日志已清除
