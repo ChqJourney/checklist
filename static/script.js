@@ -42,11 +42,35 @@ function addLogWithLevel(message, level) {
     
     // 创建日志内容
     const timestamp = new Date().toLocaleTimeString();
-    logEntry.innerHTML = `
-        <span class="log-timestamp">${timestamp}</span>
-        <span class="log-level" style="color: ${levelConfig.color}">${levelConfig.icon} ${level}</span>
-        <span class="log-message">${escapeHtml(message)}</span>
-    `;
+    const escapedMessage = escapeHtml(message);
+    const isLongMessage = message.length > 150;
+    
+    if (isLongMessage) {
+        const shortMessage = escapeHtml(message.substring(0, 150) + '...');
+        logEntry.innerHTML = `
+            <span class="log-timestamp">${timestamp}</span>
+            <span class="log-level" style="color: ${levelConfig.color}">${levelConfig.icon} ${level}</span>
+            <span class="log-message">
+                <span class="message-short">${shortMessage}</span>
+                <span class="message-full" style="display: none;">${escapedMessage}</span>
+                <button class="expand-btn" onclick="toggleMessage(this)" style="
+                    background: none; 
+                    border: none; 
+                    color: #007bff; 
+                    cursor: pointer; 
+                    font-size: 11px;
+                    margin-left: 5px;
+                    text-decoration: underline;
+                ">展开</button>
+            </span>
+        `;
+    } else {
+        logEntry.innerHTML = `
+            <span class="log-timestamp">${timestamp}</span>
+            <span class="log-level" style="color: ${levelConfig.color}">${levelConfig.icon} ${level}</span>
+            <span class="log-message">${escapedMessage}</span>
+        `;
+    }
     
     logContent.appendChild(logEntry);
     
@@ -77,6 +101,13 @@ function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+function truncateMessage(message, maxLength = 200) {
+    if (message.length <= maxLength) {
+        return message;
+    }
+    return message.substring(0, maxLength) + '...';
 }
 
 async function clearLogs() {
@@ -255,6 +286,25 @@ async function openTargetFolder(buttonElement) {
     document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
         menu.classList.remove('show');
     });
+}
+
+// 展开和收起日志消息
+function toggleMessage(button) {
+    const messageContainer = button.parentElement;
+    const shortMessage = messageContainer.querySelector('.message-short');
+    const fullMessage = messageContainer.querySelector('.message-full');
+    
+    if (shortMessage.style.display !== 'none') {
+        // 展开消息
+        shortMessage.style.display = 'none';
+        fullMessage.style.display = 'inline';
+        button.textContent = '收起';
+    } else {
+        // 收起消息
+        shortMessage.style.display = 'inline';
+        fullMessage.style.display = 'none';
+        button.textContent = '展开';
+    }
 }
 
 // 页面加载完成后的初始化
