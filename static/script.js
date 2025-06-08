@@ -29,16 +29,71 @@ async function runProcess() {
 }
 
 function addLog(message) {
+    addLogWithLevel(message, 'INFO');
+}
+
+function addLogWithLevel(message, level) {
     const logContent = document.getElementById('logContent');
     const logEntry = document.createElement('div');
-    logEntry.className = 'log-entry';
-    logEntry.textContent = message;
+    logEntry.className = `log-entry log-${level.toLowerCase()}`;
+    
+    // 获取日志级别的配置（颜色和图标）
+    const levelConfig = getLogLevelConfig(level);
+    
+    // 创建日志内容
+    const timestamp = new Date().toLocaleTimeString();
+    logEntry.innerHTML = `
+        <span class="log-timestamp">${timestamp}</span>
+        <span class="log-level" style="color: ${levelConfig.color}">${levelConfig.icon} ${level}</span>
+        <span class="log-message">${escapeHtml(message)}</span>
+    `;
+    
     logContent.appendChild(logEntry);
+    
+    // 限制日志数量，避免内存占用过多
+    const maxLogs = 1000;
+    while (logContent.children.length > maxLogs) {
+        logContent.removeChild(logContent.firstChild);
+    }
     
     // 使用 setTimeout 确保 DOM 更新后再滚动
     setTimeout(() => {
         logContent.scrollTop = logContent.scrollHeight;
     }, 0);
+}
+
+function getLogLevelConfig(level) {
+    const configs = {
+        'DEBUG': { color: '#6c757d', icon: '🔍' },
+        'INFO': { color: '#17a2b8', icon: 'ℹ️' },
+        'WARNING': { color: '#ffc107', icon: '⚠️' },
+        'ERROR': { color: '#dc3545', icon: '❌' },
+        'CRITICAL': { color: '#6f42c1', icon: '🚨' }
+    };
+    return configs[level] || configs['INFO'];
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+async function clearLogs() {
+    try {
+        const result = await pywebview.api.clear_logs();
+        if (result.success) {
+            const logContent = document.getElementById('logContent');
+            logContent.innerHTML = '<div class="log-entry">日志已清除</div>';
+        } else {
+            console.error('清除日志失败:', result.message);
+        }
+    } catch (error) {
+        console.error('清除日志错误:', error);
+        // 如果API调用失败，直接清除前端显示
+        const logContent = document.getElementById('logContent');
+        logContent.innerHTML = '<div class="log-entry">日志已清除</div>';
+    }
 }
 
 function setRunning(running) {

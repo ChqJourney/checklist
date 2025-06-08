@@ -177,6 +177,23 @@ body {
     border-bottom: 1px solid #e0e0e0;
     font-weight: 600;
     color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-clear-logs {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-clear-logs:hover {
+    background: rgba(0,0,0,0.1);
 }
 
 .log-content {
@@ -218,6 +235,99 @@ body {
     margin-bottom: 5px;
     color: #333;
     word-wrap: break-word;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.log-entry .log-timestamp {
+    color: #666;
+    font-size: 11px;
+    min-width: 80px;
+}
+
+.log-entry .log-level {
+    font-weight: bold;
+    min-width: 60px;
+    font-size: 12px;
+}
+
+.log-entry .log-message {
+    flex: 1;
+    font-size: 13px;
+}
+
+/* 不同级别的日志样式 */
+.log-debug {
+    background-color: #f8f9fa;
+    border-left: 3px solid #6c757d;
+}
+
+.log-entry.log-debug {
+    border-left-color: #6c757d;
+    background: rgba(108, 117, 125, 0.05);
+}
+
+.log-info {
+    background-color: #e8f4f8;
+    border-left: 3px solid #17a2b8;
+}
+
+.log-entry.log-info {
+    border-left-color: #17a2b8;
+    background: rgba(23, 162, 184, 0.05);
+}
+
+.log-warning {
+    background-color: #fff3cd;
+    border-left: 3px solid #ffc107;
+}
+
+.log-entry.log-warning {
+    border-left-color: #ffc107;
+    background: rgba(255, 193, 7, 0.1);
+}
+
+.log-error {
+    background-color: #f8d7da;
+    border-left: 3px solid #dc3545;
+}
+
+.log-entry.log-error {
+    border-left-color: #dc3545;
+    background: rgba(220, 53, 69, 0.1);
+}
+
+.log-critical {
+    background-color: #e2e3f1;
+    border-left: 3px solid #6f42c1;
+    font-weight: bold;
+}
+
+.log-entry.log-critical {
+    border-left-color: #6f42c1;
+    background: rgba(111, 66, 193, 0.1);
+}
+
+.log-timestamp {
+    color: #888;
+    font-size: 11px;
+    white-space: nowrap;
+    min-width: 70px;
+}
+
+.log-level {
+    font-weight: 600;
+    font-size: 12px;
+    white-space: nowrap;
+    min-width: 80px;
+}
+
+.log-message {
+    flex: 1;
+    color: #333;
 }
 
 .results-panel {

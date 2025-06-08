@@ -20,8 +20,7 @@
         "job_no":0,
         "job_creator":1,
         "engineers":2
-    },
-    "subFolder_map":{
+    },    "subFolder_map":{
        "App\\Quotation":2,
         "App\\Invoice":3,
         "App":4,
@@ -35,8 +34,35 @@
         "Photo":14,
         "Report":15,
         "Subcontract":16
+    },
+    "log_config": {
+        "level": "INFO",
+        "log_to_console": true,
+        "log_to_file": true,
+        "log_file_path": "app.log",
+        "log_format": "[{timestamp}] [{level}] {message}",
+        "max_frontend_logs": 1000,
+        "levels": {
+            "DEBUG": {
+                "color": "#6c757d",
+                "icon": "🔍"
+            },
+            "INFO": {
+                "color": "#17a2b8",
+                "icon": "ℹ️"
+            },
+            "WARNING": {
+                "color": "#ffc107",
+                "icon": "⚠️"
+            },
+            "ERROR": {
+                "color": "#dc3545",
+                "icon": "❌"
+            },
+            "CRITICAL": {
+                "color": "#6f42c1",
+                "icon": "🚨"
+            }
+        }
     }
-
-
-
 }

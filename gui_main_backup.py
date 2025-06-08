@@ -7,7 +7,7 @@ import pandas as pd
 from datetime import datetime
 from funcs import get_working_folder_path, detect_folders, kill_all_word_processes, set_checklist
 from data_manager import data_manager
-from logger import global_logger, log_info, log_error, log_warning, log_debug, log_critical
+from logger import global_logger, log_info, log_error, log_warning, log_debug
 
 class ProjectFileChecker:
     def __init__(self):
@@ -47,13 +47,12 @@ class ProjectFileChecker:
                 self.task_list_map = config.get('task_list_map', {})
                 print(f"配置加载成功: shortcuts_path={self.shortcuts_path}")
         except Exception as e:
-            print(f"配置文件加载失败: {e}")            # 设置默认值
+            print(f"配置文件加载失败: {e}")
+            # 设置默认值
             self.shortcuts_path = ""
             self.subFolderNames = []
             self.subFolder_map = {}
-            self.task_list_map = {}
-    
-    def log(self, message, level="INFO"):
+            self.task_list_map = {}    def log(self, message, level="INFO"):
         """输出日志信息 - 兼容旧接口，现在使用全局日志系统"""
         # 为了向后兼容，保留原有接口
         if level.upper() == "DEBUG":
@@ -248,25 +247,6 @@ class ProjectFileChecker:
                 
         except Exception as e:
             self.log(f"打开目录失败: {e}")
-            return {'success': False, 'message': str(e)}
-    
-    def clear_logs(self):
-        """清除前端日志"""
-        try:
-            global_logger.clear_frontend_logs()
-            self.log("日志已清除")
-            return {'success': True, 'message': '日志已清除'}
-        except Exception as e:
-            return {'success': False, 'message': str(e)}
-    
-    def get_log_config(self):
-        """获取日志配置信息"""
-        try:
-            return {
-                'success': True,
-                'config': global_logger.config
-            }
-        except Exception as e:
             return {'success': False, 'message': str(e)}
 
 # 创建API实例

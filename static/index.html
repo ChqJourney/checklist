@@ -26,9 +26,11 @@
         </div>
     </div>
     
-    <div class="main-content">
-        <div class="log-panel">
-            <div class="log-header">运行日志</div>
+    <div class="main-content">        <div class="log-panel">
+            <div class="log-header">
+                <span>运行日志</span>
+                <button class="btn-clear-logs" onclick="clearLogs()" title="清除日志">🗑️</button>
+            </div>
             <div class="log-content" id="logContent">
                 <div class="log-entry">等待开始处理...</div>
             </div>

@@ -1,19 +1,29 @@
 import datetime
 import os
+import psutil
 import win32com.client as win32
 from pathlib import Path
 from urllib.parse import unquote
 from data_manager import data_manager  # 导入全局数据管理器
+from logger import log_info, log_error, log_warning, log_debug
 
 def kill_all_word_processes():
     """
     结束所有Word进程
     """
-    import psutil
-    for proc in psutil.process_iter(['name']):
-        if proc.info['name'] == 'WINWORD.EXE':
-            proc.kill()
-    print("所有Word进程已被终止。")
+    try:
+        killed_count = 0
+        for proc in psutil.process_iter(['name']):
+            if proc.info['name'] == 'WINWORD.EXE':
+                proc.kill()
+                killed_count += 1
+        
+        if killed_count > 0:
+            log_info(f"已终止 {killed_count} 个Word进程", "WORD")
+        else:
+            log_debug("没有发现运行中的Word进程", "WORD")
+    except Exception as e:
+        log_error(f"终止Word进程时发生错误: {e}", "WORD")
 
 def set_checklist(task,target_path,status,map):
     try:
@@ -21,7 +31,7 @@ def set_checklist(task,target_path,status,map):
         word = win32.Dispatch('Word.Application')
         word.Visible = False  # 让Word可见，方便查看操作过程
         checklist_path = get_only_word_file_path(target_path)
-        print(f"检查清单路径: {checklist_path}")
+        log_debug(f"检查清单路径: {checklist_path}", "WORD")
         # 打开指定的文档
         word_doc = word.Documents.Open(checklist_path)
         # 确保文档有表格
@@ -41,7 +51,7 @@ def set_checklist(task,target_path,status,map):
         if engineer_signature_image:
             insert_image_in_cell(table_info, 1, 4, engineer_signature_image, width=80, height=20)  # 插入工程师签名图片
         else:
-            print(f"Signature image for {task['engineers']} not found. Using default logo.")
+            log_warning(f"未找到工程师 {task['engineers']} 的签名图片，使用默认图片", "WORD")
             default_image_path = Path.cwd() / 'signs' / 'default.jpg'
             insert_image_in_cell(table_info, 1, 4, default_image_path, width=80, height=20)  # 插入默认签名图片
         set_text_in_cell(table_info, 2, 2, datetime.datetime.now().strftime('%Y-%m-%d'))  # 当前日期
