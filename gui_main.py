@@ -172,7 +172,7 @@ class ProjectFileChecker:
                 self.log(f"所有任务处理完成，共处理 {len(self.tasks)} 个任务")
                 
                 # 保存结果到文件
-                data_manager.save_to_file()
+                #data_manager.save_to_file()
                 
             except Exception as e:
                 self.log(f"处理过程中发生错误: {e}")

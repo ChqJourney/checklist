@@ -36,9 +36,79 @@ body {
     display: flex;
     gap: 15px;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+.warning-panel {
+    max-width: 60%;
+    overflow: hidden; /* 关键：隐藏超出部分 */
+    position: relative; /* 为子元素提供定位参考 */
+}
 
+.warning {
+    color: #dc3545;
+    font-weight: 600;
+    /* 走马灯动画设置 */
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 8s linear infinite;
+    /* 可选：添加背景和边框增强视觉效果 */
+    background: linear-gradient(90deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05));
+    padding: 8px 12px;
+    border-radius: 4px;
+    border-left: 4px solid #dc3545;
+    box-shadow: 0 2px 4px rgba(220, 53, 69, 0.1);
+    /* 移除max-width: 100%，让文字可以滚动 */
+    min-width: 100%; /* 确保文字至少占满容器宽度 */
+}
+
+/* 走马灯动画关键帧 - 修改为在容器内滚动 */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 鼠标悬停时暂停动画 */
+.warning:hover {
+    animation-play-state: paused;
+    background: linear-gradient(90deg, rgba(220, 53, 69, 0.15), rgba(220, 53, 69, 0.08));
+}
+
+/* 如果希望文字较长时才启用走马灯效果，可以使用媒体查询 */
+@media (max-width: 768px) {
+    .warning {
+        animation-duration: 6s; /* 小屏幕上稍快一些 */
+    }
+    .warning-panel {
+        max-width: 70%; /* 小屏幕上给更多空间 */
+    }
+}
+
+/* 如果需要更平滑的边缘淡出效果（可选） */
+.warning-panel::before,
+.warning-panel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.warning-panel::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.warning-panel::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+}
 .btn {
     padding: 10px 20px;
     border: none;

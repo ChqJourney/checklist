@@ -65,7 +65,7 @@ function updateResults(results) {
             <thead>
                 <tr>
                     <th>项目编号</th>
-                    <th>创建者</th>
+                    <th>客户</th>
                     <th>工程师</th>
                     <th>状态</th>
                     <th>目录路径</th>

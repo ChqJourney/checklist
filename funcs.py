@@ -16,61 +16,74 @@ def kill_all_word_processes():
     print("所有Word进程已被终止。")
 
 def set_checklist(task,target_path,status,map):
-    current_dir = os.getcwd()
-    # 启动Word应用程序
-    word = win32.Dispatch('Word.Application')
-    word.Visible = False  # 让Word可见，方便查看操作过程
-    checklist_path = get_only_word_file_path(target_path)
-    print(f"检查清单路径: {checklist_path}")
-    # 打开指定的文档
-    word_doc = word.Documents.Open(checklist_path)
-    # 确保文档有表格
-    if word_doc.Tables.Count == 0:
-        raise ValueError("No tables found in the document")
-    # 填写基本信息
-    table_info = word_doc.Tables[0]
-    #清空单元格
-    table_info.Cell(1,2).Range.Text=""
-    table_info.Cell(2,4).Range.Text=""
-    table_info.Cell(2,2).Range.Text=""
-    set_text_in_cell(table_info, 1, 2, task['job_no'])  # 工作号
-    set_text_in_cell(table_info, 2, 4, task['job_creator'])  # 工作创建人
-    set_text_in_cell(table_info, 1, 4, task['engineers'])  # 工程师
-    # 获取工程师签名图片路径
-    engineer_signature_image = get_engineer_signature_image(task['engineers'])
-    if engineer_signature_image:
-        insert_image_in_cell(table_info, 1, 4, engineer_signature_image, width=80, height=20)  # 插入工程师签名图片
-    else:
-        print(f"Signature image for {task['engineers']} not found. Using default logo.")
-        image_path=os.path.join(os.getcwd(), 'signs\\default.jpg')
-        insert_image_in_cell(table_info, 1, 4, image_path, width=80, height=20)  # 插入默认签名图片
-    set_text_in_cell(table_info, 2, 2, datetime.datetime.now().strftime('%Y-%m-%d'))  # 当前日期
-    # 填写文件夹状态，activieX控件设置
-    table=word_doc.Tables[1]
-    
-    set_all_option_cells(table,status, map)
+    try:
+        # 启动Word应用程序
+        word = win32.Dispatch('Word.Application')
+        word.Visible = False  # 让Word可见，方便查看操作过程
+        checklist_path = get_only_word_file_path(target_path)
+        print(f"检查清单路径: {checklist_path}")
+        # 打开指定的文档
+        word_doc = word.Documents.Open(checklist_path)
+        # 确保文档有表格
+        if word_doc.Tables.Count == 0:
+            raise ValueError("No tables found in the document")
+        # 填写基本信息
+        table_info = word_doc.Tables[0]
+        #清空单元格
+        table_info.Cell(1,2).Range.Text=""
+        table_info.Cell(2,4).Range.Text=""
+        table_info.Cell(2,2).Range.Text=""
+        set_text_in_cell(table_info, 1, 2, task['job_no'])  # 工作号
+        set_text_in_cell(table_info, 2, 4, task['job_creator'])  # 工作创建人
+        #set_text_in_cell(table_info, 1, 4, task['engineers'])  # 工程师
+        # 获取工程师签名图片路径
+        engineer_signature_image = get_engineer_signature_image(task['engineers'])
+        if engineer_signature_image:
+            insert_image_in_cell(table_info, 1, 4, engineer_signature_image, width=80, height=20)  # 插入工程师签名图片
+        else:
+            print(f"Signature image for {task['engineers']} not found. Using default logo.")
+            default_image_path = Path.cwd() / 'signs' / 'default.jpg'
+            insert_image_in_cell(table_info, 1, 4, default_image_path, width=80, height=20)  # 插入默认签名图片
+        set_text_in_cell(table_info, 2, 2, datetime.datetime.now().strftime('%Y-%m-%d'))  # 当前日期
+        
+        # 填写文件夹状态，activieX控件设置
+        table=word_doc.Tables[1]
+        set_all_option_cells(table,status, map)
 
 
-    # 保存并关闭文档
-    word_doc.Save()
-    word_doc.Close()
-    word.Quit()
+        # 保存并关闭文档
+        word_doc.Save()
+        word_doc.Close()
+        word.Quit()
+    except Exception as e:
+        print(f"Error setting checklist: {str(e)}")
+        if 'word' in locals():
+            word.Quit()  # 确保Word应用程序被关闭
+        raise
 
 
 # 在signs文件夹里获取engineers签名图片
 def get_engineer_signature_image(engineer_name):
-    """
-    获取指定工程师的签名图片路径
-    :param engineer_name: 工程师姓名
-    :return: 签名图片的完整路径，如果不存在则返回None
-    """
-    signs_folder = os.path.join(os.getcwd(), 'signs')
-    image_path = os.path.join(signs_folder, f"{engineer_name}.jpg")
-    if os.path.exists(image_path):
-        return image_path
-    else:
-        print(f"Signature image for {engineer_name} not found.")
+    """获取指定工程师的签名图片路径"""
+    if not engineer_name or not engineer_name.strip():
         return None
+    
+    signs_folder = Path.cwd() / 'signs'
+    if not signs_folder.exists():
+        print(f"签名文件夹不存在: {signs_folder}")
+        return None
+    
+    # 支持多种图片格式
+    image_extensions = ['.jpg', '.jpeg', '.png', '.bmp', '.gif']
+    
+    for ext in image_extensions:
+        image_path = signs_folder / f"{engineer_name.strip()}{ext}"
+        if image_path.exists():
+            return str(image_path)
+    
+    print(f"未找到工程师 {engineer_name} 的签名图片")
+    return None
+
 # 在word表格某行某列单元格内输入文本
 def set_text_in_cell(table, row_index, column_index, text):
     """
@@ -127,7 +140,7 @@ def insert_image_in_cell(table, row_index, column_index, image_path, width=80, h
             shape.Left = 0   # 水平位置
             shape.Top = 0    # 垂直位置
         else:
-            raise Exception("Failed to insert image")
+            raise Exception("No active shape found in the cell.")
             
     except Exception as e:
         print(f"Error inserting image in cell ({row_index}, {column_index}): {str(e)}")
@@ -161,7 +174,7 @@ def set_all_option_cells(table, status, map):
             else:
                 print(f"No status found for folder: {folder_name}")
     except Exception as e:
-        print(f"Error in set_all_option_cells: {str(e)}")
+        raise Exception(f"Error in set_all_option_cells: {str(e)}")
 
 def get_cell_with_activeX_in_row(table, row_index):
     """
@@ -189,8 +202,7 @@ def get_cell_with_activeX_in_row(table, row_index):
                 
         return None
     except Exception as e:
-        print(f"Error in get_cell_with_activeX_in_row: {str(e)}")
-        return None
+        raise Exception(f"Error in get_cell_with_activeX_in_row: {str(e)}")
 
 def set_option_cell(cell, value):
     if cell.Range.InlineShapes[0].OLEFormat.Object.Value == value and cell.Range.InlineShapes[1].OLEFormat.Object.Value != value:

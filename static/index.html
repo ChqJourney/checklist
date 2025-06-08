@@ -14,9 +14,16 @@
     </div>
     
     <div class="controls">
-        <button class="btn btn-primary" onclick="selectFile()">选择文件</button>
-        <button class="btn btn-success" id="runBtn" onclick="runProcess()" disabled>运行检查</button>
-        <div class="file-info" id="fileInfo">请选取任务清单文件</div>
+        <div style="display: flex; gap: 0.5rem;align-items: center;">
+
+            <button class="btn btn-primary" onclick="selectFile()">选择文件</button>
+            <button class="btn btn-success" id="runBtn" onclick="runProcess()" disabled>运行检查</button>
+            <div class="file-info" id="fileInfo">请选取任务清单文件</div>
+        </div>
+        <div class="warning-panel">
+
+            <div class="warning">过程中会强制关闭所有word文档，使用前请保存并关闭所有word文件!!!</div>
+        </div>
     </div>
     
     <div class="main-content">
