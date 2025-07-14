@@ -1,4 +1,5 @@
 let isRunning = false;
+let isLogPanelCollapsed = false;
 
 async function selectFile() {
     try {
@@ -307,8 +308,32 @@ function toggleMessage(button) {
     }
 }
 
-// 页面加载完成后的初始化
+// 收缩/展开日志面板
+function toggleLogPanel() {
+    const logPanel = document.getElementById('logPanel');
+    const toggleIcon = document.querySelector('.toggle-icon');
+    
+    isLogPanelCollapsed = !isLogPanelCollapsed;
+    
+    if (isLogPanelCollapsed) {
+        logPanel.classList.add('collapsed');
+        toggleIcon.textContent = '▶';
+    } else {
+        logPanel.classList.remove('collapsed');
+        toggleIcon.textContent = '◀';
+    }
+    
+    // 保存状态到localStorage
+    localStorage.setItem('logPanelCollapsed', isLogPanelCollapsed);
+}
+
+// 页面加载时恢复日志面板状态
 document.addEventListener('DOMContentLoaded', function() {
+    const saved = localStorage.getItem('logPanelCollapsed');
+    if (saved === 'true') {
+        toggleLogPanel();
+    }
+    
     addLog('界面加载完成，请选择文件开始处理');
     
 });

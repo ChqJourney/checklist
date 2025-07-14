@@ -41,11 +41,11 @@ class ProjectFileChecker:
         try:
             with open('config.json', 'r', encoding='utf-8') as f:
                 config = json.load(f)
-                self.shortcuts_path = config.get('shortcuts_path', '')
-                self.subFolderNames = config.get('subFolderNames', [])
-                self.subFolder_map = config.get('subFolder_map', {})
+                self.team= config.get('team', 'general')
+                self.base_dir = config.get('base_dir', '')
+                self.subFolderConfig = config.get('subFolderConfig', {}).get(self.team, {})
                 self.task_list_map = config.get('task_list_map', {})
-                print(f"配置加载成功: shortcuts_path={self.shortcuts_path}")
+                print(f"配置加载成功: base_dir={self.base_dir}")
         except Exception as e:
             print(f"配置文件加载失败: {e}")            # 设置默认值
             self.shortcuts_path = ""
@@ -140,7 +140,7 @@ class ProjectFileChecker:
                     self.log(f"处理任务 {i+1}/{len(self.tasks)}: {task['job_no']}")
                     
                     # 获取工作目录
-                    target_path = get_working_folder_path(self.shortcuts_path, task['job_no'])
+                    target_path = get_working_folder_path(self.base_dir,self.team, task['job_no'])
                     
                     result = {
                         'job_no': task['job_no'],
@@ -155,7 +155,7 @@ class ProjectFileChecker:
                         self.log(f"找到目录: {target_path}")
                         # 检测文件夹
                         self.log("开始检查子文件夹...")
-                        folder_status = detect_folders(target_path, self.subFolderNames)
+                        folder_status = detect_folders(target_path, self.subFolderConfig.keys())
                         if  not folder_status:
                             self.log(f"子文件夹检查失败: {task['job_no']}")
                             result['status'] = '子文件夹检查失败'
@@ -169,7 +169,7 @@ class ProjectFileChecker:
                         # 设置检查列表
                         self.log(f"{task['job_no']}开始写入检查列表...")
                         try:
-                            set_checklist(task, target_path, folder_status, self.subFolder_map)
+                            set_checklist(task, target_path, folder_status, self.subFolderConfig)
                             self.log(f"{task['job_no']}检查列表写入完成")
                             result['status'] = '完成'
                         except Exception as e:

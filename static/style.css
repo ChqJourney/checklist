@@ -161,14 +161,101 @@ body {
 }
 
 .log-panel {
-    width: 40%;
+    width: 35%;
     background: white;
     border-right: 1px solid #e0e0e0;
     display: flex;
     flex-direction: column;
-    /* 确保面板有具体高度 */
     height: 100%;
     min-height: 0;
+    position: relative;
+    transition: width 0.3s ease;
+}
+
+.log-panel.collapsed {
+    width: 40px;
+    min-width: 40px;
+}
+
+.log-toggle {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    z-index: 10;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.log-toggle:hover {
+    background: #5a6fd8;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.log-panel.collapsed .log-toggle .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.log-panel.collapsed .log-header,
+.log-panel.collapsed .log-content {
+    display: none;
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease;
+    display: inline-block;
+    line-height: 1;
+}
+
+.log-panel.collapsed {
+    width: 40px;
+    min-width: 40px;
+}
+
+.log-toggle {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    z-index: 10;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.log-toggle:hover {
+    background: #5a6fd8;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.log-panel.collapsed .log-toggle .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.log-panel.collapsed .log-header,
+.log-panel.collapsed .log-content {
+    display: none;
 }
 
 .log-header {
@@ -354,10 +441,15 @@ body {
 }
 
 .results-panel {
-    width: 60%;
+    width: 65%;
     background: white;
     display: flex;
     flex-direction: column;
+    transition: width 0.3s ease;
+}
+
+.log-panel.collapsed + .results-panel {
+    width: calc(100% - 40px);
 }
 
 .results-header {

@@ -1,6 +1,7 @@
 import datetime
 import os
 import shutil
+import glob
 import psutil
 import win32com.client as win32
 from pathlib import Path
@@ -180,18 +181,19 @@ def set_all_option_cells(table, status, map):
     try:
         for folder_name, row_num in map.items():
             if not isinstance(row_num, int):
-                print(f"Warning: Invalid row number for {folder_name}: {row_num}")
+                log_debug(f"Warning: Invalid row number for {folder_name}: {row_num}")
                 continue
                 
             cell = get_cell_with_activeX_in_row(table, row_num)
             if cell is None:
-                print(f"No ActiveX control found in row {row_num}")
-                continue
+                log_error(f"No ActiveX control found in row {row_num}")
+                raise Exception(f"No ActiveX control found in row {row_num} for folder: {folder_name}, please check if the row setting is correct or if the file is damaged.")
+                
                 
             if folder_name in status:
                 set_option_cell(cell, status[folder_name])
             else:
-                print(f"No status found for folder: {folder_name}")
+                log_debug(f"No status found for folder: {folder_name}")
     except Exception as e:
         raise Exception(f"Error in set_all_option_cells: {str(e)}")
 
@@ -249,7 +251,21 @@ def detect_folders(working_folder_path,sub_folder_names):
         return None
     return result
 
-def get_working_folder_path(shortcuts_path,job_no):
+def get_working_folder_path(base_dir, team,job_no):
+    """
+    获取工作目录路径
+    :param base_dir: 基础目录
+    :param team: 团队名称
+    :param job_no: 工作号
+    :return: 工作目录路径，如果未找到则返回None
+    """
+    if team=='ppt':
+        return get_working_folder_path_for_ppt(base_dir, job_no)
+    else:
+        return get_working_folder_path_for_general(base_dir, job_no)
+
+
+def get_working_folder_path_for_ppt(shortcuts_path,job_no):
     try:
         shell = win32.Dispatch("WScript.Shell")
     except ImportError:
@@ -276,6 +292,22 @@ def get_working_folder_path(shortcuts_path,job_no):
     print("没有找到对应的文件夹")
     return None
 # 获取Word文档中所有活动的ActiveX控件单元格的行序号和列序号
+
+def get_working_folder_path_for_general(base_dir, job_no):
+    sub_year_folder = f"20{job_no[:2]}"
+    search_dir = os.path.join(base_dir, sub_year_folder)
+    
+    # 使用 os.scandir() 只查找第一层目录 (最高效)
+    try:
+        with os.scandir(search_dir) as entries:
+            for entry in entries:
+                if entry.is_dir() and entry.name.startswith(job_no):
+                    return entry.path
+    except (OSError, FileNotFoundError) as e:
+        log_debug(f"无法访问目录 {search_dir}: {e}", "FILE")
+    
+    return None
+
 def get_activeX_cells(doc_path):
     """
     获取Word文档中所有包含ActiveX控件的单元格信息

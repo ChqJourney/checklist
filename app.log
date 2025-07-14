@@ -94,3 +94,100 @@
 [2025-06-08 21:36:36] [INFO] [GUI] 250300973HZH检查列表写入完成
 [2025-06-08 21:36:36] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：完成
 [2025-06-08 21:36:36] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-07 21:41:16] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-07 21:41:21] [INFO] [GUI] 开始处理任务...
+[2025-07-07 21:41:21] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-07 21:41:21] [INFO] [GUI] 共计 1 个任务
+[2025-07-07 21:41:21] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-07 21:41:21] [INFO] [GUI] 找到目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-07 21:41:21] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-07 21:41:21] [INFO] [GUI] 子文件夹检查结果: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-07-07 21:41:21] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-07 21:41:23] [INFO] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-07 21:41:35] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-07 21:41:38] [INFO] [GUI] 250300973HZH检查列表写入完成
+[2025-07-07 21:41:38] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：完成
+[2025-07-07 21:41:38] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-07 21:41:46] [INFO] [GUI] 已打开目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-07 21:48:42] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-07 21:48:48] [INFO] [GUI] 开始处理任务...
+[2025-07-07 21:48:48] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-07 21:48:48] [INFO] [GUI] 共计 1 个任务
+[2025-07-07 21:48:48] [INFO] [GUI] 处理任务 1/1: 250600898HZH
+[2025-07-07 21:48:48] [INFO] [GUI] 找到目录: C:\Users\patri\Downloads\250600898HZH--OH-B02--7-FIN OIL FILLED HEATER--WM CA D11 DI--PT--KONWIN\250600898HZH--OH-B02--7-FIN OIL FILLED HEATER--WM CA D11 DI--PT--KONWIN
+[2025-07-07 21:48:48] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-07 21:48:48] [INFO] [GUI] 子文件夹检查结果: {'App\\Quotation': True, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': False, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-07-07 21:48:48] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-07 21:48:48] [INFO] [GUI] 250600898HZH开始写入检查列表...
+[2025-07-07 21:48:55] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-07 21:48:57] [INFO] [GUI] 250600898HZH检查列表写入完成
+[2025-07-07 21:48:57] [INFO] [GUI] 任务 250600898HZH 处理完成:结果为：完成
+[2025-07-07 21:48:57] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-07 21:49:09] [INFO] [GUI] 已打开目录: C:\Users\patri\Downloads\250600898HZH--OH-B02--7-FIN OIL FILLED HEATER--WM CA D11 DI--PT--KONWIN\250600898HZH--OH-B02--7-FIN OIL FILLED HEATER--WM CA D11 DI--PT--KONWIN
+[2025-07-07 21:52:36] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-07 21:52:39] [INFO] [GUI] 开始处理任务...
+[2025-07-07 21:52:39] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-07 21:52:39] [INFO] [GUI] 共计 1 个任务
+[2025-07-07 21:52:39] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-07 21:52:39] [INFO] [GUI] 找到目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-07 21:52:39] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-07 21:52:39] [INFO] [GUI] 子文件夹检查结果: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-07-07 21:52:39] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-07 21:52:39] [INFO] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-07 21:52:45] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-07 21:52:47] [INFO] [GUI] 250300973HZH检查列表写入完成
+[2025-07-07 21:52:47] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：完成
+[2025-07-07 21:52:47] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-07 21:52:58] [INFO] [GUI] 已打开目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-14 20:45:58] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-14 20:46:01] [INFO] [GUI] 开始处理任务...
+[2025-07-14 20:46:02] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-14 20:46:02] [INFO] [GUI] 共计 1 个任务
+[2025-07-14 20:46:02] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-14 20:46:02] [INFO] [GUI] 未找到目录: 250300973HZH
+[2025-07-14 20:46:02] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-14 20:47:35] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-14 20:47:39] [INFO] [GUI] 开始处理任务...
+[2025-07-14 20:47:39] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-14 20:47:39] [INFO] [GUI] 共计 1 个任务
+[2025-07-14 20:47:39] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-14 20:47:39] [INFO] [GUI] 找到目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-14 20:47:39] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-14 20:47:39] [INFO] [GUI] 子文件夹检查结果: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-07-14 20:47:39] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-14 20:47:40] [INFO] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-14 20:47:45] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-14 20:47:49] [INFO] [GUI] 250300973HZH检查列表写入完成
+[2025-07-14 20:47:49] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：完成
+[2025-07-14 20:47:49] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-14 21:14:45] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-14 21:14:48] [INFO] [GUI] 开始处理任务...
+[2025-07-14 21:14:49] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-14 21:14:49] [INFO] [GUI] 共计 1 个任务
+[2025-07-14 21:14:49] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-14 21:14:49] [INFO] [GUI] 找到目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-14 21:14:49] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-14 21:14:49] [INFO] [GUI] 子文件夹检查结果: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-07-14 21:14:49] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-14 21:14:50] [INFO] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-14 21:14:52] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-14 21:14:52] [ERROR] No ActiveX control found in row 2
+[2025-07-14 21:14:52] [INFO] [GUI] 250300973HZH设置检查列表失败: Error in set_all_option_cells: No ActiveX control found in row 2 for folder: App\Quotation, please check if the row setting is correct or if the file is damaged.
+[2025-07-14 21:14:52] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：失败
+[2025-07-14 21:14:52] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-14 23:21:21] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-14 23:21:22] [INFO] [GUI] 开始处理任务...
+[2025-07-14 23:21:23] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-14 23:21:23] [INFO] [GUI] 共计 1 个任务
+[2025-07-14 23:21:23] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-14 23:21:23] [INFO] [GUI] 找到目录: C:\Users\patri\Downloads\250300973HZH--TASK-0796364--MC+ROT+HAMMER+DRILL--0548781_INVOX\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-14 23:21:23] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-14 23:21:23] [INFO] [GUI] 子文件夹检查结果: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-07-14 23:21:23] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-14 23:21:24] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-14 23:21:24] [INFO] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-14 23:21:26] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-14 23:21:27] [ERROR] No ActiveX control found in row 2
+[2025-07-14 23:21:27] [INFO] [GUI] 250300973HZH设置检查列表失败: Error in set_all_option_cells: No ActiveX control found in row 2 for folder: App\Quotation, please check if the row setting is correct or if the file is damaged.
+[2025-07-14 23:21:27] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：失败
+[2025-07-14 23:21:27] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务

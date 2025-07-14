@@ -1,27 +1,9 @@
 {
-    "subFolderNames":[
-        "App\\Quotation",
-        "App\\Invoice",
-        "App",
-        "Others",
-        "Test record\\Chemical",
-        "Test record",
-        "Tech\\IM-RL-AW",
-        "Tech\\DR",
-        "Tech\\Protocol",
-        "Tech\\Other",
-        "Photo",
-        "Report",
-        "Subcontract"
-    ],
-    "shortcuts_path":"C:\\Users\\patri\\source\\demos\\py_checklist\\shortcuts",
-    
-    "task_list_map":{
-        "job_no":0,
-        "job_creator":1,
-        "engineers":2
-    },    "subFolder_map":{
-       "App\\Quotation":2,
+    "team":"ppt",
+    "base_dir":"C:\\Users\\patri\\source\\demos\\py_checklist\\shortcuts",
+    "subFolderConfig":{
+        "general":{
+        "App\\Quotation":2,
         "App\\Invoice":3,
         "App":4,
         "Others":5,
@@ -34,7 +16,31 @@
         "Photo":14,
         "Report":15,
         "Subcontract":16
+        },
+    "ppt":{
+        "App\\Quotation":2,
+        "App\\Invoice":3,
+        "App":4,
+        "Others":5,
+        "Test record\\Chemical":8,
+        "Test record":9,
+        "Tech\\IM-RL-AW":10,
+        "Tech\\DR":11,
+        "Tech\\Protocol":12,
+        "Tech\\Other":13,
+        "Photo":14,
+        "Report":15,
+        "Subcontract":16
+        }
     },
+
+    
+    "task_list_map":{
+        "job_no":0,
+        "job_creator":1,
+        "engineers":2
+    },    
+    
     "log_config": {
         "level": "INFO",
         "log_to_console": true,
