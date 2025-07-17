@@ -191,3 +191,4 @@
 [2025-07-14 23:21:27] [INFO] [GUI] 250300973HZH设置检查列表失败: Error in set_all_option_cells: No ActiveX control found in row 2 for folder: App\Quotation, please check if the row setting is correct or if the file is damaged.
 [2025-07-14 23:21:27] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：失败
 [2025-07-14 23:21:27] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-17 15:59:51] [INFO] [GUI] 已选择文件: task list.xlsx

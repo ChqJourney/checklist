@@ -1,21 +1,45 @@
 {
-    "team":"ppt",
-    "base_dir":"C:\\Users\\patri\\source\\demos\\py_checklist\\shortcuts",
+    "team":"general",
+    "base_dir":"S:\\DATA\\HZ Engineer Documents\\LUM",
     "subFolderConfig":{
         "general":{
-        "App\\Quotation":2,
-        "App\\Invoice":3,
-        "App":4,
-        "Others":5,
-        "Test record\\Chemical":8,
-        "Test record":9,
-        "Tech\\IM-RL-AW":10,
-        "Tech\\DR":11,
-        "Tech\\Protocol":12,
-        "Tech\\Other":13,
-        "Photo":14,
-        "Report":15,
-        "Subcontract":16
+        "0 Job sheet & Quotation":{
+            "Job sheet":5,
+            "Quotation":6
+        },
+        "1 Application documents":{
+            "SGS":9,
+            "CB":8,
+            "ETL":9,
+            "Others":10,
+            "OtherAppDoc":11
+        },
+        "2 Certificate":7,
+        "3 Test report":8,
+        "4 Test record":{
+            "CR":12,
+            "TDS":13,
+            "EquipmentList":14
+        },
+        "5 Technical documents":{
+            "CircuitDiagram":15,
+            "Partlist":16,
+            "BOM":17,
+            "OtherTechDoc":18
+        },
+        "6 User Manual(s) & Label":13,
+        "7 Component Cer":14,
+        "8 PAH evaluation":19,
+        "9 Communication file":{
+            "lr":20,
+            "confirmation":21,
+            "other":22
+        },
+        "10 Subcontract report and log sheet":21,
+        "11 Photos":23,
+        "12 To and From certification body":24,
+        "13 to Client":25,
+        "14 Other documents":26
         },
     "ppt":{
         "App\\Quotation":2,
