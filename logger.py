@@ -7,6 +7,7 @@ import os
 import threading
 from datetime import datetime
 from typing import Callable, Optional
+from config_manager import get_system_config
 
 class GlobalLogger:
     """全局日志管理器"""
@@ -19,26 +20,14 @@ class GlobalLogger:
         'ERROR': 40,
         'CRITICAL': 50
     }
-    
+
     def __init__(self):
-        self.config = {}
-        self.frontend_callback: Optional[Callable] = None
-        self._lock = threading.Lock()
-        self.frontend_logs = []  # 存储前端显示的日志
-        self.load_config()
-    
-    def load_config(self):
-        """加载日志配置"""
-        try:
-            with open('config.json', 'r', encoding='utf-8') as f:
-                config = json.load(f)
-                self.config = config.get('log_config', {})
-        except Exception as e:
-            print(f"加载日志配置失败: {e}")
-            # 设置默认配置
+        # 设置默认配置
+        config = get_system_config()
+        if config is None:
             self.config = {
-                "level": "INFO",
-                "log_to_console": True,
+            "level": "INFO",
+            "log_to_console": True,
                 "log_to_file": True,
                 "log_file_path": "app.log",
                 "log_format": "[{timestamp}] [{level}] {message}",
@@ -51,6 +40,13 @@ class GlobalLogger:
                     "CRITICAL": {"color": "#6f42c1", "icon": "🚨"}
                 }
             }
+        else:
+            self.config = config
+        self.frontend_callback: Optional[Callable] = None
+        self._lock = threading.Lock()
+        self.frontend_logs = []  # 存储前端显示的日志
+
+    
     
     def set_frontend_callback(self, callback: Callable):
         """设置前端回调函数"""

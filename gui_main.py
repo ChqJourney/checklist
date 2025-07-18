@@ -8,6 +8,7 @@ from datetime import datetime
 from funcs import get_working_folder_path, detect_folders, kill_all_word_processes, set_checklist
 from data_manager import data_manager
 from logger import global_logger, log_info, log_error, log_warning, log_debug, log_critical
+from config_manager import config_manager, get_system_config, set_user_config
 
 class ProjectFileChecker:
     def __init__(self):
@@ -16,11 +17,19 @@ class ProjectFileChecker:
         self.is_running = False
         self.log_callback = "None"
         
-        # 设置全局日志的前端回调
-        global_logger.set_frontend_callback(self._frontend_log_callback)
         
         # 加载配置
-        self.load_config()
+        # 获取系统配置
+        self.log_level = get_system_config('log_config.level')
+        self.file_map = get_system_config('file_map')
+        self.subFolderConfig = get_system_config('subFolderConfig', {}).get(config_manager.get_team(), {})
+        print(f"当前团队配置: {self.subFolderConfig}")
+        # 获取用户配置
+        self.team = config_manager.get_team()
+        self.base_dir = config_manager.get_base_dir()
+
+        # 设置全局日志的前端回调
+        global_logger.set_frontend_callback(self._frontend_log_callback)
     
     def _frontend_log_callback(self, formatted_message: str, level: str):
         """全局日志的前端回调函数"""
@@ -36,33 +45,17 @@ class ProjectFileChecker:
         except Exception as e:
             print(f"前端日志显示失败: {e}")
     
-    def load_config(self):
-        """加载配置文件"""
-        try:
-            with open('config.json', 'r', encoding='utf-8') as f:
-                config = json.load(f)
-                self.team= config.get('team', 'general')
-                self.base_dir = config.get('base_dir', '')
-                self.subFolderConfig = config.get('subFolderConfig', {}).get(self.team, {})
-                self.task_list_map = config.get('task_list_map', {})
-                print(f"配置加载成功: base_dir={self.base_dir}")
-        except Exception as e:
-            print(f"配置文件加载失败: {e}")            # 设置默认值
-            self.shortcuts_path = ""
-            self.subFolderNames = []
-            self.subFolder_map = {}
-            self.task_list_map = {}
     
-    def log(self, message, level="INFO"):
+    def log(self, message):
         """输出日志信息 - 兼容旧接口，现在使用全局日志系统"""
         # 为了向后兼容，保留原有接口
-        if level.upper() == "DEBUG":
+        if self.log_level.upper() == "DEBUG":
             log_debug(message, "GUI")
-        elif level.upper() == "WARNING":
+        elif self.log_level.upper() == "WARNING":
             log_warning(message, "GUI")
-        elif level.upper() == "ERROR":
+        elif self.log_level.upper() == "ERROR":
             log_error(message, "GUI")
-        elif level.upper() == "CRITICAL":
+        elif self.log_level.upper() == "CRITICAL":
             log_critical(message, "GUI")
         else:
             log_info(message, "GUI")
@@ -155,7 +148,7 @@ class ProjectFileChecker:
                         self.log(f"找到目录: {target_path}")
                         # 检测文件夹
                         self.log("开始检查子文件夹...")
-                        folder_status = detect_folders(target_path, self.subFolderConfig.keys())
+                        folder_status = detect_folders(target_path,self.team, self.subFolderConfig.options)
                         if  not folder_status:
                             self.log(f"子文件夹检查失败: {task['job_no']}")
                             result['status'] = '子文件夹检查失败'
@@ -169,7 +162,7 @@ class ProjectFileChecker:
                         # 设置检查列表
                         self.log(f"{task['job_no']}开始写入检查列表...")
                         try:
-                            set_checklist(task, target_path, folder_status, self.subFolderConfig)
+                            set_checklist(task, target_path, self.team, folder_status, self.subFolderConfig)
                             self.log(f"{task['job_no']}检查列表写入完成")
                             result['status'] = '完成'
                         except Exception as e:

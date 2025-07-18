@@ -1,219 +1,337 @@
 {
-    "JobSheet":
-				[
-					"0 Job sheet & Quotation",
-					"*Job?Sheet*.pdf",
-					"*HZH*.pdf",
-					"*HAN*.pdf",
-					"*SHA*.pdf"
-                ],
-                "Quotation":[
-                    "0 Job sheet & Quotation",
-                    "*Quotation*.pdf",
-                    "*QHZ*.pdf",
-                    "*QSH*.pdf"
-                ],
-				"GS":[
-                    "1 Application documents",
-                    "*CIG022*.pdf",
-                    "*CIG023*.pdf",
-                    "*app*.pdf",
-                    "*app*.doc*",
-                    "*20a*.pdf",
-                    "*21b*.pdf",
-                    "*21e*.pdf",
-                    "*20a*.doc*",
-                    "*21b*.doc*",
-                    "*21e*.doc*",
-                    "*01a*.pdf",
-                    "*01a*.doc*",
-                    "*申请表*.pdf",
-                    "*申请表*.doc*"
-                ],
-                "CB":[
-                    "1 Application documents",
-					"*app*.pdf",
-					"*app*.doc*",
-					"*20a*.pdf",
-					"*21b*.pdf",
-					"*CB?draft*.pdf",
-					"*20a*.doc*",
-					"*21b*.doc*",
-					"*CB?draft*.doc*",
-					"*01c*.pdf",
-					"*申请表*.pdf",
-					"*01c*.doc*",
-					"*申请表*.doc*"
-                ],
-				"ETL":[
-					"1 Application documents",
-					"*app*.pdf",
-					"*CIS*.pdf",
-					"*ML*.pdf",
-					"*申请表*.pdf"
-                ],
-                "OtherServies":[
-                    "1 Application documents\\Others Service app",
-                    "*.*"
-                ],
-                "OtherAppDoc":[
-                    "1 Application documents\\other application documents",
-                    "*.*"
-                ],
-				"Certificate":[
-                    "2 Certificate",
-					"*cer*.doc*",
-					"*cer*.xls*",
-					"*cer*.pdf",
-					"*V?.doc*",
-					"*V?.xls*",
-					"*V?.pdf",
-					"*ATM*.doc*",
-					"*ATM*.xls*",
-					"*ATM*.pdf",
-					"*SG?ITS*.doc*",
-					"*SG?ITS*.xls*",
-					"*SG?ITS*.pdf",
-					"*COC*.doc*",
-					"*COC*.xls*",
-					"*COC*.pdf",
-					"*CDF*.doc*",
-					"*CDF*.xls*",
-					"*CDF*.pdf",
-					"*CE*.doc*",
-					"*CE*.xls*",
-					"*CE*.pdf"
-                ],
-                "TestReport":[
-                    "3 Test report",
-					"*tr*.doc*",
-					"*tr*.xls*",
-					"*tr*.pdf",
-					"*photo*.doc*",
-					"*photo*.xls*",
-					"*photo*.pdf",
-					"*circuit?diagram*.doc*",
-					"*circuit?diagram*.xls*",
-					"*circuit?diagram*.pdf",
-					"*listing?report*.doc*",
-					"*listing?report*.xls*",
-					"*listing?report*.pdf",
-					"*label*.doc*",
-					"*label*.xls*",
-					"*label*.pdf",
-					"*EU*.doc*",
-					"*EU*.xls*",
-					"*EU*.pdf",
-					"*-00*.doc*",
-					"*-00*.xls*",
-					"*-00*.pdf"
-                ],
-				"TestRecord":[
-                    "4 Test record",
-					"*cr*.doc*",
-					"*cr*.xls*",
-					"*cr*.pdf",
-					"*Construction*.doc*",
-					"*Construction*.xls*",
-					"*Construction*.pdf"
-                ], 
-                "CRSheet":[
-                   
-					"4 Test record",
-					"*cr*.doc*",
-					"*cr*.xls*",
-					"*cr*.pdf",
-					"*Construction*.doc*",
-					"*Construction*.xls*",
-					"*Construction*.pdf"
-                ],
-				"DataSheet":[
-                    "4 Test record",
-					"*trecord*.doc*",
-					"*trecord*.xls*",
-					"*trecord*.pdf",
-					"*tds*.doc*",
-					"*tds*.xls*",
-					"*tds*.pdf",
-					"*data*.doc*",
-					"*data*.xls*",
-					"*data*.pdf"
-                ],
-				"EquipmentList":[
-                    "4 Test record",
-                    "*equipment*.doc*"
-                ],
-				"CircuitDiagram":[
-                    "5 Technical documents",
-                    "*.*"
-                ],
-                "Partlist":[
-                    "5 Technical documents\\Partlist",
-					"*.*"
-                ],
-				
-                "ExplodedDrawing":[
-                    "5 Technical documents\\Exploded drawing +BOM",
-                    "*.*"
-                ],
-				"OtherTechInfo":[
-                    "5 Technical documents\\Other technical info",
-                    "*.*"
-                ],
-				"UserManual":[
-                   "6 User Manual(s) & Label",
-					"*manual*.*",
-					"*label*.*",
-					"*说明书*",
-					"*Mark*.*",
-					"*铭牌*.*"
-                ],
-				"ComponentCert":[
-                   "7 Component Cer",
-					"*.*"
-                ],
-				
-				this.Pah = new string[]
-				{
-					"8 PAH evaluation",
-					"*PAH*.*"
-				};
-				this.LetterReport = new string[]
-				{
-					"9 Communication file\\Letter Report(s)",
-					"*.*"
-				};
-				this.Confirmation = new string[]
-				{
-					"9 Communication file\\Confirmation*(Declaration)",
-					"*.*"
-				};
-				this.OthersCommincation = new string[]
-				{
-					"9 Communication file\\Others Communication",
-					"*.*"
-				};
-				this.SubReport = new string[]
-				{
-					"10 Subcontract report and log sheet",
-					"*Subcontract*.*",
-					"*分包*.*"
-				};
-				this.Photo = new string[]
-				{
-					"11 Photos",
-					"*.jpg",
-					"*.jpeg",
-					"*.bmp",
-					"*.png"
-				};
-				this.OtherDoc = new string[]
-				{
-					"14 Other documents",
-					"*.*"
-				};
-				this.CrossReference = new string[]
-				{
-					"",
-					"*.lnk"
-				};
+	"subFolderConfig": {
+		"general": [
+			{
+				"fields": {
+					"job_no": {
+						"type": "text",
+						"indexes": [
+							0,
+							1
+						]
+					},
+					"date": {
+						"type": "date",
+						"indexes": [
+							1,
+							1
+						]
+					},
+					"job_creator": [
+						{
+							"type": "text",
+							"indexes": [
+								1,
+								3
+							]
+						},
+						{
+							"type": "image",
+							"indexes": [
+								1,
+								3
+							]
+						}
+					],
+					"engineers": [
+						{
+							"type": "text",
+							"indexes": [
+								0,
+								3
+							]
+						},
+						{
+							"type": "image",
+							"indexes": [
+								0,
+								3
+							]
+						}
+					]
+				},
+				"options": {
+					"0 Job sheet & Quotation": {
+						"JobSheet": 5,
+						"Quotation": 6
+					},
+					"1 Application documents": {
+						"GS": 9,
+						"CB": 8,
+						"ETL": 9,
+						"OtherServies": 10,
+						"OtherAppDoc": 11
+					},
+					"2 Certificate": 7,
+					"3 Test report": 8,
+					"4 Test record": {
+						"CRSheet": 12,
+						"DataSheet": 13,
+						"EquipmentList": 14
+					},
+					"5 Technical documents\\Circuit diagram": 15,
+					"5 Technical documents\\Partlist": 16,
+					"5 Technical documents\\Exploded drawing +BOM": 17,
+					"5 Technical documents\\Other technical info": 18,
+					"6 User Manual(s) & Label": 13,
+					"7 Component Cer": 14,
+					"8 PAH evaluation": 19,
+					"9 Communication file\\Letter report(s)": 24,
+					"9 Communication file\\Confirmation (Declaration)": 20,
+					"9 Communication file\\Others Communication": 22,
+					"10 Subcontract report and log sheet": 21,
+					"11 Photos": 23,
+					"12 To and From certification body": 24,
+					"13 to Client": 25,
+					"14 Other documents": 26
+				}
+			}
+		],
+		"ppt": [
+			{
+				"fields": {
+					"job_no": {
+						"type": "text",
+						"indexes": [
+							0,
+							1
+						]
+					},
+					"job_creator": {
+						"type": "text",
+						"indexes": [
+							1,
+							2
+						]
+					},
+					"engineers": {
+						"type": "text",
+						"indexes": [
+							2,
+							3
+						]
+					}
+				},
+				"options": {
+					"App\\Quotation": 2,
+					"App\\Invoice": 3,
+					"App": 4,
+					"Others": 5,
+					"Test record\\Chemical": 8,
+					"Test record": 9,
+					"Tech\\IM-RL-AW": 10,
+					"Tech\\DR": 11,
+					"Tech\\Protocol": 12,
+					"Tech\\Other": 13,
+					"Photo": 14,
+					"Report": 15,
+					"Subcontract": 16
+				}
+			}
+		]
+	},
+	"log_config": {
+		"level": "INFO",
+		"log_to_console": true,
+		"log_to_file": true,
+		"log_file_path": "app.log",
+		"log_format": "[{timestamp}] [{level}] {message}",
+		"max_frontend_logs": 1000,
+		"levels": {
+			"DEBUG": {
+				"color": "#6c757d",
+				"icon": "🔍"
+			},
+			"INFO": {
+				"color": "#17a2b8",
+				"icon": "ℹ️"
+			},
+			"WARNING": {
+				"color": "#ffc107",
+				"icon": "⚠️"
+			},
+			"ERROR": {
+				"color": "#dc3545",
+				"icon": "❌"
+			},
+			"CRITICAL": {
+				"color": "#6f42c1",
+				"icon": "🚨"
+			}
+		}
+	},
+	"file_map": {
+		"JobSheet": [
+			"*Job?Sheet*.pdf",
+			"*HZH*.pdf",
+			"*HAN*.pdf",
+			"*SHA*.pdf"
+		],
+		"Quotation": [
+			"*Quotation*.pdf",
+			"*QHZ*.pdf",
+			"*QSH*.pdf"
+		],
+		"GS": [
+			"*CIG022*.pdf",
+			"*CIG023*.pdf",
+			"*app*.pdf",
+			"*app*.doc*",
+			"*20a*.pdf",
+			"*21b*.pdf",
+			"*21e*.pdf",
+			"*20a*.doc*",
+			"*21b*.doc*",
+			"*21e*.doc*",
+			"*01a*.pdf",
+			"*01a*.doc*",
+			"*申请表*.pdf",
+			"*申请表*.doc*"
+		],
+		"CB": [
+			"*app*.pdf",
+			"*app*.doc*",
+			"*20a*.pdf",
+			"*21b*.pdf",
+			"*CB?draft*.pdf",
+			"*20a*.doc*",
+			"*21b*.doc*",
+			"*CB?draft*.doc*",
+			"*01c*.pdf",
+			"*申请表*.pdf",
+			"*01c*.doc*",
+			"*申请表*.doc*"
+		],
+		"ETL": [
+			"*app*.pdf",
+			"*CIS*.pdf",
+			"*ML*.pdf",
+			"*申请表*.pdf"
+		],
+		"OtherServies": [
+			"*.*"
+		],
+		"OtherAppDoc": [
+			"*.*"
+		],
+		"Certificate": [
+			"*cer*.doc*",
+			"*cer*.xls*",
+			"*cer*.pdf",
+			"*V?.doc*",
+			"*V?.xls*",
+			"*V?.pdf",
+			"*ATM*.doc*",
+			"*ATM*.xls*",
+			"*ATM*.pdf",
+			"*SG?ITS*.doc*",
+			"*SG?ITS*.xls*",
+			"*SG?ITS*.pdf",
+			"*COC*.doc*",
+			"*COC*.xls*",
+			"*COC*.pdf",
+			"*CDF*.doc*",
+			"*CDF*.xls*",
+			"*CDF*.pdf",
+			"*CE*.doc*",
+			"*CE*.xls*",
+			"*CE*.pdf"
+		],
+		"TestReport": [
+			"*tr*.doc*",
+			"*tr*.xls*",
+			"*tr*.pdf",
+			"*photo*.doc*",
+			"*photo*.xls*",
+			"*photo*.pdf",
+			"*circuit?diagram*.doc*",
+			"*circuit?diagram*.xls*",
+			"*circuit?diagram*.pdf",
+			"*listing?report*.doc*",
+			"*listing?report*.xls*",
+			"*listing?report*.pdf",
+			"*label*.doc*",
+			"*label*.xls*",
+			"*label*.pdf",
+			"*EU*.doc*",
+			"*EU*.xls*",
+			"*EU*.pdf",
+			"*-00*.doc*",
+			"*-00*.xls*",
+			"*-00*.pdf"
+		],
+		"CRSheet": [
+			"*cr*.doc*",
+			"*cr*.xls*",
+			"*cr*.pdf",
+			"*Construction*.doc*",
+			"*Construction*.xls*",
+			"*Construction*.pdf"
+		],
+		"DataSheet": [
+			"*trecord*.doc*",
+			"*trecord*.xls*",
+			"*trecord*.pdf",
+			"*tds*.doc*",
+			"*tds*.xls*",
+			"*tds*.pdf",
+			"*data*.doc*",
+			"*data*.xls*",
+			"*data*.pdf"
+		],
+		"EquipmentList": [
+			"*equipment*.doc*"
+		],
+		"CircuitDiagram": [
+			"*.*"
+		],
+		"Partlist": [
+			"*.*"
+		],
+		"ExplodedDrawing": [
+			"*.*"
+		],
+		"OtherTechInfo": [
+			"*.*"
+		],
+		"UserManual": [
+			"*manual*.*",
+			"*label*.*",
+			"*说明书*",
+			"*Mark*.*",
+			"*铭牌*.*"
+		],
+		"ComponentCert": [
+			"*.*"
+		],
+		"Pah": [
+			"*PAH*.*"
+		],
+		"LetterReport": [
+			"*.*"
+		],
+		"Confirmation": [
+			"*.*"
+		],
+		"OthersCommincation": [
+			"*.*"
+		],
+		"SubReport": [
+			"*Subcontract*.*",
+			"*分包*.*"
+		],
+		"Photo": [
+			"*.jpg",
+			"*.jpeg",
+			"*.bmp",
+			"*.png"
+		],
+		"OtherDoc": [
+			"*.*"
+		],
+		"CrossReference": [
+			"",
+			"*.lnk"
+		]
+	}
+}

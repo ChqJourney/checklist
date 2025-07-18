@@ -1,13 +1,16 @@
+from array import array
 import datetime
 import os
 import shutil
 import glob
+from numpy import number
 import psutil
 import win32com.client as win32
 from pathlib import Path
 from urllib.parse import unquote
 from data_manager import data_manager  # 导入全局数据管理器
 from logger import log_info, log_error, log_warning, log_debug
+from config_manager import ConfigManager
 
 def kill_all_word_processes():
     """
@@ -27,7 +30,69 @@ def kill_all_word_processes():
     except Exception as e:
         log_error(f"终止Word进程时发生错误: {e}", "WORD")
 
-def set_checklist(task,target_path,status,map):
+def set_fields_value(table,task, field_config):
+    if not field_config or not isinstance(field_config, dict):
+        log_warning("无效的字段配置", "WORD")
+        return
+
+    for field_name, field_value in field_config.items():
+        if not field_name or not field_value:
+            log_warning(f"字段 {field_name} 的值无效", "WORD")
+            continue
+
+        # 在Word表格中设置字段值
+        if field_value is array:
+            for i, item in enumerate(field_value):
+                cell = table.Cell(item.indexes[0], item.indexes[1])
+                if item.type=='image':
+                    signature_image = get_engineer_signature_image(task[field_name])
+                    if signature_image:
+                        insert_image_in_cell(cell, signature_image, width=80, height=20)  # 插入工程师签名图片
+                    else:
+                        log_warning(f"未找到工程师 {task['engineers']} 的签名图片，使用默认图片", "WORD")
+                        default_image_path = Path.cwd() / 'signs' / 'default.jpg'
+                        insert_image_in_cell(cell, default_image_path, width=80, height=20)  # 插入默认签名图片
+                else:
+                    set_text_in_cell(cell, task[field_name])
+        else:
+            cell = table.Cell(field_value.indexes[0], field_value.indexes[1])
+            set_text_in_cell(cell, task[field_name])
+
+def set_option_cells(table, team, folder_status, option_config):
+    if not option_config or not isinstance(option_config, dict):
+        log_warning("无效的选项配置", "WORD")
+        return
+    if team == 'ppt':
+        set_all_option_cells_for_ppt(table, folder_status, option_config)
+    else:
+        set_option_cells_for_general(table, folder_status, option_config)
+
+
+def set_option_cells_for_general(table, folder_status, option_config):
+    if not option_config or not isinstance(option_config, dict):
+        log_warning("无效的选项配置", "WORD")
+        return
+
+    for folder_name, option in option_config.items():
+        if folder_name not in folder_status:
+            log_warning(f"文件夹 {folder_name} 的状态未定义", "WORD")
+            continue
+
+        status = folder_status[folder_name]
+        row_index = option.get('row_index')
+        column_index = option.get('column_index')
+
+        if row_index is None or column_index is None:
+            log_warning(f"选项 {folder_name} 的行列索引未定义", "WORD")
+            continue
+
+        try:
+            cell = table.Cell(row_index, column_index)
+            set_option_cell(cell, status)
+        except Exception as e:
+            log_error(f"设置选项 {folder_name} 时发生错误: {e}", "WORD")
+
+def set_checklist(task,target_path,team,folder_status, subFolderConfig):
     try:
         # 启动Word应用程序
         word = win32.Dispatch('Word.Application')
@@ -37,31 +102,12 @@ def set_checklist(task,target_path,status,map):
         # 打开指定的文档
         word_doc = word.Documents.Open(checklist_path)
         # 确保文档有表格
-        if word_doc.Tables.Count == 0:
-            raise ValueError("No tables found in the document")
-        # 填写基本信息
-        table_info = word_doc.Tables[0]
-        #清空单元格
-        table_info.Cell(1,2).Range.Text=""
-        table_info.Cell(2,4).Range.Text=""
-        table_info.Cell(2,2).Range.Text=""
-        set_text_in_cell(table_info, 1, 2, task['job_no'])  # 工作号
-        set_text_in_cell(table_info, 2, 4, task['job_creator'])  # 工作创建人
-        #set_text_in_cell(table_info, 1, 4, task['engineers'])  # 工程师
-        # 获取工程师签名图片路径
-        engineer_signature_image = get_engineer_signature_image(task['engineers'])
-        if engineer_signature_image:
-            insert_image_in_cell(table_info, 1, 4, engineer_signature_image, width=80, height=20)  # 插入工程师签名图片
-        else:
-            log_warning(f"未找到工程师 {task['engineers']} 的签名图片，使用默认图片", "WORD")
-            default_image_path = Path.cwd() / 'signs' / 'default.jpg'
-            insert_image_in_cell(table_info, 1, 4, default_image_path, width=80, height=20)  # 插入默认签名图片
-        set_text_in_cell(table_info, 2, 2, datetime.datetime.now().strftime('%Y-%m-%d'))  # 当前日期
-        
-        # 填写文件夹状态，activieX控件设置
-        table=word_doc.Tables[1]
-        set_all_option_cells(table,status, map)
-
+        if word_doc.Tables.Count == 0 or word_doc.Tables.Count < len(subFolderConfig):
+            raise ValueError("tables setting in subfolderconfig's not correct")
+        for item,i in enumerate(subFolderConfig):
+            current_table = word_doc.Tables[i]
+            set_fields_value(current_table, task, item.fields)
+            set_option_cells(current_table, team, folder_status, item.options)
 
         # 保存并关闭文档
 
@@ -98,18 +144,16 @@ def get_engineer_signature_image(engineer_name):
     return None
 
 # 在word表格某行某列单元格内输入文本
-def set_text_in_cell(table, row_index, column_index, text):
+def set_text_in_cell(cell, text):
     """
     在Word表格的指定单元格内输入文本
-    :param table: Word表格对象
-    :param row_index: 行索引（从1开始）
-    :param column_index: 列索引（从1开始）
+    :param cell: Word表格单元格对象
     :param text: 要输入的文本
     """
-    cell = table.Cell(row_index, column_index)
     cell.Range.Text = text
+
 # 在word表格某行某列单元格内插入图片，并设置图片大小
-def insert_image_in_cell(table, row_index, column_index, image_path, width=80, height=20):
+def insert_image_in_cell(cell, image_path, width=80, height=20):
     """
     在Word表格的指定单元格内插入图片，并设置图片大小
     :param table: Word表格对象
@@ -124,9 +168,6 @@ def insert_image_in_cell(table, row_index, column_index, image_path, width=80, h
         if not os.path.exists(image_path):
             raise FileNotFoundError(f"Image file not found: {image_path}")
             
-        # Get cell
-        cell = table.Cell(row_index, column_index)
-        
         
          # Set cell alignment properties
         cell.VerticalAlignment = 1  # 1 = wdAlignVerticalCenter
@@ -156,8 +197,9 @@ def insert_image_in_cell(table, row_index, column_index, image_path, width=80, h
             raise Exception("No active shape found in the cell.")
             
     except Exception as e:
-        print(f"Error inserting image in cell ({row_index}, {column_index}): {str(e)}")
+        print(f"Error inserting image in cell: {str(e)}")
         raise
+
 def get_only_word_file_path(folder_path):
     for file in os.listdir(folder_path):
         if file.endswith(".docx") and "checklist" in file:
@@ -171,7 +213,8 @@ def get_only_word_file_path(folder_path):
         return str(target_path)
     else:
         raise FileNotFoundError("Default checklist file not found in the current directory. Please ensure 'E-filing checklist.docx' exists.")
-def set_all_option_cells(table, status, map):
+
+def set_all_option_cells_for_ppt(table, status, map):
     """
     Set values for ActiveX controls in table cells
     :param table: Word表格对象
@@ -236,19 +279,54 @@ def detect_folder_has_file(folder_path):
     for root, dirs, files in os.walk(folder_path):
         if files:
             return True
-def detect_folders(working_folder_path,sub_folder_names):
+def detect_folders(working_folder_path,team,options_config):
     result={}
-    for sub_folder_name in sub_folder_names:
-        sub_folder_path = os.path.join(working_folder_path, sub_folder_name)
-        print(f"检测文件夹: {sub_folder_path}")
-        if not os.path.exists(sub_folder_path):
-            raise FileNotFoundError(f"{sub_folder_name} folder not found")
-        if detect_folder_has_file(sub_folder_path):
-            result[sub_folder_name]=True
-        else:
-            result[sub_folder_name]=False
-    if result == {}:
-        return None
+    if team=='ppt':
+        for sub_folder_name in options_config.keys():
+            sub_folder_path = os.path.join(working_folder_path, sub_folder_name)
+            print(f"检测文件夹: {sub_folder_path}")
+            if not os.path.exists(sub_folder_path):
+                raise FileNotFoundError(f"{sub_folder_name} folder not found")
+            if detect_folder_has_file(sub_folder_path):
+                result[sub_folder_name]=True
+            else:
+                result[sub_folder_name]=False
+        if result == {}:
+            return None
+    else:
+        # 遍历optiions_config中的每个属性，见system.json中的subFolderConfig下的options
+        for sub_folder_name, option in options_config.items():
+            sub_folder_path = os.path.join(working_folder_path, sub_folder_name)
+            print(f"检测文件夹: {sub_folder_path}")
+            if not os.path.exists(sub_folder_path):
+                raise FileNotFoundError(f"{sub_folder_name} folder not found")
+            if isinstance(option, number):
+                # 如果option是数字，表示需要检测的文件数量
+                result[option]= detect_folder_has_file(sub_folder_path)
+            elif isinstance(option, dict):
+                # 如果option是字典，遍历字典的每个key，在file_map中查找对应的文件名规则
+                config_manager = ConfigManager()
+                file_map = config_manager.get_file_map()
+                
+                for key, value in option.items():
+                    if key in file_map:
+                        file_patterns = file_map[key]
+                        found_file = False
+                        
+                        # 遍历file_map中的文件名规则列表
+                        for pattern in file_patterns:
+                            if not pattern:  # 跳过空字符串
+                                continue
+                            # 使用glob模块查找符合规则的文件
+                            matching_files = glob.glob(os.path.join(sub_folder_path, pattern))
+                            if matching_files:
+                                found_file = True
+                                break
+                        result[key] = found_file
+                    else:
+                        log_warning(f"在file_map中未找到键: {key}", "FILE")
+                        result[key] = False
+
     return result
 
 def get_working_folder_path(base_dir, team,job_no):
