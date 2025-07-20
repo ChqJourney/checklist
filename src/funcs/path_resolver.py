@@ -64,6 +64,9 @@ def get_working_folder_path_for_general(base_dir, job_no):
     :param job_no: 工作号
     :return: 工作目录路径，如果未找到则返回None
     """
+    if not job_no or len(job_no) < 8:
+        log_debug(f"工作号 {job_no} 无效，无法获取工作目录路径", "PATH")
+        return None
     sub_year_folder = f"20{job_no[:2]}"
     search_dir = os.path.join(base_dir, sub_year_folder)
     

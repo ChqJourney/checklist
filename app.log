@@ -192,3 +192,971 @@
 [2025-07-14 23:21:27] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：失败
 [2025-07-14 23:21:27] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
 [2025-07-17 15:59:51] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:02:20] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:02:21] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:02:22] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:02:22] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:02:22] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:02:22] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:02:22] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:02:22] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:02:23] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 14:02:23] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:02:25] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:02:32] [DEBUG] [GUI] 250100032HZH设置检查列表失败: must be real number, not dict
+[2025-07-20 14:02:32] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:02:32] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:03:52] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:03:54] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:03:55] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:03:55] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:03:55] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:03:55] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:03:55] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:03:55] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:03:56] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 14:03:56] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:03:57] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:04:04] [DEBUG] [GUI] 250100032HZH设置检查列表失败: must be real number, not dict
+[2025-07-20 14:04:04] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:04:04] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:05:36] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:05:37] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:05:37] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:05:37] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:05:37] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:05:37] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:05:37] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:05:37] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:05:39] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 14:05:39] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:05:40] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:05:47] [DEBUG] [GUI] 250100032HZH设置检查列表失败: must be real number, not dict
+[2025-07-20 14:05:47] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:05:47] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:07:05] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:07:07] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:07:07] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:07:07] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:07:07] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:07:07] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:07:07] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:07:07] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:07:09] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 14:07:09] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:07:11] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:07:18] [DEBUG] [GUI] 250100032HZH设置检查列表失败: 'dict' object has no attribute 'fields'
+[2025-07-20 14:07:18] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:07:18] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:11:36] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:11:38] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:11:38] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:11:38] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:11:38] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:11:38] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:11:38] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:11:38] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:11:40] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 14:11:40] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:11:41] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:11:48] [DEBUG] [GUI] 250100032HZH设置检查列表失败: 'dict' object has no attribute 'indexes'
+[2025-07-20 14:11:48] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:11:48] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:13:21] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:13:23] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:13:23] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:13:23] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:13:23] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:13:23] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:13:23] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:13:23] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:13:25] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 14:13:25] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:13:26] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:13:33] [DEBUG] [GUI] 250100032HZH设置检查列表失败: 'date'
+[2025-07-20 14:13:33] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:13:33] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:16:06] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:16:08] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:16:08] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:16:08] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:16:08] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:16:08] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:16:08] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:16:08] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:16:10] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 14:16:10] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:16:11] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:16:18] [DEBUG] [GUI] 250100032HZH设置检查列表失败: 'date'
+[2025-07-20 14:16:18] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:16:18] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:19:46] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:19:47] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:19:48] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:19:48] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:19:48] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:19:48] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:19:48] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:19:48] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:19:49] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 14:19:49] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:19:50] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:19:57] [DEBUG] [GUI] 250100032HZH设置检查列表失败: local variable 'item' referenced before assignment
+[2025-07-20 14:19:57] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:19:57] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:21:31] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:21:32] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:21:32] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:21:32] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:21:32] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:21:32] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:21:32] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:21:32] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:21:34] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 14:21:34] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:21:35] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:21:42] [DEBUG] [GUI] 250100032HZH设置检查列表失败: list indices must be integers or slices, not str
+[2025-07-20 14:21:42] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:21:42] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:24:36] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:24:37] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:24:38] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:24:38] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:24:38] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:24:38] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:24:38] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:24:38] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:24:39] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 14:24:39] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:24:41] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:24:48] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:24:48] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 0 Job sheet & Quotation 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 1 Application documents 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 4 Test record 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 14:24:49] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 14:24:52] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 14:24:52] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 14:24:52] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:28:49] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:28:51] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:28:51] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:28:51] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:28:51] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:28:51] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:28:51] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:28:51] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:28:53] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 14:28:53] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:28:54] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:29:01] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:29:02] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:29:02] [DEBUG] [GUI] 250100032HZH设置检查列表失败: 'C:\\Users\\patri\\source\\demos\\py_checklist\\test_loads\\lum\\2025\\250100032HZH_Shangyu Shunhe_Luminaire_ETL\\0 Job sheet & Quotation'
+[2025-07-20 14:29:02] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:29:02] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:29:58] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:29:59] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:29:59] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:29:59] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:29:59] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:29:59] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:29:59] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:29:59] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:30:01] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 14:30:01] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:30:02] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:30:09] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:30:10] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:30:10] [DEBUG] [GUI] 250100032HZH设置检查列表失败: '0 Job sheet & Quotation'
+[2025-07-20 14:30:10] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 14:30:10] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:31:46] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:31:47] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:31:48] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:31:48] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:31:48] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:31:48] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:31:48] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:31:48] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:31:49] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 14:31:49] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:31:51] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:31:58] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:31:58] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:31:58] [WARNING] [WORD] 选项 0 Job sheet & Quotation 的行列索引未定义
+[2025-07-20 14:31:58] [WARNING] [WORD] 选项 1 Application documents 的行列索引未定义
+[2025-07-20 14:31:58] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 选项 4 Test record 的行列索引未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 14:31:59] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 14:32:02] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 14:32:02] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 14:32:02] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:32:33] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:32:33] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:32:34] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:32:34] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:32:34] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:32:34] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:32:34] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:32:34] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:32:35] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 14:32:35] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:32:37] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:32:44] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:32:44] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:32:44] [WARNING] [WORD] 选项 0 Job sheet & Quotation 的行列索引未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 选项 1 Application documents 的行列索引未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 选项 4 Test record 的行列索引未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 14:32:44] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 14:32:48] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 14:32:48] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 14:32:48] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 14:39:05] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:39:08] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 14:39:09] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 14:39:10] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 14:39:10] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 14:39:10] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 14:39:10] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 14:39:10] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 14:39:10] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 14:39:11] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 14:39:11] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 14:39:12] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 14:39:20] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:39:20] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 0 Job sheet & Quotation 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 0 Job sheet & Quotation 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 14:39:20] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 14:39:23] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 14:39:23] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 14:39:23] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 16:12:58] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 16:12:59] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 16:13:00] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 16:13:00] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 16:13:00] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 16:13:00] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 16:13:00] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 16:13:00] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 16:13:01] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 16:13:01] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 16:13:03] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 16:13:10] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 16:13:10] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 0 Job sheet & Quotation 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 0 Job sheet & Quotation 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 16:13:11] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 16:13:14] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 16:13:14] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 16:13:14] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 16:16:36] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 16:16:37] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 16:16:38] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 16:16:38] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 16:16:38] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 16:16:38] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 16:16:38] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 16:16:38] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 16:16:39] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 16:16:39] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 16:16:40] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 16:16:48] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 16:16:48] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 16:16:48] [DEBUG] [GUI] 250100032HZH设置检查列表失败: get_activeX_cells() takes 1 positional argument but 2 were given
+[2025-07-20 16:16:48] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 16:16:48] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 16:18:09] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 16:18:13] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 16:18:14] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 16:18:15] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 16:18:15] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 16:18:15] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 16:18:15] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 16:18:15] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 16:18:15] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 16:18:16] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 16:18:16] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 16:18:18] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 16:18:25] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 16:18:25] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 16:18:26] [ERROR] [WORD] 设置选项 0 Job sheet & Quotation 时发生错误: must be real number, not dict
+[2025-07-20 16:18:26] [ERROR] [WORD] 设置选项 0 Job sheet & Quotation 时发生错误: must be real number, not dict
+[2025-07-20 16:18:26] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: must be real number, not dict
+[2025-07-20 16:18:26] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: must be real number, not dict
+[2025-07-20 16:18:26] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: must be real number, not dict
+[2025-07-20 16:18:26] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: must be real number, not dict
+[2025-07-20 16:18:26] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: must be real number, not dict
+[2025-07-20 16:18:26] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 16:18:26] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 16:18:26] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: must be real number, not dict
+[2025-07-20 16:18:27] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: must be real number, not dict
+[2025-07-20 16:18:27] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: must be real number, not dict
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 16:18:27] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 16:18:30] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 16:18:30] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 16:18:30] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 16:57:11] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 16:57:19] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 16:57:21] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 16:57:21] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 16:57:21] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 16:57:21] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 16:57:22] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 16:57:22] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 16:57:22] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 16:57:23] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 16:57:23] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 16:57:24] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 16:57:32] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 16:57:32] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 16:57:33] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 16:57:33] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 16:57:34] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 16:57:37] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 16:57:37] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 16:57:37] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 18:39:53] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 18:39:54] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 18:39:55] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 18:39:55] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 18:39:55] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 18:39:55] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 18:39:55] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 18:39:55] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 18:39:56] [INFO] [WORD] 已终止 2 个Word进程
+[2025-07-20 18:39:56] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 18:39:58] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 18:40:05] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:40:06] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 18:40:07] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 18:40:10] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 18:40:10] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 18:40:11] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 18:45:10] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 18:45:11] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 18:45:11] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 18:45:11] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 18:45:11] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 18:45:11] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 18:45:11] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 18:45:11] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 18:45:13] [INFO] [WORD] 已终止 2 个Word进程
+[2025-07-20 18:45:13] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 18:45:14] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 18:45:21] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:45:22] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 18:45:23] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 18:45:26] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 18:45:26] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 18:45:26] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 18:47:08] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 18:47:11] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 18:47:11] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 18:47:11] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 18:47:11] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 18:47:11] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 18:47:11] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 18:47:11] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 18:47:12] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 18:47:12] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 18:47:14] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 18:47:21] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:47:21] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:47:22] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 18:47:22] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 18:47:23] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 18:47:26] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 18:47:26] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 18:47:26] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 18:53:46] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 18:53:48] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 18:53:49] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 18:53:49] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 18:53:49] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 18:53:49] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 18:53:49] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 18:53:49] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 18:53:50] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 18:53:50] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 18:53:52] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 18:53:59] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:53:59] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 18:54:00] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 18:54:01] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 18:54:01] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 18:54:01] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 18:54:01] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 18:54:01] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 18:54:01] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 18:54:01] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 18:54:04] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 18:54:04] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 18:54:04] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 18:57:27] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 18:57:28] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 18:57:28] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 18:57:28] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 18:57:28] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 18:57:28] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 18:57:28] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 18:57:28] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 18:57:30] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 18:57:30] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 18:57:31] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 18:57:38] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:57:39] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 18:57:40] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 18:57:40] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 18:57:40] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 18:57:40] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 18:57:40] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 18:57:41] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 18:57:44] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 18:57:44] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 18:57:44] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 19:00:02] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 19:00:04] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 19:00:04] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 19:00:04] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 19:00:04] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 19:00:04] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 19:00:04] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 19:00:04] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 19:00:06] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 19:00:06] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 19:00:07] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 19:00:14] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 19:00:15] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 19:00:16] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 19:00:19] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 19:00:19] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 19:00:19] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 19:43:06] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 19:43:08] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 19:43:08] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 19:43:08] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 19:43:08] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 19:43:08] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 19:43:08] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 19:43:08] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 19:43:09] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 19:43:09] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 19:43:15] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 19:43:24] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 19:43:25] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 19:43:25] [DEBUG] [GUI] 250100032HZH设置检查列表失败: 'int' object has no attribute 'items'
+[2025-07-20 19:43:25] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 19:43:25] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 19:46:01] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 19:46:02] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 19:46:03] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 19:46:03] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 19:46:03] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 19:46:03] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 19:46:03] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 19:46:03] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 19:46:04] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 19:46:04] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 19:46:05] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 19:46:14] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 19:46:14] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 19:46:17] [WARNING] [WORD] 文件夹 2 Certificate 的状态未定义
+[2025-07-20 19:46:17] [WARNING] [WORD] 文件夹 3 Test report 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 5 Technical documents\Circuit diagram 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 5 Technical documents\Partlist 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 5 Technical documents\Exploded drawing +BOM 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 5 Technical documents\Other technical info 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 6 User Manual(s) & Label 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 7 Component Cer 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 8 PAH evaluation 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 9 Communication file\Letter report(s) 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 9 Communication file\Confirmation (Declaration) 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 9 Communication file\Others Communication 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 10 Subcontract report and log sheet 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 11 Photos 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 12 To and From certification body 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 13 to Client 的状态未定义
+[2025-07-20 19:46:18] [WARNING] [WORD] 文件夹 14 Other documents 的状态未定义
+[2025-07-20 19:46:22] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 19:46:22] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 19:46:22] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 19:47:57] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 19:47:58] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 19:47:59] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 19:47:59] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 19:47:59] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 19:47:59] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 19:47:59] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 19:47:59] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 19:47:59] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 19:47:59] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 19:48:01] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 19:48:09] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 19:48:10] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 19:48:12] [DEBUG] [GUI] 250100032HZH设置检查列表失败: 'int' object has no attribute 'items'
+[2025-07-20 19:48:12] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 19:48:12] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 20:34:32] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 20:34:33] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 20:34:34] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 20:34:34] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 20:34:34] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 20:34:34] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 20:34:34] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 20:34:34] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 20:34:35] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 20:34:35] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 20:34:37] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 20:34:47] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:34:47] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:34:49] [DEBUG] [GUI] 250100032HZH设置检查列表失败: 'int' object has no attribute 'items'
+[2025-07-20 20:34:49] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 20:34:49] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 20:36:45] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 20:36:51] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 20:36:52] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 20:36:52] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 20:36:52] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 20:36:52] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 20:36:52] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 20:36:52] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 20:36:52] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 20:36:53] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 20:36:53] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 20:36:55] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 20:37:03] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:37:04] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:37:07] [DEBUG] [GUI] 250100032HZH设置检查列表失败: 'int' object has no attribute 'items'
+[2025-07-20 20:37:07] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-20 20:37:07] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 20:39:19] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 20:39:20] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 20:39:21] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 20:39:21] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 20:39:21] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 20:39:21] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 20:39:21] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 20:39:21] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 20:39:22] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-20 20:39:22] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 20:39:24] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 20:39:32] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:39:33] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:39:38] [ERROR] [WORD] 设置选项 12 To and From certification body 时发生错误: 'NoneType' object has no attribute 'Range'
+[2025-07-20 20:39:38] [ERROR] [WORD] 设置选项 13 to Client 时发生错误: 'NoneType' object has no attribute 'Range'
+[2025-07-20 20:39:41] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 20:39:41] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 20:39:41] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 20:41:11] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 20:41:12] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 20:41:12] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 20:41:12] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 20:41:12] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 20:41:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 20:41:12] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 20:41:12] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 20:41:13] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 20:41:13] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 20:41:15] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 20:41:23] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:41:24] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:41:35] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 20:41:35] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 20:41:35] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 20:41:43] [DEBUG] [GUI] 已打开目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 20:43:28] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 20:43:29] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 20:43:30] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 20:43:30] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 20:43:30] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 20:43:30] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 20:43:30] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 20:43:30] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 20:43:30] [INFO] [WORD] 已终止 2 个Word进程
+[2025-07-20 20:43:30] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 20:43:31] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 20:43:39] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:43:40] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 20:43:50] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 20:43:50] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 20:43:50] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 21:04:27] [DEBUG] [FILE] 无法访问目录 general\2025: [WinError 3] 系统找不到指定的路径。: 'general\\2025'
+[2025-07-20 21:23:45] [DEBUG] [FILE] 无法访问目录 test_loads\lum\20: [WinError 3] 系统找不到指定的路径。: 'test_loads\\lum\\20'
+[2025-07-20 21:28:06] [DEBUG] [PATH] 工作号 None 无效，无法获取工作目录路径
+[2025-07-20 21:56:47] [DEBUG] [PATH] 工作号 None 无效，无法获取工作目录路径
+[2025-07-20 21:56:47] [DEBUG] [FILE] 无法访问目录 test_loads\lum\20in: [WinError 3] 系统找不到指定的路径。: 'test_loads\\lum\\20in'
+[2025-07-20 22:05:50] [DEBUG] Test console log
+[2025-07-20 22:05:50] [WARNING] Test console log
+[2025-07-20 22:05:50] [ERROR] Test console log
+[2025-07-20 22:05:50] [CRITICAL] Test console log
+[2025-07-20 22:06:57] [DEBUG] [PATH] 工作号 None 无效，无法获取工作目录路径
+[2025-07-20 22:06:57] [DEBUG] [FILE] 无法访问目录 test_loads\lum\20in: [WinError 3] 系统找不到指定的路径。: 'test_loads\\lum\\20in'
+[2025-07-20 22:06:57] [DEBUG] Test console log
+[2025-07-20 22:06:57] [WARNING] Test console log
+[2025-07-20 22:06:57] [ERROR] Test console log
+[2025-07-20 22:06:57] [CRITICAL] Test console log
+[2025-07-20 22:14:14] [DEBUG] [PATH] 工作号 None 无效，无法获取工作目录路径
+[2025-07-20 22:14:14] [DEBUG] [FILE] 无法访问目录 test_loads\lum\20in: [WinError 3] 系统找不到指定的路径。: 'test_loads\\lum\\20in'
+[2025-07-20 22:14:14] [INFO] Test console log
+[2025-07-20 22:14:14] [DEBUG] Multi-level test - DEBUG
+[2025-07-20 22:14:14] [INFO] Multi-level test - INFO
+[2025-07-20 22:14:14] [WARNING] Multi-level test - WARNING
+[2025-07-20 22:14:14] [ERROR] Multi-level test - ERROR
+[2025-07-20 22:14:14] [CRITICAL] Multi-level test - CRITICAL
+[2025-07-20 22:14:14] [INFO] Format test message
+[2025-07-20 22:14:14] [DEBUG] 🔍 这是一条DEBUG级别的日志
+[2025-07-20 22:14:14] [INFO] ℹ️ 这是一条INFO级别的日志
+[2025-07-20 22:14:14] [WARNING] ⚠️ 这是一条WARNING级别的日志
+[2025-07-20 22:14:14] [ERROR] ❌ 这是一条ERROR级别的日志
+[2025-07-20 22:14:14] [CRITICAL] 🚨 这是一条CRITICAL级别的日志
+[2025-07-20 22:14:14] [INFO] 配置验证测试消息
+[2025-07-20 22:14:14] [INFO] Pytest fixture test
+[2025-07-20 22:14:37] [DEBUG] Multi-level test - DEBUG
+[2025-07-20 22:14:37] [INFO] Multi-level test - INFO
+[2025-07-20 22:14:37] [WARNING] Multi-level test - WARNING
+[2025-07-20 22:14:37] [ERROR] Multi-level test - ERROR
+[2025-07-20 22:14:37] [CRITICAL] Multi-level test - CRITICAL
+[2025-07-20 22:14:46] [DEBUG] 🔍 这是一条DEBUG级别的日志
+[2025-07-20 22:14:46] [INFO] ℹ️ 这是一条INFO级别的日志
+[2025-07-20 22:14:46] [WARNING] ⚠️ 这是一条WARNING级别的日志
+[2025-07-20 22:14:46] [ERROR] ❌ 这是一条ERROR级别的日志
+[2025-07-20 22:14:46] [CRITICAL] 🚨 这是一条CRITICAL级别的日志
+[2025-07-20 22:14:48] [INFO] Format test message
+[2025-07-20 22:15:31] [INFO] 配置验证测试消息
+[2025-07-20 22:16:19] [INFO] Pytest fixture test
+[2025-07-20 22:18:02] [INFO] Pytest fixture test
+[2025-07-20 22:18:34] [INFO] Pytest fixture test
+[2025-07-20 22:20:38] [INFO] Test console log
+[2025-07-20 22:20:38] [DEBUG] Multi-level test - DEBUG
+[2025-07-20 22:20:38] [INFO] Multi-level test - INFO
+[2025-07-20 22:20:38] [WARNING] Multi-level test - WARNING
+[2025-07-20 22:20:38] [ERROR] Multi-level test - ERROR
+[2025-07-20 22:20:38] [CRITICAL] Multi-level test - CRITICAL
+[2025-07-20 22:20:38] [INFO] Format test message
+[2025-07-20 22:20:38] [DEBUG] 🔍 这是一条DEBUG级别的日志
+[2025-07-20 22:20:38] [INFO] ℹ️ 这是一条INFO级别的日志
+[2025-07-20 22:20:38] [WARNING] ⚠️ 这是一条WARNING级别的日志
+[2025-07-20 22:20:38] [ERROR] ❌ 这是一条ERROR级别的日志
+[2025-07-20 22:20:38] [CRITICAL] 🚨 这是一条CRITICAL级别的日志
+[2025-07-20 22:20:38] [INFO] 配置验证测试消息
+[2025-07-20 22:20:38] [INFO] Pytest fixture test
+[2025-07-20 22:20:38] [INFO] Capsys fixture test
+[2025-07-20 22:20:38] [INFO] Monkeypatch test
+[2025-07-20 22:20:48] [INFO] Capsys fixture test
+[2025-07-20 22:20:56] [INFO] Pytest fixture test
+[2025-07-20 22:21:06] [INFO] Monkeypatch test
+[2025-07-20 22:21:14] [INFO] Test console log
+[2025-07-20 22:21:14] [DEBUG] Multi-level test - DEBUG
+[2025-07-20 22:21:14] [INFO] Multi-level test - INFO
+[2025-07-20 22:21:14] [WARNING] Multi-level test - WARNING
+[2025-07-20 22:21:14] [ERROR] Multi-level test - ERROR
+[2025-07-20 22:21:14] [CRITICAL] Multi-level test - CRITICAL
+[2025-07-20 22:21:14] [INFO] Format test message
+[2025-07-20 22:21:14] [DEBUG] 🔍 这是一条DEBUG级别的日志
+[2025-07-20 22:21:14] [INFO] ℹ️ 这是一条INFO级别的日志
+[2025-07-20 22:21:14] [WARNING] ⚠️ 这是一条WARNING级别的日志
+[2025-07-20 22:21:14] [ERROR] ❌ 这是一条ERROR级别的日志
+[2025-07-20 22:21:14] [CRITICAL] 🚨 这是一条CRITICAL级别的日志
+[2025-07-20 22:21:14] [INFO] 配置验证测试消息
+[2025-07-20 22:21:14] [INFO] Pytest fixture test
+[2025-07-20 22:21:14] [INFO] Capsys fixture test
+[2025-07-20 22:21:14] [INFO] Monkeypatch test
+[2025-07-20 22:21:24] [DEBUG] [PATH] 工作号 None 无效，无法获取工作目录路径
+[2025-07-20 22:21:24] [DEBUG] [FILE] 无法访问目录 test_loads\lum\20in: [WinError 3] 系统找不到指定的路径。: 'test_loads\\lum\\20in'
+[2025-07-20 22:21:24] [INFO] Test console log
+[2025-07-20 22:21:24] [DEBUG] Multi-level test - DEBUG
+[2025-07-20 22:21:24] [INFO] Multi-level test - INFO
+[2025-07-20 22:21:24] [WARNING] Multi-level test - WARNING
+[2025-07-20 22:21:24] [ERROR] Multi-level test - ERROR
+[2025-07-20 22:21:24] [CRITICAL] Multi-level test - CRITICAL
+[2025-07-20 22:21:24] [INFO] Format test message
+[2025-07-20 22:21:24] [DEBUG] 🔍 这是一条DEBUG级别的日志
+[2025-07-20 22:21:24] [INFO] ℹ️ 这是一条INFO级别的日志
+[2025-07-20 22:21:24] [WARNING] ⚠️ 这是一条WARNING级别的日志
+[2025-07-20 22:21:24] [ERROR] ❌ 这是一条ERROR级别的日志
+[2025-07-20 22:21:24] [CRITICAL] 🚨 这是一条CRITICAL级别的日志
+[2025-07-20 22:21:24] [INFO] 配置验证测试消息
+[2025-07-20 22:21:24] [INFO] Pytest fixture test
+[2025-07-20 22:21:24] [INFO] Capsys fixture test
+[2025-07-20 22:21:24] [INFO] Monkeypatch test
+[2025-07-20 22:48:02] [DEBUG] [FILE] 无法访问目录 test_loads\lum\20in: [WinError 3] 系统找不到指定的路径。: 'test_loads\\lum\\20in'
+[2025-07-20 22:48:05] [WARNING] [FOLDER] 未找到团队 250100032HZH 的文件夹配置
+[2025-07-20 22:49:01] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 non_existent_folder 中不存在
+[2025-07-20 22:49:01] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 test_loads\lum\2025\invalid_folder 中不存在
+[2025-07-20 23:17:39] [DEBUG] [PATH] 工作号 None 无效，无法获取工作目录路径
+[2025-07-20 23:17:39] [DEBUG] [FILE] 无法访问目录 test_loads\lum\20in: [WinError 3] 系统找不到指定的路径。: 'test_loads\\lum\\20in'
+[2025-07-20 23:17:39] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 non_existent_folder 中不存在
+[2025-07-20 23:17:39] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 test_loads\lum\2025\invalid_folder 中不存在
+[2025-07-20 23:17:39] [INFO] Test console log
+[2025-07-20 23:17:39] [DEBUG] Multi-level test - DEBUG
+[2025-07-20 23:17:39] [INFO] Multi-level test - INFO
+[2025-07-20 23:17:39] [WARNING] Multi-level test - WARNING
+[2025-07-20 23:17:39] [ERROR] Multi-level test - ERROR
+[2025-07-20 23:17:39] [CRITICAL] Multi-level test - CRITICAL
+[2025-07-20 23:17:39] [INFO] Format test message
+[2025-07-20 23:17:39] [DEBUG] 🔍 这是一条DEBUG级别的日志
+[2025-07-20 23:17:39] [INFO] ℹ️ 这是一条INFO级别的日志
+[2025-07-20 23:17:39] [WARNING] ⚠️ 这是一条WARNING级别的日志
+[2025-07-20 23:17:39] [ERROR] ❌ 这是一条ERROR级别的日志
+[2025-07-20 23:17:39] [CRITICAL] 🚨 这是一条CRITICAL级别的日志
+[2025-07-20 23:17:39] [INFO] 配置验证测试消息
+[2025-07-20 23:17:39] [INFO] Pytest fixture test
+[2025-07-20 23:17:39] [INFO] Capsys fixture test
+[2025-07-20 23:17:39] [INFO] Monkeypatch test
+[2025-07-20 23:26:57] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 23:26:59] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 23:27:00] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 23:27:00] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 23:27:00] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 23:27:00] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 23:27:00] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 23:27:00] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 23:27:01] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 23:27:01] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 23:27:03] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 23:27:11] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 23:27:11] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 23:27:12] [WARNING] [FILE] 在file_map中未找到键: PAH
+[2025-07-20 23:27:12] [WARNING] [FILE] 在file_map中未找到键: OthersCommunication
+[2025-07-20 23:27:20] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 23:27:20] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 23:27:20] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 23:31:39] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 23:31:39] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 23:31:39] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 23:31:39] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 23:31:39] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 23:31:39] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 23:31:39] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 23:31:39] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 23:31:39] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 23:31:41] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 23:31:49] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 23:31:50] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 23:31:50] [WARNING] [FILE] 在file_map中未找到键: PAH
+[2025-07-20 23:31:50] [WARNING] [FILE] 在file_map中未找到键: OthersCommunication
+[2025-07-20 23:32:00] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 23:32:00] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 23:32:00] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-20 23:34:38] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-20 23:34:39] [DEBUG] [GUI] 开始处理任务...
+[2025-07-20 23:34:40] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-20 23:34:40] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-20 23:34:40] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-20 23:34:40] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-20 23:34:40] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-20 23:34:40] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-20 23:34:41] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-20 23:34:41] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-20 23:34:42] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-20 23:34:51] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 23:34:51] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-20 23:35:01] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-20 23:35:01] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-20 23:35:01] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务

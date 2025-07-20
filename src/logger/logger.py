@@ -23,8 +23,10 @@ class GlobalLogger:
 
     def __init__(self):
         # 设置默认配置
-        config = get_system_config()
+        config = get_system_config().get('log_config', None)
+
         if config is None:
+            print("未找到配置文件，使用默认配置")
             self.config = {
             "level": "INFO",
             "log_to_console": True,
@@ -42,6 +44,7 @@ class GlobalLogger:
             }
         else:
             self.config = config
+            print(f"加载配置: {self.config}")
         self.frontend_callback: Optional[Callable] = None
         self._lock = threading.Lock()
         self.frontend_logs = []  # 存储前端显示的日志

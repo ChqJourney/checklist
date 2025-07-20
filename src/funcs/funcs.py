@@ -20,7 +20,7 @@ from src.funcs.word_processor import (
 )
 from src.funcs.file_utils import (
     detect_folder_has_file,
-    detect_folders,
+    detect_folders_status,
     folder_precheck
 )
 from src.funcs.path_resolver import (

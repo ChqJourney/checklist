@@ -5,9 +5,8 @@
 import os
 import glob
 from numpy import number
-from config.config_manager import ConfigManager, get_system_config
-import config.config_manager as config_manager
-from logger.logger import log_warning
+from src.config.config_manager import ConfigManager, get_system_config, config_manager
+from src.logger.logger import log_warning
 
 def folder_precheck(target_folder:str,team:str)-> bool:
     """
@@ -22,8 +21,15 @@ def folder_precheck(target_folder:str,team:str)-> bool:
         return False
     # 检查目标文件夹下是否有文件名包含checklist的word文档
     checklist_files = glob.glob(os.path.join(target_folder, '*checklist*.doc*'))
+    # 过滤掉隐藏文件和缓存文件
+    checklist_files = [f for f in checklist_files if not os.path.basename(f).startswith(('~$', '.', '__'))]
     if not checklist_files:
         log_warning(f"目标文件夹 {target_folder} 下没有找到包含 'checklist' 的 Word 文档", "FOLDER")
+        return False
+    if len(checklist_files) > 1:
+        for file in checklist_files:
+            log_warning(f"找到的文件: {file}", "FOLDER")
+        log_warning(f"目标文件夹 {target_folder} 下找到多个包含 'checklist' 的 Word 文档，请确保只有一个", "FOLDER")
         return False
     # 检查文件夹命名是否满足规范
     folder_name_check_result=folder_name_check(target_folder, team)
@@ -34,13 +40,16 @@ def folder_precheck(target_folder:str,team:str)-> bool:
     return True
 
 def folder_name_check(target_folder:str, team:str)-> bool:
+    folder_configs = config_manager.get_subfolder_config(team)
+    return _folder_name_check(target_folder, team, folder_configs)
+
+def _folder_name_check(target_folder:str, team:str,folder_configs:dict)-> bool:
     """
     从配置获取文件夹名列表，如果文件夹全部存在（包含大小写也一致），则返回True
     :param target_folder: 目标文件夹路径
     :param team: 团队名称
     :return: 如果符合规则返回True，否则返回False
-    """
-    folder_configs = config_manager.get_subfolder_config(team)
+    """   
     
     # 获取配置中的所有文件夹名
     if not folder_configs or not isinstance(folder_configs, list) or not folder_configs:
@@ -77,7 +86,7 @@ def detect_folder_has_file(folder_path):
     return False
 
 
-def detect_folders(working_folder_path, team, options_config):
+def detect_folders_status(working_folder_path, team, options_config):
     """
     检测工作文件夹中的子文件夹状态
     :param working_folder_path: 工作文件夹路径
@@ -102,16 +111,18 @@ def detect_folders(working_folder_path, team, options_config):
         # 遍历options_config中的每个属性，见system.json中的subFolderConfig下的options
         for sub_folder_name, option in options_config.items():
             sub_folder_path = os.path.join(working_folder_path, sub_folder_name)
-            print(f"检测文件夹: {sub_folder_path}")
+            print(f"检测文件夹: {sub_folder_path}: {option}")
             if not os.path.exists(sub_folder_path):
-                raise FileNotFoundError(f"{sub_folder_name} folder not found")
-            if isinstance(option, number):
+                print(f"{sub_folder_name} folder not found")
+                result[sub_folder_name] = False
+            if isinstance(option, int):
                 # 如果option是数字，表示需要检测的文件数量
-                result[option] = detect_folder_has_file(sub_folder_path)
+                print(f"当前option是数字: {option}")
+                result[sub_folder_name] = detect_folder_has_file(sub_folder_path)
             elif isinstance(option, dict):
+                print(f"当前option是字典: {option}")
                 # 如果option是字典，遍历字典的每个key，在file_map中查找对应的文件名规则
-                config_manager = ConfigManager()
-                file_map = config_manager.get_file_map()
+                file_map = get_system_config('file_map')
                 
                 for key, value in option.items():
                     if key in file_map:
@@ -127,9 +138,21 @@ def detect_folders(working_folder_path, team, options_config):
                             if matching_files:
                                 found_file = True
                                 break
-                        result[key] = found_file
+                        if result.get(sub_folder_name) is None:
+                            result[sub_folder_name] = {}
+                            result[sub_folder_name][key] = found_file
+                        else:
+                            result[sub_folder_name][key] = found_file
                     else:
                         log_warning(f"在file_map中未找到键: {key}", "FILE")
-                        result[key] = False
-
+                        if result.get(sub_folder_name) is None:
+                            result[sub_folder_name] = {}
+                            result[sub_folder_name][key] = False
+                        else:
+                            result[sub_folder_name][key] = False
+            else:
+                # 如果option是其他类型，直接设置为False
+                print(f"当前option不是数字或字典: {option}")
+                result[sub_folder_name] = False
+    print(f"检测结果: {result}")
     return result

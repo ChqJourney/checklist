@@ -6,30 +6,30 @@
 					"job_no": {
 						"type": "text",
 						"indexes": [
-							0,
-							1
+							1,
+							2
 						]
 					},
 					"date": {
 						"type": "date",
 						"indexes": [
-							1,
-							1
+							2,
+							2
 						]
 					},
 					"job_creator": [
 						{
 							"type": "text",
 							"indexes": [
-								1,
-								3
+								2,
+								4
 							]
 						},
 						{
 							"type": "image",
 							"indexes": [
-								1,
-								3
+								2,
+								4
 							]
 						}
 					],
@@ -37,15 +37,15 @@
 						{
 							"type": "text",
 							"indexes": [
-								0,
-								3
+								1,
+								4
 							]
 						},
 						{
 							"type": "image",
 							"indexes": [
-								0,
-								3
+								1,
+								4
 							]
 						}
 					]
@@ -57,33 +57,32 @@
 					},
 					"1 Application documents": {
 						"GS": 9,
-						"CB": 8,
-						"ETL": 9,
-						"OtherServies": 10,
-						"OtherAppDoc": 11
+						"CB": 10,
+						"ETL": 11
 					},
-					"2 Certificate": 7,
-					"3 Test report": 8,
+					"1 Application documents\\Others service app":{"OtherServies":12},
+					"1 Application documents\\other application documents": {"OtherAppDoc": 13},
+					"2 Certificate": {"Certificate": 7},
+					"3 Test report": {"TestReport": 8},
 					"4 Test record": {
-						"CRSheet": 12,
-						"DataSheet": 13,
-						"EquipmentList": 14
+						"CRSheet": 14,
+						"DataSheet": 15,
+						"EquipmentList": 16
 					},
-					"5 Technical documents\\Circuit diagram": 15,
-					"5 Technical documents\\Partlist": 16,
-					"5 Technical documents\\Exploded drawing +BOM": 17,
-					"5 Technical documents\\Other technical info": 18,
-					"6 User Manual(s) & Label": 13,
-					"7 Component Cer": 14,
-					"8 PAH evaluation": 19,
-					"9 Communication file\\Letter report(s)": 24,
-					"9 Communication file\\Confirmation (Declaration)": 20,
-					"9 Communication file\\Others Communication": 22,
-					"10 Subcontract report and log sheet": 21,
-					"11 Photos": 23,
-					"12 To and From certification body": 24,
-					"13 to Client": 25,
-					"14 Other documents": 26
+					"5 Technical documents\\Circuit diagram": {"CircuitDiagram": 17},
+					"5 Technical documents\\Partlist": {"Partlist": 18},
+					"5 Technical documents\\Exploded drawing +BOM": {"ExplodedDrawing": 19},
+					"5 Technical documents\\Other technical info": {"OtherTechInfo": 20},
+					"6 User Manual(s) & Label": {"UserManual": 21},
+					"7 Component Cer": {"ComponentCert": 22},
+					"8 PAH evaluation": {"Pah": 23},
+					"9 Communication file\\Letter report(s)": {"LetterReport": 24},
+					"9 Communication file\\Confirmation (Declaration)": {"Confirmation": 25},
+					"9 Communication file\\Others Communication": {"OthersCommunication": 26},
+					"10 Subcontract report and log sheet": {"SubReport": 27},
+					"11 Photos": {"Photo": 28},
+					"14 Other documents": {"OtherDoc": 29},
+					"": {"CrossReference": 30}
 				}
 			}
 		],
@@ -131,7 +130,7 @@
 		]
 	},
 	"log_config": {
-		"level": "INFO",
+		"level": "DEBUG",
 		"log_to_console": true,
 		"log_to_file": true,
 		"log_file_path": "app.log",
@@ -313,7 +312,7 @@
 		"Confirmation": [
 			"*.*"
 		],
-		"OthersCommincation": [
+		"OthersCommunication": [
 			"*.*"
 		],
 		"SubReport": [
@@ -330,7 +329,6 @@
 			"*.*"
 		],
 		"CrossReference": [
-			"",
 			"*.lnk"
 		]
 	}

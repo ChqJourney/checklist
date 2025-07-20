@@ -2,11 +2,16 @@
 Word文档处理模块
 负责处理Word文档的各种操作，包括表格、图片、ActiveX控件等
 """
+from datetime import date
+import glob
 import os
 import shutil
+from numpy import number
 import win32com.client as win32
 from pathlib import Path
 from array import array
+from src.funcs.file_utils import detect_folders_status
+from src.funcs.file_utils import detect_folders_status
 from src.logger.logger import log_info, log_error, log_warning, log_debug
 
 
@@ -86,10 +91,13 @@ def insert_image_in_cell(cell, image_path, width=80, height=20):
 
 def get_only_word_file_path(folder_path):
     """获取文件夹中的Word检查清单文件路径"""
-    for file in os.listdir(folder_path):
-        if file.endswith(".docx") and "checklist" in file:
-            return os.path.join(folder_path, file)
-    
+
+    checklist_files = glob.glob(os.path.join(folder_path, '*checklist*.doc*'))
+    checklist_files = [f for f in checklist_files if not os.path.basename(f).startswith(('~$', '.', '__'))]
+    if checklist_files:
+        if len(checklist_files) > 1:
+            raise ValueError(f"在文件夹 {folder_path} 中找到多个检查清单文件，请确保只有一个符合条件的文件。")
+        return checklist_files[0]
     # 如果没有找到符合条件的文件，copy the default checklist file to the folder
     default_checklist_path = Path.cwd() / 'E-filing checklist.docx'
     if default_checklist_path.exists():
@@ -151,10 +159,11 @@ def set_fields_value(table, task, field_config):
             continue
 
         # 在Word表格中设置字段值
-        if field_value is array:
+        if isinstance(field_value, list):
+            # 如果field_value是列表，遍历每个项目
             for i, item in enumerate(field_value):
-                cell = table.Cell(item.indexes[0], item.indexes[1])
-                if item.type == 'image':
+                cell = table.Cell(item["indexes"][0], item["indexes"][1])
+                if item["type"] == 'image':
                     signature_image = get_engineer_signature_image(task[field_name])
                     if signature_image:
                         insert_image_in_cell(cell, signature_image, width=80, height=20)  # 插入工程师签名图片
@@ -162,11 +171,17 @@ def set_fields_value(table, task, field_config):
                         log_warning(f"未找到工程师 {task['engineers']} 的签名图片，使用默认图片", "WORD")
                         default_image_path = Path.cwd() / 'signs' / 'default.jpg'
                         insert_image_in_cell(cell, default_image_path, width=80, height=20)  # 插入默认签名图片
+                elif item["type"] == 'date':
+                    set_text_in_cell(cell, date.today().strftime("%Y-%m-%d"))  # 设置当前日期
                 else:
                     set_text_in_cell(cell, task[field_name])
         else:
-            cell = table.Cell(field_value.indexes[0], field_value.indexes[1])
-            set_text_in_cell(cell, task[field_name])
+            # 如果field_value是单个字典
+            cell = table.Cell(field_value["indexes"][0], field_value["indexes"][1])
+            if field_name == 'date':
+                set_text_in_cell(cell, date.today().strftime("%Y-%m-%d"))  # 设置当前日期
+            else:
+                set_text_in_cell(cell, task[field_name])
 
 
 def set_all_option_cells_for_ppt(table, status, map):
@@ -202,23 +217,32 @@ def set_option_cells_for_general(table, folder_status, option_config):
         return
 
     for folder_name, option in option_config.items():
-        if folder_name not in folder_status:
+        if folder_name not in folder_status.keys():
+            print(f"folder {folder_name} not in folder_status {folder_status}")
             log_warning(f"文件夹 {folder_name} 的状态未定义", "WORD")
             continue
 
         status = folder_status[folder_name]
-        row_index = option.get('row_index')
-        column_index = option.get('column_index')
 
-        if row_index is None or column_index is None:
-            log_warning(f"选项 {folder_name} 的行列索引未定义", "WORD")
-            continue
+        if isinstance(option, int):
+            try:
+                opt_cell = get_cell_with_activeX_in_row(table, option)
+                set_option_cell(opt_cell, status)
+            except Exception as e:
+                log_error(f"设置选项 {folder_name} 时发生错误: {e}", "WORD")
 
-        try:
-            cell = table.Cell(row_index, column_index)
-            set_option_cell(cell, status)
-        except Exception as e:
-            log_error(f"设置选项 {folder_name} 时发生错误: {e}", "WORD")
+        else:
+            for key, value in option.items():
+                row_index = value
+                opt_cell=get_cell_with_activeX_in_row(table, row_index)
+                if not opt_cell:
+                    log_warning(f"未找到文件夹 {folder_name} 的选项单元格", "WORD")
+                    continue
+                try:
+
+                    set_option_cell(opt_cell, status[key])
+                except Exception as e:
+                    log_error(f"设置选项 {folder_name} 时发生错误: {e}", "WORD")
 
 
 def set_option_cells(table, team, folder_status, option_config):
@@ -232,10 +256,11 @@ def set_option_cells(table, team, folder_status, option_config):
         set_option_cells_for_general(table, folder_status, option_config)
 
 
-def set_checklist(task, target_path, team, folder_status, subFolderConfig):
+def set_checklist(task, target_path, team, subFolderConfig):
     """设置检查清单"""
     try:
         # 启动Word应用程序
+        print(f"{subFolderConfig}")
         word = win32.Dispatch('Word.Application')
         word.Visible = False  # 让Word可见，方便查看操作过程
         checklist_path = get_only_word_file_path(target_path)
@@ -245,10 +270,16 @@ def set_checklist(task, target_path, team, folder_status, subFolderConfig):
         # 确保文档有表格
         if word_doc.Tables.Count == 0 or word_doc.Tables.Count < len(subFolderConfig):
             raise ValueError("tables setting in subfolderconfig's not correct")
-        for item, i in enumerate(subFolderConfig):
+        for i,item in enumerate(subFolderConfig):
+            print(f"正在处理表格索引: {i}, 配置项: {item}")
             current_table = word_doc.Tables[i]
-            set_fields_value(current_table, task, item.fields)
-            set_option_cells(current_table, team, folder_status, item.options)
+            print(f"当前表格索引: {i}, 表格行数: {current_table.Rows.Count}, 列数: {current_table.Columns.Count}")
+            set_fields_value(current_table, task, item["fields"])
+            print(f"设置字段值完成: {item['fields']}")
+            folder_status = detect_folders_status(target_path, team, item["options"])
+            print(f"检测文件夹状态: {folder_status}")
+            # 设置选项单元格
+            set_option_cells(current_table, team, folder_status, item["options"])
 
         # 保存并关闭文档
         word_doc.Save()
