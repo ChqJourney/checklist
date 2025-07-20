@@ -16,3 +16,5 @@ site-packages/
 venv/
 target_path/
 sign_pics/
+signs/
+test_loads/

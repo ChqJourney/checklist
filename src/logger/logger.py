@@ -7,7 +7,7 @@ import os
 import threading
 from datetime import datetime
 from typing import Callable, Optional
-from config_manager import get_system_config
+from src.config.config_manager import get_system_config
 
 class GlobalLogger:
     """全局日志管理器"""

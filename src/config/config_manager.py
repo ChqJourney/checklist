@@ -244,11 +244,12 @@ if __name__ == "__main__":
         print("\n=== 用户配置测试 ===")
         print("当前团队:", config_manager.get_team())
         print("基础目录:", config_manager.get_base_dir())
+        print("用户配置:", config_manager.get_subfolder_config())
         
         # 测试设置用户配置
-        print("\n=== 设置用户配置测试 ===")
-        set_user_config('test_key', 'test_value')
-        print("测试键值:", get_user_config('test_key'))
+        # print("\n=== 设置用户配置测试 ===")
+        # set_user_config('test_key', 'test_value')
+        # print("测试键值:", get_user_config('test_key'))
         
         print("\n配置管理器测试完成！")
         

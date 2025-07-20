@@ -1,5 +1,9 @@
 {
     "team": "general",
-    "base_dir": "S:\\DATA\\HZ Engineer Documents\\LUM"
-    
+    "base_dir": "S:\\DATA\\HZ Engineer Documents\\LUM",
+    "task_list_map":{
+        "job_no":0,
+        "job_creator":1,
+        "engineers":2
+    }
 }

@@ -5,10 +5,11 @@ import os
 import sys
 import pandas as pd
 from datetime import datetime
-from funcs import get_working_folder_path, detect_folders, kill_all_word_processes, set_checklist
-from data_manager import data_manager
-from logger import global_logger, log_info, log_error, log_warning, log_debug, log_critical
-from config_manager import config_manager, get_system_config, set_user_config
+from src.funcs.file_utils import folder_precheck
+from src.funcs.funcs import get_working_folder_path, detect_folders, kill_all_word_processes, set_checklist
+from src.data.data_manager import data_manager
+from src.logger.logger import global_logger, log_info, log_error, log_warning, log_debug, log_critical
+from src.config.config_manager import config_manager, get_system_config, set_user_config
 
 class ProjectFileChecker:
     def __init__(self):
@@ -23,11 +24,12 @@ class ProjectFileChecker:
         self.log_level = get_system_config('log_config.level')
         self.file_map = get_system_config('file_map')
         self.subFolderConfig = get_system_config('subFolderConfig', {}).get(config_manager.get_team(), {})
+        
         print(f"当前团队配置: {self.subFolderConfig}")
         # 获取用户配置
         self.team = config_manager.get_team()
         self.base_dir = config_manager.get_base_dir()
-
+        self.task_list_map = config_manager.get_user_config('task_list_map', {})
         # 设置全局日志的前端回调
         global_logger.set_frontend_callback(self._frontend_log_callback)
     
@@ -143,35 +145,37 @@ class ProjectFileChecker:
                         'status': '未找到目录' if target_path is None else '已处理',
                         'folders': {}
                     }
-                    
-                    if target_path is not None:
-                        self.log(f"找到目录: {target_path}")
-                        # 检测文件夹
-                        self.log("开始检查子文件夹...")
-                        folder_status = detect_folders(target_path,self.team, self.subFolderConfig.options)
-                        if  not folder_status:
-                            self.log(f"子文件夹检查失败: {task['job_no']}")
-                            result['status'] = '子文件夹检查失败'
-                            break
-                        else:
-                            self.log(f"子文件夹检查结果: {folder_status}")
-                            result['folders'] = folder_status
-                        # 结束所有Word进程
-                        self.log("确保文件夹检查不受干扰,结束所有Word进程...")
-                        kill_all_word_processes()
-                        # 设置检查列表
-                        self.log(f"{task['job_no']}开始写入检查列表...")
-                        try:
-                            set_checklist(task, target_path, self.team, folder_status, self.subFolderConfig)
-                            self.log(f"{task['job_no']}检查列表写入完成")
-                            result['status'] = '完成'
-                        except Exception as e:
-                            self.log(f"{task['job_no']}设置检查列表失败: {e}")
-                            result['status'] = '失败'
-                            
-                        self.log(f"任务 {task['job_no']} 处理完成:结果为：{result['status']}")
+                    self.log(f"找到目录: {target_path}")
+                    if not folder_precheck(target_path, self.team, self.subFolderConfig):
+                        self.log(f"任务 {task['job_no']} 的文件夹预检查失败")
+                        result['status'] = '文件夹预检查失败'
+                        data_manager.add_result(result)
+                        continue
+                    # 检测文件夹
+                    self.log("开始检查子文件夹...")
+                    folder_status = detect_folders(target_path,self.team, self.subFolderConfig.options)
+                    if  not folder_status:
+                        self.log(f"子文件夹检查失败: {task['job_no']}")
+                        result['status'] = '子文件夹检查失败'
+                        break
                     else:
-                        self.log(f"未找到目录: {task['job_no']}")
+                        self.log(f"子文件夹检查结果: {folder_status}")
+                        result['folders'] = folder_status
+                    # 结束所有Word进程
+                    self.log("确保文件夹检查不受干扰,结束所有Word进程...")
+                    kill_all_word_processes()
+                    # 设置检查列表
+                    self.log(f"{task['job_no']}开始写入检查列表...")
+                    try:
+                        set_checklist(task, target_path, self.team, folder_status, self.subFolderConfig)
+                        self.log(f"{task['job_no']}检查列表写入完成")
+                        result['status'] = '完成'
+                    except Exception as e:
+                        self.log(f"{task['job_no']}设置检查列表失败: {e}")
+                        result['status'] = '失败'
+                            
+                    self.log(f"任务 {task['job_no']} 处理完成:结果为：{result['status']}")
+                    
                     
                     # 使用数据管理器添加结果
                     data_manager.add_result(result)
@@ -209,7 +213,7 @@ class ProjectFileChecker:
                 return {'success': False, 'message': '路径为空'}
             
             # 查找checklist文件
-            from funcs import get_only_word_file_path
+            from src.funcs.funcs import get_only_word_file_path
             checklist_file = get_only_word_file_path(target_path)
             
             if checklist_file and os.path.exists(checklist_file):
