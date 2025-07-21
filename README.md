@@ -53,3 +53,5 @@
 - 核心方法set_checklist还需梳理优化
    初步梳理过，待测试
 - toggle css 优化
+- 增加checklist覆盖配置选项
+   删除原存在文件待增加
