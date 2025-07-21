@@ -57,6 +57,7 @@ def copy_files_and_folders():
         ('signs', '签名图片文件夹'),
         ('user.json', '用户配置文件'),
         ('system.json', '系统配置文件'),
+        ('task_list_sample.xlsx', '任务列表示例文件'),
     ]
     
     success = True
@@ -138,7 +139,7 @@ def verify_build():
     print(f"文件大小: {size_mb:.2f} MB")
     
     # 检查必要文件是否存在
-    required_items = ['templates', 'signs', 'user.json', 'system.json']
+    required_items = ['templates', 'signs', 'user.json', 'system.json','task_list_sample.xlsx']
     
     for item in required_items:
         item_path = dist_dir / item
