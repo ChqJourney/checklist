@@ -5,6 +5,7 @@
 
 import json
 import os
+import sys
 from typing import Dict, Any, Optional, List
 from pathlib import Path
 import re
@@ -19,7 +20,7 @@ class ConfigManager:
         'subFolderConfig': {
             'required_teams': ['general', 'ppt'],
             'field_schema': {
-                'required_keys': ['fields', 'options'],
+                'any_of_keys': ['fields', 'options'],  # 只需要其中之一
                 'fields': {
                     'required_fields': ['job_no'],
                     'field_types': ['text', 'date', 'image']
@@ -37,8 +38,8 @@ class ConfigManager:
     
     # 用户配置规范定义
     USER_CONFIG_SCHEMA = {
-        'required_keys': ['team', 'base_dir'],
-        'allowed_keys': ['team', 'base_dir', 'task_list_map'],
+        'required_keys': ['team', 'base_dir','checklist', 'task_list_map'],
+        'allowed_keys': ['team', 'base_dir', 'task_list_map', 'checklist'],
         'team': {
             'allowed_values': ['general', 'ppt']
         },
@@ -49,6 +50,10 @@ class ConfigManager:
         'task_list_map': {
             'type': dict,
             'required_keys': ['job_no']
+        },
+        'checklist': {
+            'type': str,
+            'allowed_values': ['cover', 'fill']
         }
     }
     
@@ -60,8 +65,8 @@ class ConfigManager:
             config_dir: 配置文件目录，默认为项目根目录
         """
         if config_dir is None:
-            # 获取项目根目录 (从 src/config 向上两级)
-            self.config_dir = Path(__file__).parent.parent.parent
+            # 检测运行环境并设置配置文件路径
+            self.config_dir = self._get_config_directory()
         else:
             self.config_dir = Path(config_dir)
             
@@ -73,6 +78,27 @@ class ConfigManager:
         
         # 加载配置
         self._load_configs()
+    
+    def _get_config_directory(self) -> Path:
+        """
+        根据运行环境确定配置文件目录
+        
+        Returns:
+            配置文件目录路径
+        """
+        if getattr(sys, 'frozen', False):
+            # 生产环境：PyInstaller打包后的exe环境
+            # sys.executable 指向exe文件路径
+            # 配置文件在exe文件同级目录
+            executable_dir = Path(sys.executable).parent
+            print(f"检测到生产环境，配置文件目录: {executable_dir}")
+            return executable_dir
+        else:
+            # 开发环境：从源码运行
+            # 获取项目根目录 (从 src/config 向上两级)
+            project_root = Path(__file__).parent.parent.parent
+            print(f"检测到开发环境，配置文件目录: {project_root}")
+            return project_root
     
     def _load_configs(self):
         """加载配置文件"""
@@ -172,25 +198,38 @@ class ConfigManager:
         """验证单个团队配置项"""
         field_schema = self.SYSTEM_CONFIG_SCHEMA['subFolderConfig']['field_schema']
         
-        # 检查必需的顶级键
-        for key in field_schema['required_keys']:
-            if key not in config_item:
-                raise ValueError(f"团队 {team}[{index}] 缺少必需键: {key}")
+        # 检查必需的顶级键（如果存在required_keys）
+        if 'required_keys' in field_schema:
+            for key in field_schema['required_keys']:
+                if key not in config_item:
+                    raise ValueError(f"团队 {team}[{index}] 缺少必需键: {key}")
         
-        # 验证 fields
-        fields = config_item.get('fields', {})
-        for required_field in field_schema['fields']['required_fields']:
-            if required_field not in fields:
-                raise ValueError(f"团队 {team}[{index}] 缺少必需字段: {required_field}")
+        # 检查any_of_keys（只需要其中之一）
+        if 'any_of_keys' in field_schema:
+            any_keys = field_schema['any_of_keys']
+            found_keys = [key for key in any_keys if key in config_item]
+            if not found_keys:
+                raise ValueError(f"团队 {team}[{index}] 必须包含以下键中的至少一个: {any_keys}")
         
-        # 验证字段类型
-        for field_name, field_config in fields.items():
-            self._validate_field_config(field_config, team, index, field_name)
+        # 验证 fields（如果存在）
+        if 'fields' in config_item:
+            fields = config_item.get('fields', {})
+            if 'fields' in field_schema and 'required_fields' in field_schema['fields']:
+                for required_field in field_schema['fields']['required_fields']:
+                    if required_field not in fields:
+                        raise ValueError(f"团队 {team}[{index}] 缺少必需字段: {required_field}")
         
-        # 验证 options
-        options = config_item.get('options', {})
-        if not isinstance(options, dict):
-            raise ValueError(f"团队 {team}[{index}] 的 options 必须是字典")
+        # 验证字段类型（如果存在fields）
+        if 'fields' in config_item:
+            fields = config_item.get('fields', {})
+            for field_name, field_config in fields.items():
+                self._validate_field_config(field_config, team, index, field_name)
+        
+        # 验证 options（如果存在）
+        if 'options' in config_item:
+            options = config_item.get('options', {})
+            if not isinstance(options, dict):
+                raise ValueError(f"团队 {team}[{index}] 的 options 必须是字典")
     
     def _validate_field_config(self, field_config: Any, team: str, index: int, field_name: str):
         """验证字段配置"""
@@ -343,7 +382,8 @@ class ConfigManager:
                 'job_no': 0,
                 'job_creator': 1,
                 'engineers': 2
-            }
+            },
+            'checklist': 'new'  # 默认值为 'new'
         }
     
     def validate_config_integrity(self) -> Dict[str, Any]:
@@ -379,7 +419,8 @@ class ConfigManager:
             result['user_config_info'] = {
                 'team': self._user_config.get('team'),
                 'base_dir_exists': Path(self._user_config.get('base_dir', '')).exists() if self._user_config.get('base_dir') else False,
-                'has_task_mapping': 'task_list_map' in self._user_config
+                'has_task_mapping': 'task_list_map' in self._user_config,
+                'checklist': self._user_config.get('checklist')
             }
         except Exception as e:
             result['is_valid'] = False
@@ -420,6 +461,23 @@ class ConfigManager:
             max_index = max(task_map.values()) if task_map.values() else -1
             if max_index > 50:  # 假设Excel列数不应该超过50
                 result['warnings'].append(f"任务映射索引过大，最大索引: {max_index}")
+    
+    def get_runtime_info(self) -> Dict[str, Any]:
+        """
+        获取运行时环境信息
+        
+        Returns:
+            包含运行环境信息的字典
+        """
+        return {
+            'is_frozen': getattr(sys, 'frozen', False),
+            'executable_path': sys.executable,
+            'script_path': __file__,
+            'config_directory': str(self.config_dir),
+            'system_config_exists': self.system_config_path.exists(),
+            'user_config_exists': self.user_config_path.exists(),
+            'environment_type': 'production' if getattr(sys, 'frozen', False) else 'development'
+        }
     
     def get_config_summary(self) -> Dict[str, Any]:
         """获取配置摘要信息"""
@@ -610,6 +668,12 @@ if __name__ == "__main__":
     # 测试代码
     try:
         print("=== 配置管理器测试 ===")
+        
+        # 显示运行时环境信息
+        print("\n0. 运行时环境信息:")
+        runtime_info = config_manager.get_runtime_info()
+        for key, value in runtime_info.items():
+            print(f"  {key}: {value}")
         
         # 测试配置完整性验证
         print("\n1. 配置完整性验证:")

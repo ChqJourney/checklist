@@ -4,10 +4,27 @@
 """
 import json
 import os
+import sys
 import threading
 from datetime import datetime
 from typing import Callable, Optional
 from src.config.config_manager import get_system_config
+
+# 确保在 PyInstaller 环境中正确处理 Unicode
+def safe_print(text):
+    """安全的打印函数，处理编码问题"""
+    try:
+        print(text)
+    except UnicodeEncodeError:
+        try:
+            # 尝试使用替换策略处理无法编码的字符
+            print(text.encode('utf-8', 'replace').decode('utf-8', 'replace'))
+        except:
+            try:
+                # 如果还是失败，移除所有非ASCII字符
+                print(''.join(char for char in text if ord(char) < 128))
+            except:
+                print("[无法显示的消息]")
 
 class GlobalLogger:
     """全局日志管理器"""
@@ -23,10 +40,15 @@ class GlobalLogger:
 
     def __init__(self):
         # 设置默认配置
-        config = get_system_config().get('log_config', None)
+        try:
+            config = get_system_config().get('log_config', None)
+        except Exception as e:
+            # 如果获取系统配置失败，使用默认配置
+            config = None
+            safe_print(f"获取系统配置失败，使用默认配置: {e}")
 
         if config is None:
-            print("未找到配置文件，使用默认配置")
+            safe_print("未找到配置文件，使用默认配置")
             self.config = {
             "level": "INFO",
             "log_to_console": True,
@@ -44,7 +66,7 @@ class GlobalLogger:
             }
         else:
             self.config = config
-            print(f"加载配置: {self.config}")
+            safe_print("加载日志配置成功")
         self.frontend_callback: Optional[Callable] = None
         self._lock = threading.Lock()
         self.frontend_logs = []  # 存储前端显示的日志
@@ -85,12 +107,12 @@ class GlobalLogger:
             with open(log_file, 'a', encoding='utf-8') as f:
                 f.write(formatted_message + '\n')
         except Exception as e:
-            print(f"写入日志文件失败: {e}")
+            safe_print(f"写入日志文件失败: {e}")
     
     def _log_to_console(self, formatted_message: str):
         """输出到控制台"""
         if self.config.get('log_to_console', True):
-            print(formatted_message)
+            safe_print(formatted_message)
     
     def _log_to_frontend(self, formatted_message: str, level: str):
         """发送日志到前端"""
@@ -112,7 +134,7 @@ class GlobalLogger:
                 try:
                     self.frontend_callback(formatted_message, level)
                 except Exception as e:
-                    print(f"前端日志回调失败: {e}")
+                    safe_print(f"前端日志回调失败: {e}")
     
     def _escape_for_js(self, text: str) -> str:
         """转义文本以便在JavaScript中安全使用"""
@@ -163,20 +185,54 @@ class GlobalLogger:
             self.frontend_logs.clear()
 
 # 创建全局日志实例
-global_logger = GlobalLogger()
+try:
+    global_logger = GlobalLogger()
+except Exception as e:
+    # 如果创建失败，创建一个简单的备用logger
+    import logging
+    logging.basicConfig(level=logging.INFO)
+    
+    class FallbackLogger:
+        def debug(self, message, module=""): logging.debug(f"[{module}] {message}" if module else message)
+        def info(self, message, module=""): logging.info(f"[{module}] {message}" if module else message)
+        def warning(self, message, module=""): logging.warning(f"[{module}] {message}" if module else message)
+        def error(self, message, module=""): logging.error(f"[{module}] {message}" if module else message)
+        def critical(self, message, module=""): logging.critical(f"[{module}] {message}" if module else message)
+        def log(self, message, level='INFO', module=""): getattr(logging, level.lower())(f"[{module}] {message}" if module else message)
+        def set_frontend_callback(self, callback): pass
+        def get_frontend_logs(self): return []
+        def clear_frontend_logs(self): pass
+    
+    global_logger = FallbackLogger()
+    safe_print(f"全局日志初始化失败，使用备用日志系统: {e}")
 
 # 便捷函数
 def log_debug(message: str, module: str = ""):
-    global_logger.debug(message, module)
+    try:
+        global_logger.debug(message, module)
+    except:
+        safe_print(f"[DEBUG] [{module}] {message}" if module else f"[DEBUG] {message}")
 
 def log_info(message: str, module: str = ""):
-    global_logger.info(message, module)
+    try:
+        global_logger.info(message, module)
+    except:
+        safe_print(f"[INFO] [{module}] {message}" if module else f"[INFO] {message}")
 
 def log_warning(message: str, module: str = ""):
-    global_logger.warning(message, module)
+    try:
+        global_logger.warning(message, module)
+    except:
+        safe_print(f"[WARNING] [{module}] {message}" if module else f"[WARNING] {message}")
 
 def log_error(message: str, module: str = ""):
-    global_logger.error(message, module)
+    try:
+        global_logger.error(message, module)
+    except:
+        safe_print(f"[ERROR] [{module}] {message}" if module else f"[ERROR] {message}")
 
 def log_critical(message: str, module: str = ""):
-    global_logger.critical(message, module)
+    try:
+        global_logger.critical(message, module)
+    except:
+        safe_print(f"[CRITICAL] [{module}] {message}" if module else f"[CRITICAL] {message}")

@@ -162,14 +162,15 @@ body {
 
 .log-panel {
     width: 35%;
-    background: white;
-    border-right: 1px solid #e0e0e0;
+    background: #ffffff;
+    border-right: 1px solid #f1f3f4;
     display: flex;
     flex-direction: column;
     height: 100%;
     min-height: 0;
     position: relative;
-    transition: width 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .log-panel.collapsed {
@@ -179,78 +180,61 @@ body {
 
 .log-toggle {
     position: absolute;
-    top: 50%;
-    right: -15px;
+    top: 0px;
+    right: 0px;
     z-index: 10;
-    background: #667eea;
-    color: white;
+    background: #ffffff;
+    color: #6b7280;
     border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    border-radius: 3px;
+    width: 15px;
+    height: 100%;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e7eb;
 }
 
 .log-toggle:hover {
-    background: #5a6fd8;
-    transform: translateY(-50%) scale(1.1);
+    background: #f9fafb;
+    color: #374151;
+    transform: translateX(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.log-toggle:active {
+    transform: translateX(-1px) scale(0.98);
+}
+
+.log-panel.collapsed .log-toggle {
+    right: 0px;
+    background: #ffffff;
+    color: white;
+}
+
+.log-panel.collapsed .log-toggle:hover {
+    background: #ffffff;
+    transform: translateX(2px);
 }
 
 .log-panel.collapsed .log-toggle .toggle-icon {
     transform: rotate(180deg);
-}
-
-.log-panel.collapsed .log-header,
-.log-panel.collapsed .log-content {
-    display: none;
 }
 
 .toggle-icon {
-    transition: transform 0.3s ease;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
     line-height: 1;
+    font-weight: 400;
 }
 
 .log-panel.collapsed {
     width: 40px;
     min-width: 40px;
-}
-
-.log-toggle {
-    position: absolute;
-    top: 50%;
-    right: -15px;
-    z-index: 10;
-    background: #667eea;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-.log-toggle:hover {
-    background: #5a6fd8;
-    transform: translateY(-50%) scale(1.1);
-}
-
-.log-panel.collapsed .log-toggle .toggle-icon {
-    transform: rotate(180deg);
 }
 
 .log-panel.collapsed .log-header,
@@ -259,11 +243,13 @@ body {
 }
 
 .log-header {
-    background: #f8f9fa;
-    padding: 15px;
-    border-bottom: 1px solid #e0e0e0;
-    font-weight: 600;
-    color: #333;
+    background: #fafbfc;
+    padding: 20px 24px;
+    border-bottom: 1px solid #f1f3f4;
+    font-weight: 500;
+    color: #374151;
+    font-size: 14px;
+    letter-spacing: 0.01em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -272,15 +258,20 @@ body {
 .btn-clear-logs {
     background: none;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
-    padding: 5px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+    color: #6b7280;
+    opacity: 0.7;
 }
 
 .btn-clear-logs:hover {
-    background: rgba(0,0,0,0.1);
+    background: #f3f4f6;
+    color: #374151;
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .log-content {

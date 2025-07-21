@@ -1,12 +1,13 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 a = Analysis(
-    ['main.py'],
+    ['app.py'],
     pathex=[],
     binaries=[],
     datas=[
-        ('static', 'static'),  # 包含静态文件（HTML, CSS, JS）
-        ('check.ico', '.'),    # 包含图标文件
+        ('src/static', 'src/static'),  # 包含静态文件（HTML, CSS, JS）
+        ('src/static/check.ico', '.'),    # 包含图标文件
+        # templates、signs文件夹以及user.json、system.json文件不打包，保持在exe同级目录
     ],
     hiddenimports=[
         'pandas',
@@ -67,5 +68,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='check.ico',  # 设置应用程序图标
+    icon='src/static/check.ico',  # 设置应用程序图标
 )

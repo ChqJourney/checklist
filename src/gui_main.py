@@ -6,7 +6,9 @@ import sys
 import pandas as pd
 from datetime import datetime
 from src.funcs.file_utils import folder_precheck
-from src.funcs.funcs import get_working_folder_path, detect_folders_status, kill_all_word_processes, set_checklist, get_only_word_file_path
+from src.funcs.path_resolver import get_working_folder_path
+from src.funcs.process_manager import kill_all_word_processes
+from src.funcs.word_processor import get_only_word_file_path, set_checklist
 from src.data.data_manager import data_manager
 from src.logger.logger import global_logger, log_info, log_error, log_warning, log_debug, log_critical
 from src.config.config_manager import config_manager, get_system_config, set_user_config
@@ -179,6 +181,7 @@ class ProjectFileChecker:
                 
                 self.log(f"所有任务处理完成，共处理 {len(self.tasks)} 个任务")
                 
+                
                 # 保存结果到文件
                 #data_manager.save_to_file()
                 
@@ -186,6 +189,8 @@ class ProjectFileChecker:
                 self.log(f"处理过程中发生错误: {e}")
             finally:
                 self.is_running = False
+                self.task_file_path = ""
+                webview.windows[0].evaluate_js('deSelectedTaskFile()')
                 data_manager.set_processing_status(False)
                 webview.windows[0].evaluate_js('setRunning(false)')
         

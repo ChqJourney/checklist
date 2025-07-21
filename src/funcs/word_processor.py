@@ -10,6 +10,8 @@ from numpy import number
 import win32com.client as win32
 from pathlib import Path
 from array import array
+from src.config import config_manager
+from src.funcs.process_manager import kill_all_word_processes
 from src.funcs.file_utils import detect_folders_status
 from src.funcs.file_utils import detect_folders_status
 from src.logger.logger import log_info, log_error, log_warning, log_debug
@@ -91,23 +93,30 @@ def insert_image_in_cell(cell, image_path, width=80, height=20):
 
 def get_only_word_file_path(folder_path):
     """获取文件夹中的Word检查清单文件路径"""
-
+    user_config = config_manager.get_user_config()
+    if not user_config.get('checklist', None):
+        raise ValueError("User configuration for checklist not found. Please ensure the user config is set up correctly.")
     checklist_files = glob.glob(os.path.join(folder_path, '*checklist*.doc*'))
     checklist_files = [f for f in checklist_files if not os.path.basename(f).startswith(('~$', '.', '__'))]
+    if len(checklist_files)==0 or user_config['checklist']=='cover':
+        template_name=f"{user_config['team']}_template.docx"
+        default_checklist_path = Path.cwd() / 'templates' / template_name
+        if default_checklist_path.exists():
+            # Copy the default checklist file to the target folder
+            target_path = Path(folder_path) / 'E-filing checklist.docx'
+            shutil.copy2(default_checklist_path, target_path)
+            log_info(f"已复制默认检查清单文件到: {target_path}", "WORD")
+            return str(target_path)
+        else:
+            raise FileNotFoundError("Default checklist file not found in the current directory. Please ensure 'E-filing checklist.docx' exists.")
+
     if checklist_files:
-        if len(checklist_files) > 1:
-            raise ValueError(f"在文件夹 {folder_path} 中找到多个检查清单文件，请确保只有一个符合条件的文件。")
+        if len(checklist_files) > 1 and user_config['checklist'] != 'cover':
+            log_error(f"在文件夹 {folder_path} 中找到多个检查清单文件，只有第一个会被填写。")
         return checklist_files[0]
-    # 如果没有找到符合条件的文件，copy the default checklist file to the folder
-    default_checklist_path = Path.cwd() / 'E-filing checklist.docx'
-    if default_checklist_path.exists():
-        # Copy the default checklist file to the target folder
-        target_path = Path(folder_path) / 'E-filing checklist.docx'
-        shutil.copy2(default_checklist_path, target_path)
-        log_info(f"已复制默认检查清单文件到: {target_path}", "WORD")
-        return str(target_path)
     else:
-        raise FileNotFoundError("Default checklist file not found in the current directory. Please ensure 'E-filing checklist.docx' exists.")
+        # 如果既不符合复制默认文件的条件，又没有找到检查清单文件
+        raise FileNotFoundError(f"在文件夹 {folder_path} 中未找到检查清单文件，且不符合使用默认文件的条件。")
 
 
 def get_cell_with_activeX_in_row(table, row_index):
@@ -120,8 +129,9 @@ def get_cell_with_activeX_in_row(table, row_index):
     try:
         # Validate row_index
         if row_index < 1 or row_index > table.Rows.Count:
-            print(f"Invalid row index: {row_index}. Must be between 1 and {table.Rows.Count}")
+            log_error(f"Invalid row index: {row_index}. Must be between 1 and {table.Rows.Count}")
             return None
+
 
         for column_index in range(1, table.Columns.Count + 1):
             try:
@@ -131,7 +141,7 @@ def get_cell_with_activeX_in_row(table, row_index):
                         if hasattr(shape, 'OLEFormat') and shape.OLEFormat is not None:
                             return cell
             except Exception as e:
-                print(f"Error accessing cell at row {row_index}, column {column_index}: {str(e)}")
+                log_debug(f"Error accessing cell at row {row_index}, column {column_index}: {str(e)}", "WORD")
                 continue
                 
         return None
@@ -224,25 +234,21 @@ def set_option_cells_for_general(table, folder_status, option_config):
 
         status = folder_status[folder_name]
 
-        if isinstance(option, int):
+        if not isinstance(option, dict):
+            raise Exception(f"选项配置 {folder_name} 的格式不正确，应该是字典类型")
+
+        
+        for key, value in option.items():
+            row_index = value
+            opt_cell = get_cell_with_activeX_in_row(table, row_index)
+            if not opt_cell:
+                log_warning(f"未找到文件夹 {folder_name} 的选项单元格", "WORD")
+                continue
+                
             try:
-                opt_cell = get_cell_with_activeX_in_row(table, option)
-                set_option_cell(opt_cell, status)
+                set_option_cell(opt_cell, status[key])
             except Exception as e:
                 log_error(f"设置选项 {folder_name} 时发生错误: {e}", "WORD")
-
-        else:
-            for key, value in option.items():
-                row_index = value
-                opt_cell=get_cell_with_activeX_in_row(table, row_index)
-                if not opt_cell:
-                    log_warning(f"未找到文件夹 {folder_name} 的选项单元格", "WORD")
-                    continue
-                try:
-
-                    set_option_cell(opt_cell, status[key])
-                except Exception as e:
-                    log_error(f"设置选项 {folder_name} 时发生错误: {e}", "WORD")
 
 
 def set_option_cells(table, team, folder_status, option_config):
@@ -271,85 +277,27 @@ def set_checklist(task, target_path, team, subFolderConfig):
         if word_doc.Tables.Count == 0 or word_doc.Tables.Count < len(subFolderConfig):
             raise ValueError("tables setting in subfolderconfig's not correct")
         for i,item in enumerate(subFolderConfig):
-            print(f"正在处理表格索引: {i}, 配置项: {item}")
+            log_debug(f"正在处理表格索引: {i}, 配置项: {item}", "WORD")
             current_table = word_doc.Tables[i]
-            print(f"当前表格索引: {i}, 表格行数: {current_table.Rows.Count}, 列数: {current_table.Columns.Count}")
-            set_fields_value(current_table, task, item["fields"])
-            print(f"设置字段值完成: {item['fields']}")
-            folder_status = detect_folders_status(target_path, team, item["options"])
-            print(f"检测文件夹状态: {folder_status}")
-            # 设置选项单元格
-            set_option_cells(current_table, team, folder_status, item["options"])
+            log_debug(f"当前表格索引: {i}, 表格行数: {current_table.Rows.Count}, 列数: {current_table.Columns.Count}", "WORD")
+            log_debug(f"fields: {item.get('fields')}, options: {item.get('options')}", "WORD")
+            if 'fields' in item and item['fields'] is not None:
+                set_fields_value(current_table, task, item["fields"])
+                log_debug(f"设置字段值完成: {item['fields']}", "WORD")
+            if 'options' in item and item["options"] is not None:
+                folder_status = detect_folders_status(target_path, team, item["options"])
+                log_debug(f"检测文件夹状态: {folder_status}", "WORD")
+                # 设置选项单元格
+                set_option_cells(current_table, team, folder_status, item["options"])
 
         # 保存并关闭文档
         word_doc.Save()
         word_doc.Close()
         word.Quit()
     except Exception as e:
-        print(f"Error setting checklist: {str(e)}")
+        log_error(f"Error setting checklist: {str(e)}", "WORD")
         if 'word' in locals():
-            word.Quit()  # 确保Word应用程序被关闭
+            kill_all_word_processes()
         raise
 
 
-def get_activeX_cells(doc_path):
-    """
-    获取Word文档中所有包含ActiveX控件的单元格信息
-    
-    Args:
-        doc_path (str): Word文档的路径
-        
-    Returns:
-        list: 包含字典的列表，每个字典包含 {'row': row_index, 'column': column_index, 'table_index': table_index}
-    """
-    
-    try:
-        # 启动Word应用程序
-        word = win32.Dispatch('Word.Application')
-        word.Visible = False  # 隐藏Word窗口
-        
-        # 打开文档
-        doc = word.Documents.Open(doc_path)
-        
-        # 遍历文档中的所有表格
-        for table_index, table in enumerate(doc.Tables, 1):
-            # 遍历表格中的所有行
-            for row_index in range(1, table.Rows.Count + 1):
-                # 遍历表格中的所有列
-                for column_index in range(1, table.Columns.Count + 1):
-                    try:
-                        # 获取单元格
-                        cell = table.Cell(row_index, column_index)
-                        
-                        # 检查单元格中是否有InlineShapes（ActiveX控件通常以InlineShapes的形式存在）
-                        if cell.Range.InlineShapes.Count > 0:
-                            # 检查InlineShapes是否为ActiveX控件
-                            for shape_index in range(1, cell.Range.InlineShapes.Count + 1):
-                                shape = cell.Range.InlineShapes[shape_index]
-                                # 检查是否为OLE对象（ActiveX控件）
-                                if hasattr(shape, 'OLEFormat') and shape.OLEFormat is not None:
-                                    try:
-                                        # 尝试访问OLE对象，确认它是一个有效的ActiveX控件
-                                        ole_object = shape.OLEFormat.Object
-                                        if ole_object is not None:
-                                            print(f"Found ActiveX control at Row: {row_index}, Column: {column_index}, Table: {table_index}, Shape: {shape_index}")
-                                            break  # 找到一个ActiveX控件就跳出循环
-                                    except Exception:
-                                        # 如果无法访问OLE对象，继续检查下一个
-                                        continue
-                    except Exception:
-                        # 如果无法访问某个单元格，跳过它
-                        continue
-        
-        # 关闭文档和Word应用程序
-        doc.Close()
-        word.Quit()
-        
-    except Exception as e:
-        print(f"处理文档时出错: {e}")
-        # 确保Word应用程序被关闭
-        try:
-            if 'word' in locals():
-                word.Quit()
-        except:
-            pass

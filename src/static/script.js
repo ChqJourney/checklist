@@ -139,6 +139,10 @@ function setRunning(running) {
         runBtn.classList.remove('loading');
     }
 }
+function deSelectedTaskFile(){
+    document.getElementById('fileInfo').textContent = `请选取任务清单文件`;
+    document.getElementById('runBtn').disabled = true;
+}
 
 function updateResults(results) {
     const resultsContent = document.getElementById('resultsContent');
@@ -317,10 +321,8 @@ function toggleLogPanel() {
     
     if (isLogPanelCollapsed) {
         logPanel.classList.add('collapsed');
-        toggleIcon.textContent = '▶';
     } else {
         logPanel.classList.remove('collapsed');
-        toggleIcon.textContent = '◀';
     }
     
     // 保存状态到localStorage

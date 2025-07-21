@@ -1160,3 +1160,283 @@
 [2025-07-20 23:35:01] [DEBUG] [GUI] 250100032HZH检查列表写入完成
 [2025-07-20 23:35:01] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
 [2025-07-20 23:35:01] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 20:21:35] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 20:21:36] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 20:21:36] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 20:21:36] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 20:21:36] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-21 20:21:36] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-21 20:21:36] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 20:21:36] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 20:21:37] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 20:21:37] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-21 20:21:39] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-21 20:21:45] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 20:21:46] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 20:21:52] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-21 20:21:52] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-21 20:21:52] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 21:00:00] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 21:00:01] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 21:00:02] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 21:00:02] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 21:00:02] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-21 21:00:02] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-21 21:00:02] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 21:00:02] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 21:00:02] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 21:00:02] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-21 21:00:04] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-21 21:00:10] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 21:00:11] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 21:00:11] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-21 21:00:11] [DEBUG] [GUI] 250100032HZH设置检查列表失败: Error in get_cell_with_activeX_in_row: (-2147352567, '发生意外。', (0, 'Microsoft Word', '无法访问此集合中单独的行，因为表格有纵向合并的单元格。', 'wdmain11.chm', 25471, -2146822297), None)
+[2025-07-21 21:00:11] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-21 21:00:11] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 21:08:32] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 21:08:33] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 21:08:34] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 21:08:34] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 21:08:34] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-21 21:08:34] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-21 21:08:34] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 21:08:34] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 21:08:35] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 21:08:35] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-21 21:08:36] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-21 21:08:43] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 21:08:43] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 21:08:44] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-21 21:08:44] [DEBUG] [GUI] 250100032HZH设置检查列表失败: Error in get_cell_with_activeX_in_row: (-2147352567, '发生意外。', (0, 'Microsoft Word', '无法访问此集合中单独的行，因为表格有纵向合并的单元格。', 'wdmain11.chm', 25471, -2146822297), None)
+[2025-07-21 21:08:44] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-21 21:08:44] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 21:10:23] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 21:10:24] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 21:10:25] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 21:10:25] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 21:10:25] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-21 21:10:25] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-21 21:10:25] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 21:10:25] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 21:10:25] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 21:10:25] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-21 21:10:27] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\project No._E-Filing Checklist.docx
+[2025-07-21 21:10:34] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 21:10:34] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 21:10:40] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-21 21:10:40] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-21 21:10:40] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 21:23:34] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 21:23:36] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 21:23:36] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 21:23:36] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 21:23:36] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-21 21:23:36] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-21 21:23:36] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL 下没有找到包含 'checklist' 的 Word 文档
+[2025-07-21 21:23:36] [DEBUG] [GUI] 任务 250100032HZH 的文件夹预检查失败
+[2025-07-21 21:23:36] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 21:25:03] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 21:25:04] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 21:25:04] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 21:25:04] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 21:25:04] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-21 21:25:04] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-21 21:25:04] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 21:25:04] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 21:25:05] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 21:25:05] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-21 21:25:07] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-21 21:25:07] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-21 21:25:13] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-21 21:25:13] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-21 21:25:13] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 21:25:14] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 21:25:14] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-21 21:25:14] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': True, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-21 21:25:15] [DEBUG] [WORD] Error accessing cell at row 10, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:15] [DEBUG] [WORD] Error accessing cell at row 11, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:15] [DEBUG] [WORD] Error accessing cell at row 12, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:15] [DEBUG] [WORD] Error accessing cell at row 13, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:16] [DEBUG] [WORD] Error accessing cell at row 15, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:16] [DEBUG] [WORD] Error accessing cell at row 16, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:16] [DEBUG] [WORD] Error accessing cell at row 18, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:16] [DEBUG] [WORD] Error accessing cell at row 19, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:16] [DEBUG] [WORD] Error accessing cell at row 20, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:17] [DEBUG] [WORD] Error accessing cell at row 25, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:17] [DEBUG] [WORD] Error accessing cell at row 25, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:17] [DEBUG] [WORD] Error accessing cell at row 26, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:17] [DEBUG] [WORD] Error accessing cell at row 26, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 21:25:21] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-21 21:25:21] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-21 21:25:21] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 21:52:53] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 21:52:57] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 21:52:57] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 21:52:57] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 21:52:57] [DEBUG] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-21 21:52:57] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-21 21:52:57] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 21:52:57] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 21:52:58] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 21:52:58] [DEBUG] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-21 21:53:00] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-07-21 21:53:03] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [0, 1]}, 'job_creator': {'type': 'text', 'indexes': [1, 2]}, 'engineers': {'type': 'text', 'indexes': [2, 3]}}, 'options': {'App\\Quotation': 2, 'App\\Invoice': 3, 'App': 4, 'Others': 5, 'Test record\\Chemical': 8, 'Test record': 9, 'Tech\\IM-RL-AW': 10, 'Tech\\DR': 11, 'Tech\\Protocol': 12, 'Tech\\Other': 13, 'Photo': 14, 'Report': 15, 'Subcontract': 16}}
+[2025-07-21 21:53:03] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 2, 列数: 4
+[2025-07-21 21:53:04] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [0, 1]}, 'job_creator': {'type': 'text', 'indexes': [1, 2]}, 'engineers': {'type': 'text', 'indexes': [2, 3]}}
+[2025-07-21 21:53:04] [DEBUG] [WORD] 检测文件夹状态: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-07-21 21:53:04] [ERROR] No ActiveX control found in row 2
+[2025-07-21 21:53:04] [ERROR] [WORD] Error setting checklist: Error in set_all_option_cells: No ActiveX control found in row 2 for folder: App\Quotation, please check if the row setting is correct or if the file is damaged.
+[2025-07-21 21:53:04] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-21 21:53:04] [DEBUG] [GUI] 250300973HZH设置检查列表失败: Error in set_all_option_cells: No ActiveX control found in row 2 for folder: App\Quotation, please check if the row setting is correct or if the file is damaged.
+[2025-07-21 21:53:04] [DEBUG] [GUI] 任务 250300973HZH 处理完成:结果为：失败
+[2025-07-21 21:53:04] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 22:06:31] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 22:06:34] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 22:06:34] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 22:06:34] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 22:06:34] [DEBUG] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-21 22:06:34] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-21 22:06:34] [WARNING] [FOLDER] 找到的文件: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-07-21 22:06:34] [WARNING] [FOLDER] 找到的文件: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\~$filing checklist.docx
+[2025-07-21 22:06:34] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX 下找到多个包含 'checklist' 的 Word 文档，请确保只有一个
+[2025-07-21 22:06:34] [DEBUG] [GUI] 任务 250300973HZH 的文件夹预检查失败
+[2025-07-21 22:06:34] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 22:08:02] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 22:08:04] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 22:08:04] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 22:08:04] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 22:08:04] [DEBUG] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-21 22:08:04] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-21 22:08:04] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 22:08:04] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 22:08:05] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 22:08:05] [DEBUG] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-21 22:08:07] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-07-21 22:08:10] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [0, 1]}, 'job_creator': {'type': 'text', 'indexes': [1, 2]}, 'engineers': {'type': 'text', 'indexes': [2, 3]}}}
+[2025-07-21 22:08:11] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 2, 列数: 4
+[2025-07-21 22:08:11] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [0, 1]}, 'job_creator': {'type': 'text', 'indexes': [1, 2]}, 'engineers': {'type': 'text', 'indexes': [2, 3]}}
+[2025-07-21 22:08:11] [ERROR] [WORD] Error setting checklist: 'options'
+[2025-07-21 22:08:11] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-21 22:08:11] [DEBUG] [GUI] 250300973HZH设置检查列表失败: 'options'
+[2025-07-21 22:08:11] [DEBUG] [GUI] 任务 250300973HZH 处理完成:结果为：失败
+[2025-07-21 22:08:11] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 22:12:25] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 22:12:26] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 22:12:26] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 22:12:26] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 22:12:26] [DEBUG] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-21 22:12:26] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-21 22:12:26] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 22:12:26] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 22:12:27] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 22:12:27] [DEBUG] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-21 22:12:29] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-07-21 22:12:34] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [0, 1]}, 'job_creator': {'type': 'text', 'indexes': [1, 2]}, 'engineers': {'type': 'text', 'indexes': [2, 3]}}}
+[2025-07-21 22:12:34] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 2, 列数: 4
+[2025-07-21 22:12:34] [ERROR] [WORD] Error setting checklist: 'options'
+[2025-07-21 22:12:34] [INFO] [WORD] 已终止 1 个Word进程
+[2025-07-21 22:12:34] [DEBUG] [GUI] 250300973HZH设置检查列表失败: 'options'
+[2025-07-21 22:12:34] [DEBUG] [GUI] 任务 250300973HZH 处理完成:结果为：失败
+[2025-07-21 22:12:34] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 22:15:55] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 22:15:57] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 22:15:58] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 22:15:58] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 22:15:58] [DEBUG] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-21 22:15:58] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-21 22:15:58] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 22:15:58] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 22:15:59] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 22:15:59] [DEBUG] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-21 22:16:01] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-07-21 22:16:05] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [0, 1]}, 'job_creator': {'type': 'text', 'indexes': [1, 2]}, 'engineers': {'type': 'text', 'indexes': [2, 3]}}}
+[2025-07-21 22:16:05] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 2, 列数: 4
+[2025-07-21 22:16:05] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [0, 1]}, 'job_creator': {'type': 'text', 'indexes': [1, 2]}, 'engineers': {'type': 'text', 'indexes': [2, 3]}}, options: None
+[2025-07-21 22:16:05] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [0, 1]}, 'job_creator': {'type': 'text', 'indexes': [1, 2]}, 'engineers': {'type': 'text', 'indexes': [2, 3]}}
+[2025-07-21 22:16:05] [DEBUG] [WORD] 正在处理表格索引: 1, 配置项: {'options': {'App\\Quotation': 2, 'App\\Invoice': 3, 'App': 4, 'Others': 5, 'Test record\\Chemical': 8, 'Test record': 9, 'Tech\\IM-RL-AW': 10, 'Tech\\DR': 11, 'Tech\\Protocol': 12, 'Tech\\Other': 13, 'Photo': 14, 'Report': 15, 'Subcontract': 16}}
+[2025-07-21 22:16:06] [DEBUG] [WORD] 当前表格索引: 1, 表格行数: 16, 列数: 5
+[2025-07-21 22:16:06] [DEBUG] [WORD] fields: None, options: {'App\\Quotation': 2, 'App\\Invoice': 3, 'App': 4, 'Others': 5, 'Test record\\Chemical': 8, 'Test record': 9, 'Tech\\IM-RL-AW': 10, 'Tech\\DR': 11, 'Tech\\Protocol': 12, 'Tech\\Other': 13, 'Photo': 14, 'Report': 15, 'Subcontract': 16}
+[2025-07-21 22:16:06] [DEBUG] [WORD] 检测文件夹状态: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-07-21 22:16:06] [DEBUG] [WORD] Error accessing cell at row 3, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:06] [DEBUG] [WORD] Error accessing cell at row 3, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:07] [DEBUG] [WORD] Error accessing cell at row 4, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:07] [DEBUG] [WORD] Error accessing cell at row 4, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:08] [DEBUG] [WORD] Error accessing cell at row 9, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:08] [DEBUG] [WORD] Error accessing cell at row 9, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:09] [DEBUG] [WORD] Error accessing cell at row 11, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:09] [DEBUG] [WORD] Error accessing cell at row 11, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:09] [DEBUG] [WORD] Error accessing cell at row 12, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:09] [DEBUG] [WORD] Error accessing cell at row 12, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:10] [DEBUG] [WORD] Error accessing cell at row 13, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:10] [DEBUG] [WORD] Error accessing cell at row 13, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:16:14] [DEBUG] [GUI] 250300973HZH检查列表写入完成
+[2025-07-21 22:16:14] [DEBUG] [GUI] 任务 250300973HZH 处理完成:结果为：完成
+[2025-07-21 22:16:14] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 22:19:32] [DEBUG] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 22:19:32] [DEBUG] [GUI] 开始处理任务...
+[2025-07-21 22:19:33] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-07-21 22:19:33] [DEBUG] [GUI] 共计 1 个任务
+[2025-07-21 22:19:33] [DEBUG] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-21 22:19:33] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-21 22:19:33] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-21 22:19:33] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 22:19:34] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-21 22:19:34] [DEBUG] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-21 22:19:36] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-07-21 22:19:36] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-07-21 22:19:40] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': {'type': 'text', 'indexes': [2, 4]}, 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}}
+[2025-07-21 22:19:40] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 2, 列数: 4
+[2025-07-21 22:19:40] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': {'type': 'text', 'indexes': [2, 4]}, 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: None
+[2025-07-21 22:19:41] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 22:19:41] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': {'type': 'text', 'indexes': [2, 4]}, 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-21 22:19:41] [DEBUG] [WORD] 正在处理表格索引: 1, 配置项: {'options': {'App\\Quotation': 2, 'App\\Invoice': 3, 'App': 4, 'Others': 5, 'Test record\\Chemical': 8, 'Test record': 9, 'Tech\\IM-RL-AW': 10, 'Tech\\DR': 11, 'Tech\\Protocol': 12, 'Tech\\Other': 13, 'Photo': 14, 'Report': 15, 'Subcontract': 16}}
+[2025-07-21 22:19:41] [DEBUG] [WORD] 当前表格索引: 1, 表格行数: 16, 列数: 5
+[2025-07-21 22:19:41] [DEBUG] [WORD] fields: None, options: {'App\\Quotation': 2, 'App\\Invoice': 3, 'App': 4, 'Others': 5, 'Test record\\Chemical': 8, 'Test record': 9, 'Tech\\IM-RL-AW': 10, 'Tech\\DR': 11, 'Tech\\Protocol': 12, 'Tech\\Other': 13, 'Photo': 14, 'Report': 15, 'Subcontract': 16}
+[2025-07-21 22:19:41] [DEBUG] [WORD] 检测文件夹状态: {'App\\Quotation': False, 'App\\Invoice': False, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': True, 'Tech\\DR': True, 'Tech\\Protocol': True, 'Tech\\Other': False, 'Photo': True, 'Report': True, 'Subcontract': False}
+[2025-07-21 22:19:41] [DEBUG] [WORD] Error accessing cell at row 3, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:41] [DEBUG] [WORD] Error accessing cell at row 3, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:42] [DEBUG] [WORD] Error accessing cell at row 4, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:42] [DEBUG] [WORD] Error accessing cell at row 4, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:42] [DEBUG] [WORD] Error accessing cell at row 9, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:42] [DEBUG] [WORD] Error accessing cell at row 9, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:43] [DEBUG] [WORD] Error accessing cell at row 11, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:43] [DEBUG] [WORD] Error accessing cell at row 11, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:43] [DEBUG] [WORD] Error accessing cell at row 12, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:43] [DEBUG] [WORD] Error accessing cell at row 12, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:43] [DEBUG] [WORD] Error accessing cell at row 13, column 1: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:43] [DEBUG] [WORD] Error accessing cell at row 13, column 2: (-2147352567, '发生意外。', (0, 'Microsoft Word', '集合所要求的成员不存在。', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-21 22:19:47] [DEBUG] [GUI] 250300973HZH检查列表写入完成
+[2025-07-21 22:19:47] [DEBUG] [GUI] 任务 250300973HZH 处理完成:结果为：完成
+[2025-07-21 22:19:47] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 22:20:03] [DEBUG] [GUI] 已打开目录: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-21 22:20:54] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 22:20:55] [INFO] [GUI] 开始处理任务...
+[2025-07-21 22:20:55] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-21 22:20:55] [INFO] [GUI] 共计 1 个任务
+[2025-07-21 22:20:55] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-21 22:20:55] [INFO] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-21 22:20:55] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-21 22:20:55] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 22:20:56] [INFO] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-21 22:20:58] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-07-21 22:21:02] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 22:21:08] [INFO] [GUI] 250300973HZH检查列表写入完成
+[2025-07-21 22:21:08] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：完成
+[2025-07-21 22:21:08] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 22:21:33] [INFO] [GUI] 请先选择任务列表文件
+[2025-07-21 22:27:42] [INFO] [GUI] 已选择文件: task list.xlsx
+[2025-07-21 22:27:43] [INFO] [GUI] 开始处理任务...
+[2025-07-21 22:27:43] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-21 22:27:43] [INFO] [GUI] 共计 1 个任务
+[2025-07-21 22:27:43] [INFO] [GUI] 处理任务 1/1: 250300973HZH
+[2025-07-21 22:27:43] [INFO] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX
+[2025-07-21 22:27:43] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-21 22:27:43] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-21 22:27:44] [INFO] [GUI] 250300973HZH开始写入检查列表...
+[2025-07-21 22:27:46] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\ppt\250300973HZH--TASK-0796364--MC ROT HAMMER DRILL--0548781_INVOX\E-filing checklist.docx
+[2025-07-21 22:27:51] [WARNING] [WORD] 未找到工程师 Jack Bai 的签名图片，使用默认图片
+[2025-07-21 22:27:58] [INFO] [GUI] 250300973HZH检查列表写入完成
+[2025-07-21 22:27:58] [INFO] [GUI] 任务 250300973HZH 处理完成:结果为：完成
+[2025-07-21 22:27:58] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-21 22:28:06] [INFO] [GUI] 请先选择任务列表文件
+[2025-07-21 22:48:39] [INFO] [GUI] 已选择文件: task list.xlsx

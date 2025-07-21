@@ -45,6 +45,11 @@
 
 ## 当前进度
 - 在测试环境中功能已实现
+   增加了pyfakefs用于测试文件系统操作
 - ui中选择task list的逻辑还需优化，二次选择以及任务完成后的task list初始化
+   任务完成后的task list路径初始化已添加，ui操作也跟上了
 - 所有文件项检查逻辑detect_folders_status还需斟酌
+   todo
 - 核心方法set_checklist还需梳理优化
+   初步梳理过，待测试
+- toggle css 优化

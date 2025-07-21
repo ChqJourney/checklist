@@ -60,29 +60,65 @@
 						"CB": 10,
 						"ETL": 11
 					},
-					"1 Application documents\\Others service app":{"OtherServies":12},
-					"1 Application documents\\other application documents": {"OtherAppDoc": 13},
-					"2 Certificate": {"Certificate": 7},
-					"3 Test report": {"TestReport": 8},
+					"1 Application documents\\Others service app": {
+						"OtherServies": 12
+					},
+					"1 Application documents\\other application documents": {
+						"OtherAppDoc": 13
+					},
+					"2 Certificate": {
+						"Certificate": 7
+					},
+					"3 Test report": {
+						"TestReport": 8
+					},
 					"4 Test record": {
 						"CRSheet": 14,
 						"DataSheet": 15,
 						"EquipmentList": 16
 					},
-					"5 Technical documents\\Circuit diagram": {"CircuitDiagram": 17},
-					"5 Technical documents\\Partlist": {"Partlist": 18},
-					"5 Technical documents\\Exploded drawing +BOM": {"ExplodedDrawing": 19},
-					"5 Technical documents\\Other technical info": {"OtherTechInfo": 20},
-					"6 User Manual(s) & Label": {"UserManual": 21},
-					"7 Component Cer": {"ComponentCert": 22},
-					"8 PAH evaluation": {"Pah": 23},
-					"9 Communication file\\Letter report(s)": {"LetterReport": 24},
-					"9 Communication file\\Confirmation (Declaration)": {"Confirmation": 25},
-					"9 Communication file\\Others Communication": {"OthersCommunication": 26},
-					"10 Subcontract report and log sheet": {"SubReport": 27},
-					"11 Photos": {"Photo": 28},
-					"14 Other documents": {"OtherDoc": 29},
-					"": {"CrossReference": 30}
+					"5 Technical documents\\Circuit diagram": {
+						"CircuitDiagram": 17
+					},
+					"5 Technical documents\\Partlist": {
+						"Partlist": 18
+					},
+					"5 Technical documents\\Exploded drawing +BOM": {
+						"ExplodedDrawing": 19
+					},
+					"5 Technical documents\\Other technical info": {
+						"OtherTechInfo": 20
+					},
+					"6 User Manual(s) & Label": {
+						"UserManual": 21
+					},
+					"7 Component Cer": {
+						"ComponentCert": 22
+					},
+					"8 PAH evaluation": {
+						"Pah": 23
+					},
+					"9 Communication file\\Letter report(s)": {
+						"LetterReport": 24
+					},
+					"9 Communication file\\Confirmation (Declaration)": {
+						"Confirmation": 25
+					},
+					"9 Communication file\\Others Communication": {
+						"OthersCommunication": 26
+					},
+					"10 Subcontract report and log sheet": {
+						"SubReport": 27
+					},
+					"11 Photos": {
+						"Photo": 28
+					},
+					"14 Other documents": {
+						"OtherDoc": 29
+					},
+					"": {
+						"CrossReference": 30
+					}
 				}
 			}
 		],
@@ -92,25 +128,43 @@
 					"job_no": {
 						"type": "text",
 						"indexes": [
-							0,
-							1
+							1,
+							2
+						]
+					},
+					"date": {
+						"type": "date",
+						"indexes": [
+							2,
+							2
 						]
 					},
 					"job_creator": {
 						"type": "text",
 						"indexes": [
-							1,
-							2
+							2,
+							4
 						]
 					},
-					"engineers": {
-						"type": "text",
-						"indexes": [
-							2,
-							3
-						]
-					}
-				},
+					"engineers": [
+						{
+							"type": "text",
+							"indexes": [
+								1,
+								4
+							]
+						},
+						{
+							"type": "image",
+							"indexes": [
+								1,
+								4
+							]
+						}
+					]
+				}
+			},
+			{
 				"options": {
 					"App\\Quotation": 2,
 					"App\\Invoice": 3,
@@ -130,7 +184,7 @@
 		]
 	},
 	"log_config": {
-		"level": "DEBUG",
+		"level": "INFO",
 		"log_to_console": true,
 		"log_to_file": true,
 		"log_file_path": "app.log",

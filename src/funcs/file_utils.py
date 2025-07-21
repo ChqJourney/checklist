@@ -23,9 +23,9 @@ def folder_precheck(target_folder:str,team:str)-> bool:
     checklist_files = glob.glob(os.path.join(target_folder, '*checklist*.doc*'))
     # 过滤掉隐藏文件和缓存文件
     checklist_files = [f for f in checklist_files if not os.path.basename(f).startswith(('~$', '.', '__'))]
-    if not checklist_files:
-        log_warning(f"目标文件夹 {target_folder} 下没有找到包含 'checklist' 的 Word 文档", "FOLDER")
-        return False
+    # if not checklist_files:
+    #     log_warning(f"目标文件夹 {target_folder} 下没有找到包含 'checklist' 的 Word 文档", "FOLDER")
+    #     return False
     if len(checklist_files) > 1:
         for file in checklist_files:
             log_warning(f"找到的文件: {file}", "FOLDER")
