@@ -98,17 +98,21 @@ def get_only_word_file_path(folder_path):
         raise ValueError("User configuration for checklist not found. Please ensure the user config is set up correctly.")
     checklist_files = glob.glob(os.path.join(folder_path, '*checklist*.doc*'))
     checklist_files = [f for f in checklist_files if not os.path.basename(f).startswith(('~$', '.', '__'))]
-    if len(checklist_files)==0 or user_config['checklist']=='cover':
+    if user_config['checklist']=='cover':
+        if len(checklist_files)>0:
+            #删除找到的第一个checklist文件
+            os.remove(checklist_files[0])
+            log_info(f"已删除现有的检查清单文件: {checklist_files[0]}", "WORD")
         template_name=f"{user_config['team']}_template.docx"
-        default_checklist_path = Path.cwd() / 'templates' / template_name
-        if default_checklist_path.exists():
+        template_path = Path.cwd() / 'templates' / template_name
+        if template_path.exists():
             # Copy the default checklist file to the target folder
             target_path = Path(folder_path) / 'E-filing checklist.docx'
-            shutil.copy2(default_checklist_path, target_path)
+            shutil.copy2(template_path, target_path)
             log_info(f"已复制默认检查清单文件到: {target_path}", "WORD")
             return str(target_path)
         else:
-            raise FileNotFoundError("Default checklist file not found in the current directory. Please ensure 'E-filing checklist.docx' exists.")
+            raise FileNotFoundError("Checklist template's not found in the 'templates' directory of program folder. Please ensure 'E-filing checklist.docx' exists.")
 
     if checklist_files:
         if len(checklist_files) > 1 and user_config['checklist'] != 'cover':

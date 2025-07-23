@@ -12,3 +12,6 @@ pywebview>=4.0.0
 
 # 打包工具
 pyinstaller>=5.0.0
+
+# Markdown 转换
+markdown>=3.4.0
