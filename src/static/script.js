@@ -329,6 +329,116 @@ function toggleLogPanel() {
     localStorage.setItem('logPanelCollapsed', isLogPanelCollapsed);
 }
 
+// Base Directory 相关功能
+let currentBaseDir = '';
+
+async function initializeBaseDir() {
+    try {
+        console.log('开始初始化基础目录...');
+        
+        // 检查 pywebview.api 是否可用
+        if (typeof pywebview === 'undefined' || !pywebview.api) {
+            console.log('pywebview.api 不可用，稍后重试...');
+            setTimeout(initializeBaseDir, 1000); // 1秒后重试
+            return;
+        }
+        
+        const result = await pywebview.api.get_base_dir();
+        console.log('API调用结果:', result);
+        
+        if (result.success) {
+            currentBaseDir = result.base_dir || '';
+            console.log('成功获取基础目录:', currentBaseDir);
+            updateBaseDirTooltip(currentBaseDir);
+        } else {
+            console.log('获取基础目录失败:', result.message);
+            addLog(`获取基础目录失败: ${result.message}`);
+        }
+    } catch (error) {
+        console.error('获取基础目录异常:', error);
+        addLog(`获取基础目录失败: ${error}`);
+    }
+}
+
+function updateBaseDirTooltip(baseDir) {
+    const tooltip = document.getElementById('baseDirTooltip');
+    if (tooltip) {
+        const displayText = baseDir ? `当前基础目录: ${baseDir}` : '当前基础目录: 未设置';
+        tooltip.textContent = displayText;
+        console.log('更新tooltip:', displayText);
+    } else {
+        console.error('未找到baseDirTooltip元素');
+    }
+}
+
+async function selectBaseDir() {
+    try {
+        // 先获取当前base_dir
+        const result = await pywebview.api.get_base_dir();
+        if (result.success) {
+            currentBaseDir = result.base_dir || '';
+            document.getElementById('currentBaseDir').value = currentBaseDir;
+        }
+        
+        // 显示modal
+        const modal = document.getElementById('baseDirModal');
+        modal.classList.add('show');
+    } catch (error) {
+        addLog(`获取基础目录失败: ${error}`);
+    }
+}
+
+function closeBaseDirModal() {
+    const modal = document.getElementById('baseDirModal');
+    modal.classList.remove('show');
+}
+
+async function selectFolder() {
+    try {
+        const result = await pywebview.api.select_folder();
+        if (result.success) {
+            document.getElementById('currentBaseDir').value = result.path;
+            addLog(`已选择文件夹: ${result.path}`);
+        } else {
+            addLog(`文件夹选择失败: ${result.message || '未知错误'}`);
+        }
+    } catch (error) {
+        addLog(`文件夹选择错误: ${error}`);
+    }
+}
+
+async function saveBaseDir() {
+    const newBaseDir = document.getElementById('currentBaseDir').value;
+    try {
+        const result = await pywebview.api.set_base_dir(newBaseDir);
+        if (result.success) {
+            currentBaseDir = newBaseDir;
+            updateBaseDirTooltip(currentBaseDir);
+            closeBaseDirModal();
+            addLog(`基础目录已更新: ${newBaseDir}`);
+        } else {
+            addLog(`保存基础目录失败: ${result.message || '未知错误'}`);
+        }
+    } catch (error) {
+        addLog(`保存基础目录错误: ${error}`);
+    }
+}
+
+// 点击modal外部关闭
+document.addEventListener('click', function(event) {
+    const modal = document.getElementById('baseDirModal');
+    if (event.target === modal) {
+        closeBaseDirModal();
+    }
+});
+
+// ESC键关闭modal
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeBaseDirModal();
+    }
+});
+
 // 页面加载时恢复日志面板状态
 document.addEventListener('DOMContentLoaded', function() {
     const saved = localStorage.getItem('logPanelCollapsed');
@@ -338,4 +448,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     addLog('界面加载完成，请选择文件开始处理');
     
+    // 初始化基础目录
+    initializeBaseDir();
 });

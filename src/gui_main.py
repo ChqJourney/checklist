@@ -20,20 +20,35 @@ class ProjectFileChecker:
         self.is_running = False
         self.log_callback = "None"
         
-        
-        # 加载配置
-        # 获取系统配置
-        self.log_level = get_system_config('log_config.level')
-        self.file_map = get_system_config('file_map')
-        self.subFolderConfig = get_system_config('subFolderConfig', {}).get(config_manager.get_team(), {})
-        
-        print(f"当前团队配置: {self.subFolderConfig}")
-        # 获取用户配置
-        self.team = config_manager.get_team()
-        self.base_dir = config_manager.get_base_dir()
-        self.task_list_map = config_manager.get_user_config('task_list_map', {})
-        # 设置全局日志的前端回调
-        global_logger.set_frontend_callback(self._frontend_log_callback)
+        try:
+            print("=== 初始化ProjectFileChecker ===")
+            
+            # 加载配置
+            print("正在加载配置...")
+            # 获取系统配置
+            self.log_level = get_system_config('log_config.level')
+            self.file_map = get_system_config('file_map')
+            self.subFolderConfig = get_system_config('subFolderConfig', {}).get(config_manager.get_team(), {})
+            
+            print(f"当前团队配置: {self.subFolderConfig}")
+            # 获取用户配置
+            self.team = config_manager.get_team()
+            print(f"当前团队: {self.team}")
+            
+            self.base_dir = config_manager.get_base_dir()
+            print(f"初始化时的基础目录: '{self.base_dir}'")
+            
+            self.task_list_map = config_manager.get_user_config('task_list_map', {})
+            print(f"任务列表映射: {self.task_list_map}")
+            
+            # 设置全局日志的前端回调
+            global_logger.set_frontend_callback(self._frontend_log_callback)
+            print("=== ProjectFileChecker 初始化完成 ===")
+            
+        except Exception as e:
+            print(f"初始化过程中出现错误: {e}")
+            import traceback
+            traceback.print_exc()
     
     def _frontend_log_callback(self, formatted_message: str, level: str):
         """全局日志的前端回调函数"""
@@ -263,6 +278,78 @@ class ProjectFileChecker:
             }
         except Exception as e:
             return {'success': False, 'message': str(e)}
+    
+    def get_base_dir(self):
+        """获取当前基础目录"""
+        try:
+            # 从配置管理器获取最新的base_dir值
+            config_base_dir = config_manager.get_base_dir()
+            instance_base_dir = self.base_dir
+            
+            print(f"配置管理器中的base_dir: '{config_base_dir}'")
+            print(f"实例中的base_dir: '{instance_base_dir}'")
+            
+            # 使用配置管理器中的值，因为它是最新的
+            base_dir = config_base_dir
+            
+            # 更新实例变量
+            self.base_dir = base_dir
+            
+            return {
+                'success': True,
+                'base_dir': base_dir
+            }
+        except Exception as e:
+            print(f"获取基础目录异常: {e}")
+            self.log(f"获取基础目录失败: {e}")
+            return {'success': False, 'message': str(e)}
+    
+    def set_base_dir(self, base_dir):
+        """设置基础目录"""
+        try:
+            # 验证路径
+            if base_dir and not os.path.isabs(base_dir):
+                return {'success': False, 'message': '基础目录必须是绝对路径'}
+            
+            if base_dir and not os.path.exists(base_dir):
+                return {'success': False, 'message': '指定的目录不存在'}
+            
+            if base_dir and not os.path.isdir(base_dir):
+                return {'success': False, 'message': '指定的路径不是目录'}
+            
+            # 保存配置
+            config_manager.set_base_dir(base_dir)
+            self.base_dir = base_dir  # 更新本地变量
+            self.log(f"基础目录已更新: {base_dir}")
+            
+            return {
+                'success': True,
+                'base_dir': base_dir
+            }
+        except Exception as e:
+            self.log(f"设置基础目录失败: {e}")
+            return {'success': False, 'message': str(e)}
+    
+    def select_folder(self):
+        """选择文件夹"""
+        try:
+            result = webview.windows[0].create_file_dialog(
+                webview.FOLDER_DIALOG,
+                directory=self.base_dir if self.base_dir and os.path.exists(self.base_dir) else os.getcwd()
+            )
+            
+            if result and len(result) > 0:
+                folder_path = result[0] if isinstance(result, list) else result
+                self.log(f"已选择文件夹: {folder_path}")
+                return {
+                    'success': True,
+                    'path': folder_path
+                }
+            else:
+                return {'success': False, 'message': '未选择文件夹'}
+        except Exception as e:
+            self.log(f"文件夹选择失败: {e}")
+            return {'success': False, 'message': str(e)}
 
 # 创建API实例
 api = ProjectFileChecker()
@@ -290,4 +377,4 @@ if __name__ == '__main__':
     )
     
     # 启动应用
-    webview.start(debug=False, icon=icon_path)
+    webview.start(debug=True, icon=icon_path)
