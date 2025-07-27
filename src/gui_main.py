@@ -41,6 +41,8 @@ class ProjectFileChecker:
             self.task_list_map = config_manager.get_user_config('task_list_map', {})
             print(f"任务列表映射: {self.task_list_map}")
             
+            self.if_continue_with_e_filing = config_manager.get_user_config('if_continue_with_e_filing', True)
+            print(f"是否继续电子归档: {self.if_continue_with_e_filing}")
             # 设置全局日志的前端回调
             global_logger.set_frontend_callback(self._frontend_log_callback)
             print("=== ProjectFileChecker 初始化完成 ===")
@@ -153,7 +155,6 @@ class ProjectFileChecker:
                     
                     # 获取工作目录
                     target_path = get_working_folder_path(self.base_dir,self.team, task['job_no'])
-                    
                     result = {
                         'job_no': task['job_no'],
                         'job_creator': task['job_creator'],
@@ -162,11 +163,17 @@ class ProjectFileChecker:
                         'status': '未找到目录' if target_path is None else '已处理',
                         'folders': {}
                     }
+                    if target_path is None:
+                        self.log(f"任务 {task['job_no']} 的工作目录未找到")
+                        data_manager.add_result(result)
+                        webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
+                        continue
                     self.log(f"找到目录: {target_path}")
                     if not folder_precheck(target_path, self.team):
                         self.log(f"任务 {task['job_no']} 的文件夹预检查失败")
                         result['status'] = '文件夹预检查失败'
                         data_manager.add_result(result)
+                        webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
                         continue
                     # 检测文件夹
                     self.log("开始检查子文件夹...")
@@ -195,7 +202,10 @@ class ProjectFileChecker:
                     webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
                 
                 self.log(f"所有任务处理完成，共处理 {len(self.tasks)} 个任务")
-                
+                if self.if_continue_with_e_filing:
+                    self.log("开始电子归档...")
+                    # 这里可以添加电子归档的逻辑
+                    # todo: 实现电子归档逻辑
                 
                 # 保存结果到文件
                 #data_manager.save_to_file()
@@ -279,6 +289,93 @@ class ProjectFileChecker:
         except Exception as e:
             return {'success': False, 'message': str(e)}
     
+    def get_all_config(self):
+        """获取所有用户配置"""
+        try:
+            config = {
+                'team': config_manager.get_team(),
+                'base_dir': config_manager.get_base_dir(),
+                'checklist': config_manager.get_user_config('checklist', 'cover'),
+                'task_list_map': config_manager.get_user_config('task_list_map', {
+                    'job_no': 0,
+                    'job_creator': 1,
+                    'engineers': 2
+                }),
+                'if_continue_with_e_filing': config_manager.get_user_config('if_continue_with_e_filing', True)
+            }
+            
+            return {
+                'success': True,
+                'config': config
+            }
+        except Exception as e:
+            self.log(f"获取配置失败: {e}")
+            return {'success': False, 'message': str(e)}
+    
+    def save_all_config(self, config_data):
+        """保存所有用户配置"""
+        try:
+            # 验证配置数据
+            if not isinstance(config_data, dict):
+                return {'success': False, 'message': '配置数据格式错误'}
+            
+            # 验证团队
+            team = config_data.get('team')
+            if team not in ['general', 'ppt']:
+                return {'success': False, 'message': '无效的团队配置'}
+            
+            # 验证基础目录
+            base_dir = config_data.get('base_dir', '')
+            if base_dir:
+                if not os.path.isabs(base_dir):
+                    return {'success': False, 'message': '基础目录必须是绝对路径'}
+                if not os.path.exists(base_dir):
+                    return {'success': False, 'message': '指定的目录不存在'}
+                if not os.path.isdir(base_dir):
+                    return {'success': False, 'message': '指定的路径不是目录'}
+            
+            # 验证检查清单模式
+            checklist = config_data.get('checklist')
+            if checklist not in ['cover', 'fill']:
+                return {'success': False, 'message': '无效的检查清单模式'}
+            
+            # 验证任务列表映射
+            task_list_map = config_data.get('task_list_map', {})
+            if not isinstance(task_list_map, dict):
+                return {'success': False, 'message': '任务列表映射必须是字典格式'}
+            
+            # 检查必需的映射字段
+            required_fields = ['job_no', 'job_creator', 'engineers']
+            for field in required_fields:
+                if field not in task_list_map:
+                    return {'success': False, 'message': f'缺少必需的映射字段: {field}'}
+                if not isinstance(task_list_map[field], int) or task_list_map[field] < 0:
+                    return {'success': False, 'message': f'映射字段 {field} 必须是非负整数'}
+            if_continue_with_e_filing = config_data.get('if_continue_with_e_filing', True)
+            # 保存配置
+            config_manager.set_team(team)
+            config_manager.set_base_dir(base_dir)
+            config_manager.set_user_config('checklist', checklist)
+            config_manager.set_user_config('task_list_map', task_list_map)
+            config_manager.set_user_config('if_continue_with_e_filing', if_continue_with_e_filing)
+            
+            # 更新实例变量
+            self.team = team
+            self.base_dir = base_dir
+            self.task_list_map = task_list_map
+            self.if_continue_with_e_filing = if_continue_with_e_filing
+
+            self.log(f"配置保存成功: 团队={team}, 基础目录={base_dir}, 检查清单={checklist}, 是否继续电子归档={if_continue_with_e_filing}")
+
+            return {
+                'success': True,
+                'message': '配置保存成功'
+            }
+            
+        except Exception as e:
+            self.log(f"保存配置失败: {e}")
+            return {'success': False, 'message': str(e)}
+
     def get_base_dir(self):
         """获取当前基础目录"""
         try:

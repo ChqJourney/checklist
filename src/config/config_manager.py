@@ -38,8 +38,8 @@ class ConfigManager:
     
     # 用户配置规范定义
     USER_CONFIG_SCHEMA = {
-        'required_keys': ['team', 'base_dir','checklist', 'task_list_map'],
-        'allowed_keys': ['team', 'base_dir', 'task_list_map', 'checklist'],
+        'required_keys': ['team', 'base_dir','checklist', 'task_list_map','if_continue_with_e_filing'],
+        'allowed_keys': ['team', 'base_dir', 'task_list_map', 'checklist', 'if_continue_with_e_filing'],
         'team': {
             'allowed_values': ['general', 'ppt']
         },
@@ -54,6 +54,9 @@ class ConfigManager:
         'checklist': {
             'type': str,
             'allowed_values': ['cover', 'fill']
+        },
+        'if_continue_with_e_filing': {
+            'type': bool
         }
     }
     

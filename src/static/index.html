@@ -15,9 +15,9 @@
     
     <div class="controls">
         <div style="display: flex; gap: 0.5rem;align-items: center;">
-            <button class="changedir-btn" onclick="selectBaseDir()">
+            <button class="changedir-btn" onclick="openConfigModal()">
                 <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200"><path d="M213.312 682.688v170.624h469.312V768H1024v256H682.688l-0.064-85.376H128v-256h85.312zM1024 384v256H682.688l-0.064-85.376h-341.12v-85.248h341.12V384H1024z m-85.312 85.312H768v85.376h170.688v-85.376zM1024 0v256H682.688l-0.064-85.376H213.312v170.688H128v-256h554.624V0H1024z m-85.312 85.312H768v85.376h170.688V85.312zM768 853.312v85.376h170.688v-85.376H768z m-768-512h341.312v341.376H0V341.312z m85.312 85.376v170.624H256V426.688H85.312z" fill="#1295db"></path></svg>
-                <div class="tooltip" id="baseDirTooltip">当前基础目录: 未设置</div>
+                <div class="tooltip" id="baseDirTooltip">配置系统设置</div>
             </button>
             <button class="btn btn-primary" onclick="selectFile()">选择项目清单</button>
             <button class="btn btn-success" id="runBtn" onclick="runProcess()" disabled>运行</button>
@@ -50,25 +50,129 @@
         </div>
     </div>
     
-    <!-- Base Directory Modal -->
-    <div class="modal-overlay" id="baseDirModal">
-        <div class="modal">
+    <!-- Configuration Modal -->
+    <div class="modal-overlay" id="configModal">
+        <div class="modal config-modal">
             <div class="modal-header">
-                <h3 class="modal-title">设置基础目录</h3>
-                <button class="modal-close" onclick="closeBaseDirModal()">&times;</button>
+                <h3 class="modal-title">系统配置</h3>
+                <button class="modal-close" onclick="closeConfigModal()">&times;</button>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <label class="form-label">当前基础目录：</label>
-                    <div class="input-group">
-                        <input type="text" class="form-input" id="currentBaseDir" readonly placeholder="未设置">
-                        <button class="btn btn-secondary" onclick="selectFolder()">选择文件夹</button>
+                <!-- 团队配置 -->
+                <div class="config-section">
+                    <h4 class="section-title">团队配置</h4>
+                    <div class="form-group">
+                        <label class="form-label">当前团队：</label>
+                        <select class="form-select" id="teamSelect">
+                            <option value="general">General（通用）</option>
+                            <option value="ppt">PPT（专用）</option>
+                        </select>
+                        <small class="form-help">选择您所属的团队，除PPT以外的团队将使用通用工作流</small>
                     </div>
                 </div>
+
+                <!-- 基础目录配置 -->
+                <div class="config-section">
+                    <h4 class="section-title">目录设置</h4>
+                    <div class="form-group">
+                        <label class="form-label">工程文件夹目录：</label>
+                        <div class="input-group">
+                            <input type="text" class="form-input" id="currentBaseDir" readonly placeholder="未设置">
+                            <button class="btn btn-secondary" onclick="selectFolder()">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2l5 0 2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                更改目录
+                            </button>
+                        </div>
+                        <small class="form-help">设置项目文件夹所在的根目录（年份的上一级目录），所有任务文件将从此目录开始查找</small>
+                    </div>
+                </div>
+
+                <!-- 检查清单配置 -->
+                <div class="config-section">
+                    <h4 class="section-title">清单设置</h4>
+                    <div class="form-group">
+                        <label class="form-label">清单生成模式：</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="checklist" value="cover" id="checklistCover">
+                                <span class="radio-custom"></span>
+                                <div class="radio-content">
+                                    <span class="radio-label">Cover（覆盖模式）</span>
+                                    <span class="radio-desc">使用覆盖模式生成检查清单</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="checklist" value="fill" id="checklistFill">
+                                <span class="radio-custom"></span>
+                                <div class="radio-content">
+                                    <span class="radio-label">Fill（填写模式）</span>
+                                    <span class="radio-desc">直接填写已有的检查清单（如无，则采用覆盖模式）</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 任务清单映射配置 -->
+                <div class="config-section">
+                    <h4 class="section-title">任务清单列表映射</h4>
+                    <div class="form-group">
+                        <label class="form-label">Excel列映射配置：</label>
+                        <small class="form-help">配置Excel文件中各列对应的数据字段（列号从1开始）</small>
+                        <div class="mapping-container">
+                            <div class="mapping-item">
+                                <label class="mapping-label">项目编号 (job_no)：</label>
+                                <input type="number" class="form-input mapping-input" id="mapJobNo" min="1" placeholder="1">
+                            </div>
+                            <div class="mapping-item">
+                                <label class="mapping-label">客服 (job_creator)：</label>
+                                <input type="number" class="form-input mapping-input" id="mapJobCreator" min="1" placeholder="2">
+                            </div>
+                            <div class="mapping-item">
+                                <label class="mapping-label">工程师 (engineers)：</label>
+                                <input type="number" class="form-input mapping-input" id="mapEngineers" min="1" placeholder="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 电子归档配置 -->
+                <div class="config-section">
+                    <h4 class="section-title">电子归档设置</h4>
+                    <div class="form-group">
+                        <label class="form-label">是否继续电子归档：</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="if_continue_with_e_filing" value="true" id="ifContinueWithEFilingTrue">
+                                <span class="radio-custom"></span>
+                                <div class="radio-content">
+                                    <span class="radio-label">是</span>
+                                    <span class="radio-desc">在所有任务处理完成后继续进行电子归档</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="if_continue_with_e_filing" value="false" id="ifContinueWithEFilingFalse">
+                                <span class="radio-custom"></span>
+                                <div class="radio-content">
+                                    <span class="radio-label">否</span>
+                                    <span class="radio-desc">在所有任务处理完成后不进行电子归档</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                
             </div>
             <div class="modal-footer">
-                <button class="btn btn-cancel" onclick="closeBaseDirModal()">取消</button>
-                <button class="btn btn-success" onclick="saveBaseDir()">保存</button>
+                <button class="btn btn-cancel" onclick="closeConfigModal()">取消</button>
+                <button class="btn btn-success" onclick="saveAllConfig()">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                        <polyline points="17,21 17,13 7,13 7,21"></polyline>
+                        <polyline points="7,3 7,8 15,8"></polyline>
+                    </svg>
+                    保存配置
+                </button>
             </div>
         </div>
     </div>

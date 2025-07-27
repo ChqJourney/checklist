@@ -132,7 +132,7 @@ function setRunning(running) {
     isRunning = running;
     const runBtn = document.getElementById('runBtn');
     runBtn.disabled = running;
-    runBtn.textContent = running ? '运行中...' : '运行检查';
+    runBtn.textContent = running ? '运行中...' : '运行';
     if (running) {
         runBtn.classList.add('loading');
     } else {
@@ -156,7 +156,7 @@ function updateResults(results) {
             <thead>
                 <tr>
                     <th>项目编号</th>
-                    <th>客户</th>
+                    <th>客服</th>
                     <th>工程师</th>
                     <th>状态</th>
                     <th>目录路径</th>
@@ -334,7 +334,7 @@ let currentBaseDir = '';
 
 async function initializeBaseDir() {
     try {
-        console.log('开始初始化基础目录...');
+        console.log('开始初始化配置...');
         
         // 检查 pywebview.api 是否可用
         if (typeof pywebview === 'undefined' || !pywebview.api) {
@@ -343,27 +343,32 @@ async function initializeBaseDir() {
             return;
         }
         
-        const result = await pywebview.api.get_base_dir();
+        const result = await pywebview.api.get_all_config();
         console.log('API调用结果:', result);
         
         if (result.success) {
-            currentBaseDir = result.base_dir || '';
-            console.log('成功获取基础目录:', currentBaseDir);
-            updateBaseDirTooltip(currentBaseDir);
+            currentConfig = result.config;
+            currentBaseDir = currentConfig.base_dir || '';
+            console.log('成功获取配置:', currentConfig);
+            updateBaseDirTooltip(currentConfig);
         } else {
-            console.log('获取基础目录失败:', result.message);
-            addLog(`获取基础目录失败: ${result.message}`);
+            console.log('获取配置失败:', result.message);
+            addLog(`获取配置失败: ${result.message}`);
         }
     } catch (error) {
-        console.error('获取基础目录异常:', error);
-        addLog(`获取基础目录失败: ${error}`);
+        console.error('获取配置异常:', error);
+        addLog(`获取配置失败: ${error}`);
     }
 }
 
-function updateBaseDirTooltip(baseDir) {
+function updateBaseDirTooltip(config) {
     const tooltip = document.getElementById('baseDirTooltip');
     if (tooltip) {
-        const displayText = baseDir ? `当前基础目录: ${baseDir}` : '当前基础目录: 未设置';
+        const team = config.team || 'general';
+        const baseDir = config.base_dir || '未设置';
+        const checklist = config.checklist || 'cover';
+        
+        const displayText = `团队: ${team === 'general' ? '通用' : 'PPT'} | 基础目录: ${baseDir} | 模式: ${checklist === 'cover' ? '封面' : '填写'}`;
         tooltip.textContent = displayText;
         console.log('更新tooltip:', displayText);
     } else {
@@ -371,26 +376,60 @@ function updateBaseDirTooltip(baseDir) {
     }
 }
 
-async function selectBaseDir() {
+// 配置相关函数
+let currentConfig = {
+    team: 'general',
+    base_dir: '',
+    checklist: 'cover',
+    task_list_map: {
+        job_no: 0,
+        job_creator: 1,
+        engineers: 2
+    }
+};
+
+async function openConfigModal() {
     try {
-        // 先获取当前base_dir
-        const result = await pywebview.api.get_base_dir();
+        // 获取当前配置
+        const result = await pywebview.api.get_all_config();
         if (result.success) {
-            currentBaseDir = result.base_dir || '';
-            document.getElementById('currentBaseDir').value = currentBaseDir;
+            currentConfig = result.config;
+            populateConfigModal(currentConfig);
+            document.getElementById('configModal').classList.add('show');
+        } else {
+            addLog(`获取配置失败: ${result.message || '未知错误'}`);
         }
-        
-        // 显示modal
-        const modal = document.getElementById('baseDirModal');
-        modal.classList.add('show');
     } catch (error) {
-        addLog(`获取基础目录失败: ${error}`);
+        addLog(`获取配置错误: ${error}`);
+        // 使用默认配置
+        populateConfigModal(currentConfig);
+        document.getElementById('configModal').classList.add('show');
     }
 }
 
-function closeBaseDirModal() {
-    const modal = document.getElementById('baseDirModal');
-    modal.classList.remove('show');
+function populateConfigModal(config) {
+    // 设置团队选择
+    document.getElementById('teamSelect').value = config.team || 'general';
+    
+    // 设置基础目录
+    document.getElementById('currentBaseDir').value = config.base_dir || '';
+    
+    // 设置检查清单模式
+    const checklistValue = config.checklist || 'cover';
+    const checklistRadio = document.querySelector(`input[name="checklist"][value="${checklistValue}"]`);
+    if (checklistRadio) {
+        checklistRadio.checked = true;
+    }
+    
+    // 设置任务列表映射
+    const taskMap = config.task_list_map || { job_no: 0, job_creator: 1, engineers: 2 };
+    document.getElementById('mapJobNo').value = taskMap.job_no+1 || 1;
+    document.getElementById('mapJobCreator').value = taskMap.job_creator+1 || 2;
+    document.getElementById('mapEngineers').value = taskMap.engineers+1 || 3;
+}
+
+function closeConfigModal() {
+    document.getElementById('configModal').classList.remove('show');
 }
 
 async function selectFolder() {
@@ -407,35 +446,93 @@ async function selectFolder() {
     }
 }
 
-async function saveBaseDir() {
-    const newBaseDir = document.getElementById('currentBaseDir').value;
+async function saveAllConfig() {
     try {
-        const result = await pywebview.api.set_base_dir(newBaseDir);
+        // 收集所有配置数据
+        const newConfig = {
+            team: document.getElementById('teamSelect').value,
+            base_dir: document.getElementById('currentBaseDir').value,
+            checklist: document.querySelector('input[name="checklist"]:checked')?.value || 'cover',
+            task_list_map: {
+                job_no: parseInt(document.getElementById('mapJobNo').value-1) || 0,
+                job_creator: parseInt(document.getElementById('mapJobCreator').value-1) || 1,
+                engineers: parseInt(document.getElementById('mapEngineers').value-1) || 2
+            }
+        };
+        
+        // 验证必填项
+        if (!newConfig.team) {
+            addLog('错误: 请选择团队');
+            return;
+        }
+        
+        if (!newConfig.base_dir) {
+            addLog('错误: 请设置基础目录');
+            return;
+        }
+        // 验证task_list_map的数值是否合理
+        if (isNaN(newConfig.task_list_map.job_no) || newConfig.task_list_map.job_no < 0) {
+            addLog('错误: 任务编号映射必须是非负整数');
+            return;
+        }
+
+        if (isNaN(newConfig.task_list_map.job_creator) || newConfig.task_list_map.job_creator < 0) {
+            addLog('错误: 客服映射必须是非负整数');
+            return;
+        }
+
+        if (isNaN(newConfig.task_list_map.engineers) || newConfig.task_list_map.engineers < 0) {
+            addLog('错误: 工程师映射必须是非负整数');
+            return;
+        }
+
+        // 保存配置
+        const result = await pywebview.api.save_all_config(newConfig);
         if (result.success) {
-            currentBaseDir = newBaseDir;
-            updateBaseDirTooltip(currentBaseDir);
-            closeBaseDirModal();
-            addLog(`基础目录已更新: ${newBaseDir}`);
+            currentConfig = newConfig;
+            updateBaseDirTooltip(currentConfig);
+            closeConfigModal();
+            addLog('配置保存成功');
+            
+            // 如果有已选择的文件，重新验证
+            const fileInfo = document.getElementById('fileInfo').textContent;
+            if (fileInfo && !fileInfo.includes('请选取')) {
+                deSelectedTaskFile();
+                addLog('配置已更新，请重新选择任务列表文件');
+            }
         } else {
-            addLog(`保存基础目录失败: ${result.message || '未知错误'}`);
+            addLog(`保存配置失败: ${result.message || '未知错误'}`);
         }
     } catch (error) {
-        addLog(`保存基础目录错误: ${error}`);
+        addLog(`保存配置错误: ${error}`);
     }
+}
+
+// 兼容旧的函数名（保持向后兼容）
+async function selectBaseDir() {
+    await openConfigModal();
+}
+
+async function closeBaseDirModal() {
+    closeConfigModal();
+}
+
+async function saveBaseDir() {
+    await saveAllConfig();
 }
 
 // 点击modal外部关闭
 document.addEventListener('click', function(event) {
-    const modal = document.getElementById('baseDirModal');
+    const modal = document.getElementById('configModal');
     if (event.target === modal) {
-        closeBaseDirModal();
+        closeConfigModal();
     }
 });
 
 // ESC键关闭modal
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
-        closeBaseDirModal();
+        closeConfigModal();
     }
 });
 
@@ -448,6 +545,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     addLog('界面加载完成，请选择文件开始处理');
     
-    // 初始化基础目录
+    // 初始化配置
     initializeBaseDir();
 });
