@@ -1,3 +1,4 @@
+import glob
 import webview
 import threading
 import json
@@ -31,12 +32,15 @@ class ProjectFileChecker:
             # 获取系统配置
             self.log_level = get_system_config('log_config.level')
             self.file_map = get_system_config('file_map')
-            self.subFolderConfig = get_system_config('subFolderConfig', {}).get(config_manager.get_team(), {})
-            
-            print(f"当前团队配置: {self.subFolderConfig}")
             # 获取用户配置
             self.team = config_manager.get_team()
             print(f"当前团队: {self.team}")
+            
+            # 获取子文件夹配置
+            team_category = self.team.lower() if self.team=='PPT' else 'general'
+            self.subFolderConfig = get_system_config('subFolderConfig', {}).get(team_category, {})
+
+            print(f"当前团队配置: {self.subFolderConfig}")
             
             self.base_dir = config_manager.get_base_dir()
             print(f"初始化时的基础目录: '{self.base_dir}'")
@@ -258,12 +262,13 @@ class ProjectFileChecker:
                 return {'success': False, 'message': '路径为空'}
             
             # 查找checklist文件
-            checklist_file = get_only_word_file_path(target_path)
-            
-            if checklist_file and os.path.exists(checklist_file):
-                os.startfile(checklist_file)
-                self.log(f"已打开文件: {checklist_file}")
-                return {'success': True, 'message': f'已打开文件: {os.path.basename(checklist_file)}'}
+            checklist_files = glob.glob(os.path.join(target_path, '*checklist*.doc*'))
+            checklist_files = [f for f in checklist_files if not os.path.basename(f).startswith(('~$', '.', '__'))]
+
+            if checklist_files and os.path.exists(checklist_files[0]):
+                os.startfile(checklist_files[0])
+                self.log(f"已打开文件: {checklist_files[0]}")
+                return {'success': True, 'message': f'已打开文件: {os.path.basename(checklist_files[0])}'}
             else:
                 self.log(f"在路径 {target_path} 中未找到checklist文件")
                 return {'success': False, 'message': '未找到checklist文件'}
@@ -342,7 +347,7 @@ class ProjectFileChecker:
             
             # 验证团队
             team = config_data.get('team')
-            if team not in ['general', 'ppt']:
+            if team not in ['LUM','HA','TM','EMC', 'PPT']:
                 return {'success': False, 'message': '无效的团队配置'}
             
             # 验证基础目录
@@ -510,7 +515,7 @@ class ProjectFileChecker:
             return {'success': False, 'message': str(e)}
     
     def open_efiling_tool(self):
-        """打开E-filing工具"""
+        """打开E-filing工具并自动填入信息"""
         try:
             efilling_tool_path = config_manager.get_user_config('efilling_tool_path', '')
             
@@ -523,39 +528,66 @@ class ProjectFileChecker:
             if not efilling_tool_path.lower().endswith('.exe'):
                 return {'success': False, 'message': 'E-filing工具路径必须指向.exe文件'}
             
-            # 启动exe文件
+            # 使用pywinauto启动并自动化E-filing工具
             try:
-                # 方案1：不使用shell=True（推荐）
-                process = subprocess.Popen(
-                    [efilling_tool_path],
-                    shell=False,  # 更安全
-                    cwd=os.path.dirname(efilling_tool_path),  # 设置工作目录
-                    creationflags=subprocess.CREATE_NEW_CONSOLE if os.name == 'nt' else 0
-                )
-            
-                # 等待短暂时间检查进程是否正常启动
-                import time
-                time.sleep(0.5)
-            
-                if process.poll() is None:
-                    # 进程仍在运行，说明启动成功
-                    self.log(f"已启动E-filing工具: {os.path.basename(efilling_tool_path)} (PID: {process.pid})")
-                    return {'success': True, 'message': 'E-filing工具启动成功'}
-                else:
-                    # 进程已退出，可能启动失败
-                    return_code = process.returncode
-                    return {'success': False, 'message': f'E-filing工具启动失败，退出码: {return_code}'}
+                from src.funcs.efiling_automation import create_efiling_automation
                 
-            except FileNotFoundError:
-                return {'success': False, 'message': 'E-filing工具可执行文件未找到'}
-            except PermissionError:
-                return {'success': False, 'message': '没有权限执行E-filing工具'}
-            except OSError as e:
-                return {'success': False, 'message': f'启动E-filing工具失败: {e}'}
+                self.log(f"正在启动E-filing工具: {os.path.basename(efilling_tool_path)}")
+                
+                # 创建自动化实例
+                automation = create_efiling_automation(logger_callback=self.log)
+                
+                # 使用pywinauto启动应用程序并连接
+                if automation.start_and_connect(efilling_tool_path):
+                    
+                    print("E-filing工具启动成功，正在自动填入信息...")
+                    fill_success = automation.fill_information(self.base_dir,self.team)
+                    # 断开连接
+                    automation.disconnect()
+                    
+                    if fill_success:
+                        return {'success': True, 'message': 'E-filing工具启动成功并已自动填入信息'}
+                    else:
+                        return {'success': True, 'message': 'E-filing工具启动成功，但自动填入信息时遇到问题'}
+                else:
+                    return {'success': False, 'message': 'E-filing工具启动失败或无法连接'}
+                        
+            except ImportError as import_error:
+                self.log(f"导入pywinauto模块失败: {import_error}")
+                return {'success': False, 'message': 'pywinauto未安装，无法启动E-filing工具'}
+            except Exception as auto_error:
+                self.log(f"启动E-filing工具失败: {auto_error}")
+                return {'success': False, 'message': f'启动E-filing工具失败: {auto_error}'}
             
         except Exception as e:
             self.log(f"启动E-filing工具失败: {e}")
             return {'success': False, 'message': str(e)}
+    
+    def _get_current_task_info(self):
+        """获取当前任务信息用于自动填入"""
+        try:
+            # 如果有当前处理的任务，返回其信息
+            if hasattr(self, 'current_task') and self.current_task:
+                return self.current_task
+            
+            # 如果有任务列表，返回第一个任务的信息
+            if self.tasks and len(self.tasks) > 0:
+                return self.tasks[0]
+            
+            # 返回默认信息
+            return {
+                'job_no': 'DEFAULT_JOB',
+                'job_creator': 'DEFAULT_CREATOR', 
+                'engineers': 'DEFAULT_ENGINEER'
+            }
+            
+        except Exception as e:
+            self.log(f"获取当前任务信息失败: {e}")
+            return {
+                'job_no': 'ERROR_JOB',
+                'job_creator': 'ERROR_CREATOR',
+                'engineers': 'ERROR_ENGINEER'
+            }
 
 # 创建API实例
 api = ProjectFileChecker()

@@ -41,7 +41,7 @@ class ConfigManager:
         'required_keys': ['team', 'base_dir','checklist', 'task_list_map'],
         'allowed_keys': ['team', 'base_dir', 'task_list_map', 'checklist', 'efilling_tool_path'],
         'team': {
-            'allowed_values': ['general', 'ppt']
+            'allowed_values': ['LUM','HA','TM','EMC', 'ppt']
         },
         'base_dir': {
             'type': str,
@@ -380,14 +380,14 @@ class ConfigManager:
     def _create_default_user_config(self) -> Dict[str, Any]:
         """创建默认用户配置"""
         return {
-            'team': 'general',
+            'team': 'LUM',  # 默认团队
             'base_dir': '',
             'task_list_map': {
                 'job_no': 0,
                 'job_creator': 1,
                 'engineers': 2
             },
-            'checklist': 'new'  # 默认值为 'new'
+            'checklist': 'cover'  # 默认值为 'cover'
         }
     
     def validate_config_integrity(self) -> Dict[str, Any]:
@@ -443,12 +443,6 @@ class ConfigManager:
         if not self._system_config or not self._user_config:
             return
         
-        # 验证用户选择的团队在系统配置中存在
-        user_team = self._user_config.get('team')
-        system_teams = list(self._system_config.get('subFolderConfig', {}).keys())
-        
-        if user_team not in system_teams:
-            result['warnings'].append(f"用户配置的团队 '{user_team}' 在系统配置中不存在。可用团队: {system_teams}")
         
         # 验证基础目录路径
         base_dir = self._user_config.get('base_dir', '')
@@ -613,9 +607,10 @@ class ConfigManager:
     def get_subfolder_config(self, team: str = None) -> Dict[str, Any]:
         """获取子文件夹配置"""
         if team is None:
-            team = self.get_user_config('team', 'general')
-        return self.get_system_config(f'subFolderConfig.{team}', [])
-    
+            team = self.get_user_config('team', 'LUM')  # 默认团队为 'LUM'
+        team_category = team.lower() if team == 'PPT' else 'general'
+        return self.get_system_config(f'subFolderConfig.{team_category}', [])
+
     def get_log_config(self) -> Dict[str, Any]:
         """获取日志配置"""
         return self.get_system_config('log_config', {})
@@ -635,7 +630,7 @@ class ConfigManager:
     
     def get_team(self) -> str:
         """获取团队配置"""
-        return self.get_user_config('team', 'general')
+        return self.get_user_config('team', 'LUM')
     
     def set_team(self, team: str):
         """设置团队配置"""

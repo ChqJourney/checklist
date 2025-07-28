@@ -414,11 +414,11 @@ async function initializeBaseDir(retryCount = 0) {
 function updateBaseDirTooltip(config) {
     const tooltip = document.getElementById('baseDirTooltip');
     if (tooltip) {
-        const team = config.team || 'general';
+        const team = config.team || 'HA';
         const baseDir = config.base_dir || '未设置';
         const checklist = config.checklist || 'cover';
 
-        const displayText = `<div>Team: ${team === 'general' ? 'General' : 'PPT'} </div><div>基础目录:  ${baseDir} </div><div>模式: ${checklist === 'cover' ? '覆盖' : '填写'}</div>`;
+        const displayText = `<div>Team: ${team} </div><div>基础目录:  ${baseDir} </div><div>模式: ${checklist === 'cover' ? '覆盖' : '填写'}</div>`;
         tooltip.innerHTML = displayText;
         console.log('更新tooltip:', displayText);
     } else {
@@ -428,7 +428,7 @@ function updateBaseDirTooltip(config) {
 
 // 配置相关函数
 let currentConfig = {
-    team: 'general',
+    team: '',
     base_dir: '',
     checklist: 'cover',
     task_list_map: {
@@ -460,7 +460,7 @@ async function openConfigModal() {
 
 function populateConfigModal(config) {
     // 设置团队选择
-    document.getElementById('teamSelect').value = config.team || 'general';
+    document.getElementById('teamSelect').value = config.team || 'HA';
     
     // 设置基础目录
     document.getElementById('currentBaseDir').value = config.base_dir || '';

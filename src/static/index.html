@@ -45,7 +45,7 @@
         <div class="results-panel">
             <div class="results-header">
                 <span>处理结果</span>
-                <button class="btn btn-primary" id="efillingBtn" onclick="openEfillingTool()" style="display: none;">
+                <button class="btn btn-primary" id="efillingBtn" onclick="openEfillingTool()">
                     <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                         <polyline points="14,2 14,8 20,8"></polyline>
@@ -76,10 +76,13 @@
                     <div class="form-group">
                         <label class="form-label">当前团队：</label>
                         <select class="form-select" id="teamSelect">
-                            <option value="general">General（通用）</option>
-                            <option value="ppt">PPT（专用）</option>
+                            <option value="HA">HA</option>
+                            <option value="TM">TM</option>
+                            <option value="EMC">EMC</option>
+                            <option value="LUM">LUM</option>
+                            <option value="PPT">PPT</option>
                         </select>
-                        <small class="form-help">选择您所属的团队，除PPT以外的团队将使用通用工作流</small>
+                        <small class="form-help">选择您所属的团队</small>
                     </div>
                 </div>
 

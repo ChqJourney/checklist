@@ -103,7 +103,8 @@ def get_only_word_file_path(folder_path):
             #删除找到的第一个checklist文件
             os.remove(checklist_files[0])
             log_info(f"已删除现有的检查清单文件: {checklist_files[0]}", "WORD")
-        template_name=f"{user_config['team']}_template.docx"
+        team_category = user_config['team'].lower() if user_config['team'] == 'PPT' else 'general'
+        template_name=f"{team_category}_template.docx"
         template_path = Path.cwd() / 'templates' / template_name
         if template_path.exists():
             # Copy the default checklist file to the target folder
