@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Project File Checker V1.0</h1>
+        <h1>Project File Checker V1.1</h1>
         <p>项目文件检查工具</p>
     </div>
     
@@ -43,7 +43,19 @@
         </div>
         
         <div class="results-panel">
-            <div class="results-header">处理结果</div>
+            <div class="results-header">
+                <span>处理结果</span>
+                <button class="btn btn-primary" id="efillingBtn" onclick="openEfillingTool()" style="display: none;">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14,2 14,8 20,8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10,9 9,9 8,9"></polyline>
+                    </svg>
+                    打开E-filing工具
+                </button>
+            </div>
             <div class="results-content" id="resultsContent">
                 <div class="empty-state">运行完成后将在此处显示结果</div>
             </div>
@@ -137,30 +149,26 @@
                         </div>
                     </div>
                 </div>
-                <!-- 电子归档配置 -->
+
+                <!-- E-filing工具配置 -->
                 <div class="config-section">
-                    <h4 class="section-title">电子归档设置</h4>
+                    <h4 class="section-title">E-filing工具设置</h4>
                     <div class="form-group">
-                        <label class="form-label">是否继续电子归档：</label>
-                        <div class="radio-group">
-                            <label class="radio-option">
-                                <input type="radio" name="if_continue_with_e_filing" value="true" id="ifContinueWithEFilingTrue">
-                                <span class="radio-custom"></span>
-                                <div class="radio-content">
-                                    <span class="radio-label">是</span>
-                                    <span class="radio-desc">在所有任务处理完成后继续进行电子归档</span>
-                                </div>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="if_continue_with_e_filing" value="false" id="ifContinueWithEFilingFalse">
-                                <span class="radio-custom"></span>
-                                <div class="radio-content">
-                                    <span class="radio-label">否</span>
-                                    <span class="radio-desc">在所有任务处理完成后不进行电子归档</span>
-                                </div>
-                            </label>
+                        <label class="form-label">E-filing工具路径：</label>
+                        <div class="input-group">
+                            <input type="text" class="form-input" id="efillingToolPath" readonly placeholder="未设置">
+                            <button class="btn btn-secondary" onclick="selectExeFile()">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14,2 14,8 20,8"></polyline>
+                                </svg>
+                                选择工具
+                            </button>
                         </div>
+                        <small class="form-help">选择E-filing工具的可执行文件(.exe)，用于在处理完成后打开电子归档工具</small>
                     </div>
+                </div>
+                
                 
             </div>
             <div class="modal-footer">

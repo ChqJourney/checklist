@@ -17,12 +17,14 @@ async function selectFile() {
 }
 
 async function runProcess() {
-    if (isRunning) return;
-    
     try {
         const result = await pywebview.api.process_tasks();
         if (!result.success) {
-            addLog(`启动失败: ${result.message}`);
+            addLog(`操作失败: ${result.message}`);
+        } else {
+            if (result.message === '已请求取消') {
+                addLog('正在取消任务处理...');
+            }
         }
     } catch (error) {
         addLog(`运行错误: ${error}`);
@@ -131,26 +133,46 @@ async function clearLogs() {
 function setRunning(running) {
     isRunning = running;
     const runBtn = document.getElementById('runBtn');
-    runBtn.disabled = running;
-    runBtn.textContent = running ? '运行中...' : '运行';
+    
     if (running) {
+        runBtn.disabled = false; // 运行时启用按钮以便取消
+        runBtn.textContent = '取消';
         runBtn.classList.add('loading');
+        runBtn.classList.add('cancel-mode');
     } else {
+        runBtn.disabled = true; // 停止时禁用按钮，直到选择文件
+        runBtn.textContent = '运行';
         runBtn.classList.remove('loading');
+        runBtn.classList.remove('cancel-mode');
     }
 }
 function deSelectedTaskFile(){
     document.getElementById('fileInfo').textContent = `请选取任务清单文件`;
-    document.getElementById('runBtn').disabled = true;
+    const runBtn = document.getElementById('runBtn');
+    runBtn.disabled = true;
+    runBtn.textContent = '运行';
+    runBtn.classList.remove('loading');
+    runBtn.classList.remove('cancel-mode');
 }
 
 function updateResults(results) {
     const resultsContent = document.getElementById('resultsContent');
+    const efillingBtn = document.getElementById('efillingBtn');
     
     if (!results || results.length === 0) {
         resultsContent.innerHTML = '<div class="empty-state">暂无结果数据</div>';
+        // 隐藏E-filing按钮
+        if (efillingBtn) {
+            efillingBtn.style.display = 'none';
+        }
         return;
     }
+    
+    // 显示E-filing按钮
+    if (efillingBtn) {
+        efillingBtn.style.display = 'inline-flex';
+    }
+    
       let tableHTML = `
         <table class="results-table">
             <thead>
@@ -174,7 +196,7 @@ function updateResults(results) {
                 <td>${result.job_creator}</td>
                 <td>${result.engineers}</td>
                 <td class="${statusClass}">${result.status}</td>
-                <td title="${result.target_path || ''}">${result.target_path}</td>
+                <td title="${result.target_path || ''}">${result.target_path ?? ""}</td>
                 <td>
                     <div class="action-dropdown" data-target-path="${result.target_path || ''}">
                         <button class="action-btn" onclick="toggleDropdown(this)">
@@ -332,15 +354,24 @@ function toggleLogPanel() {
 // Base Directory 相关功能
 let currentBaseDir = '';
 
-async function initializeBaseDir() {
+async function initializeBaseDir(retryCount = 0) {
     try {
-        console.log('开始初始化配置...');
+        console.log(`开始初始化配置... (尝试 ${retryCount + 1}/6)`);
         
         // 检查 pywebview.api 是否可用
         if (typeof pywebview === 'undefined' || !pywebview.api) {
-            console.log('pywebview.api 不可用，稍后重试...');
-            setTimeout(initializeBaseDir, 1000); // 1秒后重试
-            return;
+            console.log('pywebview.api 不可用');
+            
+            // 检查是否还能重试 (最多重试5次)
+            if (retryCount < 5) {
+                console.log('将在 1 秒后重试...');
+                setTimeout(() => initializeBaseDir(retryCount + 1), 1000);
+                return;
+            } else {
+                console.log('重试次数已达上限，使用默认配置');
+                addLog('配置初始化失败，已加载默认配置');
+                return;
+            }
         }
         
         const result = await pywebview.api.get_all_config();
@@ -351,13 +382,32 @@ async function initializeBaseDir() {
             currentBaseDir = currentConfig.base_dir || '';
             console.log('成功获取配置:', currentConfig);
             updateBaseDirTooltip(currentConfig);
+            addLog('配置初始化成功');
         } else {
             console.log('获取配置失败:', result.message);
             addLog(`获取配置失败: ${result.message}`);
+            
+            // 不管成功失败，都重试5次
+            if (retryCount < 5) {
+                console.log('将在 1 秒后重试...');
+                setTimeout(() => initializeBaseDir(retryCount + 1), 1000);
+            } else {
+                console.log('重试次数已达上限');
+                addLog('配置初始化重试次数已达上限');
+            }
         }
     } catch (error) {
         console.error('获取配置异常:', error);
         addLog(`获取配置失败: ${error}`);
+        
+        // 不管成功失败，都重试5次
+        if (retryCount < 5) {
+            console.log('将在 1 秒后重试...');
+            setTimeout(() => initializeBaseDir(retryCount + 1), 1000);
+        } else {
+            console.log('重试次数已达上限');
+            addLog('配置初始化重试次数已达上限');
+        }
     }
 }
 
@@ -367,9 +417,9 @@ function updateBaseDirTooltip(config) {
         const team = config.team || 'general';
         const baseDir = config.base_dir || '未设置';
         const checklist = config.checklist || 'cover';
-        
-        const displayText = `团队: ${team === 'general' ? '通用' : 'PPT'} | 基础目录: ${baseDir} | 模式: ${checklist === 'cover' ? '封面' : '填写'}`;
-        tooltip.textContent = displayText;
+
+        const displayText = `<div>Team: ${team === 'general' ? 'General' : 'PPT'} </div><div>基础目录:  ${baseDir} </div><div>模式: ${checklist === 'cover' ? '覆盖' : '填写'}</div>`;
+        tooltip.innerHTML = displayText;
         console.log('更新tooltip:', displayText);
     } else {
         console.error('未找到baseDirTooltip元素');
@@ -385,7 +435,8 @@ let currentConfig = {
         job_no: 0,
         job_creator: 1,
         engineers: 2
-    }
+    },
+    efilling_tool_path: ''
 };
 
 async function openConfigModal() {
@@ -423,9 +474,12 @@ function populateConfigModal(config) {
     
     // 设置任务列表映射
     const taskMap = config.task_list_map || { job_no: 0, job_creator: 1, engineers: 2 };
-    document.getElementById('mapJobNo').value = taskMap.job_no+1 || 1;
-    document.getElementById('mapJobCreator').value = taskMap.job_creator+1 || 2;
-    document.getElementById('mapEngineers').value = taskMap.engineers+1 || 3;
+    document.getElementById('mapJobNo').value = (taskMap.job_no || 0) + 1;
+    document.getElementById('mapJobCreator').value = (taskMap.job_creator || 1) + 1;
+    document.getElementById('mapEngineers').value = (taskMap.engineers || 2) + 1;
+    
+    // 设置E-filing工具路径
+    document.getElementById('efillingToolPath').value = config.efilling_tool_path || '';
 }
 
 function closeConfigModal() {
@@ -454,10 +508,11 @@ async function saveAllConfig() {
             base_dir: document.getElementById('currentBaseDir').value,
             checklist: document.querySelector('input[name="checklist"]:checked')?.value || 'cover',
             task_list_map: {
-                job_no: parseInt(document.getElementById('mapJobNo').value-1) || 0,
-                job_creator: parseInt(document.getElementById('mapJobCreator').value-1) || 1,
-                engineers: parseInt(document.getElementById('mapEngineers').value-1) || 2
-            }
+                job_no: (parseInt(document.getElementById('mapJobNo').value) || 1) - 1,
+                job_creator: (parseInt(document.getElementById('mapJobCreator').value) || 2) - 1,
+                engineers: (parseInt(document.getElementById('mapEngineers').value) || 3) - 1
+            },
+            efilling_tool_path: document.getElementById('efillingToolPath').value || ''
         };
         
         // 验证必填项
@@ -548,3 +603,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // 初始化配置
     initializeBaseDir();
 });
+
+// 选择exe文件
+async function selectExeFile() {
+    try {
+        const result = await pywebview.api.select_exe_file();
+        if (result.success) {
+            document.getElementById('efillingToolPath').value = result.path;
+            addLog(`已选择E-filing工具: ${result.path}`);
+        } else {
+            addLog(`E-filing工具选择失败: ${result.message || '未知错误'}`);
+        }
+    } catch (error) {
+        addLog(`E-filing工具选择错误: ${error}`);
+    }
+}
+
+// 打开E-filing工具
+async function openEfillingTool() {
+    try {
+        const result = await pywebview.api.open_efiling_tool();
+        if (result.success) {
+            addLog('E-filing工具启动成功');
+        } else {
+            addLog(`启动E-filing工具失败: ${result.message || '未知错误'}`);
+        }
+    } catch (error) {
+        addLog(`启动E-filing工具错误: ${error}`);
+    }
+}

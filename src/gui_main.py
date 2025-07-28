@@ -4,6 +4,7 @@ import json
 import os
 import sys
 import pandas as pd
+import subprocess
 from datetime import datetime
 from src.funcs.file_utils import folder_precheck
 from src.funcs.path_resolver import get_working_folder_path
@@ -19,6 +20,8 @@ class ProjectFileChecker:
         self.tasks = []
         self.is_running = False
         self.log_callback = "None"
+        self.cancel_requested = False
+        self.current_thread = None
         
         try:
             print("=== 初始化ProjectFileChecker ===")
@@ -41,8 +44,6 @@ class ProjectFileChecker:
             self.task_list_map = config_manager.get_user_config('task_list_map', {})
             print(f"任务列表映射: {self.task_list_map}")
             
-            self.if_continue_with_e_filing = config_manager.get_user_config('if_continue_with_e_filing', True)
-            print(f"是否继续电子归档: {self.if_continue_with_e_filing}")
             # 设置全局日志的前端回调
             global_logger.set_frontend_callback(self._frontend_log_callback)
             print("=== ProjectFileChecker 初始化完成 ===")
@@ -63,10 +64,9 @@ class ProjectFileChecker:
             if webview.windows and len(webview.windows) > 0:
                 escaped_message = global_logger._escape_for_js(formatted_message)
                 webview.windows[0].evaluate_js(f'addLogWithLevel("{escaped_message}", "{level}")')
-        except Exception as e:
-            print(f"前端日志显示失败: {e}")
-    
-    
+        finally:
+            pass
+
     def log(self, message):
         """输出日志信息 - 兼容旧接口，现在使用全局日志系统"""
         # 为了向后兼容，保留原有接口
@@ -126,12 +126,15 @@ class ProjectFileChecker:
             return {'success': False, 'message': '请先选择任务列表文件'}
         
         if self.is_running:
-            self.log("程序正在运行中...")
-            return {'success': False, 'message': '程序正在运行中'}
+            # 如果正在运行，则请求取消
+            self.log("请求取消任务处理...")
+            self.cancel_requested = True
+            return {'success': True, 'message': '已请求取消'}
         
         def run_process():
             try:
                 self.is_running = True
+                self.cancel_requested = False
 
                 data_manager.clear_results()  # 清空之前的结果
                 data_manager.set_processing_status(True)
@@ -149,8 +152,14 @@ class ProjectFileChecker:
                     self.log("没有找到任务数据")
                     return
                 self.log(f"共计 {len(self.tasks)} 个任务")
+                
                 # 处理每个任务
                 for i, task in enumerate(self.tasks):
+                    # 检查是否请求取消
+                    if self.cancel_requested:
+                        self.log("用户请求取消，停止处理任务")
+                        break
+                    
                     self.log(f"处理任务 {i+1}/{len(self.tasks)}: {task['job_no']}")
                     
                     # 获取工作目录
@@ -178,10 +187,20 @@ class ProjectFileChecker:
                     # 检测文件夹
                     self.log("开始检查子文件夹...")
                     
+                    # 再次检查是否请求取消
+                    if self.cancel_requested:
+                        self.log("用户请求取消，停止处理任务")
+                        break
                     
                     # 结束所有Word进程
                     self.log("确保文件夹检查不受干扰,结束所有Word进程...")
                     kill_all_word_processes()
+                    
+                    # 再次检查是否请求取消
+                    if self.cancel_requested:
+                        self.log("用户请求取消，停止处理任务")
+                        break
+                    
                     # 设置检查列表
                     self.log(f"{task['job_no']}开始写入检查列表...")
                     try:
@@ -201,11 +220,11 @@ class ProjectFileChecker:
                     # 更新表格
                     webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
                 
-                self.log(f"所有任务处理完成，共处理 {len(self.tasks)} 个任务")
-                if self.if_continue_with_e_filing:
-                    self.log("开始电子归档...")
-                    # 这里可以添加电子归档的逻辑
-                    # todo: 实现电子归档逻辑
+                if self.cancel_requested:
+                    self.log(f"任务处理已取消，已处理 {len(data_manager.get_results())} 个任务")
+                else:
+                    self.log(f"所有任务处理完成，共处理 {len(self.tasks)} 个任务")
+              
                 
                 # 保存结果到文件
                 #data_manager.save_to_file()
@@ -214,6 +233,7 @@ class ProjectFileChecker:
                 self.log(f"处理过程中发生错误: {e}")
             finally:
                 self.is_running = False
+                self.cancel_requested = False
                 self.task_file_path = ""
                 webview.windows[0].evaluate_js('deSelectedTaskFile()')
                 data_manager.set_processing_status(False)
@@ -222,6 +242,7 @@ class ProjectFileChecker:
         # 在新线程中运行处理过程
         thread = threading.Thread(target=run_process)
         thread.daemon = True
+        self.current_thread = thread
         thread.start()
         
         return {'success': True, 'message': '开始处理任务'}
@@ -301,7 +322,7 @@ class ProjectFileChecker:
                     'job_creator': 1,
                     'engineers': 2
                 }),
-                'if_continue_with_e_filing': config_manager.get_user_config('if_continue_with_e_filing', True)
+                'efilling_tool_path': config_manager.get_user_config('efilling_tool_path', '')
             }
             
             return {
@@ -351,21 +372,34 @@ class ProjectFileChecker:
                     return {'success': False, 'message': f'缺少必需的映射字段: {field}'}
                 if not isinstance(task_list_map[field], int) or task_list_map[field] < 0:
                     return {'success': False, 'message': f'映射字段 {field} 必须是非负整数'}
-            if_continue_with_e_filing = config_data.get('if_continue_with_e_filing', True)
+            
+            # 验证E-filing工具路径（可选）
+            efilling_tool_path = config_data.get('efilling_tool_path', '')
+            if efilling_tool_path:
+                if not os.path.isabs(efilling_tool_path):
+                    return {'success': False, 'message': 'E-filing工具路径必须是绝对路径'}
+                if not efilling_tool_path.lower().endswith('.exe'):
+                    return {'success': False, 'message': 'E-filing工具路径必须指向.exe文件'}
+                if not os.path.exists(efilling_tool_path):
+                    return {'success': False, 'message': 'E-filing工具文件不存在'}
+            
             # 保存配置
             config_manager.set_team(team)
             config_manager.set_base_dir(base_dir)
             config_manager.set_user_config('checklist', checklist)
             config_manager.set_user_config('task_list_map', task_list_map)
-            config_manager.set_user_config('if_continue_with_e_filing', if_continue_with_e_filing)
+            config_manager.set_user_config('efilling_tool_path', efilling_tool_path)
             
+            # 保存配置到文件
+            config_manager.save_user_config()
+           
             # 更新实例变量
             self.team = team
             self.base_dir = base_dir
             self.task_list_map = task_list_map
-            self.if_continue_with_e_filing = if_continue_with_e_filing
-
-            self.log(f"配置保存成功: 团队={team}, 基础目录={base_dir}, 检查清单={checklist}, 是否继续电子归档={if_continue_with_e_filing}")
+            self.subFolderConfig = config_manager.get_subfolder_config(team)
+            
+            self.log(f"配置保存成功: 团队={team}, 基础目录={base_dir}, 检查清单={checklist}, E-filing工具路径={efilling_tool_path}")
 
             return {
                 'success': True,
@@ -446,6 +480,81 @@ class ProjectFileChecker:
                 return {'success': False, 'message': '未选择文件夹'}
         except Exception as e:
             self.log(f"文件夹选择失败: {e}")
+            return {'success': False, 'message': str(e)}
+    
+    def select_exe_file(self):
+        """选择exe文件"""
+        try:
+            file_types = ('Executable Files (*.exe)', 'All files (*.*)')
+            result = webview.windows[0].create_file_dialog(
+                webview.OPEN_DIALOG,
+                directory=os.getcwd(),
+                allow_multiple=False,
+                file_types=file_types
+            )
+            
+            if result and len(result) > 0:
+                exe_path = result[0]
+                if not exe_path.lower().endswith('.exe'):
+                    return {'success': False, 'message': '请选择.exe文件'}
+                
+                self.log(f"已选择E-filing工具: {os.path.basename(exe_path)}")
+                return {
+                    'success': True,
+                    'path': exe_path
+                }
+            else:
+                return {'success': False, 'message': '未选择文件'}
+        except Exception as e:
+            self.log(f"文件选择失败: {e}")
+            return {'success': False, 'message': str(e)}
+    
+    def open_efiling_tool(self):
+        """打开E-filing工具"""
+        try:
+            efilling_tool_path = config_manager.get_user_config('efilling_tool_path', '')
+            
+            if not efilling_tool_path:
+                return {'success': False, 'message': '未配置E-filing工具路径'}
+            
+            if not os.path.exists(efilling_tool_path):
+                return {'success': False, 'message': 'E-filing工具文件不存在'}
+            
+            if not efilling_tool_path.lower().endswith('.exe'):
+                return {'success': False, 'message': 'E-filing工具路径必须指向.exe文件'}
+            
+            # 启动exe文件
+            try:
+                # 方案1：不使用shell=True（推荐）
+                process = subprocess.Popen(
+                    [efilling_tool_path],
+                    shell=False,  # 更安全
+                    cwd=os.path.dirname(efilling_tool_path),  # 设置工作目录
+                    creationflags=subprocess.CREATE_NEW_CONSOLE if os.name == 'nt' else 0
+                )
+            
+                # 等待短暂时间检查进程是否正常启动
+                import time
+                time.sleep(0.5)
+            
+                if process.poll() is None:
+                    # 进程仍在运行，说明启动成功
+                    self.log(f"已启动E-filing工具: {os.path.basename(efilling_tool_path)} (PID: {process.pid})")
+                    return {'success': True, 'message': 'E-filing工具启动成功'}
+                else:
+                    # 进程已退出，可能启动失败
+                    return_code = process.returncode
+                    return {'success': False, 'message': f'E-filing工具启动失败，退出码: {return_code}'}
+                
+            except FileNotFoundError:
+                return {'success': False, 'message': 'E-filing工具可执行文件未找到'}
+            except PermissionError:
+                return {'success': False, 'message': '没有权限执行E-filing工具'}
+            except OSError as e:
+                return {'success': False, 'message': f'启动E-filing工具失败: {e}'}
+            
+        except Exception as e:
+            self.log(f"启动E-filing工具失败: {e}")
             return {'success': False, 'message': str(e)}
 
 # 创建API实例

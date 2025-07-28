@@ -38,8 +38,8 @@ class ConfigManager:
     
     # 用户配置规范定义
     USER_CONFIG_SCHEMA = {
-        'required_keys': ['team', 'base_dir','checklist', 'task_list_map','if_continue_with_e_filing'],
-        'allowed_keys': ['team', 'base_dir', 'task_list_map', 'checklist', 'if_continue_with_e_filing'],
+        'required_keys': ['team', 'base_dir','checklist', 'task_list_map'],
+        'allowed_keys': ['team', 'base_dir', 'task_list_map', 'checklist', 'efilling_tool_path'],
         'team': {
             'allowed_values': ['general', 'ppt']
         },
@@ -55,8 +55,9 @@ class ConfigManager:
             'type': str,
             'allowed_values': ['cover', 'fill']
         },
-        'if_continue_with_e_filing': {
-            'type': bool
+        'efilling_tool_path': {
+            'type': str,
+            'must_exist': False  # 工具路径可以不存在
         }
     }
     

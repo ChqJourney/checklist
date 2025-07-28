@@ -1507,3 +1507,127 @@
 [2025-07-27 14:46:16] [INFO] [GUI] 任务 250600234HZH 的工作目录未找到
 [2025-07-27 14:46:16] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
 [2025-07-27 14:46:16] [INFO] [GUI] 开始电子归档...
+[2025-07-28 20:59:41] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 20:59:41] [INFO] [GUI] 开始处理任务...
+[2025-07-28 20:59:42] [INFO] [GUI] 读取Excel文件失败: single positional indexer is out-of-bounds
+[2025-07-28 20:59:42] [INFO] [GUI] 没有找到任务数据
+[2025-07-28 20:59:55] [INFO] [GUI] 保存配置失败: name 'if_continue_with_e_filing' is not defined
+[2025-07-28 21:00:00] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 21:00:01] [INFO] [GUI] 开始处理任务...
+[2025-07-28 21:00:01] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-28 21:00:01] [INFO] [GUI] 共计 1 个任务
+[2025-07-28 21:00:01] [INFO] [GUI] 处理任务 1/1: 250600234HZH
+[2025-07-28 21:00:01] [INFO] [GUI] 任务 250600234HZH 的工作目录未找到
+[2025-07-28 21:00:01] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-28 21:15:01] [INFO] [GUI] 配置保存成功: 团队=ppt, 基础目录=C:\Users\patri\source\demos\py_checklist\test_loads\shortcuts, 检查清单=cover, E-filing工具路径=
+[2025-07-28 21:15:18] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 21:15:34] [INFO] [GUI] 开始处理任务...
+[2025-07-28 21:15:34] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-28 21:15:34] [INFO] [GUI] 共计 1 个任务
+[2025-07-28 21:15:34] [INFO] [GUI] 处理任务 1/1: 250600234HZH
+[2025-07-28 21:15:35] [INFO] [GUI] 任务 250600234HZH 的工作目录未找到
+[2025-07-28 21:15:35] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-28 21:16:28] [INFO] [GUI] 已选择E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-28 21:16:30] [INFO] [GUI] 配置保存成功: 团队=ppt, 基础目录=C:\Users\patri\source\demos\py_checklist\test_loads\shortcuts, 检查清单=cover, E-filing工具路径=C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-28 21:16:43] [INFO] [GUI] 已启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-28 21:17:42] [INFO] [GUI] 已选择E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-28 21:17:43] [INFO] [GUI] 配置保存成功: 团队=ppt, 基础目录=C:\Users\patri\source\demos\py_checklist\test_loads\shortcuts, 检查清单=cover, E-filing工具路径=C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-28 21:18:01] [INFO] [GUI] 配置保存成功: 团队=ppt, 基础目录=C:\Users\patri\source\demos\py_checklist\test_loads\shortcuts, 检查清单=fill, E-filing工具路径=C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-28 21:22:27] [INFO] [GUI] 配置保存成功: 团队=general, 基础目录=C:\Users\patri\source\demos\py_checklist\test_loads\shortcuts, 检查清单=cover, E-filing工具路径=C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-28 21:24:22] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 21:24:23] [INFO] [GUI] 开始处理任务...
+[2025-07-28 21:24:23] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-28 21:24:23] [INFO] [GUI] 共计 1 个任务
+[2025-07-28 21:24:23] [INFO] [GUI] 处理任务 1/1: 250600234HZH
+[2025-07-28 21:24:23] [INFO] [GUI] 任务 250600234HZH 的工作目录未找到
+[2025-07-28 21:24:23] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-28 21:24:25] [INFO] [GUI] 已启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-28 22:10:22] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 22:10:26] [INFO] [GUI] 开始处理任务...
+[2025-07-28 22:10:26] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-28 22:10:26] [INFO] [GUI] 共计 1 个任务
+[2025-07-28 22:10:26] [INFO] [GUI] 处理任务 1/1: 250600234HZH
+[2025-07-28 22:10:26] [INFO] [GUI] 任务 250600234HZH 的工作目录未找到
+[2025-07-28 22:10:26] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-28 22:28:33] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 22:28:37] [INFO] [GUI] 开始处理任务...
+[2025-07-28 22:28:37] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-28 22:28:37] [INFO] [GUI] 共计 1 个任务
+[2025-07-28 22:28:37] [INFO] [GUI] 处理任务 1/1: 250600234HZH
+[2025-07-28 22:28:37] [INFO] [GUI] 任务 250600234HZH 的工作目录未找到
+[2025-07-28 22:28:37] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-28 22:29:59] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 22:30:00] [INFO] [GUI] 开始处理任务...
+[2025-07-28 22:30:00] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-28 22:30:00] [INFO] [GUI] 共计 1 个任务
+[2025-07-28 22:30:00] [INFO] [GUI] 处理任务 1/1: 250600234HZH
+[2025-07-28 22:30:00] [INFO] [GUI] 任务 250600234HZH 的工作目录未找到
+[2025-07-28 22:30:00] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-28 22:41:46] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 22:41:49] [INFO] [GUI] 开始处理任务...
+[2025-07-28 22:41:50] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-28 22:41:50] [INFO] [GUI] 共计 1 个任务
+[2025-07-28 22:41:50] [INFO] [GUI] 处理任务 1/1: 250600234HZH
+[2025-07-28 22:41:50] [INFO] [GUI] 任务 250600234HZH 的工作目录未找到
+[2025-07-28 22:41:50] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-28 22:42:36] [INFO] [GUI] 已选择文件夹: ('C:\\Users\\patri\\source\\demos\\py_checklist\\test_loads\\lum',)
+[2025-07-28 22:42:38] [INFO] [GUI] 配置保存成功: 团队=general, 基础目录=C:\Users\patri\source\demos\py_checklist\test_loads\lum, 检查清单=cover, E-filing工具路径=C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-28 22:43:58] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 22:44:02] [INFO] [GUI] 开始处理任务...
+[2025-07-28 22:44:02] [INFO] [GUI] 成功读取 2 个任务
+[2025-07-28 22:44:02] [INFO] [GUI] 共计 2 个任务
+[2025-07-28 22:44:02] [INFO] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-28 22:44:02] [INFO] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-28 22:44:02] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-28 22:44:02] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-28 22:44:04] [INFO] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-28 22:44:06] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-28 22:44:06] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-28 22:44:07] [INFO] [GUI] 请求取消任务处理...
+[2025-07-28 22:44:15] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-28 22:44:16] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-28 22:44:23] [INFO] [GUI] 250100032HZH检查列表写入完成
+[2025-07-28 22:44:23] [INFO] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-28 22:44:23] [INFO] [GUI] 用户请求取消，停止处理任务
+[2025-07-28 22:44:23] [INFO] [GUI] 任务处理已取消，已处理 1 个任务
+[2025-07-28 22:44:49] [INFO] [GUI] 已打开目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-28 22:45:12] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 22:45:14] [INFO] [GUI] 开始处理任务...
+[2025-07-28 22:45:14] [INFO] [GUI] 成功读取 2 个任务
+[2025-07-28 22:45:14] [INFO] [GUI] 共计 2 个任务
+[2025-07-28 22:45:14] [INFO] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-28 22:45:14] [INFO] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-28 22:45:15] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-28 22:45:15] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-28 22:45:15] [INFO] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-28 22:45:15] [INFO] [GUI] 请求取消任务处理...
+[2025-07-28 22:45:16] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-28 22:45:16] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-28 22:45:23] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-28 22:45:24] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-28 22:45:29] [INFO] [GUI] 请求取消任务处理...
+[2025-07-28 22:45:31] [INFO] [GUI] 250100032HZH检查列表写入完成
+[2025-07-28 22:45:31] [INFO] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-28 22:45:31] [INFO] [GUI] 用户请求取消，停止处理任务
+[2025-07-28 22:45:31] [INFO] [GUI] 任务处理已取消，已处理 1 个任务
+[2025-07-28 22:45:38] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-28 22:45:39] [INFO] [GUI] 开始处理任务...
+[2025-07-28 22:45:39] [INFO] [GUI] 成功读取 2 个任务
+[2025-07-28 22:45:39] [INFO] [GUI] 共计 2 个任务
+[2025-07-28 22:45:39] [INFO] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-28 22:45:39] [INFO] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-28 22:45:39] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-28 22:45:39] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-28 22:45:39] [INFO] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-28 22:45:40] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-28 22:45:40] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-28 22:45:48] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-28 22:45:48] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-28 22:45:55] [INFO] [GUI] 250100032HZH检查列表写入完成
+[2025-07-28 22:45:55] [INFO] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-28 22:45:55] [INFO] [GUI] 处理任务 2/2: 250400031HZH
+[2025-07-28 22:45:55] [INFO] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-28 22:45:55] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-28 22:45:55] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-28 22:45:55] [INFO] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-28 22:45:55] [INFO] [GUI] 所有任务处理完成，共处理 2 个任务
