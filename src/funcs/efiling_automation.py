@@ -290,7 +290,7 @@ class EFilingAutomation:
             self.log(f"激活窗口时发生错误: {e}", "ERROR")
             return False
 
-    def fill_information(self, base_dir: str, team: str) -> bool:
+    def fill_information(self, base_dir: str, team: str,filing_dir:str) -> bool:
         """
         自动填入信息到E-filing工具
         
@@ -318,7 +318,7 @@ class EFilingAutomation:
             # 填入TextBox信息
             base_dir_success = self._fill_text_boxes(base_dir,1)
 
-            efiling_dir_success = self._fill_text_boxes("E-filing Directory",0)
+            efiling_dir_success = self._fill_text_boxes(filing_dir,0)
 
             success = team_success and shortcut_success and base_dir_success and efiling_dir_success
 

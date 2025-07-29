@@ -299,3 +299,1000 @@
 [2025-07-29 22:27:59] [DEBUG] [GUI] 填入TextBox时发生错误: Handle 18614322 is not a vaild window handle
 [2025-07-29 22:27:59] [DEBUG] [GUI] E-filing信息填入失败
 [2025-07-29 22:27:59] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 22:36:01] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 22:36:02] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 22:36:03] [DEBUG] [GUI] 成功读取 3 个任务
+[2025-07-29 22:36:03] [DEBUG] [GUI] 共计 3 个任务
+[2025-07-29 22:36:03] [DEBUG] [GUI] 处理任务 1/3: 250100032HZH
+[2025-07-29 22:36:03] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-29 22:36:03] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 22:36:03] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 22:36:04] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 22:36:04] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 22:36:06] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 22:36:06] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 22:36:06] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 22:36:14] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 22:36:14] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 22:36:15] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 22:36:15] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 22:36:15] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 22:36:16] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 22:36:16] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 22:36:16] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 22:36:16] [DEBUG] [WORD] 已加载ActiveX配置文件: C:\Users\patri\source\demos\py_checklist\activex_config.json
+[2025-07-29 22:36:16] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 22:36:17] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 22:36:17] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 22:36:17] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 22:36:17] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 22:36:17] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 22:36:18] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 22:36:18] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 22:36:18] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 22:36:18] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 22:36:18] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 22:36:19] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 22:36:19] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 22:36:19] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 22:36:19] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 22:36:19] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 22:36:19] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 22:36:20] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 22:36:20] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 22:36:20] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 22:36:20] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 22:36:20] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 22:36:20] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 22:36:21] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 22:36:21] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 22:36:21] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 22:36:24] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 22:36:24] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 22:36:24] [DEBUG] [GUI] 处理任务 2/3: 250400031HZH
+[2025-07-29 22:36:24] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 22:36:24] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 22:36:24] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 22:36:24] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 22:36:24] [DEBUG] [GUI] 处理任务 3/3: 250600345HZH
+[2025-07-29 22:36:24] [DEBUG] [GUI] 任务 250600345HZH 的工作目录未找到
+[2025-07-29 22:36:24] [DEBUG] [GUI] 所有任务处理完成，共处理 3 个任务
+[2025-07-29 22:37:35] [DEBUG] [GUI] 开始重新运行任务: 250600345HZH
+[2025-07-29 22:37:35] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本
+[2025-07-29 22:37:35] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 22:37:35] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 22:37:35] [DEBUG] [GUI] 250600345HZH开始写入检查列表...
+[2025-07-29 22:37:37] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 22:37:37] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 22:37:37] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 22:37:45] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 22:37:45] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 22:37:45] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 22:37:45] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 22:37:46] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 22:37:46] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 22:37:47] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 22:37:47] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 22:37:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 22:37:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 22:37:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 22:37:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 22:37:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 22:37:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 22:37:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 22:37:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 22:37:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 22:37:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 22:37:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 22:37:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 22:37:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 22:37:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 22:37:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 22:37:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 22:37:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 22:37:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 22:37:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 22:37:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 22:37:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 22:37:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 22:37:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 22:37:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 22:37:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 22:37:51] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 22:37:54] [DEBUG] [GUI] 250600345HZH检查列表写入完成
+[2025-07-29 22:37:54] [DEBUG] [GUI] 任务 250600345HZH 处理完成: 结果为：完成
+[2025-07-29 22:55:00] [DEBUG] [GUI] 配置保存成功
+[2025-07-29 22:57:06] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 22:57:06] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 22:57:07] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 22:57:07] [DEBUG] [GUI] 启动新的E-filing工具进程: C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 22:57:08] [DEBUG] [GUI] 新进程启动成功
+[2025-07-29 22:57:14] [DEBUG] [GUI] 找到主窗口: 'Microsoft .NET Framework'
+[2025-07-29 22:57:17] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-29 22:57:17] [DEBUG] [GUI] 窗口已恢复
+[2025-07-29 22:57:22] [DEBUG] [GUI] 设置窗口焦点失败: Handle 1838482 is not a vaild window handle
+[2025-07-29 22:57:27] [DEBUG] [GUI] 移动窗口到前台失败: Handle 1838482 is not a vaild window handle
+[2025-07-29 22:57:27] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-29 22:57:27] [DEBUG] [GUI] 新进程启动成功，窗口已激活
+[2025-07-29 22:57:27] [DEBUG] [GUI] 启动E-filing工具失败: EFilingAutomation.fill_information() missing 1 required positional argument: 'filing_dir'
+[2025-07-29 23:00:05] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:00:05] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:00:06] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:00:06] [DEBUG] [GUI] 启动新的E-filing工具进程: C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:00:07] [DEBUG] [GUI] 新进程启动成功
+[2025-07-29 23:00:12] [DEBUG] [GUI] 找到主窗口: 'Microsoft .NET Framework'
+[2025-07-29 23:00:15] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-29 23:00:20] [DEBUG] [GUI] 恢复窗口失败: Handle 25429168 is not a vaild window handle
+[2025-07-29 23:00:25] [DEBUG] [GUI] 设置窗口焦点失败: Handle 25429168 is not a vaild window handle
+[2025-07-29 23:00:30] [DEBUG] [GUI] 移动窗口到前台失败: Handle 25429168 is not a vaild window handle
+[2025-07-29 23:00:31] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-29 23:00:31] [DEBUG] [GUI] 新进程启动成功，窗口已激活
+[2025-07-29 23:00:31] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-29 23:00:31] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-29 23:00:36] [DEBUG] [GUI] 打印控件信息失败: Handle 25429168 is not a vaild window handle
+[2025-07-29 23:00:41] [DEBUG] [GUI] 填入ComboBox时发生错误: Handle 25429168 is not a vaild window handle
+[2025-07-29 23:00:46] [DEBUG] [GUI] 填入ComboBox时发生错误: Handle 25429168 is not a vaild window handle
+[2025-07-29 23:00:51] [DEBUG] [GUI] 填入TextBox时发生错误: Handle 25429168 is not a vaild window handle
+[2025-07-29 23:00:56] [DEBUG] [GUI] 填入TextBox时发生错误: Handle 25429168 is not a vaild window handle
+[2025-07-29 23:00:56] [DEBUG] [GUI] E-filing信息填入失败
+[2025-07-29 23:00:56] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 23:01:15] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:01:15] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:01:16] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:01:16] [DEBUG] [GUI] 启动新的E-filing工具进程: C:\Users\patri\source\demos\auto\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:01:16] [DEBUG] [GUI] 新进程启动成功
+[2025-07-29 23:01:22] [DEBUG] [GUI] 找到主窗口: 'Microsoft .NET Framework'
+[2025-07-29 23:01:25] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-29 23:01:30] [DEBUG] [GUI] 恢复窗口失败: Handle 9309186 is not a vaild window handle
+[2025-07-29 23:01:35] [DEBUG] [GUI] 设置窗口焦点失败: Handle 9309186 is not a vaild window handle
+[2025-07-29 23:01:40] [DEBUG] [GUI] 移动窗口到前台失败: Handle 9309186 is not a vaild window handle
+[2025-07-29 23:01:40] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-29 23:01:40] [DEBUG] [GUI] 新进程启动成功，窗口已激活
+[2025-07-29 23:01:40] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-29 23:01:40] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-29 23:01:45] [DEBUG] [GUI] 打印控件信息失败: Handle 9309186 is not a vaild window handle
+[2025-07-29 23:01:50] [DEBUG] [GUI] 填入ComboBox时发生错误: Handle 9309186 is not a vaild window handle
+[2025-07-29 23:01:55] [DEBUG] [GUI] 填入ComboBox时发生错误: Handle 9309186 is not a vaild window handle
+[2025-07-29 23:02:00] [DEBUG] [GUI] 填入TextBox时发生错误: Handle 9309186 is not a vaild window handle
+[2025-07-29 23:02:05] [DEBUG] [GUI] 填入TextBox时发生错误: Handle 9309186 is not a vaild window handle
+[2025-07-29 23:02:05] [DEBUG] [GUI] E-filing信息填入失败
+[2025-07-29 23:02:05] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 23:03:04] [DEBUG] [GUI] 已选择E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:03:05] [DEBUG] [GUI] 配置保存成功
+[2025-07-29 23:03:09] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:03:09] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:03:09] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: C:\Users\patri\Downloads\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:03:09] [DEBUG] [GUI] 启动新的E-filing工具进程: C:\Users\patri\Downloads\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:03:09] [DEBUG] [GUI] 新进程启动成功
+[2025-07-29 23:03:15] [DEBUG] [GUI] 找到主窗口: 'Microsoft .NET Framework'
+[2025-07-29 23:03:18] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-29 23:03:23] [DEBUG] [GUI] 恢复窗口失败: Handle 37881290 is not a vaild window handle
+[2025-07-29 23:03:28] [DEBUG] [GUI] 设置窗口焦点失败: Handle 37881290 is not a vaild window handle
+[2025-07-29 23:03:33] [DEBUG] [GUI] 移动窗口到前台失败: Handle 37881290 is not a vaild window handle
+[2025-07-29 23:03:33] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-29 23:03:33] [DEBUG] [GUI] 新进程启动成功，窗口已激活
+[2025-07-29 23:03:33] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-29 23:03:33] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-29 23:03:38] [DEBUG] [GUI] 打印控件信息失败: Handle 37881290 is not a vaild window handle
+[2025-07-29 23:03:43] [DEBUG] [GUI] 填入ComboBox时发生错误: Handle 37881290 is not a vaild window handle
+[2025-07-29 23:03:48] [DEBUG] [GUI] 填入ComboBox时发生错误: Handle 37881290 is not a vaild window handle
+[2025-07-29 23:03:53] [DEBUG] [GUI] 填入TextBox时发生错误: Handle 37881290 is not a vaild window handle
+[2025-07-29 23:03:58] [DEBUG] [GUI] 填入TextBox时发生错误: Handle 37881290 is not a vaild window handle
+[2025-07-29 23:03:58] [DEBUG] [GUI] E-filing信息填入失败
+[2025-07-29 23:03:58] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 23:05:31] [DEBUG] [GUI] 配置保存成功
+[2025-07-29 23:06:05] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:06:05] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:06:07] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: C:\Users\patri\Downloads\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:06:07] [DEBUG] [GUI] 启动新的E-filing工具进程: C:\Users\patri\Downloads\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:06:07] [DEBUG] [GUI] 新进程启动成功
+[2025-07-29 23:06:13] [DEBUG] [GUI] 找到主窗口: 'Microsoft .NET Framework'
+[2025-07-29 23:06:16] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-29 23:06:16] [DEBUG] [GUI] 窗口已恢复
+[2025-07-29 23:06:21] [DEBUG] [GUI] 设置窗口焦点失败: Handle 5377050 is not a vaild window handle
+[2025-07-29 23:06:26] [DEBUG] [GUI] 移动窗口到前台失败: Handle 5377050 is not a vaild window handle
+[2025-07-29 23:06:26] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:06:26] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 23:06:26] [DEBUG] [GUI] 找到运行中的进程: New_E_Filing_HZ_V3.1.exe (PID: 32484)
+[2025-07-29 23:06:26] [DEBUG] [GUI] 发现已运行的E-filing工具进程 (PID: 32484)，尝试连接...
+[2025-07-29 23:06:26] [DEBUG] [GUI] 连接到已存在的进程: 32484
+[2025-07-29 23:06:26] [DEBUG] [GUI] 成功连接到已存在的E-filing工具进程
+[2025-07-29 23:06:26] [DEBUG] [GUI] 找到主窗口: 'E_Filing 批处理程序 for HZ'
+[2025-07-29 23:06:26] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-29 23:06:26] [DEBUG] [GUI] 新进程启动成功，窗口已激活
+[2025-07-29 23:06:26] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-29 23:06:26] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-29 23:06:29] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-29 23:06:29] [DEBUG] [GUI] 窗口已恢复
+[2025-07-29 23:06:29] [DEBUG] [GUI] 窗口焦点已设置
+[2025-07-29 23:06:29] [DEBUG] [GUI] 窗口已移到前台
+[2025-07-29 23:06:30] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-29 23:06:30] [DEBUG] [GUI] 连接成功，窗口已激活
+[2025-07-29 23:06:30] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-29 23:06:30] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-29 23:06:30] [DEBUG] [GUI] === 控件信息结束 ===
+[2025-07-29 23:06:30] [DEBUG] [GUI] 已选择ComboBox: TM
+[2025-07-29 23:06:30] [DEBUG] [GUI] 已选择ComboBox: No
+[2025-07-29 23:06:30] [DEBUG] [GUI] E-filing信息自动填入完成
+[2025-07-29 23:06:30] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 23:06:31] [DEBUG] [GUI] 打印控件信息失败: Handle 5377050 is not a vaild window handle
+[2025-07-29 23:06:36] [DEBUG] [GUI] 填入ComboBox时发生错误: Handle 5377050 is not a vaild window handle
+[2025-07-29 23:06:41] [DEBUG] [GUI] 填入ComboBox时发生错误: Handle 5377050 is not a vaild window handle
+[2025-07-29 23:06:46] [DEBUG] [GUI] 填入TextBox时发生错误: Handle 5377050 is not a vaild window handle
+[2025-07-29 23:06:51] [DEBUG] [GUI] 填入TextBox时发生错误: Handle 5377050 is not a vaild window handle
+[2025-07-29 23:06:51] [DEBUG] [GUI] E-filing信息填入失败
+[2025-07-29 23:06:51] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 23:12:07] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 23:12:17] [DEBUG] [GUI] 配置保存成功
+[2025-07-29 23:12:21] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 23:12:21] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 23:12:22] [DEBUG] [GUI] 成功读取 19 个任务
+[2025-07-29 23:12:22] [DEBUG] [GUI] 共计 19 个任务
+[2025-07-29 23:12:22] [DEBUG] [GUI] 处理任务 1/19: 250100032HZH
+[2025-07-29 23:12:22] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-29 23:12:22] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 23:12:22] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 23:12:22] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:12:22] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 23:12:22] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:12:22] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:12:22] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:12:23] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 23:12:23] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 23:12:23] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 23:12:23] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 23:12:23] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:12:23] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:12:23] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 23:12:23] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 23:12:23] [DEBUG] [WORD] 已加载ActiveX配置文件: C:\Users\patri\source\demos\py_checklist\activex_config.json
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 23:12:23] [ERROR] [WORD] 设置选项 0 Job sheet & Quotation 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 23:12:23] [ERROR] [WORD] 设置选项 0 Job sheet & Quotation 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 23:12:23] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 23:12:23] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 23:12:23] [ERROR] [WORD] 设置选项 1 Application documents 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 23:12:23] [ERROR] [WORD] 设置选项 1 Application documents\Others service app 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 23:12:23] [ERROR] [WORD] 设置选项 1 Application documents\other application documents 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 23:12:23] [ERROR] [WORD] 设置选项 2 Certificate 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 23:12:23] [ERROR] [WORD] 设置选项 3 Test report 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:23] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 4 Test record 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 5 Technical documents\Circuit diagram 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 5 Technical documents\Partlist 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 5 Technical documents\Exploded drawing +BOM 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 5 Technical documents\Other technical info 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 6 User Manual(s) & Label 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 7 Component Cer 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 8 PAH evaluation 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 9 Communication file\Letter report(s) 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 9 Communication file\Confirmation (Declaration) 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 9 Communication file\Others Communication 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 10 Subcontract report and log sheet 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 11 Photos 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项 14 Other documents 时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 23:12:24] [ERROR] [WORD] 设置选项  时发生错误: (-2147352567, '发生意外。', (0, None, None, None, 0, -2147467259), None)
+[2025-07-29 23:12:25] [ERROR] [WORD] Error setting checklist: (-2147023170, '远程过程调用失败。', None, None)
+[2025-07-29 23:12:25] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:12:25] [DEBUG] [GUI] 250100032HZH设置检查列表失败: (-2147023170, '远程过程调用失败。', None, None)
+[2025-07-29 23:12:25] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：失败
+[2025-07-29 23:12:25] [DEBUG] [GUI] 处理任务 2/19: 250400031HZH
+[2025-07-29 23:12:25] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:25] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:25] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:25] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:25] [DEBUG] [GUI] 处理任务 3/19: 250600345HZH
+[2025-07-29 23:12:25] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本
+[2025-07-29 23:12:25] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 23:12:25] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 23:12:25] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:12:25] [DEBUG] [GUI] 250600345HZH开始写入检查列表...
+[2025-07-29 23:12:27] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:12:27] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:12:27] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:12:36] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 23:12:36] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 23:12:36] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 23:12:36] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 23:12:37] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:12:38] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:12:38] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 23:12:38] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 23:12:38] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 23:12:38] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 23:12:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 23:12:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 23:12:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 23:12:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 23:12:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 23:12:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 23:12:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 23:12:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 23:12:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 23:12:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 23:12:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 23:12:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 23:12:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 23:12:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 23:12:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 23:12:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 23:12:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 23:12:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 23:12:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 23:12:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 23:12:43] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 23:12:43] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 23:12:43] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 23:12:43] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 23:12:47] [DEBUG] [GUI] 250600345HZH检查列表写入完成
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250600345HZH 处理完成:结果为：完成
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 4/19: 250404031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250404031HZH 的工作目录未找到
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 5/19: 250405031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 6/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 7/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 8/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 9/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 10/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 11/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 12/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 13/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 14/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 15/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 16/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 17/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 18/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 处理任务 19/19: 250400031HZH
+[2025-07-29 23:12:47] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:12:47] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:12:47] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:12:47] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务
+[2025-07-29 23:14:30] [DEBUG] [GUI] 开始重新运行任务: 250100032HZH
+[2025-07-29 23:14:30] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-29 23:14:30] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 23:14:30] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:14:30] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 23:14:31] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:14:31] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:14:31] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:14:40] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 23:14:40] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 23:14:41] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 23:14:41] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 23:14:41] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:14:42] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:14:42] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 23:14:42] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 23:14:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 23:14:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 23:14:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 23:14:43] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 23:14:43] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 23:14:43] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 23:14:43] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 23:14:43] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 23:14:44] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 23:14:44] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 23:14:44] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 23:14:44] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 23:14:44] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 23:14:44] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 23:14:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 23:14:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 23:14:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 23:14:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 23:14:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 23:14:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 23:14:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 23:14:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 23:14:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 23:14:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 23:14:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 23:14:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 23:14:50] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 23:14:50] [DEBUG] [GUI] 任务 250100032HZH 处理完成: 结果为：完成
+[2025-07-29 23:20:23] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 23:20:23] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 23:20:24] [DEBUG] [GUI] 成功读取 19 个任务
+[2025-07-29 23:20:24] [DEBUG] [GUI] 共计 19 个任务
+[2025-07-29 23:20:24] [DEBUG] [GUI] 处理任务 1/19: 250100032HZH
+[2025-07-29 23:20:24] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-29 23:20:24] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 23:20:24] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 23:20:26] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:20:26] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 23:20:27] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:20:27] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:20:27] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:20:36] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 23:20:36] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 23:20:36] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 23:20:36] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 23:20:36] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:20:37] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:20:38] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 23:20:38] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 23:20:38] [DEBUG] [WORD] 已加载ActiveX配置文件: C:\Users\patri\source\demos\py_checklist\activex_config.json
+[2025-07-29 23:20:38] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 23:20:38] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 23:20:38] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 23:20:38] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 23:20:38] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 23:20:38] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 23:20:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 23:20:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 23:20:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 23:20:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 23:20:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 23:20:39] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 23:20:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 23:20:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 23:20:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 23:20:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 23:20:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 23:20:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 23:20:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 23:20:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 23:20:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 23:20:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 23:20:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 23:20:41] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 23:20:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 23:20:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 23:20:45] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 23:20:45] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 23:20:45] [DEBUG] [GUI] 处理任务 2/19: 250400031HZH
+[2025-07-29 23:20:45] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:20:45] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:20:45] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:20:45] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:20:45] [DEBUG] [GUI] 处理任务 3/19: 250600345HZH
+[2025-07-29 23:20:45] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本
+[2025-07-29 23:20:45] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 23:20:45] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 23:20:46] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:20:46] [DEBUG] [GUI] 250600345HZH开始写入检查列表...
+[2025-07-29 23:20:47] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:20:47] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:20:47] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:20:56] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 23:20:56] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 23:20:56] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 23:20:56] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 23:20:56] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:20:57] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:20:57] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 23:20:57] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 23:20:58] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 23:20:58] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 23:20:58] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 23:20:58] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 23:20:58] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 23:20:58] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 23:20:59] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 23:20:59] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 23:20:59] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 23:20:59] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 23:20:59] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 23:20:59] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 23:21:00] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 23:21:00] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 23:21:00] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 23:21:00] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 23:21:00] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 23:21:00] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 23:21:01] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 23:21:01] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 23:21:01] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 23:21:01] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 23:21:01] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 23:21:01] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 23:21:01] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 23:21:02] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 23:21:05] [DEBUG] [GUI] 250600345HZH检查列表写入完成
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250600345HZH 处理完成:结果为：完成
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 4/19: 250404031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250404031HZH 的工作目录未找到
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 5/19: 250405031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 6/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 7/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 8/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 9/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 10/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 11/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 12/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 13/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 14/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 15/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 16/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:05] [DEBUG] [GUI] 处理任务 17/19: 250400031HZH
+[2025-07-29 23:21:05] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:05] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:05] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:06] [DEBUG] [GUI] 处理任务 18/19: 250400031HZH
+[2025-07-29 23:21:06] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:06] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:06] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:06] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:06] [DEBUG] [GUI] 处理任务 19/19: 250400031HZH
+[2025-07-29 23:21:06] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:21:06] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:21:06] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:21:06] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:21:06] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务
+[2025-07-29 23:25:29] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 23:25:30] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 23:25:30] [DEBUG] [GUI] 成功读取 19 个任务
+[2025-07-29 23:25:30] [DEBUG] [GUI] 共计 19 个任务
+[2025-07-29 23:25:30] [DEBUG] [GUI] 处理任务 1/19: 250100032HZH
+[2025-07-29 23:25:30] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-29 23:25:30] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 23:25:30] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 23:25:32] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:25:32] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 23:25:34] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:25:34] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:25:34] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:25:42] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 23:25:42] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 23:25:43] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 23:25:43] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 23:25:43] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:25:44] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:25:44] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 23:25:44] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 23:25:44] [DEBUG] [WORD] 已加载ActiveX配置文件: C:\Users\patri\source\demos\py_checklist\activex_config.json
+[2025-07-29 23:25:44] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 23:25:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 23:25:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 23:25:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 23:25:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 23:25:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 23:25:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 23:25:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 23:25:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 23:25:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 23:25:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 23:25:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 23:25:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 23:25:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 23:25:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 23:25:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 23:25:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 23:25:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 23:25:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 23:25:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 23:25:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 23:25:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 23:25:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 23:25:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 23:25:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 23:25:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 23:25:53] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 23:25:53] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 23:25:53] [DEBUG] [GUI] 处理任务 2/19: 250400031HZH
+[2025-07-29 23:25:53] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:25:53] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:25:53] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:25:53] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:25:53] [DEBUG] [GUI] 处理任务 3/19: 250600345HZH
+[2025-07-29 23:25:53] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本
+[2025-07-29 23:25:53] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 23:25:53] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 23:25:53] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:25:53] [DEBUG] [GUI] 250600345HZH开始写入检查列表...
+[2025-07-29 23:25:54] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:25:54] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:25:54] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:26:03] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 23:26:03] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 23:26:03] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 23:26:03] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 23:26:03] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:26:04] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:26:04] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 23:26:04] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 23:26:05] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 23:26:05] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 23:26:05] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 23:26:05] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 23:26:05] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 23:26:05] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 23:26:05] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 23:26:06] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 23:26:06] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 23:26:06] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 23:26:06] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 23:26:06] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 23:26:06] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 23:26:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 23:26:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 23:26:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 23:26:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 23:26:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 23:26:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 23:26:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 23:26:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 23:26:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 23:26:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 23:26:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 23:26:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 23:26:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 23:26:12] [DEBUG] [GUI] 250600345HZH检查列表写入完成
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250600345HZH 处理完成:结果为：完成
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 4/19: 250404031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250404031HZH 的工作目录未找到
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 5/19: 250405031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 6/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 7/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 8/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 9/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 10/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 11/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 12/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 13/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 14/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 15/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 16/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 17/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 18/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 处理任务 19/19: 250400031HZH
+[2025-07-29 23:26:12] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:26:12] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:26:12] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:26:12] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务
+[2025-07-29 23:27:09] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 23:27:10] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 23:27:10] [DEBUG] [GUI] 成功读取 19 个任务
+[2025-07-29 23:27:10] [DEBUG] [GUI] 共计 19 个任务
+[2025-07-29 23:27:10] [DEBUG] [GUI] 处理任务 1/19: 250100032HZH
+[2025-07-29 23:27:10] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-07-29 23:27:10] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 23:27:10] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 23:27:12] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:27:12] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 23:27:13] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:27:13] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:27:13] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 23:27:22] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 23:27:22] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 23:27:22] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 23:27:22] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 23:27:23] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:27:23] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:27:24] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 23:27:24] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 23:27:24] [DEBUG] [WORD] 已加载ActiveX配置文件: C:\Users\patri\source\demos\py_checklist\activex_config.json
+[2025-07-29 23:27:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 23:27:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 23:27:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 23:27:24] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 23:27:25] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 23:27:25] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 23:27:25] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 23:27:25] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 23:27:25] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 23:27:26] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 23:27:26] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 23:27:26] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 23:27:26] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 23:27:26] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 23:27:27] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 23:27:27] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 23:27:27] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 23:27:27] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 23:27:27] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 23:27:27] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 23:27:28] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 23:27:28] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 23:27:28] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 23:27:28] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 23:27:28] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 23:27:29] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 23:27:32] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 23:27:32] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 23:27:32] [DEBUG] [GUI] 处理任务 2/19: 250400031HZH
+[2025-07-29 23:27:32] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:32] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:32] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:32] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:32] [DEBUG] [GUI] 处理任务 3/19: 250600345HZH
+[2025-07-29 23:27:32] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本
+[2025-07-29 23:27:32] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 23:27:32] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 23:27:32] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 23:27:32] [DEBUG] [GUI] 250600345HZH开始写入检查列表...
+[2025-07-29 23:27:35] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:27:35] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:27:35] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250600345HZH_Shangyu Shunhe_Luminaire_ETL - 副本\E-filing checklist.docx
+[2025-07-29 23:27:44] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 23:27:44] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 23:27:44] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 23:27:44] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 23:27:44] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:27:45] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 23:27:46] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 23:27:46] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-07-29 23:27:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 23:27:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 23:27:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 23:27:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 23:27:46] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 23:27:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 23:27:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 23:27:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 23:27:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 23:27:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 23:27:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 23:27:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 23:27:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 23:27:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 23:27:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 23:27:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 23:27:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 23:27:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 23:27:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 23:27:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 23:27:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 23:27:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 23:27:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 23:27:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 23:27:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 23:27:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 23:27:54] [DEBUG] [GUI] 250600345HZH检查列表写入完成
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250600345HZH 处理完成:结果为：完成
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 4/19: 250404031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250404031HZH 的工作目录未找到
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 5/19: 250405031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 6/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 7/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 8/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 9/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 10/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 11/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 12/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 13/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 14/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 15/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 16/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 17/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 18/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 处理任务 19/19: 250400031HZH
+[2025-07-29 23:27:54] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中不存在
+[2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
+[2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
+[2025-07-29 23:27:54] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务

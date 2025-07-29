@@ -979,7 +979,7 @@ body {
     overflow-y: auto;
     /* 为dropdown菜单留出边距 */
     padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 70px;
 }
 
 /* 配置模态框样式 */

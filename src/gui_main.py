@@ -44,7 +44,9 @@ class ProjectFileChecker:
             
             self.base_dir = config_manager.get_base_dir()
             print(f"初始化时的基础目录: '{self.base_dir}'")
-            
+
+            self.archive_path = config_manager.get_user_config('archive_path', {})
+            print(f"初始化时归档目录: '{self.archive_path}'")
             self.task_list_map = config_manager.get_user_config('task_list_map', {})
             print(f"任务列表映射: {self.task_list_map}")
             
@@ -250,6 +252,110 @@ class ProjectFileChecker:
         thread.start()
         
         return {'success': True, 'message': '开始处理任务'}
+
+    def rerun_task(self, job_no):
+        """重新运行单个任务"""
+        if self.is_running:
+            return {'success': False, 'message': '有任务正在运行，请等待完成或取消后再试'}
+
+        # 查找指定的任务
+        task_to_rerun = None
+        if self.tasks:
+            for task in self.tasks:
+                if task['job_no'] == job_no:
+                    task_to_rerun = task
+                    break
+        
+        if not task_to_rerun:
+            self.log(f"未找到任务 {job_no}")
+            return {'success': False, 'message': f'未找到任务 {job_no}'}
+
+        def run_single_task():
+            try:
+                self.is_running = True
+                self.cancel_requested = False
+                
+                data_manager.set_processing_status(True)
+                webview.windows[0].evaluate_js('setRunning(true)')
+                
+                self.log(f"开始重新运行任务: {job_no}")
+                
+                # 获取工作目录
+                target_path = get_working_folder_path(self.base_dir, self.team, task_to_rerun['job_no'])
+                result = {
+                    'job_no': task_to_rerun['job_no'],
+                    'job_creator': task_to_rerun['job_creator'],
+                    'engineers': task_to_rerun['engineers'],
+                    'target_path': str(target_path) if target_path is not None else None,
+                    'status': '未找到目录' if target_path is None else '处理中',
+                    'folders': {}
+                }
+                
+                # 更新现有结果中的这一项为处理中状态
+                data_manager.update_result_by_job_no(job_no, result)
+                webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
+                
+                if target_path is None:
+                    self.log(f"任务 {task_to_rerun['job_no']} 的工作目录未找到")
+                    result['status'] = '未找到目录'
+                    data_manager.update_result_by_job_no(job_no, result)
+                    webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
+                    return
+                
+                self.log(f"找到目录: {target_path}")
+                
+                if not folder_precheck(target_path, self.team):
+                    self.log(f"任务 {task_to_rerun['job_no']} 的文件夹预检查失败")
+                    result['status'] = '文件夹预检查失败'
+                    data_manager.update_result_by_job_no(job_no, result)
+                    webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
+                    return
+                
+                # 结束所有Word进程
+                self.log("确保文件夹检查不受干扰,结束所有Word进程...")
+                kill_all_word_processes()
+                
+                # 设置检查列表
+                self.log(f"{task_to_rerun['job_no']}开始写入检查列表...")
+                try:
+                    set_checklist(task_to_rerun, target_path, self.team, self.subFolderConfig)
+                    self.log(f"{task_to_rerun['job_no']}检查列表写入完成")
+                    result['status'] = '完成'
+                except Exception as e:
+                    self.log(f"{task_to_rerun['job_no']}设置检查列表失败: {e}")
+                    result['status'] = '失败'
+                
+                self.log(f"任务 {task_to_rerun['job_no']} 处理完成: 结果为：{result['status']}")
+                
+                # 更新结果
+                data_manager.update_result_by_job_no(job_no, result)
+                webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
+                
+            except Exception as e:
+                self.log(f"处理过程中发生错误: {e}")
+                # 确保即使出错也更新状态
+                result = {
+                    'job_no': task_to_rerun['job_no'],
+                    'job_creator': task_to_rerun['job_creator'],
+                    'engineers': task_to_rerun['engineers'],
+                    'target_path': str(target_path) if 'target_path' in locals() else None,
+                    'status': f'错误: {str(e)}',
+                    'folders': {}
+                }
+                data_manager.update_result_by_job_no(job_no, result)
+                webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
+            finally:
+                self.is_running = False
+                data_manager.set_processing_status(False)
+                webview.windows[0].evaluate_js('setRunning(false)')
+        
+        # 在新线程中运行处理过程
+        thread = threading.Thread(target=run_single_task)
+        thread.daemon = True
+        self.current_thread = thread
+        thread.start()
+        
+        return {'success': True, 'message': f'开始重新运行任务 {job_no}'}
     
     def get_results(self):
         """获取结果数据"""
@@ -316,11 +422,12 @@ class ProjectFileChecker:
             return {'success': False, 'message': str(e)}
     
     def get_all_config(self):
-        """获取所有用户配置"""
+        """获取所有配置"""
         try:
             config = {
                 'team': config_manager.get_team(),
                 'base_dir': config_manager.get_base_dir(),
+                'archive_path': config_manager.get_user_config('archive_path', ''),
                 'checklist': config_manager.get_user_config('checklist', 'cover'),
                 'task_list_map': config_manager.get_user_config('task_list_map', {
                     'job_no': 0,
@@ -329,87 +436,44 @@ class ProjectFileChecker:
                 }),
                 'efilling_tool_path': config_manager.get_user_config('efilling_tool_path', '')
             }
-            
-            return {
-                'success': True,
-                'config': config
-            }
+            return {'success': True, 'config': config}
         except Exception as e:
             self.log(f"获取配置失败: {e}")
             return {'success': False, 'message': str(e)}
-    
-    def save_all_config(self, config_data):
-        """保存所有用户配置"""
-        try:
-            # 验证配置数据
-            if not isinstance(config_data, dict):
-                return {'success': False, 'message': '配置数据格式错误'}
-            
-            # 验证团队
-            team = config_data.get('team')
-            if team not in ['LUM','HA','TM','EMC', 'PPT']:
-                return {'success': False, 'message': '无效的团队配置'}
-            
-            # 验证基础目录
-            base_dir = config_data.get('base_dir', '')
-            if base_dir:
-                if not os.path.isabs(base_dir):
-                    return {'success': False, 'message': '基础目录必须是绝对路径'}
-                if not os.path.exists(base_dir):
-                    return {'success': False, 'message': '指定的目录不存在'}
-                if not os.path.isdir(base_dir):
-                    return {'success': False, 'message': '指定的路径不是目录'}
-            
-            # 验证检查清单模式
-            checklist = config_data.get('checklist')
-            if checklist not in ['cover', 'fill']:
-                return {'success': False, 'message': '无效的检查清单模式'}
-            
-            # 验证任务列表映射
-            task_list_map = config_data.get('task_list_map', {})
-            if not isinstance(task_list_map, dict):
-                return {'success': False, 'message': '任务列表映射必须是字典格式'}
-            
-            # 检查必需的映射字段
-            required_fields = ['job_no', 'job_creator', 'engineers']
-            for field in required_fields:
-                if field not in task_list_map:
-                    return {'success': False, 'message': f'缺少必需的映射字段: {field}'}
-                if not isinstance(task_list_map[field], int) or task_list_map[field] < 0:
-                    return {'success': False, 'message': f'映射字段 {field} 必须是非负整数'}
-            
-            # 验证E-filing工具路径（可选）
-            efilling_tool_path = config_data.get('efilling_tool_path', '')
-            if efilling_tool_path:
-                if not os.path.isabs(efilling_tool_path):
-                    return {'success': False, 'message': 'E-filing工具路径必须是绝对路径'}
-                if not efilling_tool_path.lower().endswith('.exe'):
-                    return {'success': False, 'message': 'E-filing工具路径必须指向.exe文件'}
-                if not os.path.exists(efilling_tool_path):
-                    return {'success': False, 'message': 'E-filing工具文件不存在'}
-            
-            # 保存配置
-            config_manager.set_team(team)
-            config_manager.set_base_dir(base_dir)
-            config_manager.set_user_config('checklist', checklist)
-            config_manager.set_user_config('task_list_map', task_list_map)
-            config_manager.set_user_config('efilling_tool_path', efilling_tool_path)
-            
-            # 保存配置到文件
-            config_manager.save_user_config()
-           
-            # 更新实例变量
-            self.team = team
-            self.base_dir = base_dir
-            self.task_list_map = task_list_map
-            self.subFolderConfig = config_manager.get_subfolder_config(team)
-            
-            self.log(f"配置保存成功: 团队={team}, 基础目录={base_dir}, 检查清单={checklist}, E-filing工具路径={efilling_tool_path}")
 
-            return {
-                'success': True,
-                'message': '配置保存成功'
-            }
+    def save_all_config(self, new_config):
+        """保存所有配置"""
+        try:
+            # 验证配置
+            if not isinstance(new_config, dict):
+                raise ValueError("配置必须是字典格式")
+            
+            # 保存各项配置
+            config_manager.set_user_config('team', new_config.get('team', 'LUM'))
+            config_manager.set_user_config('base_dir', new_config.get('base_dir', ''))
+            config_manager.set_user_config('archive_path', new_config.get('archive_path', ''))
+            config_manager.set_user_config('checklist', new_config.get('checklist', 'cover'))
+            config_manager.set_user_config('task_list_map', new_config.get('task_list_map', {
+                'job_no': 0,
+                'job_creator': 1,
+                'engineers': 2
+            }))
+            config_manager.set_user_config('efilling_tool_path', new_config.get('efilling_tool_path', ''))
+            
+            # 保存到文件
+            config_manager.save_user_config()
+            
+            # 更新当前实例的配置
+            self.team = new_config.get('team', 'LUM')
+            self.base_dir = new_config.get('base_dir', '')
+            self.task_list_map = new_config.get('task_list_map', {
+                'job_no': 0,
+                'job_creator': 1,
+                'engineers': 2
+            })
+            
+            self.log("配置保存成功")
+            return {'success': True, 'message': '配置保存成功'}
             
         except Exception as e:
             self.log(f"保存配置失败: {e}")
@@ -467,24 +531,59 @@ class ProjectFileChecker:
             return {'success': False, 'message': str(e)}
     
     def select_folder(self):
-        """选择文件夹"""
+        """选择基础目录"""
         try:
-            result = webview.windows[0].create_file_dialog(
-                webview.FOLDER_DIALOG,
-                directory=self.base_dir if self.base_dir and os.path.exists(self.base_dir) else os.getcwd()
+            import tkinter as tk
+            from tkinter import filedialog
+            
+            # 创建根窗口并隐藏
+            root = tk.Tk()
+            root.withdraw()
+            root.attributes('-topmost', True)  # 确保对话框在最前面
+            
+            # 打开文件夹选择对话框
+            folder_path = filedialog.askdirectory(
+                title="选择基础目录",
+                mustexist=False  # 允许选择不存在的目录
             )
             
-            if result and len(result) > 0:
-                folder_path = result[0] if isinstance(result, list) else result
-                self.log(f"已选择文件夹: {folder_path}")
-                return {
-                    'success': True,
-                    'path': folder_path
-                }
+            root.destroy()  # 销毁根窗口
+            
+            if folder_path:
+                return {'success': True, 'path': folder_path}
             else:
-                return {'success': False, 'message': '未选择文件夹'}
+                return {'success': False, 'message': '未选择目录'}
+                
         except Exception as e:
-            self.log(f"文件夹选择失败: {e}")
+            self.log(f"选择文件夹时发生错误: {e}")
+            return {'success': False, 'message': str(e)}
+
+    def select_archive_folder(self):
+        """选择归档目录"""
+        try:
+            import tkinter as tk
+            from tkinter import filedialog
+            
+            # 创建根窗口并隐藏
+            root = tk.Tk()
+            root.withdraw()
+            root.attributes('-topmost', True)  # 确保对话框在最前面
+            
+            # 打开文件夹选择对话框
+            folder_path = filedialog.askdirectory(
+                title="选择归档目录",
+                mustexist=False  # 允许选择不存在的目录
+            )
+            
+            root.destroy()  # 销毁根窗口
+            
+            if folder_path:
+                return {'success': True, 'path': folder_path}
+            else:
+                return {'success': False, 'message': '未选择目录'}
+                
+        except Exception as e:
+            self.log(f"选择归档文件夹时发生错误: {e}")
             return {'success': False, 'message': str(e)}
     
     def select_exe_file(self):
@@ -541,7 +640,7 @@ class ProjectFileChecker:
                 if automation.start_and_connect(efilling_tool_path):
                     
                     print("E-filing工具启动成功，正在自动填入信息...")
-                    fill_success = automation.fill_information(self.base_dir,self.team)
+                    fill_success = automation.fill_information(self.base_dir,self.team,self.archive_path)
                     # 断开连接
                     automation.disconnect()
                     

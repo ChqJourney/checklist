@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>Project File Checker V1.1</h1>
+        <h1>Project File Checker V2.0</h1>
         <p>项目文件检查工具</p>
     </div>
     
@@ -101,6 +101,20 @@
                             </button>
                         </div>
                         <small class="form-help">设置项目文件夹所在的根目录（年份的上一级目录），所有任务文件将从此目录开始查找</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">归档路径目录：</label>
+                        <div class="input-group">
+                            <input type="text" class="form-input" id="archivePath" readonly placeholder="未设置">
+                            <button class="btn btn-secondary" onclick="selectArchiveFolder()">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2l5 0 2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                更改目录
+                            </button>
+                        </div>
+                        <small class="form-help">设置归档文件夹目录，用于存放处理完成的文件</small>
                     </div>
                 </div>
 

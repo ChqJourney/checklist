@@ -37,6 +37,15 @@ class DataManager:
             if 0 <= index < len(self.results):
                 self.results[index] = result
     
+    def update_result_by_job_no(self, job_no: str, result: Dict[str, Any]) -> bool:
+        """根据工作号更新结果记录，成功返回True，未找到返回False"""
+        with self._lock:
+            for i, existing_result in enumerate(self.results):
+                if existing_result.get('job_no') == job_no:
+                    self.results[i] = result
+                    return True
+            return False
+    
     def get_results(self) -> List[Dict[str, Any]]:
         """获取所有结果记录"""
         with self._lock:

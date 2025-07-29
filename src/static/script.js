@@ -198,7 +198,7 @@ function updateResults(results) {
                 <td class="${statusClass}">${result.status}</td>
                 <td title="${result.target_path || ''}">${result.target_path ?? ""}</td>
                 <td>
-                    <div class="action-dropdown" data-target-path="${result.target_path || ''}">
+                    <div class="action-dropdown" data-target-path="${result.target_path || ''}" data-job-no="${result.job_no}">
                         <button class="action-btn" onclick="toggleDropdown(this)">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="1"></circle>
@@ -219,6 +219,12 @@ function updateResults(results) {
                                     <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2l5 0 2 3h9a2 2 0 0 1 2 2z"></path>
                                 </svg>
                                 打开目录
+                            </button>
+                            <button class="dropdown-item" onclick="rerunTask(this)">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                                重新运行
                             </button>
                         </div>
                     </div>
@@ -332,6 +338,34 @@ function toggleMessage(button) {
         fullMessage.style.display = 'none';
         button.textContent = '展开';
     }
+}
+
+// 重新运行单个任务
+async function rerunTask(buttonElement) {
+    const actionDropdown = buttonElement.closest('.action-dropdown');
+    const jobNo = actionDropdown.getAttribute('data-job-no');
+    
+    if (!jobNo) {
+        addLog('任务编号为空，无法重新运行');
+        return;
+    }
+    
+    try {
+        addLog(`开始重新运行任务: ${jobNo}`);
+        const result = await pywebview.api.rerun_task(jobNo);
+        if (result.success) {
+            addLog(`任务 ${jobNo} 重新运行完成`);
+        } else {
+            addLog(`任务 ${jobNo} 重新运行失败: ${result.message || '未知错误'}`);
+        }
+    } catch (error) {
+        addLog(`任务 ${jobNo} 重新运行错误: ${error}`);
+    }
+    
+    // 关闭dropdown
+    document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+        menu.classList.remove('show');
+    });
 }
 
 // 收缩/展开日志面板
@@ -458,12 +492,19 @@ async function openConfigModal() {
     }
 }
 
+function closeConfigModal() {
+    document.getElementById('configModal').classList.remove('show');
+}
+
 function populateConfigModal(config) {
     // 设置团队选择
     document.getElementById('teamSelect').value = config.team || 'HA';
     
     // 设置基础目录
     document.getElementById('currentBaseDir').value = config.base_dir || '';
+    
+    // 设置归档路径
+    document.getElementById('archivePath').value = config.archive_path || '';
     
     // 设置检查清单模式
     const checklistValue = config.checklist || 'cover';
@@ -482,30 +523,13 @@ function populateConfigModal(config) {
     document.getElementById('efillingToolPath').value = config.efilling_tool_path || '';
 }
 
-function closeConfigModal() {
-    document.getElementById('configModal').classList.remove('show');
-}
-
-async function selectFolder() {
-    try {
-        const result = await pywebview.api.select_folder();
-        if (result.success) {
-            document.getElementById('currentBaseDir').value = result.path;
-            addLog(`已选择文件夹: ${result.path}`);
-        } else {
-            addLog(`文件夹选择失败: ${result.message || '未知错误'}`);
-        }
-    } catch (error) {
-        addLog(`文件夹选择错误: ${error}`);
-    }
-}
-
 async function saveAllConfig() {
     try {
         // 收集所有配置数据
         const newConfig = {
             team: document.getElementById('teamSelect').value,
             base_dir: document.getElementById('currentBaseDir').value,
+            archive_path: document.getElementById('archivePath').value,
             checklist: document.querySelector('input[name="checklist"]:checked')?.value || 'cover',
             task_list_map: {
                 job_no: (parseInt(document.getElementById('mapJobNo').value) || 1) - 1,
@@ -603,6 +627,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // 初始化配置
     initializeBaseDir();
 });
+
+// 选择基础文件夹
+async function selectFolder() {
+    try {
+        const result = await pywebview.api.select_folder();
+        if (result.success) {
+            document.getElementById('currentBaseDir').value = result.path;
+            addLog(`已选择文件夹: ${result.path}`);
+        } else {
+            addLog(`文件夹选择失败: ${result.message || '未知错误'}`);
+        }
+    } catch (error) {
+        addLog(`文件夹选择错误: ${error}`);
+    }
+}
+
+// 选择归档文件夹
+async function selectArchiveFolder() {
+    try {
+        const result = await pywebview.api.select_archive_folder();
+        if (result.success) {
+            document.getElementById('archivePath').value = result.path;
+            addLog(`已选择归档文件夹: ${result.path}`);
+        } else {
+            addLog(`归档文件夹选择失败: ${result.message || '未知错误'}`);
+        }
+    } catch (error) {
+        addLog(`归档文件夹选择错误: ${error}`);
+    }
+}
 
 // 选择exe文件
 async function selectExeFile() {

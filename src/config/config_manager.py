@@ -39,11 +39,15 @@ class ConfigManager:
     # 用户配置规范定义
     USER_CONFIG_SCHEMA = {
         'required_keys': ['team', 'base_dir','checklist', 'task_list_map'],
-        'allowed_keys': ['team', 'base_dir', 'task_list_map', 'checklist', 'efilling_tool_path'],
+        'allowed_keys': ['team', 'base_dir', 'task_list_map', 'checklist', 'efilling_tool_path', 'archive_path'],
         'team': {
             'allowed_values': ['LUM','HA','TM','EMC', 'PPT']
         },
         'base_dir': {
+            'type': str,
+            'must_exist': False  # 目录可以不存在，但路径格式要正确
+        },
+        'archive_path': {
             'type': str,
             'must_exist': False  # 目录可以不存在，但路径格式要正确
         },
@@ -382,6 +386,7 @@ class ConfigManager:
         return {
             'team': 'LUM',  # 默认团队
             'base_dir': '',
+            'archive_path': '',
             'task_list_map': {
                 'job_no': 0,
                 'job_creator': 1,
