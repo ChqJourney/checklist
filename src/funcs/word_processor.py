@@ -2,6 +2,7 @@
 Word文档处理模块
 负责处理Word文档的各种操作，包括表格、图片、ActiveX控件等
 """
+import json
 from datetime import date
 import glob
 import os
@@ -15,6 +16,122 @@ from src.funcs.process_manager import kill_all_word_processes
 from src.funcs.file_utils import detect_folders_status
 from src.funcs.file_utils import detect_folders_status
 from src.logger.logger import log_info, log_error, log_warning, log_debug
+
+# 全局变量，用于缓存ActiveX配置
+_activex_config_cache = None
+
+
+def load_activex_config():
+    """加载ActiveX控件位置配置文件"""
+    global _activex_config_cache
+    
+    if _activex_config_cache is not None:
+        return _activex_config_cache
+    
+    config_path = Path.cwd() / 'activex_config.json'
+    
+    try:
+        if config_path.exists():
+            with open(config_path, 'r', encoding='utf-8') as f:
+                _activex_config_cache = json.load(f)
+                log_debug(f"已加载ActiveX配置文件: {config_path}", "WORD")
+                return _activex_config_cache
+        else:
+            log_warning(f"ActiveX配置文件不存在: {config_path}", "WORD")
+            return {}
+    except Exception as e:
+        log_error(f"加载ActiveX配置文件失败: {str(e)}", "WORD")
+        return {}
+
+
+def get_template_name_from_team(team):
+    """根据团队名称获取模板名称"""
+    if team.lower() == 'ppt':
+        return 'ppt_template'
+    else:
+        return 'general_template'
+
+
+def get_cell_with_activeX_by_config(table, row_index, table_index=0, team='general'):
+    """
+    根据配置文件快速获取指定行中包含ActiveX控件的单元格
+    :param table: Word表格对象
+    :param row_index: 行索引（从1开始）
+    :param table_index: 表格索引（从0开始）
+    :param team: 团队名称，用于确定使用哪个模板配置
+    :return: 包含ActiveX控件的单元格对象，如果没有找到则返回None
+    """
+    try:
+        # 验证参数
+        if row_index < 1 or row_index > table.Rows.Count:
+            log_error(f"Invalid row index: {row_index}. Must be between 1 and {table.Rows.Count}", "WORD")
+            return None
+        
+        # 加载配置
+        config = load_activex_config()
+        if not config:
+            log_warning("ActiveX配置为空，回退到原方法", "WORD")
+            return get_cell_with_activeX_in_row(table, row_index)
+        
+        # 获取模板名称
+        template_name = get_template_name_from_team(team)
+        
+        # 检查模板配置是否存在
+        if template_name not in config:
+            log_warning(f"未找到模板配置: {template_name}，回退到原方法", "WORD")
+            return get_cell_with_activeX_in_row(table, row_index)
+        
+        template_config = config[template_name]
+        table_key = f"table_{table_index}"
+        
+        # 检查表格配置是否存在
+        if table_key not in template_config:
+            log_warning(f"未找到表格配置: {table_key}，回退到原方法", "WORD")
+            return get_cell_with_activeX_in_row(table, row_index)
+        
+        table_config = template_config[table_key]
+        row_key = str(row_index)
+        
+        # 检查行配置是否存在
+        if row_key not in table_config:
+            log_debug(f"行 {row_index} 没有ActiveX控件配置", "WORD")
+            return None
+        
+        # 获取配置的位置
+        position = table_config[row_key]
+        config_row = position['row']
+        config_col = position['column']
+        
+        # 验证配置的位置是否合理
+        if config_row != row_index:
+            log_warning(f"配置文件中行号不匹配: 期望{row_index}，配置{config_row}", "WORD")
+        
+        if config_col < 1 or config_col > table.Columns.Count:
+            log_error(f"配置的列号无效: {config_col}，表格列数: {table.Columns.Count}", "WORD")
+            return get_cell_with_activeX_in_row(table, row_index)
+        
+        # 直接获取指定位置的单元格
+        try:
+            cell = table.Cell(config_row, config_col)
+            
+            # 验证单元格确实包含ActiveX控件
+            if cell.Range.InlineShapes.Count > 0:
+                for shape in cell.Range.InlineShapes:
+                    if hasattr(shape, 'OLEFormat') and shape.OLEFormat is not None:
+                        log_debug(f"基于配置找到ActiveX控件: 行{config_row}, 列{config_col}", "WORD")
+                        return cell
+            
+            # 如果配置的位置没有ActiveX控件，记录警告但不回退
+            log_warning(f"配置位置({config_row},{config_col})没有ActiveX控件", "WORD")
+            return None
+            
+        except Exception as e:
+            log_error(f"访问配置位置({config_row},{config_col})时出错: {str(e)}", "WORD")
+            return get_cell_with_activeX_in_row(table, row_index)
+    
+    except Exception as e:
+        log_error(f"基于配置获取ActiveX控件时出错: {str(e)}", "WORD")
+        return get_cell_with_activeX_in_row(table, row_index)
 
 
 def get_engineer_signature_image(engineer_name):
@@ -199,20 +316,27 @@ def set_fields_value(table, task, field_config):
                 set_text_in_cell(cell, task[field_name])
 
 
-def set_all_option_cells_for_ppt(table, status, map):
+def set_all_option_cells_for_ppt(table, status, map, table_index=0, use_config=True):
     """
     Set values for ActiveX controls in table cells for PPT team
     :param table: Word表格对象
     :param status: 状态字典
     :param map: 行映射字典
+    :param table_index: 表格索引
+    :param use_config: 是否使用配置文件方法
     """
     try:
         for folder_name, row_num in map.items():
             if not isinstance(row_num, int):
                 log_debug(f"Warning: Invalid row number for {folder_name}: {row_num}")
                 continue
+            
+            # 选择使用配置方法还是原方法
+            if use_config:
+                cell = get_cell_with_activeX_by_config(table, row_num, table_index, 'ppt')
+            else:
+                cell = get_cell_with_activeX_in_row(table, row_num)
                 
-            cell = get_cell_with_activeX_in_row(table, row_num)
             if cell is None:
                 log_error(f"No ActiveX control found in row {row_num}")
                 raise Exception(f"No ActiveX control found in row {row_num} for folder: {folder_name}, please check if the row setting is correct or if the file is damaged.")
@@ -225,7 +349,7 @@ def set_all_option_cells_for_ppt(table, status, map):
         raise Exception(f"Error in set_all_option_cells: {str(e)}")
 
 
-def set_option_cells_for_general(table, folder_status, option_config):
+def set_option_cells_for_general(table, folder_status, option_config, table_index=0, use_config=True):
     """设置通用团队的选项单元格"""
     if not option_config or not isinstance(option_config, dict):
         log_warning("无效的选项配置", "WORD")
@@ -242,10 +366,15 @@ def set_option_cells_for_general(table, folder_status, option_config):
         if not isinstance(option, dict):
             raise Exception(f"选项配置 {folder_name} 的格式不正确，应该是字典类型")
 
-        
         for key, value in option.items():
             row_index = value
-            opt_cell = get_cell_with_activeX_in_row(table, row_index)
+            
+            # 选择使用配置方法还是原方法
+            if use_config:
+                opt_cell = get_cell_with_activeX_by_config(table, row_index, table_index, 'general')
+            else:
+                opt_cell = get_cell_with_activeX_in_row(table, row_index)
+                
             if not opt_cell:
                 log_warning(f"未找到文件夹 {folder_name} 的选项单元格", "WORD")
                 continue
@@ -256,18 +385,18 @@ def set_option_cells_for_general(table, folder_status, option_config):
                 log_error(f"设置选项 {folder_name} 时发生错误: {e}", "WORD")
 
 
-def set_option_cells(table, team, folder_status, option_config):
+def set_option_cells(table, team, folder_status, option_config, table_index=0, use_config=True):
     """设置选项单元格"""
     if not option_config or not isinstance(option_config, dict):
         log_warning("无效的选项配置", "WORD")
         return
     if team == 'ppt':
-        set_all_option_cells_for_ppt(table, folder_status, option_config)
+        set_all_option_cells_for_ppt(table, folder_status, option_config, table_index, use_config)
     else:
-        set_option_cells_for_general(table, folder_status, option_config)
+        set_option_cells_for_general(table, folder_status, option_config, table_index, use_config)
 
 
-def set_checklist(task, target_path, team, subFolderConfig):
+def set_checklist(task, target_path, team, subFolderConfig, use_config=True):
     """设置检查清单"""
     try:
         # 启动Word应用程序
@@ -276,24 +405,32 @@ def set_checklist(task, target_path, team, subFolderConfig):
         word.Visible = False  # 让Word可见，方便查看操作过程
         checklist_path = get_only_word_file_path(target_path)
         log_debug(f"检查清单路径: {checklist_path}", "WORD")
+        
         # 打开指定的文档
         word_doc = word.Documents.Open(checklist_path)
         # 确保文档有表格
         if word_doc.Tables.Count == 0 or word_doc.Tables.Count < len(subFolderConfig):
             raise ValueError("tables setting in subfolderconfig's not correct")
-        for i,item in enumerate(subFolderConfig):
+        
+        # 记录使用的方法
+        method_name = "配置文件方法" if use_config else "原始搜索方法"
+        log_info(f"使用{method_name}处理ActiveX控件", "WORD")
+        
+        for i, item in enumerate(subFolderConfig):
             log_debug(f"正在处理表格索引: {i}, 配置项: {item}", "WORD")
             current_table = word_doc.Tables[i]
             log_debug(f"当前表格索引: {i}, 表格行数: {current_table.Rows.Count}, 列数: {current_table.Columns.Count}", "WORD")
             log_debug(f"fields: {item.get('fields')}, options: {item.get('options')}", "WORD")
+            
             if 'fields' in item and item['fields'] is not None:
                 set_fields_value(current_table, task, item["fields"])
                 log_debug(f"设置字段值完成: {item['fields']}", "WORD")
+                
             if 'options' in item and item["options"] is not None:
                 folder_status = detect_folders_status(target_path, team, item["options"])
                 log_debug(f"检测文件夹状态: {folder_status}", "WORD")
-                # 设置选项单元格
-                set_option_cells(current_table, team, folder_status, item["options"])
+                # 设置选项单元格，传递表格索引和配置方法选择
+                set_option_cells(current_table, team, folder_status, item["options"], i, use_config)
 
         # 保存并关闭文档
         word_doc.Save()

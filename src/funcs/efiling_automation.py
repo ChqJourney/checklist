@@ -107,7 +107,13 @@ class EFilingAutomation:
             self.log("成功连接到已存在的E-filing工具进程")
             
             # 查找主窗口
-            return self._find_main_window()
+            window_found = self._find_main_window()
+            
+            # 如果找到主窗口，确保其已激活
+            if window_found:
+                self.log("连接成功，窗口已激活")
+            
+            return window_found
             
         except Exception as e:
             self.log(f"连接到已存在进程失败: {e}", "ERROR")
@@ -134,7 +140,13 @@ class EFilingAutomation:
             time.sleep(self.config['operation']['window_wait'])
             
             # 查找主窗口
-            return self._find_main_window()
+            window_found = self._find_main_window()
+            
+            # 如果找到主窗口，确保其已激活
+            if window_found:
+                self.log("新进程启动成功，窗口已激活")
+            
+            return window_found
             
         except Exception as e:
             self.log(f"启动新进程失败: {e}", "ERROR")
@@ -161,7 +173,13 @@ class EFilingAutomation:
             self.log("成功连接到E-filing工具进程")
             
             # 获取主窗口
-            return self._find_main_window()
+            window_found = self._find_main_window()
+            
+            # 如果找到主窗口，确保其已激活
+            if window_found:
+                self.log("连接成功，窗口已激活")
+            
+            return window_found
             
         except Exception as e:
             self.log(f"连接到进程失败: {e}", "ERROR")
@@ -208,14 +226,8 @@ class EFilingAutomation:
                         # 等待窗口完全加载
                         time.sleep(self.config['operation']['window_wait'])
                         
-                        # 确保窗口是可见的
-                        try:
-                            if hasattr(self.main_window, 'is_visible') and not self.main_window.is_visible():
-                                self.log("窗口不可见，尝试使其可见")
-                                if hasattr(self.main_window, 'set_focus'):
-                                    self.main_window.set_focus()
-                        except Exception as visibility_error:
-                            self.log(f"设置窗口可见性时出错: {visibility_error}")
+                        # 激活窗口
+                        self._activate_window()
                         
                         return True
                         
@@ -230,6 +242,52 @@ class EFilingAutomation:
             
         except Exception as e:
             self.log(f"查找主窗口时发生错误: {e}", "ERROR")
+            return False
+
+    def _activate_window(self):
+        """激活主窗口，使其处于前台并获得焦点"""
+        if not self.main_window:
+            self.log("主窗口未找到，无法激活", "WARNING")
+            return False
+        
+        try:
+            self.log("正在激活E-filing工具窗口...")
+            
+            # 方法1: 使用restore()恢复窗口（如果被最小化）
+            try:
+                if hasattr(self.main_window, 'restore'):
+                    self.main_window.restore()
+                    self.log("窗口已恢复")
+            except Exception as restore_error:
+                self.log(f"恢复窗口失败: {restore_error}")
+            
+            # 方法2: 使用set_focus()设置焦点
+            try:
+                if hasattr(self.main_window, 'set_focus'):
+                    self.main_window.set_focus()
+                    self.log("窗口焦点已设置")
+            except Exception as focus_error:
+                self.log(f"设置窗口焦点失败: {focus_error}")
+            
+            # 方法3: 使用move_window()将窗口移到前台
+            try:
+                if hasattr(self.main_window, 'move_window'):
+                    # 获取当前窗口位置，然后重新设置（这会将窗口带到前台）
+                    rect = self.main_window.rectangle()
+                    self.main_window.move_window(rect.left, rect.top, rect.width(), rect.height())
+                    self.log("窗口已移到前台")
+            except Exception as move_error:
+                self.log(f"移动窗口到前台失败: {move_error}")
+            
+                      
+            # 等待一下确保操作生效
+            time.sleep(0.5)
+            
+            self.log("E-filing工具窗口激活完成")
+            return True
+            
+        except Exception as e:
+            self.log(f"激活窗口时发生错误: {e}", "ERROR")
             return False
 
     def fill_information(self, base_dir: str, team: str) -> bool:

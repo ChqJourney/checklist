@@ -1,0 +1,171 @@
+{
+  "general_template": {
+    "description": "general_template模板ActiveX控件位置配置",
+    "scanned_from": "C:\\Users\\patrickc\\repos\\checklist\\templates\\general_template.docx",
+    "table_0": {
+      "5": {
+        "row": 5,
+        "column": 3
+      },
+      "6": {
+        "row": 6,
+        "column": 3
+      },
+      "7": {
+        "row": 7,
+        "column": 3
+      },
+      "8": {
+        "row": 8,
+        "column": 3
+      },
+      "9": {
+        "row": 9,
+        "column": 5
+      },
+      "10": {
+        "row": 10,
+        "column": 5
+      },
+      "11": {
+        "row": 11,
+        "column": 5
+      },
+      "12": {
+        "row": 12,
+        "column": 5
+      },
+      "13": {
+        "row": 13,
+        "column": 4
+      },
+      "14": {
+        "row": 14,
+        "column": 4
+      },
+      "15": {
+        "row": 15,
+        "column": 4
+      },
+      "16": {
+        "row": 16,
+        "column": 4
+      },
+      "17": {
+        "row": 17,
+        "column": 4
+      },
+      "18": {
+        "row": 18,
+        "column": 4
+      },
+      "19": {
+        "row": 19,
+        "column": 4
+      },
+      "20": {
+        "row": 20,
+        "column": 4
+      },
+      "21": {
+        "row": 21,
+        "column": 3
+      },
+      "22": {
+        "row": 22,
+        "column": 3
+      },
+      "23": {
+        "row": 23,
+        "column": 3
+      },
+      "24": {
+        "row": 24,
+        "column": 4
+      },
+      "25": {
+        "row": 25,
+        "column": 4
+      },
+      "26": {
+        "row": 26,
+        "column": 4
+      },
+      "27": {
+        "row": 27,
+        "column": 3
+      },
+      "28": {
+        "row": 28,
+        "column": 3
+      },
+      "29": {
+        "row": 29,
+        "column": 3
+      },
+      "30": {
+        "row": 30,
+        "column": 3
+      }
+    }
+  },
+  "ppt_template": {
+    "description": "ppt_template模板ActiveX控件位置配置",
+    "scanned_from": "C:\\Users\\patrickc\\repos\\checklist\\templates\\ppt_template.docx",
+    "table_0": {},
+    "table_1": {
+      "2": {
+        "row": 2,
+        "column": 4
+      },
+      "3": {
+        "row": 3,
+        "column": 4
+      },
+      "4": {
+        "row": 4,
+        "column": 4
+      },
+      "5": {
+        "row": 5,
+        "column": 3
+      },
+      "8": {
+        "row": 8,
+        "column": 4
+      },
+      "9": {
+        "row": 9,
+        "column": 4
+      },
+      "10": {
+        "row": 10,
+        "column": 4
+      },
+      "11": {
+        "row": 11,
+        "column": 4
+      },
+      "12": {
+        "row": 12,
+        "column": 4
+      },
+      "13": {
+        "row": 13,
+        "column": 4
+      },
+      "14": {
+        "row": 14,
+        "column": 3
+      },
+      "15": {
+        "row": 15,
+        "column": 3
+      },
+      "16": {
+        "row": 16,
+        "column": 3
+      }
+    }
+  }
+}

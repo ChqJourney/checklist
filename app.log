@@ -1995,3 +1995,314 @@
 [2025-07-29 01:13:33] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
 [2025-07-29 01:13:33] [DEBUG] [GUI] 所有任务处理完成，共处理 2 个任务
 [2025-07-29 01:13:51] [DEBUG] [GUI] 已打开文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-29 08:40:55] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 08:40:59] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 08:40:59] [DEBUG] [GUI] 成功读取 2 个任务
+[2025-07-29 08:40:59] [DEBUG] [GUI] 共计 2 个任务
+[2025-07-29 08:40:59] [DEBUG] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-29 08:40:59] [DEBUG] [FILE] 无法访问目录 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patri\\source\\demos\\py_checklist\\test_loads\\lum\\2025'
+[2025-07-29 08:40:59] [DEBUG] [GUI] 任务 250100032HZH 的工作目录未找到
+[2025-07-29 08:40:59] [DEBUG] [GUI] 处理任务 2/2: 250400031HZH
+[2025-07-29 08:40:59] [DEBUG] [FILE] 无法访问目录 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patri\\source\\demos\\py_checklist\\test_loads\\lum\\2025'
+[2025-07-29 08:40:59] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-29 08:40:59] [DEBUG] [GUI] 所有任务处理完成，共处理 2 个任务
+[2025-07-29 08:43:12] [DEBUG] [GUI] 已选择E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 08:43:42] [DEBUG] [GUI] 已选择文件夹: ('C:\\Users\\patrickc\\repos\\checklist\\test_loads\\lum',)
+[2025-07-29 08:44:42] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 08:44:43] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 08:44:43] [DEBUG] [GUI] 成功读取 2 个任务
+[2025-07-29 08:44:43] [DEBUG] [GUI] 共计 2 个任务
+[2025-07-29 08:44:43] [DEBUG] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-29 08:44:43] [DEBUG] [FILE] 无法访问目录 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patri\\source\\demos\\py_checklist\\test_loads\\lum\\2025'
+[2025-07-29 08:44:43] [DEBUG] [GUI] 任务 250100032HZH 的工作目录未找到
+[2025-07-29 08:44:43] [DEBUG] [GUI] 处理任务 2/2: 250400031HZH
+[2025-07-29 08:44:43] [DEBUG] [FILE] 无法访问目录 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patri\\source\\demos\\py_checklist\\test_loads\\lum\\2025'
+[2025-07-29 08:44:43] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-29 08:44:43] [DEBUG] [GUI] 所有任务处理完成，共处理 2 个任务
+[2025-07-29 08:45:14] [DEBUG] [GUI] 已选择文件夹: ('C:\\Users\\patrickc\\repos\\checklist',)
+[2025-07-29 08:45:33] [DEBUG] [GUI] 已选择E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 08:45:34] [DEBUG] [GUI] 配置保存成功: 团队=LUM, 基础目录=C:\Users\patrickc\repos\checklist, 检查清单=cover, E-filing工具路径=D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 08:45:47] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 08:45:48] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 08:45:48] [DEBUG] [GUI] 成功读取 2 个任务
+[2025-07-29 08:45:48] [DEBUG] [GUI] 共计 2 个任务
+[2025-07-29 08:45:48] [DEBUG] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-29 08:45:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\2025'
+[2025-07-29 08:45:48] [DEBUG] [GUI] 任务 250100032HZH 的工作目录未找到
+[2025-07-29 08:45:48] [DEBUG] [GUI] 处理任务 2/2: 250400031HZH
+[2025-07-29 08:45:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\2025'
+[2025-07-29 08:45:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-29 08:45:48] [DEBUG] [GUI] 所有任务处理完成，共处理 2 个任务
+[2025-07-29 08:46:17] [DEBUG] [GUI] 已选择文件夹: ('C:\\Users\\patrickc\\repos\\checklist\\test_loads\\lum',)
+[2025-07-29 08:46:18] [DEBUG] [GUI] 配置保存成功: 团队=LUM, 基础目录=C:\Users\patrickc\repos\checklist\test_loads\lum, 检查清单=cover, E-filing工具路径=D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 08:46:23] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 08:46:24] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 08:46:24] [DEBUG] [GUI] 成功读取 2 个任务
+[2025-07-29 08:46:24] [DEBUG] [GUI] 共计 2 个任务
+[2025-07-29 08:46:24] [DEBUG] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-29 08:46:24] [DEBUG] [GUI] 找到目录: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL
+[2025-07-29 08:46:24] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 08:46:24] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 08:46:26] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 08:46:26] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 08:46:28] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\project No._E-filing checklist.docx
+[2025-07-29 08:46:28] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 08:46:28] [DEBUG] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 08:46:36] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 08:46:38] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 08:46:38] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 08:46:40] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 08:46:45] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 08:46:46] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 08:46:46] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': False, 'CB': False, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': True, 'DataSheet': True, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': False}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': True}, '': {'CrossReference': False}}
+[2025-07-29 08:46:58] [DEBUG] [WORD] Error accessing cell at row 10, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:02] [DEBUG] [WORD] Error accessing cell at row 11, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:06] [DEBUG] [WORD] Error accessing cell at row 12, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:11] [DEBUG] [WORD] Error accessing cell at row 13, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:26] [DEBUG] [WORD] Error accessing cell at row 15, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:28] [DEBUG] [WORD] Error accessing cell at row 16, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:35] [DEBUG] [WORD] Error accessing cell at row 18, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:38] [DEBUG] [WORD] Error accessing cell at row 19, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:42] [DEBUG] [WORD] Error accessing cell at row 20, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:59] [DEBUG] [WORD] Error accessing cell at row 25, column 1: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:47:59] [DEBUG] [WORD] Error accessing cell at row 25, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:48:02] [DEBUG] [WORD] Error accessing cell at row 26, column 1: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:48:02] [DEBUG] [WORD] Error accessing cell at row 26, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 08:48:24] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 08:48:24] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 08:48:24] [DEBUG] [GUI] 处理任务 2/2: 250400031HZH
+[2025-07-29 08:48:24] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-29 08:48:24] [DEBUG] [GUI] 所有任务处理完成，共处理 2 个任务
+[2025-07-29 08:48:36] [DEBUG] [GUI] 已打开文件: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 08:48:56] [DEBUG] [GUI] 导入pywinauto模块失败: No module named 'pywinauto'
+[2025-07-29 08:51:21] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 08:51:21] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 08:51:23] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 08:51:23] [DEBUG] [GUI] 启动新的E-filing工具进程: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 08:51:23] [DEBUG] [GUI] 新进程启动成功
+[2025-07-29 08:51:28] [DEBUG] [GUI] 找到主窗口: 'E_Filing 批处理程序 for HZ'
+[2025-07-29 08:51:31] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-29 08:51:31] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-29 08:51:31] [DEBUG] [GUI] === 控件信息结束 ===
+[2025-07-29 08:51:31] [DEBUG] [GUI] 已选择ComboBox: LUM
+[2025-07-29 08:51:31] [DEBUG] [GUI] 已选择ComboBox: No
+[2025-07-29 08:51:31] [DEBUG] [GUI] E-filing信息自动填入完成
+[2025-07-29 08:51:31] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 13:50:24] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 13:50:26] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 13:50:27] [DEBUG] [GUI] 成功读取 2 个任务
+[2025-07-29 13:50:27] [DEBUG] [GUI] 共计 2 个任务
+[2025-07-29 13:50:27] [DEBUG] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-29 13:50:27] [DEBUG] [GUI] 找到目录: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL
+[2025-07-29 13:50:27] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 13:50:27] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 13:50:28] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 13:50:28] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 13:50:30] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 13:50:30] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 13:50:30] [DEBUG] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 13:50:40] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 13:50:41] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 13:50:41] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 13:50:43] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 13:50:46] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 13:50:48] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 13:50:48] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': False, 'CB': False, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': True, 'DataSheet': True, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': False}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': True}, '': {'CrossReference': False}}
+[2025-07-29 13:50:59] [DEBUG] [WORD] Error accessing cell at row 10, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:02] [DEBUG] [WORD] Error accessing cell at row 11, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:05] [DEBUG] [WORD] Error accessing cell at row 12, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:08] [DEBUG] [WORD] Error accessing cell at row 13, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:20] [DEBUG] [WORD] Error accessing cell at row 15, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:21] [DEBUG] [WORD] Error accessing cell at row 16, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:27] [DEBUG] [WORD] Error accessing cell at row 18, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:29] [DEBUG] [WORD] Error accessing cell at row 19, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:34] [DEBUG] [WORD] Error accessing cell at row 20, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:46] [DEBUG] [WORD] Error accessing cell at row 25, column 1: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:46] [DEBUG] [WORD] Error accessing cell at row 25, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:49] [DEBUG] [WORD] Error accessing cell at row 26, column 1: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:51:49] [DEBUG] [WORD] Error accessing cell at row 26, column 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 13:52:11] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 13:52:11] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 13:52:11] [DEBUG] [GUI] 处理任务 2/2: 250400031HZH
+[2025-07-29 13:52:11] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-29 13:52:11] [DEBUG] [GUI] 所有任务处理完成，共处理 2 个任务
+[2025-07-29 13:52:21] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:52:21] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:52:22] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:52:22] [DEBUG] [GUI] 启动新的E-filing工具进程: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:52:23] [DEBUG] [GUI] 新进程启动成功
+[2025-07-29 13:52:28] [DEBUG] [GUI] 找到主窗口: 'E_Filing 批处理程序 for HZ'
+[2025-07-29 13:52:31] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-29 13:52:31] [DEBUG] [GUI] 窗口已恢复
+[2025-07-29 13:52:31] [DEBUG] [GUI] 窗口焦点已设置
+[2025-07-29 13:52:31] [DEBUG] [GUI] 窗口已移到前台
+[2025-07-29 13:52:31] [DEBUG] [GUI] 窗口已最大化
+[2025-07-29 13:52:31] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-29 13:52:31] [DEBUG] [GUI] 新进程启动成功，窗口已激活
+[2025-07-29 13:52:31] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-29 13:52:31] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-29 13:52:31] [DEBUG] [GUI] === 控件信息结束 ===
+[2025-07-29 13:52:31] [DEBUG] [GUI] 已选择ComboBox: LUM
+[2025-07-29 13:52:31] [DEBUG] [GUI] 已选择ComboBox: No
+[2025-07-29 13:52:31] [DEBUG] [GUI] E-filing信息自动填入完成
+[2025-07-29 13:52:31] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 13:53:42] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:53:42] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:53:43] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:53:43] [DEBUG] [GUI] 启动新的E-filing工具进程: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:53:43] [DEBUG] [GUI] 新进程启动成功
+[2025-07-29 13:53:48] [DEBUG] [GUI] 找到主窗口: 'E_Filing 批处理程序 for HZ'
+[2025-07-29 13:53:51] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-29 13:53:51] [DEBUG] [GUI] 窗口已恢复
+[2025-07-29 13:53:51] [DEBUG] [GUI] 窗口焦点已设置
+[2025-07-29 13:53:51] [DEBUG] [GUI] 窗口已移到前台
+[2025-07-29 13:53:52] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-29 13:53:52] [DEBUG] [GUI] 新进程启动成功，窗口已激活
+[2025-07-29 13:53:52] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-29 13:53:52] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-29 13:53:52] [DEBUG] [GUI] === 控件信息结束 ===
+[2025-07-29 13:53:52] [DEBUG] [GUI] 已选择ComboBox: LUM
+[2025-07-29 13:53:52] [DEBUG] [GUI] 已选择ComboBox: No
+[2025-07-29 13:53:52] [DEBUG] [GUI] E-filing信息自动填入完成
+[2025-07-29 13:53:52] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 13:54:20] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:54:20] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-29 13:54:20] [DEBUG] [GUI] 找到运行中的进程: New_E_Filing_HZ_V3.1.exe (PID: 9992)
+[2025-07-29 13:54:20] [DEBUG] [GUI] 发现已运行的E-filing工具进程 (PID: 9992)，尝试连接...
+[2025-07-29 13:54:20] [DEBUG] [GUI] 连接到已存在的进程: 9992
+[2025-07-29 13:54:20] [DEBUG] [GUI] 成功连接到已存在的E-filing工具进程
+[2025-07-29 13:54:20] [DEBUG] [GUI] 找到主窗口: 'E_Filing 批处理程序 for HZ'
+[2025-07-29 13:54:23] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-29 13:54:23] [DEBUG] [GUI] 窗口已恢复
+[2025-07-29 13:54:23] [DEBUG] [GUI] 窗口焦点已设置
+[2025-07-29 13:54:23] [DEBUG] [GUI] 窗口已移到前台
+[2025-07-29 13:54:24] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-29 13:54:24] [DEBUG] [GUI] 连接成功，窗口已激活
+[2025-07-29 13:54:24] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-29 13:54:24] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-29 13:54:24] [DEBUG] [GUI] === 控件信息结束 ===
+[2025-07-29 13:54:24] [DEBUG] [GUI] 已选择ComboBox: LUM
+[2025-07-29 13:54:24] [DEBUG] [GUI] 已选择ComboBox: No
+[2025-07-29 13:54:24] [DEBUG] [GUI] E-filing信息自动填入完成
+[2025-07-29 13:54:24] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-29 14:03:33] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 14:03:34] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 14:03:34] [DEBUG] [GUI] 成功读取 2 个任务
+[2025-07-29 14:03:34] [DEBUG] [GUI] 共计 2 个任务
+[2025-07-29 14:03:34] [DEBUG] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-29 14:03:34] [DEBUG] [GUI] 找到目录: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL
+[2025-07-29 14:03:34] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 14:03:34] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 14:03:36] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 14:03:36] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 14:03:36] [DEBUG] [WORD] ActiveX控件缓存已清除
+[2025-07-29 14:03:37] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 14:03:37] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 14:03:37] [DEBUG] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 14:03:46] [INFO] [WORD] 使用快速方法处理ActiveX控件
+[2025-07-29 14:03:46] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 14:03:47] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 14:03:47] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 14:03:47] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 14:03:50] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 14:03:51] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 14:03:51] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': False, 'CB': False, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': True, 'DataSheet': True, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': False}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': True}, '': {'CrossReference': False}}
+[2025-07-29 14:03:52] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 5
+[2025-07-29 14:03:55] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 6
+[2025-07-29 14:03:59] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 9
+[2025-07-29 14:04:02] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 10
+[2025-07-29 14:04:03] [DEBUG] [WORD] 访问单元格时出错: row 10, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:04:06] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 11
+[2025-07-29 14:04:07] [DEBUG] [WORD] 访问单元格时出错: row 11, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:04:10] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 12
+[2025-07-29 14:04:10] [DEBUG] [WORD] 访问单元格时出错: row 12, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:04:13] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 13
+[2025-07-29 14:04:14] [DEBUG] [WORD] 访问单元格时出错: row 13, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:04:17] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 7
+[2025-07-29 14:04:21] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 8
+[2025-07-29 14:04:23] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 14
+[2025-07-29 14:04:26] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 15
+[2025-07-29 14:04:27] [DEBUG] [WORD] 访问单元格时出错: row 15, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:04:29] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 16
+[2025-07-29 14:04:29] [DEBUG] [WORD] 访问单元格时出错: row 16, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:04:32] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 17
+[2025-07-29 14:04:35] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 18
+[2025-07-29 14:04:36] [DEBUG] [WORD] 访问单元格时出错: row 18, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:04:38] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 19
+[2025-07-29 14:04:39] [DEBUG] [WORD] 访问单元格时出错: row 19, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:04:41] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 20
+[2025-07-29 14:04:42] [DEBUG] [WORD] 访问单元格时出错: row 20, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:04:45] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 21
+[2025-07-29 14:04:48] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 22
+[2025-07-29 14:04:51] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 23
+[2025-07-29 14:04:56] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 24
+[2025-07-29 14:05:00] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 25
+[2025-07-29 14:05:00] [DEBUG] [WORD] 访问单元格时出错: row 25, col 1: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:05:00] [DEBUG] [WORD] 访问单元格时出错: row 25, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:05:05] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 26
+[2025-07-29 14:05:05] [DEBUG] [WORD] 访问单元格时出错: row 26, col 1: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:05:05] [DEBUG] [WORD] 访问单元格时出错: row 26, col 2: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'The requested member of the collection does not exist.', 'wdmain11.chm', 25421, -2146822347), None)
+[2025-07-29 14:05:08] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 27
+[2025-07-29 14:05:11] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 28
+[2025-07-29 14:05:15] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 29
+[2025-07-29 14:05:19] [DEBUG] [WORD] Word内置搜索方法失败，使用备用方法查找行 30
+[2025-07-29 14:05:23] [DEBUG] [WORD] ActiveX控件缓存已清除
+[2025-07-29 14:05:27] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 14:05:27] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 14:05:27] [DEBUG] [GUI] 处理任务 2/2: 250400031HZH
+[2025-07-29 14:05:27] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-29 14:05:27] [DEBUG] [GUI] 所有任务处理完成，共处理 2 个任务
+[2025-07-29 14:51:15] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 14:51:16] [DEBUG] [GUI] 开始处理任务...
+[2025-07-29 14:51:17] [DEBUG] [GUI] 成功读取 2 个任务
+[2025-07-29 14:51:17] [DEBUG] [GUI] 共计 2 个任务
+[2025-07-29 14:51:17] [DEBUG] [GUI] 处理任务 1/2: 250100032HZH
+[2025-07-29 14:51:17] [DEBUG] [GUI] 找到目录: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL
+[2025-07-29 14:51:17] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-07-29 14:51:17] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 14:51:18] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-07-29 14:51:18] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 14:51:19] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 14:51:19] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 14:51:19] [DEBUG] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 14:51:28] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-07-29 14:51:28] [DEBUG] [WORD] 正在处理表格索引: 0, 配置项: {'fields': {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, 'options': {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}}
+[2025-07-29 14:51:29] [DEBUG] [WORD] 当前表格索引: 0, 表格行数: 30, 列数: 6
+[2025-07-29 14:51:29] [DEBUG] [WORD] fields: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}, options: {'0 Job sheet & Quotation': {'JobSheet': 5, 'Quotation': 6}, '1 Application documents': {'GS': 9, 'CB': 10, 'ETL': 11}, '1 Application documents\\Others service app': {'OtherServies': 12}, '1 Application documents\\other application documents': {'OtherAppDoc': 13}, '2 Certificate': {'Certificate': 7}, '3 Test report': {'TestReport': 8}, '4 Test record': {'CRSheet': 14, 'DataSheet': 15, 'EquipmentList': 16}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': 17}, '5 Technical documents\\Partlist': {'Partlist': 18}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': 19}, '5 Technical documents\\Other technical info': {'OtherTechInfo': 20}, '6 User Manual(s) & Label': {'UserManual': 21}, '7 Component Cer': {'ComponentCert': 22}, '8 PAH evaluation': {'Pah': 23}, '9 Communication file\\Letter report(s)': {'LetterReport': 24}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': 25}, '9 Communication file\\Others Communication': {'OthersCommunication': 26}, '10 Subcontract report and log sheet': {'SubReport': 27}, '11 Photos': {'Photo': 28}, '14 Other documents': {'OtherDoc': 29}, '': {'CrossReference': 30}}
+[2025-07-29 14:51:29] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 14:51:32] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 14:51:34] [DEBUG] [WORD] 设置字段值完成: {'job_no': {'type': 'text', 'indexes': [1, 2]}, 'date': {'type': 'date', 'indexes': [2, 2]}, 'job_creator': [{'type': 'text', 'indexes': [2, 4]}, {'type': 'image', 'indexes': [2, 4]}], 'engineers': [{'type': 'text', 'indexes': [1, 4]}, {'type': 'image', 'indexes': [1, 4]}]}
+[2025-07-29 14:51:34] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': False, 'CB': False, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': True, 'DataSheet': True, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': False}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': True}, '': {'CrossReference': False}}
+[2025-07-29 14:51:34] [DEBUG] [WORD] 已加载ActiveX配置文件: C:\Users\patrickc\repos\checklist\activex_config.json
+[2025-07-29 14:51:35] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-07-29 14:51:37] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-07-29 14:51:40] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-07-29 14:51:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-07-29 14:51:45] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-07-29 14:51:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-07-29 14:51:50] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-07-29 14:51:53] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-07-29 14:51:55] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-07-29 14:51:57] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-07-29 14:51:59] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-07-29 14:52:02] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-07-29 14:52:04] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-07-29 14:52:06] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-07-29 14:52:10] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-07-29 14:52:12] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-07-29 14:52:16] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-07-29 14:52:19] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-07-29 14:52:22] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-07-29 14:52:25] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-07-29 14:52:28] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-07-29 14:52:31] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-07-29 14:52:33] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-07-29 14:52:36] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-07-29 14:52:38] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-07-29 14:52:42] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-07-29 14:52:49] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 14:52:49] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 14:52:49] [DEBUG] [GUI] 处理任务 2/2: 250400031HZH
+[2025-07-29 14:52:49] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-29 14:52:49] [DEBUG] [GUI] 所有任务处理完成，共处理 2 个任务
+[2025-07-29 14:52:58] [DEBUG] [GUI] 已打开文件: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
