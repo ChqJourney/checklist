@@ -41,7 +41,7 @@ class ConfigManager:
         'required_keys': ['team', 'base_dir','checklist', 'task_list_map'],
         'allowed_keys': ['team', 'base_dir', 'task_list_map', 'checklist', 'efilling_tool_path'],
         'team': {
-            'allowed_values': ['LUM','HA','TM','EMC', 'ppt']
+            'allowed_values': ['LUM','HA','TM','EMC', 'PPT']
         },
         'base_dir': {
             'type': str,

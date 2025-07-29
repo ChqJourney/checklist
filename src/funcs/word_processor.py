@@ -390,7 +390,7 @@ def set_option_cells(table, team, folder_status, option_config, table_index=0, u
     if not option_config or not isinstance(option_config, dict):
         log_warning("无效的选项配置", "WORD")
         return
-    if team == 'ppt':
+    if team == 'PPT':
         set_all_option_cells_for_ppt(table, folder_status, option_config, table_index, use_config)
     else:
         set_option_cells_for_general(table, folder_status, option_config, table_index, use_config)

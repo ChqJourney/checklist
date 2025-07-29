@@ -17,7 +17,7 @@ def get_working_folder_path(base_dir, team, job_no):
     :param job_no: 工作号
     :return: 工作目录路径，如果未找到则返回None
     """
-    if team == 'ppt':
+    if team == 'PPT':
         return get_working_folder_path_for_ppt(base_dir, job_no)
     else:
         return get_working_folder_path_for_general(base_dir, job_no)
