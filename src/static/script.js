@@ -174,7 +174,7 @@ function updateResults(results) {
                 <td>${result.job_creator}</td>
                 <td>${result.engineers}</td>
                 <td class="${statusClass}">${result.status}</td>
-                <td title="${result.target_path || ''}">${result.target_path}</td>
+                <td title="${result.target_path || ''}">${result.target_path??""}</td>
                 <td>
                     <div class="action-dropdown" data-target-path="${result.target_path || ''}">
                         <button class="action-btn" onclick="toggleDropdown(this)">

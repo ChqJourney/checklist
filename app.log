@@ -1441,3 +1441,99 @@
 [2025-07-21 22:28:06] [INFO] [GUI] 请先选择任务列表文件
 [2025-07-21 22:48:39] [INFO] [GUI] 已选择文件: task list.xlsx
 [2025-07-22 13:25:55] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:44:06] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:44:06] [INFO] [GUI] 开始处理任务...
+[2025-07-29 15:44:06] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 15:44:06] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 15:44:06] [INFO] [GUI] 处理任务 1/1: 250600234HZH
+[2025-07-29 15:44:06] [INFO] [GUI] 找到目录: None
+[2025-07-29 15:44:06] [INFO] [GUI] 处理过程中发生错误: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+[2025-07-29 15:47:02] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:47:03] [INFO] [GUI] 开始处理任务...
+[2025-07-29 15:47:03] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 15:47:03] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 15:47:03] [INFO] [GUI] 处理任务 1/1: 250600234HZH
+[2025-07-29 15:47:03] [INFO] [GUI] 找到目录: None
+[2025-07-29 15:47:03] [INFO] [GUI] 处理过程中发生错误: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+[2025-07-29 15:49:16] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:49:17] [INFO] [GUI] 开始处理任务...
+[2025-07-29 15:49:17] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 15:49:17] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 15:49:17] [INFO] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-29 15:49:17] [INFO] [GUI] 找到目录: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL
+[2025-07-29 15:49:17] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-29 15:49:17] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 15:49:18] [INFO] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 15:49:20] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 15:49:20] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 15:49:31] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 15:49:32] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 15:49:49] [INFO] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 15:49:49] [INFO] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 15:49:49] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-29 15:53:01] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:53:01] [INFO] [GUI] 开始处理任务...
+[2025-07-29 15:53:01] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 15:53:01] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 15:53:01] [INFO] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-29 15:53:01] [INFO] [GUI] 找到目录: None
+[2025-07-29 15:53:01] [INFO] [GUI] 处理过程中发生错误: stat: path should be string, bytes, os.PathLike or integer, not NoneType
+[2025-07-29 15:54:39] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:54:39] [INFO] [GUI] 开始处理任务...
+[2025-07-29 15:54:40] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 15:54:40] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 15:54:40] [INFO] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-29 15:54:40] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-29 15:56:38] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:56:38] [INFO] [GUI] 开始处理任务...
+[2025-07-29 15:56:38] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 15:56:38] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 15:56:38] [INFO] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-29 15:56:38] [INFO] [GUI] 任务 250100032HZH 的项目文件夹不存在
+[2025-07-29 15:56:38] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-29 15:58:10] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:58:15] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:58:16] [INFO] [GUI] 开始处理任务...
+[2025-07-29 15:58:16] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 15:58:16] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 15:58:16] [INFO] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-29 15:58:16] [INFO] [GUI] 任务 250100032HZH 的项目文件夹不存在
+[2025-07-29 15:58:16] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-29 15:59:51] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:59:55] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 15:59:56] [INFO] [GUI] 开始处理任务...
+[2025-07-29 15:59:56] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 15:59:56] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 15:59:56] [INFO] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-29 15:59:56] [INFO] [GUI] 处理过程中发生错误: 'job'
+[2025-07-29 16:00:19] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 16:00:19] [INFO] [GUI] 开始处理任务...
+[2025-07-29 16:00:19] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 16:00:19] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 16:00:19] [INFO] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-29 16:00:19] [INFO] [GUI] 任务 250100032HZH 的项目文件夹不存在
+[2025-07-29 16:00:19] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-29 16:01:19] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 16:01:20] [INFO] [GUI] 开始处理任务...
+[2025-07-29 16:01:20] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 16:01:20] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 16:01:20] [INFO] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-29 16:01:20] [INFO] [GUI] 任务 250100032HZH 的项目文件夹不存在
+[2025-07-29 16:01:20] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-29 16:01:41] [INFO] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-29 16:01:41] [INFO] [GUI] 开始处理任务...
+[2025-07-29 16:01:41] [INFO] [GUI] 成功读取 1 个任务
+[2025-07-29 16:01:41] [INFO] [GUI] 共计 1 个任务
+[2025-07-29 16:01:41] [INFO] [GUI] 处理任务 1/1: 250100032HZH
+[2025-07-29 16:01:41] [INFO] [GUI] 找到目录: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL
+[2025-07-29 16:01:41] [INFO] [GUI] 开始检查子文件夹...
+[2025-07-29 16:01:41] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-07-29 16:01:43] [INFO] [GUI] 250100032HZH开始写入检查列表...
+[2025-07-29 16:01:45] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 16:01:45] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx
+[2025-07-29 16:01:58] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 16:02:01] [WARNING] [WORD] 未找到工程师 Jack Chen 的签名图片，使用默认图片
+[2025-07-29 16:03:28] [INFO] [GUI] 250100032HZH检查列表写入完成
+[2025-07-29 16:03:28] [INFO] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-07-29 16:03:28] [INFO] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-07-29 16:03:31] [INFO] [GUI] 已打开文件: C:\Users\patrickc\repos\checklist\test_loads\lum\2025\250100032HZH_Wuxi Seastar_LED Retro-fit Kits_ETL\E-filing checklist.docx

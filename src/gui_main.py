@@ -1,3 +1,4 @@
+import glob
 import webview
 import threading
 import json
@@ -138,20 +139,25 @@ class ProjectFileChecker:
                     
                     # 获取工作目录
                     target_path = get_working_folder_path(self.base_dir,self.team, task['job_no'])
-                    
                     result = {
                         'job_no': task['job_no'],
                         'job_creator': task['job_creator'],
                         'engineers': task['engineers'],
                         'target_path': str(target_path) if target_path is not None else None,
-                        'status': '未找到目录' if target_path is None else '已处理',
+                        'status': f"未找到{task['job_no']}目录" if target_path is None else '已处理',
                         'folders': {}
                     }
+                    if target_path==None:
+                        self.log(f"任务 {task['job_no']} 的项目文件夹不存在")
+                        data_manager.add_result(result)
+                        webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
+                        continue
                     self.log(f"找到目录: {target_path}")
                     if not folder_precheck(target_path, self.team):
                         self.log(f"任务 {task['job_no']} 的文件夹预检查失败")
                         result['status'] = '文件夹预检查失败'
                         data_manager.add_result(result)
+                        webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
                         continue
                     # 检测文件夹
                     self.log("开始检查子文件夹...")
@@ -212,12 +218,13 @@ class ProjectFileChecker:
                 return {'success': False, 'message': '路径为空'}
             
             # 查找checklist文件
-            checklist_file = get_only_word_file_path(target_path)
+            checklist_files = glob.glob(os.path.join(target_path, '*checklist*.doc*'))
+            checklist_files = [f for f in checklist_files if not os.path.basename(f).startswith(('~$', '.', '__'))]
             
-            if checklist_file and os.path.exists(checklist_file):
-                os.startfile(checklist_file)
-                self.log(f"已打开文件: {checklist_file}")
-                return {'success': True, 'message': f'已打开文件: {os.path.basename(checklist_file)}'}
+            if checklist_files and os.path.exists(checklist_files[0]):
+                os.startfile(checklist_files[0])
+                self.log(f"已打开文件: {checklist_files[0]}")
+                return {'success': True, 'message': f'已打开文件: {os.path.basename(checklist_files[0])}'}
             else:
                 self.log(f"在路径 {target_path} 中未找到checklist文件")
                 return {'success': False, 'message': '未找到checklist文件'}
