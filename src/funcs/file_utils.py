@@ -95,7 +95,7 @@ def detect_folders_status(working_folder_path, team, options_config):
     :return: 文件夹状态字典
     """
     result = {}
-    if team == 'ppt':
+    if team == 'PPT':
         for sub_folder_name in options_config.keys():
             sub_folder_path = os.path.join(working_folder_path, sub_folder_name)
             print(f"检测文件夹: {sub_folder_path}")
