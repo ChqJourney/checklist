@@ -16,7 +16,7 @@ def folder_precheck(target_folder:str,team:str)-> bool:
     :return: 如果符合规则返回True，否则返回False
     """
     # 检查目标文件夹是否存在,检查目标文件夹是否为目录
-    if not os.path.exists(target_folder) and not os.path.isdir(target_folder):
+    if not os.path.exists(target_folder) or not os.path.isdir(target_folder):
         log_warning(f"目标文件夹 {target_folder} 不存在，或该文件夹不是目录", "FOLDER")
         return False
     # 检查目标文件夹下是否有文件名包含checklist的word文档
@@ -32,8 +32,7 @@ def folder_precheck(target_folder:str,team:str)-> bool:
         log_warning(f"目标文件夹 {target_folder} 下找到多个包含 'checklist' 的 Word 文档，请确保只有一个", "FOLDER")
         return False
     # 检查文件夹命名是否满足规范
-    folder_name_check_result=folder_name_check(target_folder, team)
-    if not folder_name_check_result:
+    if not folder_name_check(target_folder, team):
         log_warning(f"目标文件夹 {target_folder} 中的子文件夹的命名不符合规范", "FOLDER")
         return False
 

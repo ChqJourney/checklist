@@ -67,6 +67,7 @@ def get_working_folder_path_for_general(base_dir, job_no):
     if not job_no or len(job_no) < 8:
         log_debug(f"工作号 {job_no} 无效，无法获取工作目录路径", "PATH")
         return None
+    # 构造年份文件夹名称 (假设工作号前两位表示年份，如23表示2023年)
     sub_year_folder = f"20{job_no[:2]}"
     search_dir = os.path.join(base_dir, sub_year_folder)
     
@@ -75,8 +76,12 @@ def get_working_folder_path_for_general(base_dir, job_no):
         with os.scandir(search_dir) as entries:
             for entry in entries:
                 if entry.is_dir() and entry.name.startswith(job_no):
+                    log_debug(f"找到工作目录: {entry.path}", "PATH")
                     return entry.path
-    except (OSError, FileNotFoundError) as e:
+    except (OSError, FileNotFoundError, PermissionError) as e:
         log_debug(f"无法访问目录 {search_dir}: {e}", "FILE")
+    else:
+        # 只有在目录可访问但未找到匹配项时才记录此日志
+        log_debug(f"在目录 {search_dir} 中未找到以 {job_no} 开头的文件夹", "PATH")
     
     return None

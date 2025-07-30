@@ -356,8 +356,14 @@ def set_option_cells_for_general(table, folder_status, option_config, table_inde
         log_warning("无效的选项配置", "WORD")
         return
 
+    # 验证 folder_status 是否为字典类型
+    if not isinstance(folder_status, dict):
+        log_warning("无效的文件夹状态配置", "WORD")
+        return
+
     for folder_name, option in option_config.items():
-        if folder_name not in folder_status.keys():
+        # 优化：直接使用 in 操作符而不是 keys() 方法
+        if folder_name not in folder_status:
             print(f"folder {folder_name} not in folder_status {folder_status}")
             log_warning(f"文件夹 {folder_name} 的状态未定义", "WORD")
             continue
@@ -380,10 +386,15 @@ def set_option_cells_for_general(table, folder_status, option_config, table_inde
                 log_warning(f"未找到文件夹 {folder_name} 的选项单元格", "WORD")
                 continue
                 
+            # 增强异常处理，提供更多上下文信息
             try:
+                # 验证 status 是否包含所需的键
+                if key not in status:
+                    log_warning(f"状态配置中缺少键 {key} 对于文件夹 {folder_name}", "WORD")
+                    continue
                 set_option_cell(opt_cell, status[key])
             except Exception as e:
-                log_error(f"设置选项 {folder_name} 时发生错误: {e}", "WORD")
+                log_error(f"设置选项 {folder_name}.{key} 时发生错误: {e}", "WORD")
 
 
 def set_option_cells(table, team, folder_status, option_config, table_index=0, use_config=True):
@@ -399,19 +410,23 @@ def set_option_cells(table, team, folder_status, option_config, table_index=0, u
 
 def set_checklist(task, target_path, team, subFolderConfig, use_config=True):
     """设置检查清单"""
+    word = None
+    word_doc = None
     try:
         # 启动Word应用程序
-        print(f"{subFolderConfig}")
+        log_debug(f"subFolderConfig length: {len(subFolderConfig)}", "WORD")
         word = win32.Dispatch('Word.Application')
-        word.Visible = False  # 让Word可见，方便查看操作过程
+        word.Visible = False  # 让Word不可见，避免干扰用户操作
         checklist_path = get_only_word_file_path(target_path)
         log_debug(f"检查清单路径: {checklist_path}", "WORD")
         
         # 打开指定的文档
         word_doc = word.Documents.Open(checklist_path)
-        # 确保文档有表格
-        if word_doc.Tables.Count == 0 or word_doc.Tables.Count < len(subFolderConfig):
-            raise ValueError("tables setting in subfolderconfig's not correct")
+        # 确保文档有表格且数量足够
+        if word_doc.Tables.Count == 0:
+            raise ValueError("文档中没有找到表格")
+        if word_doc.Tables.Count < len(subFolderConfig):
+            raise ValueError(f"文档中的表格数量({word_doc.Tables.Count})少于配置要求的数量({len(subFolderConfig)})")
         
         # 记录使用的方法
         method_name = "配置文件方法" if use_config else "原始搜索方法"
@@ -435,12 +450,24 @@ def set_checklist(task, target_path, team, subFolderConfig, use_config=True):
 
         # 保存并关闭文档
         word_doc.Save()
-        word_doc.Close()
-        word.Quit()
+        log_info("检查清单保存成功", "WORD")
     except Exception as e:
         log_error(f"Error setting checklist: {str(e)}", "WORD")
-        if 'word' in locals():
-            kill_all_word_processes()
         raise
-
-
+    finally:
+        # 确保资源被正确释放
+        if word_doc:
+            try:
+                word_doc.Close()
+                log_debug("Word文档已关闭", "WORD")
+            except Exception as e:
+                log_error(f"关闭Word文档时出错: {str(e)}", "WORD")
+        
+        if word:
+            try:
+                word.Quit()
+                log_debug("Word应用程序已退出", "WORD")
+            except Exception as e:
+                log_error(f"退出Word应用程序时出错: {str(e)}", "WORD")
+            finally:
+                kill_all_word_processes()

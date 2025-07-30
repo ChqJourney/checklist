@@ -1986,3 +1986,24 @@
 [2025-07-30 21:49:27] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
 [2025-07-30 21:49:27] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
 [2025-07-30 21:49:58] [DEBUG] [GUI] 已打开文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-07-30 23:20:38] [DEBUG] [PATH] 工作号 None 无效，无法获取工作目录路径
+[2025-07-30 23:20:38] [DEBUG] [FILE] 无法访问目录 test_loads\lum\20in: [WinError 3] 系统找不到指定的路径。: 'test_loads\\lum\\20in'
+[2025-07-30 23:20:38] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 non_existent_folder 中不存在
+[2025-07-30 23:20:38] [WARNING] [FOLDER] 必需文件夹 0 Job sheet & Quotation 在路径 test_loads\lum\2025\invalid_folder 中不存在
+[2025-07-30 23:20:38] [INFO] Test console log
+[2025-07-30 23:20:38] [DEBUG] Multi-level test - DEBUG
+[2025-07-30 23:20:38] [INFO] Multi-level test - INFO
+[2025-07-30 23:20:38] [WARNING] Multi-level test - WARNING
+[2025-07-30 23:20:38] [ERROR] Multi-level test - ERROR
+[2025-07-30 23:20:38] [CRITICAL] Multi-level test - CRITICAL
+[2025-07-30 23:20:38] [INFO] Format test message
+[2025-07-30 23:20:38] [DEBUG] 🔍 这是一条DEBUG级别的日志
+[2025-07-30 23:20:38] [INFO] ℹ️ 这是一条INFO级别的日志
+[2025-07-30 23:20:38] [WARNING] ⚠️ 这是一条WARNING级别的日志
+[2025-07-30 23:20:38] [ERROR] ❌ 这是一条ERROR级别的日志
+[2025-07-30 23:20:38] [CRITICAL] 🚨 这是一条CRITICAL级别的日志
+[2025-07-30 23:20:38] [INFO] 配置验证测试消息
+[2025-07-30 23:20:38] [INFO] Pytest fixture test
+[2025-07-30 23:20:38] [INFO] Capsys fixture test
+[2025-07-30 23:20:38] [INFO] Monkeypatch test
+[2025-07-30 23:20:38] [DEBUG] [WORD] 已加载ActiveX配置文件: c:\Users\patri\source\demos\py_checklist\activex_config.json
