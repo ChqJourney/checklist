@@ -1296,3 +1296,344 @@
 [2025-07-29 23:27:54] [WARNING] [FOLDER] 目标文件夹 C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250400031HZH_sdfadsf_dfadf_ETL 中的子文件夹的命名不符合规范
 [2025-07-29 23:27:54] [DEBUG] [GUI] 任务 250400031HZH 的文件夹预检查失败
 [2025-07-29 23:27:54] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务
+[2025-07-30 09:55:26] [DEBUG] [GUI] 已选择E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-30 09:55:26] [DEBUG] [GUI] 配置保存成功
+[2025-07-30 09:55:34] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-30 09:55:37] [DEBUG] [GUI] 开始处理任务...
+[2025-07-30 09:55:37] [DEBUG] [GUI] 成功读取 19 个任务
+[2025-07-30 09:55:37] [DEBUG] [GUI] 共计 19 个任务
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 1/19: 250100032HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250100032HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 2/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 3/19: 250600345HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250600345HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 4/19: 250404031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250404031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 5/19: 250405031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 6/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 7/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 8/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 9/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 10/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 11/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 12/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 13/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 14/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 15/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 16/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 17/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 18/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 处理任务 19/19: 250400031HZH
+[2025-07-30 09:55:37] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 09:55:37] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务
+[2025-07-30 09:55:51] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-30 09:55:51] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-30 09:55:53] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-30 09:55:53] [DEBUG] [GUI] 启动新的E-filing工具进程: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-30 09:55:53] [DEBUG] [GUI] 新进程启动成功
+[2025-07-30 09:55:59] [DEBUG] [GUI] 找到主窗口: 'E_Filing 批处理程序 for HZ'
+[2025-07-30 09:56:02] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-30 09:56:02] [DEBUG] [GUI] 窗口已恢复
+[2025-07-30 09:56:02] [DEBUG] [GUI] 窗口焦点已设置
+[2025-07-30 09:56:02] [DEBUG] [GUI] 窗口已移到前台
+[2025-07-30 09:56:03] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-30 09:56:03] [DEBUG] [GUI] 新进程启动成功，窗口已激活
+[2025-07-30 09:56:03] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-30 09:56:03] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-30 09:56:03] [DEBUG] [GUI] === 控件信息结束 ===
+[2025-07-30 09:56:03] [DEBUG] [GUI] 已选择ComboBox: LUM
+[2025-07-30 09:56:03] [DEBUG] [GUI] 已选择ComboBox: No
+[2025-07-30 09:56:03] [DEBUG] [GUI] E-filing信息自动填入完成
+[2025-07-30 09:56:03] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-30 10:32:24] [DEBUG] [GUI] 配置保存成功
+[2025-07-30 10:59:30] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-30 10:59:32] [DEBUG] [GUI] 开始处理任务...
+[2025-07-30 10:59:32] [DEBUG] [GUI] 成功读取 19 个任务
+[2025-07-30 10:59:32] [DEBUG] [GUI] 共计 19 个任务
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 1/19: 250100032HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250100032HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 2/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 3/19: 250600345HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250600345HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 4/19: 250404031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250404031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 5/19: 250405031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 6/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 7/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 8/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 9/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 10/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 11/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 12/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 13/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 14/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 15/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 16/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 17/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 18/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 处理任务 19/19: 250400031HZH
+[2025-07-30 10:59:32] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 10:59:32] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 10:59:32] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务
+[2025-07-30 11:01:36] [DEBUG] [GUI] 正在启动E-filing工具: New_E_Filing_HZ_V3.1.exe
+[2025-07-30 11:01:36] [DEBUG] [GUI] 检查E-filing工具是否已运行: New_E_Filing_HZ_V3.1.exe
+[2025-07-30 11:01:37] [DEBUG] [GUI] 未发现运行中的E-filing工具，启动新实例: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-30 11:01:37] [DEBUG] [GUI] 启动新的E-filing工具进程: D:\OneDrive - Intertek\Desktop\New_E_Filing_HZ_V3.1\New_E_Filing_HZ_V3.1.exe
+[2025-07-30 11:01:38] [DEBUG] [GUI] 新进程启动成功
+[2025-07-30 11:01:43] [DEBUG] [GUI] 找到主窗口: 'E_Filing 批处理程序 for HZ'
+[2025-07-30 11:01:46] [DEBUG] [GUI] 正在激活E-filing工具窗口...
+[2025-07-30 11:01:46] [DEBUG] [GUI] 窗口已恢复
+[2025-07-30 11:01:46] [DEBUG] [GUI] 窗口焦点已设置
+[2025-07-30 11:01:46] [DEBUG] [GUI] 窗口已移到前台
+[2025-07-30 11:01:47] [DEBUG] [GUI] E-filing工具窗口激活完成
+[2025-07-30 11:01:47] [DEBUG] [GUI] 新进程启动成功，窗口已激活
+[2025-07-30 11:01:47] [DEBUG] [GUI] 开始自动填入E-filing信息...
+[2025-07-30 11:01:47] [DEBUG] [GUI] === 窗口控件信息 ===
+[2025-07-30 11:01:47] [DEBUG] [GUI] === 控件信息结束 ===
+[2025-07-30 11:01:47] [DEBUG] [GUI] 已选择ComboBox: LUM
+[2025-07-30 11:01:47] [DEBUG] [GUI] 已选择ComboBox: No
+[2025-07-30 11:01:47] [DEBUG] [GUI] E-filing信息自动填入完成
+[2025-07-30 11:01:47] [DEBUG] [GUI] 已断开与E-filing工具的连接
+[2025-07-30 14:37:32] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-30 14:37:40] [DEBUG] [GUI] 开始处理任务...
+[2025-07-30 14:37:41] [DEBUG] [GUI] 成功读取 19 个任务
+[2025-07-30 14:37:41] [DEBUG] [GUI] 共计 19 个任务
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 1/19: 250100032HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250100032HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 2/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 3/19: 250600345HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250600345HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 4/19: 250404031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250404031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 5/19: 250405031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 6/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 7/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 8/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 9/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 10/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 11/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 12/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 13/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 14/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 15/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 16/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 17/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 18/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 处理任务 19/19: 250400031HZH
+[2025-07-30 14:37:41] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:41] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:37:41] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务
+[2025-07-30 14:37:52] [DEBUG] [GUI] 开始重新运行任务: 250405031HZH
+[2025-07-30 14:37:52] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:37:52] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-30 14:40:43] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-30 14:40:47] [DEBUG] [GUI] 开始处理任务...
+[2025-07-30 14:40:48] [DEBUG] [GUI] 成功读取 19 个任务
+[2025-07-30 14:40:48] [DEBUG] [GUI] 共计 19 个任务
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 1/19: 250100032HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250100032HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 2/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 3/19: 250600345HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250600345HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 4/19: 250404031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250404031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 5/19: 250405031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 6/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 7/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 8/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 9/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 10/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 11/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 12/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 13/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 14/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 15/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 16/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 17/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 18/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 处理任务 19/19: 250400031HZH
+[2025-07-30 14:40:48] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:48] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:48] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务
+[2025-07-30 14:40:54] [DEBUG] [GUI] 开始重新运行任务: 250400031HZH
+[2025-07-30 14:40:54] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:54] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:40:57] [DEBUG] [GUI] 开始重新运行任务: 250400031HZH
+[2025-07-30 14:40:57] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:40:57] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:02] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-07-30 14:41:02] [DEBUG] [GUI] 开始处理任务...
+[2025-07-30 14:41:02] [DEBUG] [GUI] 成功读取 19 个任务
+[2025-07-30 14:41:02] [DEBUG] [GUI] 共计 19 个任务
+[2025-07-30 14:41:02] [DEBUG] [GUI] 处理任务 1/19: 250100032HZH
+[2025-07-30 14:41:02] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:02] [DEBUG] [GUI] 任务 250100032HZH 的工作目录未找到
+[2025-07-30 14:41:02] [DEBUG] [GUI] 处理任务 2/19: 250400031HZH
+[2025-07-30 14:41:02] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:02] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:02] [DEBUG] [GUI] 处理任务 3/19: 250600345HZH
+[2025-07-30 14:41:02] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:02] [DEBUG] [GUI] 任务 250600345HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 4/19: 250404031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250404031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 5/19: 250405031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250405031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 6/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 7/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 8/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 9/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 10/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 11/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 12/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 13/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 14/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 15/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 16/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 17/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 18/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 处理任务 19/19: 250400031HZH
+[2025-07-30 14:41:03] [DEBUG] [FILE] 无法访问目录 C:\Users\patrickc\repos\checklist\test_loads\shortcuts\2025: [WinError 3] The system cannot find the path specified: 'C:\\Users\\patrickc\\repos\\checklist\\test_loads\\shortcuts\\2025'
+[2025-07-30 14:41:03] [DEBUG] [GUI] 任务 250400031HZH 的工作目录未找到
+[2025-07-30 14:41:03] [DEBUG] [GUI] 所有任务处理完成，共处理 19 个任务

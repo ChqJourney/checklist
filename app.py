@@ -32,4 +32,4 @@ if __name__ == "__main__":
         )
     
         # 启动应用
-        webview.start(debug=True, icon=icon_path)
+        webview.start(debug=False, icon=icon_path)

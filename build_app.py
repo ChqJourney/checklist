@@ -379,6 +379,7 @@ def copy_files_and_folders():
         ('user.json', '用户配置文件'),
         ('system.json', '系统配置文件'),
         ('task_list_sample.xlsx', '任务列表示例文件'),
+        ('activex_config.json','radio box配置'),
         ('docs', '图片文件夹'),
     ]
     
@@ -458,7 +459,7 @@ def build_executable():
         return False
     
     # 运行PyInstaller
-    command = "pyinstaller main.spec"
+    command = ".\\venv\\Scripts\\pyinstaller main.spec"
     return run_command(command, "构建可执行文件")
 
 
@@ -504,7 +505,7 @@ def main():
     
     # 检查必要工具
     try:
-        subprocess.run(['pyinstaller', '--version'], capture_output=True, check=True)
+        subprocess.run(['.\\venv\\Scripts\\pyinstaller.exe', '--version'], capture_output=True, check=True)
         print("✓ PyInstaller 已安装")
     except (subprocess.CalledProcessError, FileNotFoundError):
         print("✗ PyInstaller 未安装，请运行: pip install pyinstaller")

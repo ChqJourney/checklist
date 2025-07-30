@@ -533,24 +533,14 @@ class ProjectFileChecker:
     def select_folder(self):
         """选择基础目录"""
         try:
-            import tkinter as tk
-            from tkinter import filedialog
-            
-            # 创建根窗口并隐藏
-            root = tk.Tk()
-            root.withdraw()
-            root.attributes('-topmost', True)  # 确保对话框在最前面
-            
-            # 打开文件夹选择对话框
-            folder_path = filedialog.askdirectory(
-                title="选择基础目录",
-                mustexist=False  # 允许选择不存在的目录
+            result = webview.windows[0].create_file_dialog(
+                webview.FOLDER_DIALOG,
+                directory=os.getcwd(),
+                allow_multiple=False
             )
             
-            root.destroy()  # 销毁根窗口
-            
-            if folder_path:
-                return {'success': True, 'path': folder_path}
+            if result:
+                return {'success': True, 'path': result}
             else:
                 return {'success': False, 'message': '未选择目录'}
                 
@@ -561,24 +551,14 @@ class ProjectFileChecker:
     def select_archive_folder(self):
         """选择归档目录"""
         try:
-            import tkinter as tk
-            from tkinter import filedialog
-            
-            # 创建根窗口并隐藏
-            root = tk.Tk()
-            root.withdraw()
-            root.attributes('-topmost', True)  # 确保对话框在最前面
-            
-            # 打开文件夹选择对话框
-            folder_path = filedialog.askdirectory(
-                title="选择归档目录",
-                mustexist=False  # 允许选择不存在的目录
+            result = webview.windows[0].create_file_dialog(
+                webview.FOLDER_DIALOG,
+                directory=os.getcwd(),
+                allow_multiple=False
             )
             
-            root.destroy()  # 销毁根窗口
-            
-            if folder_path:
-                return {'success': True, 'path': folder_path}
+            if result:
+                return {'success': True, 'path': result}
             else:
                 return {'success': False, 'message': '未选择目录'}
                 
