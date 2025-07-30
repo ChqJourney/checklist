@@ -471,6 +471,10 @@ class ProjectFileChecker:
                 'job_creator': 1,
                 'engineers': 2
             })
+             # 获取子文件夹配置
+            team_category = self.team.lower() if self.team=='PPT' else 'general'
+            self.subFolderConfig = get_system_config('subFolderConfig', {}).get(team_category, {})
+            
             
             self.log("配置保存成功")
             return {'success': True, 'message': '配置保存成功'}

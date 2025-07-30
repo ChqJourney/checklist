@@ -139,21 +139,14 @@
 							2
 						]
 					},
-					"job_creator": {
-						"type": "text",
+					"job_creator": [{
+						"type": "image",
 						"indexes": [
 							2,
 							4
 						]
-					},
+					}],
 					"engineers": [
-						{
-							"type": "text",
-							"indexes": [
-								1,
-								4
-							]
-						},
 						{
 							"type": "image",
 							"indexes": [

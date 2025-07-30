@@ -134,9 +134,9 @@ def get_cell_with_activeX_by_config(table, row_index, table_index=0, team='gener
         return get_cell_with_activeX_in_row(table, row_index)
 
 
-def get_engineer_signature_image(engineer_name):
+def get_signature_image(staff_name):
     """获取指定工程师的签名图片路径"""
-    if not engineer_name or not engineer_name.strip():
+    if not staff_name or not staff_name.strip():
         return None
     
     signs_folder = Path.cwd() / 'signs'
@@ -148,11 +148,11 @@ def get_engineer_signature_image(engineer_name):
     image_extensions = ['.jpg', '.jpeg', '.png', '.bmp', '.gif']
     
     for ext in image_extensions:
-        image_path = signs_folder / f"{engineer_name.strip()}{ext}"
+        image_path = signs_folder / f"{staff_name.strip()}{ext}"
         if image_path.exists():
             return str(image_path)
     
-    print(f"未找到工程师 {engineer_name} 的签名图片")
+    print(f"未找到工程师 {staff_name} 的签名图片")
     return None
 
 
@@ -296,11 +296,12 @@ def set_fields_value(table, task, field_config):
             for i, item in enumerate(field_value):
                 cell = table.Cell(item["indexes"][0], item["indexes"][1])
                 if item["type"] == 'image':
-                    signature_image = get_engineer_signature_image(task[field_name])
+                    # print(f"{field_name}")
+                    signature_image = get_signature_image(task[field_name])
                     if signature_image:
-                        insert_image_in_cell(cell, signature_image, width=80, height=20)  # 插入工程师签名图片
+                        insert_image_in_cell(cell, signature_image, width=80, height=20)  # 插入签名图片
                     else:
-                        log_warning(f"未找到工程师 {task['engineers']} 的签名图片，使用默认图片", "WORD")
+                        log_warning(f"未找到staff {task[field_name]} 的签名图片，使用默认图片", "WORD")
                         default_image_path = Path.cwd() / 'signs' / 'default.jpg'
                         insert_image_in_cell(cell, default_image_path, width=80, height=20)  # 插入默认签名图片
                 elif item["type"] == 'date':
