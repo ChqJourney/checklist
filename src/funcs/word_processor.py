@@ -17,8 +17,78 @@ from src.funcs.file_utils import detect_folders_status
 from src.funcs.file_utils import detect_folders_status
 from src.logger.logger import log_info, log_error, log_warning, log_debug
 
-# 全局变量，用于缓存ActiveX配置
+# 全局变量，用于缓存ActiveX配置和Word应用程序实例
 _activex_config_cache = None
+_word_app_cache = None
+_word_app_lock = False
+
+
+def get_cached_word_app():
+    """获取缓存的Word应用程序实例，如果不存在则创建新的"""
+    global _word_app_cache, _word_app_lock
+    
+    if _word_app_lock:
+        # 如果正在使用中，创建新实例
+        return create_optimized_word_app()
+    
+    if _word_app_cache is None:
+        _word_app_cache = create_optimized_word_app()
+    
+    try:
+        # 测试连接是否有效
+        _ = _word_app_cache.Version
+        return _word_app_cache
+    except:
+        # 如果连接失效，重新创建
+        log_debug("Word应用程序连接失效，重新创建", "WORD")
+        _word_app_cache = create_optimized_word_app()
+        return _word_app_cache
+
+
+def create_optimized_word_app():
+    """创建优化配置的Word应用程序实例"""
+    try:
+        word = win32.Dispatch('Word.Application')
+        word.Visible = False  # 不显示界面
+        
+        # 性能优化设置
+        word.ScreenUpdating = False  # 禁用屏幕更新
+        word.DisplayAlerts = 0  # 禁用警告对话框 (wdAlertsNone)
+        
+        # 禁用自动功能以提高性能
+        if hasattr(word.Options, 'CheckSpellingAsYouType'):
+            word.Options.CheckSpellingAsYouType = False
+        if hasattr(word.Options, 'CheckGrammarAsYouType'):
+            word.Options.CheckGrammarAsYouType = False
+        if hasattr(word.Options, 'SuggestSpellingCorrections'):
+            word.Options.SuggestSpellingCorrections = False
+        if hasattr(word.Options, 'AutoFormatAsYouTypeApplyBorders'):
+            word.Options.AutoFormatAsYouTypeApplyBorders = False
+        if hasattr(word.Options, 'AutoFormatAsYouTypeApplyBulletedLists'):
+            word.Options.AutoFormatAsYouTypeApplyBulletedLists = False
+        if hasattr(word.Options, 'AutoFormatAsYouTypeApplyNumberedLists'):
+            word.Options.AutoFormatAsYouTypeApplyNumberedLists = False
+            
+        log_debug("已创建优化的Word应用程序实例", "WORD")
+        return word
+    except Exception as e:
+        log_error(f"创建Word应用程序时出错: {str(e)}", "WORD")
+        raise
+
+
+def release_word_app_cache():
+    """释放缓存的Word应用程序实例"""
+    global _word_app_cache
+    
+    if _word_app_cache:
+        try:
+            _word_app_cache.Quit()
+            log_debug("已释放缓存的Word应用程序", "WORD")
+        except Exception as e:
+            log_error(f"释放Word应用程序时出错: {str(e)}", "WORD")
+        finally:
+            _word_app_cache = None
+            kill_all_word_processes()
 
 
 def load_activex_config():
@@ -50,6 +120,48 @@ def get_template_name_from_team(team):
         return 'ppt_template'
     else:
         return 'general_template'
+
+
+def batch_set_activex_controls(table, controls_data, table_index=0, team='general'):
+    """
+    批量设置ActiveX控件，减少COM调用次数
+    :param table: Word表格对象
+    :param controls_data: 控件数据列表，格式为 [{'row': row, 'value': value}, ...]
+    :param table_index: 表格索引
+    :param team: 团队名称
+    """
+    try:
+        # 按行号排序，优化访问顺序
+        sorted_controls = sorted(controls_data, key=lambda x: x['row'])
+        
+        for control_data in sorted_controls:
+            row_index = control_data['row']
+            value = control_data['value']
+            
+            # 使用配置快速定位
+            cell = get_cell_with_activeX_by_config(table, row_index, table_index, team)
+            if cell:
+                try:
+                    # 批量设置，减少属性访问次数
+                    inline_shapes = cell.Range.InlineShapes
+                    if inline_shapes.Count >= 2:
+                        ole_obj1 = inline_shapes[0].OLEFormat.Object
+                        ole_obj2 = inline_shapes[1].OLEFormat.Object
+                        
+                        # 只有在值不同时才设置，避免不必要的操作
+                        if ole_obj1.Value != value:
+                            ole_obj1.Value = value
+                        if ole_obj2.Value == value:
+                            ole_obj2.Value = not value
+                            
+                except Exception as e:
+                    log_error(f"批量设置ActiveX控件失败 (行{row_index}): {str(e)}", "WORD")
+            else:
+                log_warning(f"未找到行{row_index}的ActiveX控件", "WORD")
+                
+    except Exception as e:
+        log_error(f"批量设置ActiveX控件时出错: {str(e)}", "WORD")
+        raise
 
 
 def get_cell_with_activeX_by_config(table, row_index, table_index=0, team='general'):
@@ -271,6 +383,38 @@ def get_cell_with_activeX_in_row(table, row_index):
         raise Exception(f"Error in get_cell_with_activeX_in_row: {str(e)}")
 
 
+def set_option_cell_optimized(cell, value):
+    """
+    优化的选项单元格设置方法
+    :param cell: Word表格单元格对象
+    :param value: 要设置的值
+    """
+    try:
+        inline_shapes = cell.Range.InlineShapes
+        if inline_shapes.Count < 2:
+            log_warning("单元格中ActiveX控件数量不足", "WORD")
+            return
+            
+        # 缓存OLE对象引用，减少COM调用
+        ole_obj1 = inline_shapes[0].OLEFormat.Object
+        ole_obj2 = inline_shapes[1].OLEFormat.Object
+        
+        # 检查当前值，避免不必要的设置
+        current_value1 = ole_obj1.Value
+        current_value2 = ole_obj2.Value
+        
+        # 只在需要时更新
+        if current_value1 != value:
+            ole_obj1.Value = value
+        if current_value2 == value:
+            ole_obj2.Value = not value
+            
+    except Exception as e:
+        log_error(f"设置选项单元格时出错: {str(e)}", "WORD")
+        # 回退到原方法
+        set_option_cell(cell, value)
+
+
 def set_option_cell(cell, value):
     """设置选项单元格的值"""
     if cell.Range.InlineShapes[0].OLEFormat.Object.Value == value and cell.Range.InlineShapes[1].OLEFormat.Object.Value != value:
@@ -317,6 +461,48 @@ def set_fields_value(table, task, field_config):
                 set_text_in_cell(cell, task[field_name])
 
 
+def set_all_option_cells_for_ppt_optimized(table, status, map, table_index=0, use_config=True):
+    """
+    优化的PPT团队选项单元格批量设置方法
+    :param table: Word表格对象
+    :param status: 状态字典
+    :param map: 行映射字典
+    :param table_index: 表格索引
+    :param use_config: 是否使用配置文件方法
+    """
+    try:
+        # 准备批量数据
+        controls_data = []
+        
+        for folder_name, row_num in map.items():
+            if not isinstance(row_num, int):
+                log_debug(f"Warning: Invalid row number for {folder_name}: {row_num}")
+                continue
+                
+            if folder_name in status:
+                controls_data.append({
+                    'row': row_num,
+                    'value': status[folder_name],
+                    'folder_name': folder_name
+                })
+        
+        # 批量处理
+        if use_config and controls_data:
+            batch_set_activex_controls(table, controls_data, table_index, 'ppt')
+        else:
+            # 回退到逐个处理
+            for data in controls_data:
+                cell = get_cell_with_activeX_in_row(table, data['row'])
+                if cell is None:
+                    log_error(f"No ActiveX control found in row {data['row']}")
+                    raise Exception(f"No ActiveX control found in row {data['row']} for folder: {data['folder_name']}")
+                set_option_cell_optimized(cell, data['value'])
+                
+    except Exception as e:
+        log_error(f"优化的PPT选项设置失败，回退到原方法: {str(e)}", "WORD")
+        set_all_option_cells_for_ppt(table, status, map, table_index, use_config)
+
+
 def set_all_option_cells_for_ppt(table, status, map, table_index=0, use_config=True):
     """
     Set values for ActiveX controls in table cells for PPT team
@@ -348,6 +534,61 @@ def set_all_option_cells_for_ppt(table, status, map, table_index=0, use_config=T
                 log_debug(f"No status found for folder: {folder_name}")
     except Exception as e:
         raise Exception(f"Error in set_all_option_cells: {str(e)}")
+
+
+def set_option_cells_for_general_optimized(table, folder_status, option_config, table_index=0, use_config=True):
+    """优化的通用团队选项单元格设置"""
+    if not option_config or not isinstance(option_config, dict):
+        log_warning("无效的选项配置", "WORD")
+        return
+
+    if not isinstance(folder_status, dict):
+        log_warning("无效的文件夹状态配置", "WORD")
+        return
+
+    # 准备批量数据
+    controls_data = []
+    
+    for folder_name, option in option_config.items():
+        if folder_name not in folder_status:
+            log_warning(f"文件夹 {folder_name} 的状态未定义", "WORD")
+            continue
+
+        status = folder_status[folder_name]
+
+        if not isinstance(option, dict):
+            log_error(f"选项配置 {folder_name} 的格式不正确", "WORD")
+            continue
+
+        for key, value in option.items():
+            if key not in status:
+                log_warning(f"状态配置中缺少键 {key} 对于文件夹 {folder_name}", "WORD")
+                continue
+                
+            controls_data.append({
+                'row': value,
+                'value': status[key],
+                'folder_name': folder_name,
+                'key': key
+            })
+    
+    # 批量处理
+    try:
+        if use_config and controls_data:
+            batch_set_activex_controls(table, controls_data, table_index, 'general')
+        else:
+            # 回退到逐个处理
+            for data in controls_data:
+                opt_cell = get_cell_with_activeX_in_row(table, data['row'])
+                if opt_cell:
+                    set_option_cell_optimized(opt_cell, data['value'])
+                else:
+                    log_warning(f"未找到文件夹 {data['folder_name']} 的选项单元格", "WORD")
+                    
+    except Exception as e:
+        log_error(f"优化的通用选项设置失败: {str(e)}", "WORD")
+        # 回退到原方法
+        set_option_cells_for_general(table, folder_status, option_config, table_index, use_config)
 
 
 def set_option_cells_for_general(table, folder_status, option_config, table_index=0, use_config=True):
@@ -397,6 +638,18 @@ def set_option_cells_for_general(table, folder_status, option_config, table_inde
                 log_error(f"设置选项 {folder_name}.{key} 时发生错误: {e}", "WORD")
 
 
+def set_option_cells_optimized(table, team, folder_status, option_config, table_index=0, use_config=True):
+    """优化的选项单元格设置入口"""
+    if not option_config or not isinstance(option_config, dict):
+        log_warning("无效的选项配置", "WORD")
+        return
+        
+    if team == 'PPT':
+        set_all_option_cells_for_ppt_optimized(table, folder_status, option_config, table_index, use_config)
+    else:
+        set_option_cells_for_general_optimized(table, folder_status, option_config, table_index, use_config)
+
+
 def set_option_cells(table, team, folder_status, option_config, table_index=0, use_config=True):
     """设置选项单元格"""
     if not option_config or not isinstance(option_config, dict):
@@ -408,8 +661,132 @@ def set_option_cells(table, team, folder_status, option_config, table_index=0, u
         set_option_cells_for_general(table, folder_status, option_config, table_index, use_config)
 
 
-def set_checklist(task, target_path, team, subFolderConfig, use_config=True):
-    """设置检查清单"""
+def set_checklist_optimized(task, target_path, team, subFolderConfig, use_config=True, use_cached_word=True):
+    """优化的检查清单设置方法"""
+    global _word_app_lock
+    
+    word = None
+    word_doc = None
+    original_screen_updating = None
+    
+    try:
+        log_debug(f"subFolderConfig length: {len(subFolderConfig)}", "WORD")
+        
+        # 获取Word应用程序实例
+        if use_cached_word:
+            _word_app_lock = True
+            word = get_cached_word_app()
+        else:
+            word = create_optimized_word_app()
+        
+        # 保存原始设置
+        original_screen_updating = word.ScreenUpdating
+        
+        # 进一步优化设置
+        word.ScreenUpdating = False
+        word.DisplayAlerts = 0
+        
+        checklist_path = get_only_word_file_path(target_path)
+        log_debug(f"检查清单路径: {checklist_path}", "WORD")
+        
+        # 打开文档
+        word_doc = word.Documents.Open(checklist_path)
+        
+        # 文档级别的优化设置
+        if hasattr(word_doc, 'TrackRevisions'):
+            word_doc.TrackRevisions = False
+        if hasattr(word_doc, 'ShowRevisions'):
+            word_doc.ShowRevisions = False
+        
+        # 验证表格
+        if word_doc.Tables.Count == 0:
+            raise ValueError("文档中没有找到表格")
+        if word_doc.Tables.Count < len(subFolderConfig):
+            raise ValueError(f"文档中的表格数量({word_doc.Tables.Count})少于配置要求的数量({len(subFolderConfig)})")
+        
+        # 记录使用的方法
+        method_name = "优化配置文件方法" if use_config else "优化原始搜索方法"
+        log_info(f"使用{method_name}处理ActiveX控件", "WORD")
+        
+        # 批量处理表格
+        for i, item in enumerate(subFolderConfig):
+            log_debug(f"正在处理表格索引: {i}", "WORD")
+            current_table = word_doc.Tables[i]
+            
+            # 字段设置（保持原有逻辑）
+            if 'fields' in item and item['fields'] is not None:
+                set_fields_value(current_table, task, item["fields"])
+                log_debug(f"设置字段值完成", "WORD")
+                
+            # 选项设置使用优化方法
+            if 'options' in item and item["options"] is not None:
+                folder_status = detect_folders_status(target_path, team, item["options"])
+                log_debug(f"检测文件夹状态: {folder_status}", "WORD")
+                # 使用优化的选项设置方法
+                set_option_cells_optimized(current_table, team, folder_status, item["options"], i, use_config)
+
+        # 保存文档
+        word_doc.Save()
+        log_info("检查清单保存成功", "WORD")
+        
+    except Exception as e:
+        log_error(f"优化检查清单设置失败: {str(e)}", "WORD")
+        # 回退到原方法
+        log_info("回退到原始方法", "WORD")
+        if word_doc:
+            try:
+                word_doc.Close()
+            except:
+                pass
+        if word and not use_cached_word:
+            try:
+                word.Quit()
+            except:
+                pass
+        # 调用原方法
+        set_checklist(task, target_path, team, subFolderConfig, use_config)
+        return
+        
+    finally:
+        # 恢复设置
+        if word and original_screen_updating is not None:
+            try:
+                word.ScreenUpdating = original_screen_updating
+            except:
+                pass
+        
+        # 资源清理
+        if word_doc:
+            try:
+                word_doc.Close()
+                log_debug("Word文档已关闭", "WORD")
+            except Exception as e:
+                log_error(f"关闭Word文档时出错: {str(e)}", "WORD")
+        
+        if not use_cached_word and word:
+            try:
+                word.Quit()
+                log_debug("Word应用程序已退出", "WORD")
+            except Exception as e:
+                log_error(f"退出Word应用程序时出错: {str(e)}", "WORD")
+            finally:
+                kill_all_word_processes()
+        
+        # 释放锁
+        if use_cached_word:
+            _word_app_lock = False
+
+
+def set_checklist(task, target_path, team, subFolderConfig, use_config=True, use_optimized=True):
+    """设置检查清单 - 默认使用优化版本"""
+    if use_optimized:
+        try:
+            set_checklist_optimized(task, target_path, team, subFolderConfig, use_config, use_cached_word=True)
+            return
+        except Exception as e:
+            log_warning(f"优化方法失败，回退到原方法: {str(e)}", "WORD")
+    
+    # 原始实现（作为回退方案）
     word = None
     word_doc = None
     try:
@@ -471,3 +848,34 @@ def set_checklist(task, target_path, team, subFolderConfig, use_config=True):
                 log_error(f"退出Word应用程序时出错: {str(e)}", "WORD")
             finally:
                 kill_all_word_processes()
+
+
+# 添加模块清理函数
+def cleanup_word_resources():
+    """清理所有Word相关资源"""
+    global _word_app_cache, _activex_config_cache
+    
+    try:
+        release_word_app_cache()
+        _activex_config_cache = None
+        log_info("Word处理模块资源已清理", "WORD")
+    except Exception as e:
+        log_error(f"清理Word资源时出错: {str(e)}", "WORD")
+
+
+def get_performance_stats():
+    """获取性能统计信息（可用于监控优化效果）"""
+    global _word_app_cache
+    
+    stats = {
+        "word_app_cached": _word_app_cache is not None,
+        "activex_config_cached": _activex_config_cache is not None,
+        "config_entries": len(_activex_config_cache) if _activex_config_cache else 0
+    }
+    
+    return stats
+
+
+# 模块级别的清理（当模块被卸载时调用）
+import atexit
+atexit.register(cleanup_word_resources)

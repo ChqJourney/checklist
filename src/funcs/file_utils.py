@@ -31,10 +31,10 @@ def folder_precheck(target_folder:str,team:str)-> bool:
             log_warning(f"找到的文件: {file}", "FOLDER")
         log_warning(f"目标文件夹 {target_folder} 下找到多个包含 'checklist' 的 Word 文档，请确保只有一个", "FOLDER")
         return False
-    # 检查文件夹命名是否满足规范
-    if not folder_name_check(target_folder, team):
-        log_warning(f"目标文件夹 {target_folder} 中的子文件夹的命名不符合规范", "FOLDER")
-        return False
+    # 检查文件夹命名是否满足规范，暂时废弃
+    #if not folder_name_check(target_folder, team):
+        #log_warning(f"目标文件夹 {target_folder} 中的子文件夹的命名不符合规范", "FOLDER")
+        #return False
 
     return True
 
@@ -111,13 +111,17 @@ def detect_folders_status(working_folder_path, team, options_config):
         for sub_folder_name, option in options_config.items():
             sub_folder_path = os.path.join(working_folder_path, sub_folder_name)
             print(f"检测文件夹: {sub_folder_path}: {option}")
-            if not os.path.exists(sub_folder_path):
-                print(f"{sub_folder_name} folder not found")
-                result[sub_folder_name] = False
+            sub_folder_exist = os.path.exists(sub_folder_path)
+            # if not sub_folder_exist:
+            #     print(f"{sub_folder_name} folder not found")
+            #     result[sub_folder_name] = False
             if isinstance(option, int):
                 # 如果option是数字，表示需要检测的文件数量
                 print(f"当前option是数字: {option}")
-                result[sub_folder_name] = detect_folder_has_file(sub_folder_path)
+                if not sub_folder_exist:
+                    result[sub_folder_name] = False
+                else:
+                    result[sub_folder_name] = detect_folder_has_file(sub_folder_path)
             elif isinstance(option, dict):
                 print(f"当前option是字典: {option}")
                 # 如果option是字典，遍历字典的每个key，在file_map中查找对应的文件名规则
@@ -127,7 +131,13 @@ def detect_folders_status(working_folder_path, team, options_config):
                     if key in file_map:
                         file_patterns = file_map[key]
                         found_file = False
-                        
+                        if not sub_folder_exist:
+                            if result.get(sub_folder_name) is None:
+                                result[sub_folder_name] = {}
+                                result[sub_folder_name][key] = False
+                            else:
+                                result[sub_folder_name][key] = False
+                            continue
                         # 遍历file_map中的文件名规则列表
                         for pattern in file_patterns:
                             if not pattern:  # 跳过空字符串

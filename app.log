@@ -2007,3 +2007,131 @@
 [2025-07-30 23:20:38] [INFO] Capsys fixture test
 [2025-07-30 23:20:38] [INFO] Monkeypatch test
 [2025-07-30 23:20:38] [DEBUG] [WORD] 已加载ActiveX配置文件: c:\Users\patri\source\demos\py_checklist\activex_config.json
+[2025-08-21 20:09:11] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:09:47] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:14:34] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-08-21 20:14:35] [DEBUG] [GUI] 开始处理任务...
+[2025-08-21 20:14:35] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-08-21 20:14:35] [DEBUG] [GUI] 共计 1 个任务
+[2025-08-21 20:14:35] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-08-21 20:14:35] [DEBUG] [PATH] 找到工作目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-08-21 20:14:35] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-08-21 20:14:35] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-08-21 20:14:35] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-08-21 20:14:35] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-08-21 20:14:35] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-08-21 20:14:35] [DEBUG] [WORD] subFolderConfig length: 1
+[2025-08-21 20:14:38] [DEBUG] [WORD] 已创建优化的Word应用程序实例
+[2025-08-21 20:14:38] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-08-21 20:14:38] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-08-21 20:14:38] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-08-21 20:14:46] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-08-21 20:14:46] [DEBUG] [WORD] 正在处理表格索引: 0
+[2025-08-21 20:14:46] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-08-21 20:14:47] [WARNING] [WORD] 未找到staff Jack Chen 的签名图片，使用默认图片
+[2025-08-21 20:14:47] [DEBUG] [WORD] 设置字段值完成
+[2025-08-21 20:14:47] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-08-21 20:14:47] [DEBUG] [WORD] 已加载ActiveX配置文件: C:\Users\patri\source\demos\py_checklist\activex_config.json
+[2025-08-21 20:14:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-08-21 20:14:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-08-21 20:14:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-08-21 20:14:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-08-21 20:14:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-08-21 20:14:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-08-21 20:14:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-08-21 20:14:47] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-08-21 20:14:48] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-08-21 20:14:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-08-21 20:14:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-08-21 20:14:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-08-21 20:14:49] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-08-21 20:14:49] [INFO] [WORD] 检查清单保存成功
+[2025-08-21 20:14:49] [DEBUG] [WORD] Word文档已关闭
+[2025-08-21 20:14:49] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-08-21 20:14:49] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-08-21 20:14:49] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-08-21 20:14:56] [DEBUG] [GUI] 已打开文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-08-21 20:29:17] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:29:24] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:37:50] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:37:53] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:37:58] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:38:02] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:38:08] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:38:12] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:38:41] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:40:02] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:40:12] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:40:17] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:40:31] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:40:49] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:41:42] [INFO] [WORD] Word处理模块资源已清理
+[2025-08-21 20:41:56] [DEBUG] [GUI] 已选择文件: Task_list_sample.xlsx
+[2025-08-21 20:41:57] [DEBUG] [GUI] 开始处理任务...
+[2025-08-21 20:41:58] [DEBUG] [GUI] 成功读取 1 个任务
+[2025-08-21 20:41:58] [DEBUG] [GUI] 共计 1 个任务
+[2025-08-21 20:41:58] [DEBUG] [GUI] 处理任务 1/1: 250100032HZH
+[2025-08-21 20:41:58] [DEBUG] [PATH] 找到工作目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-08-21 20:41:58] [DEBUG] [GUI] 找到目录: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL
+[2025-08-21 20:41:58] [DEBUG] [GUI] 开始检查子文件夹...
+[2025-08-21 20:41:58] [DEBUG] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-08-21 20:41:58] [DEBUG] [WORD] 没有发现运行中的Word进程
+[2025-08-21 20:41:58] [DEBUG] [GUI] 250100032HZH开始写入检查列表...
+[2025-08-21 20:41:58] [DEBUG] [WORD] subFolderConfig length: 1
+[2025-08-21 20:41:59] [DEBUG] [WORD] 已创建优化的Word应用程序实例
+[2025-08-21 20:41:59] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-08-21 20:41:59] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-08-21 20:41:59] [DEBUG] [WORD] 检查清单路径: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-08-21 20:42:06] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-08-21 20:42:06] [DEBUG] [WORD] 正在处理表格索引: 0
+[2025-08-21 20:42:06] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-08-21 20:42:06] [WARNING] [WORD] 未找到staff Jack Chen 的签名图片，使用默认图片
+[2025-08-21 20:42:07] [DEBUG] [WORD] 设置字段值完成
+[2025-08-21 20:42:07] [DEBUG] [WORD] 检测文件夹状态: {'0 Job sheet & Quotation': {'JobSheet': False, 'Quotation': False}, '1 Application documents': {'GS': True, 'CB': True, 'ETL': False}, '1 Application documents\\Others service app': {'OtherServies': False}, '1 Application documents\\other application documents': {'OtherAppDoc': False}, '2 Certificate': {'Certificate': False}, '3 Test report': {'TestReport': True}, '4 Test record': {'CRSheet': False, 'DataSheet': False, 'EquipmentList': False}, '5 Technical documents\\Circuit diagram': {'CircuitDiagram': False}, '5 Technical documents\\Partlist': {'Partlist': False}, '5 Technical documents\\Exploded drawing +BOM': {'ExplodedDrawing': False}, '5 Technical documents\\Other technical info': {'OtherTechInfo': False}, '6 User Manual(s) & Label': {'UserManual': False}, '7 Component Cer': {'ComponentCert': False}, '8 PAH evaluation': {'Pah': True}, '9 Communication file\\Letter report(s)': {'LetterReport': False}, '9 Communication file\\Confirmation (Declaration)': {'Confirmation': False}, '9 Communication file\\Others Communication': {'OthersCommunication': False}, '10 Subcontract report and log sheet': {'SubReport': False}, '11 Photos': {'Photo': False}, '14 Other documents': {'OtherDoc': False}, '': {'CrossReference': False}}
+[2025-08-21 20:42:07] [DEBUG] [WORD] 已加载ActiveX配置文件: C:\Users\patri\source\demos\py_checklist\activex_config.json
+[2025-08-21 20:42:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行5, 列3
+[2025-08-21 20:42:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行6, 列3
+[2025-08-21 20:42:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行7, 列3
+[2025-08-21 20:42:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行8, 列3
+[2025-08-21 20:42:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行9, 列5
+[2025-08-21 20:42:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行10, 列5
+[2025-08-21 20:42:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行11, 列5
+[2025-08-21 20:42:07] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行12, 列5
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行13, 列4
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行14, 列4
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行15, 列4
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行16, 列4
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行17, 列4
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行18, 列4
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行19, 列4
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行20, 列4
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行21, 列3
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行22, 列3
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行23, 列3
+[2025-08-21 20:42:08] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行24, 列4
+[2025-08-21 20:42:09] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行25, 列4
+[2025-08-21 20:42:09] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行26, 列4
+[2025-08-21 20:42:09] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行27, 列3
+[2025-08-21 20:42:09] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行28, 列3
+[2025-08-21 20:42:09] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行29, 列3
+[2025-08-21 20:42:09] [DEBUG] [WORD] 基于配置找到ActiveX控件: 行30, 列3
+[2025-08-21 20:42:09] [INFO] [WORD] 检查清单保存成功
+[2025-08-21 20:42:09] [DEBUG] [WORD] Word文档已关闭
+[2025-08-21 20:42:09] [DEBUG] [GUI] 250100032HZH检查列表写入完成
+[2025-08-21 20:42:09] [DEBUG] [GUI] 任务 250100032HZH 处理完成:结果为：完成
+[2025-08-21 20:42:09] [DEBUG] [GUI] 所有任务处理完成，共处理 1 个任务
+[2025-08-21 20:42:17] [DEBUG] [GUI] 已打开文件: C:\Users\patri\source\demos\py_checklist\test_loads\lum\2025\250100032HZH_Shangyu Shunhe_Luminaire_ETL\E-filing checklist.docx
+[2025-08-21 20:43:41] [INFO] [WORD] Word处理模块资源已清理
