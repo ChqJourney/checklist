@@ -1,6 +1,14 @@
-## Checklist 自动填写工具 V2.0
+## Checklist 自动填写工具 V2.2
 
 这是一个为E-filing工具提供自动化的便捷应用，用于批量处理项目的checklist.docx文件。程序会读取Excel任务列表，扫描对应的项目文件夹内容，并根据内容自动填写checklist文档，以供E-filing使用。
+
+### V2.2 更新内容
+- 去除了项目文件夹完整性检查
+- 优化了一些已知问题
+
+### V2.1 更新内容
+
+- 修复了一些已知问题
 
 ### V2.0 更新内容
 
@@ -42,13 +50,4 @@
   <img src="docs/open.jpg" alt="rerun" width="600" height="400">
 
 
-### 自动化处理流程
-   - 根据 `user.json` 中的 `task_list_map` 读取 `task list.xlsx`，获取项目信息（项目号、创建人、负责工程师）
-   - 遍历每个项目，执行以下操作：
-     1. 根据项目号（job_no）在 `base_dir` 中, 根据`user.json`中的`team`使用不同方式去查找对应的项目文件夹
-     2. 获取`system.json`中的`subFolderConfig`的配置，
-         - 根据`fields`配置填写`fields`，
-         - 根据`options`配置，扫描对应文件夹内的文件情况，来填写activeX控件
-     3. 保存并关闭文档
-     4. 记录
-   
+

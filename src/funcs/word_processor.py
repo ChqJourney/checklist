@@ -655,6 +655,7 @@ def set_option_cells(table, team, folder_status, option_config, table_index=0, u
     if not option_config or not isinstance(option_config, dict):
         log_warning("无效的选项配置", "WORD")
         return
+    log_info("开始填写文件状态......", "WORD")
     if team == 'PPT':
         set_all_option_cells_for_ppt(table, folder_status, option_config, table_index, use_config)
     else:
@@ -722,6 +723,7 @@ def set_checklist_optimized(task, target_path, team, subFolderConfig, use_config
             if 'options' in item and item["options"] is not None:
                 folder_status = detect_folders_status(target_path, team, item["options"])
                 log_debug(f"检测文件夹状态: {folder_status}", "WORD")
+                log_info("开始在checklist中填写文件状态，请稍候......", "WORD")
                 # 使用优化的选项设置方法
                 set_option_cells_optimized(current_table, team, folder_status, item["options"], i, use_config)
 
@@ -823,6 +825,7 @@ def set_checklist(task, target_path, team, subFolderConfig, use_config=True, use
                 folder_status = detect_folders_status(target_path, team, item["options"])
                 log_debug(f"检测文件夹状态: {folder_status}", "WORD")
                 # 设置选项单元格，传递表格索引和配置方法选择
+                
                 set_option_cells(current_table, team, folder_status, item["options"], i, use_config)
 
         # 保存并关闭文档

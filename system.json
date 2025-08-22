@@ -177,7 +177,7 @@
 		]
 	},
 	"log_config": {
-		"level": "DEBUG",
+		"level": "INFO",
 		"log_to_console": true,
 		"log_to_file": true,
 		"log_file_path": "app.log",

@@ -144,7 +144,8 @@ class ProjectFileChecker:
 
                 data_manager.clear_results()  # 清空之前的结果
                 data_manager.set_processing_status(True)
-                
+                # 更新表格
+                webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
                 # 更新按钮状态
                 webview.windows[0].evaluate_js('setRunning(true)')
                 
