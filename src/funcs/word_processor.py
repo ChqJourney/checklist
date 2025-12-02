@@ -686,13 +686,13 @@ def set_checklist_optimized(task, target_path, team, subFolderConfig, use_config
         # 进一步优化设置
         word.ScreenUpdating = False
         word.DisplayAlerts = 0
-        
+        log_info(f"target_path: {target_path}", "WORD")
         checklist_path = get_only_word_file_path(target_path)
-        log_debug(f"检查清单路径: {checklist_path}", "WORD")
+        log_info(f"检查清单路径: {checklist_path}", "WORD")
         
         # 打开文档
         word_doc = word.Documents.Open(checklist_path)
-        
+        log_info("checklist 路径：",checklist_path)
         # 文档级别的优化设置
         if hasattr(word_doc, 'TrackRevisions'):
             word_doc.TrackRevisions = False
@@ -733,6 +733,10 @@ def set_checklist_optimized(task, target_path, team, subFolderConfig, use_config
         
     except Exception as e:
         log_error(f"优化检查清单设置失败: {str(e)}", "WORD")
+        if str(e).find("denied")>=0:
+            log_error("你没有写入权限", "WORD")
+            #抛出异常
+            raise PermissionError("你没有写入权限")
         # 回退到原方法
         log_info("回退到原始方法", "WORD")
         if word_doc:
@@ -786,6 +790,8 @@ def set_checklist(task, target_path, team, subFolderConfig, use_config=True, use
             set_checklist_optimized(task, target_path, team, subFolderConfig, use_config, use_cached_word=True)
             return
         except Exception as e:
+            if isinstance(e, PermissionError):
+                raise
             log_warning(f"优化方法失败，回退到原方法: {str(e)}", "WORD")
     
     # 原始实现（作为回退方案）

@@ -2841,3 +2841,1950 @@
 [2025-08-22 09:31:56] [INFO] [GUI] 所有任务处理完成，共处理 2 个任务
 [2025-08-22 09:32:15] [INFO] [WORD] Word处理模块资源已清理
 [2025-08-22 09:33:06] [INFO] [WORD] Word处理模块资源已清理
+[2025-10-17 08:43:13] [INFO] [WORD] Word处理模块资源已清理
+[2025-10-17 08:43:14] [INFO] [WORD] Word处理模块资源已清理
+[2025-10-17 08:43:23] [INFO] [WORD] Word处理模块资源已清理
+[2025-10-17 08:43:25] [INFO] [WORD] Word处理模块资源已清理
+[2025-10-17 08:43:27] [INFO] [WORD] Word处理模块资源已清理
+[2025-10-17 08:43:28] [INFO] [WORD] Word处理模块资源已清理
+[2025-10-17 08:44:34] [INFO] [WORD] Word处理模块资源已清理
+[2025-10-17 08:44:36] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:14:56] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:15:39] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:19:31] [INFO] [GUI] 配置保存成功
+[2025-12-02 16:19:41] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:19:51] [INFO] [GUI] 开始处理任务...
+[2025-12-02 16:19:51] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 16:19:51] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 16:19:51] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 16:19:51] [INFO] [GUI] 找到目录: .
+[2025-12-02 16:19:51] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 16:19:51] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 16:19:51] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 16:19:51] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 16:19:55] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:20:03] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:20:03] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:20:03] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:20:04] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:20:04] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:20:09] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:20:09] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:20:15] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:20:15] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:20:16] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:20:17] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:20:17] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:20:27] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:20:27] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:20:34] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:20:34] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:20:34] [INFO] [GUI] 请求取消任务处理...
+[2025-12-02 16:20:35] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:20:36] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:20:36] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:20:37] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:20:37] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:20:42] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:24:42] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:24:49] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:25:00] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:25:07] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:25:11] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:25:25] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:25:29] [INFO] [GUI] 开始处理任务...
+[2025-12-02 16:25:29] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 16:25:29] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 16:25:29] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 16:25:29] [INFO] [GUI] 找到目录: .
+[2025-12-02 16:25:29] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 16:25:29] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 16:25:29] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 16:25:29] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 16:25:32] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:25:32] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:25:39] [INFO] [C:\Users\patrickc\repos\checklist\E-filing checklist.docx] checklist 路径：
+[2025-12-02 16:25:39] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:25:39] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:25:40] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:25:40] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:25:40] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:25:43] [INFO] [GUI] 请求取消任务处理...
+[2025-12-02 16:25:47] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:28:41] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:29:33] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:29:34] [INFO] [GUI] 开始处理任务...
+[2025-12-02 16:29:34] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 16:29:34] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 16:29:34] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 16:29:34] [INFO] [GUI] 找到目录: .
+[2025-12-02 16:29:34] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 16:29:34] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 16:29:34] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 16:29:34] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 16:29:38] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:29:38] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:29:44] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:29:44] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:29:44] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:29:45] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:29:45] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:29:45] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:29:48] [INFO] [GUI] 请求取消任务处理...
+[2025-12-02 16:29:52] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:31:16] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:31:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:31:37] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:31:38] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:31:42] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:31:58] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:32:35] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:32:36] [INFO] [GUI] 开始处理任务...
+[2025-12-02 16:32:37] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 16:32:37] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 16:32:37] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 16:32:37] [INFO] [GUI] 找到目录: .
+[2025-12-02 16:32:37] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 16:32:37] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 16:32:37] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 16:32:37] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 16:32:40] [INFO] [WORD] target_path: .
+[2025-12-02 16:32:40] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:32:40] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:32:40] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:32:46] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:32:46] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:32:46] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:32:46] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:32:47] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:32:47] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:32:47] [INFO] [WORD] target_path: .
+[2025-12-02 16:32:49] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:32:49] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:32:49] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:32:56] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:34:43] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:34:45] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:34:50] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:34:53] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:35:00] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:35:11] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:35:13] [INFO] [GUI] 开始处理任务...
+[2025-12-02 16:35:13] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 16:35:13] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 16:35:13] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 16:35:13] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 16:35:13] [INFO] [GUI] 找到目录: .
+[2025-12-02 16:35:13] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 16:35:13] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 16:35:14] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 16:35:14] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 16:35:17] [INFO] [WORD] target_path: .
+[2025-12-02 16:35:17] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:17] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:17] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:24] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:24] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:35:24] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:35:24] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:35:25] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:35:25] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:35:26] [INFO] [WORD] target_path: .
+[2025-12-02 16:35:26] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:26] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:26] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:32] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:32] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:35:33] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:35:35] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:35:37] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:35:37] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:35:38] [INFO] [WORD] target_path: .
+[2025-12-02 16:35:38] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:38] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:38] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:43] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:44] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:35:45] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:35:46] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:35:48] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:35:48] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:35:49] [INFO] [WORD] target_path: .
+[2025-12-02 16:35:49] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:49] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:49] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:56] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:56] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:35:56] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:35:56] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:35:57] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:35:57] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:35:58] [INFO] [WORD] target_path: .
+[2025-12-02 16:35:58] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:58] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:35:58] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:05] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:05] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:36:05] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:36:05] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:36:06] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:36:06] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:36:06] [INFO] [WORD] target_path: .
+[2025-12-02 16:36:06] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:06] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:06] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:12] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:12] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:36:12] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:36:13] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:36:13] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:36:13] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:36:14] [INFO] [WORD] target_path: .
+[2025-12-02 16:36:14] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:14] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:14] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:19] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:19] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:36:20] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:36:20] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:36:21] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:36:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:36:22] [INFO] [WORD] target_path: .
+[2025-12-02 16:36:22] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:22] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:22] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:29] [INFO] [WORD] checklist 路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:29] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-02 16:36:29] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-02 16:36:30] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-02 16:36:30] [ERROR] [WORD] 优化检查清单设置失败: App\Quotation folder not found
+[2025-12-02 16:36:30] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:36:31] [INFO] [WORD] target_path: .
+[2025-12-02 16:36:31] [INFO] [WORD] 已删除现有的检查清单文件: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:31] [INFO] [WORD] 已复制默认检查清单文件到: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:31] [INFO] [WORD] 检查清单路径: C:\Users\patrickc\repos\checklist\E-filing checklist.docx
+[2025-12-02 16:36:36] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:39:50] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:40:05] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:40:57] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:40:59] [INFO] [GUI] 开始处理任务...
+[2025-12-02 16:40:59] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 16:40:59] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 16:40:59] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 16:40:59] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 16:40:59] [WARNING] [PATH] 解析快捷方式 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk 失败: <unknown>.Resolve
+[2025-12-02 16:40:59] [INFO] [GUI] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 16:40:59] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 16:40:59] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 16:40:59] [WARNING] [PATH] 解析快捷方式 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk 失败: <unknown>.Resolve
+[2025-12-02 16:40:59] [INFO] [GUI] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 16:40:59] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 16:40:59] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 16:40:59] [WARNING] [PATH] 解析快捷方式 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk 失败: <unknown>.Resolve
+[2025-12-02 16:40:59] [INFO] [GUI] 任务 250900266HZH 的工作目录未找到
+[2025-12-02 16:40:59] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-02 16:40:59] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-02 16:40:59] [WARNING] [PATH] 解析快捷方式 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk 失败: <unknown>.Resolve
+[2025-12-02 16:40:59] [INFO] [GUI] 任务 250901064HZH 的工作目录未找到
+[2025-12-02 16:40:59] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-02 16:42:04] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:42:06] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:42:26] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:45:41] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:45:43] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:45:45] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:45:48] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:45:51] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:45:57] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:45:58] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:46:17] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:46:21] [INFO] [GUI] 开始处理任务...
+[2025-12-02 16:46:21] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 16:46:21] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 16:46:21] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 16:46:21] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 16:46:21] [INFO] [PATH1] 找到工作目录: .
+[2025-12-02 16:46:21] [INFO] [GUI] 找到目录: .
+[2025-12-02 16:46:21] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 16:46:21] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 16:46:21] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 16:46:21] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 16:46:25] [INFO] [WORD] target_path: .
+[2025-12-02 16:46:25] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:46:25] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:46:25] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:46:25] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:46:25] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:46:25] [INFO] [WORD] target_path: .
+[2025-12-02 16:46:25] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:46:25] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:46:25] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:46:25] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:46:25] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:46:25] [INFO] [WORD] target_path: .
+[2025-12-02 16:46:25] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:46:25] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:46:25] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:46:25] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:46:25] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:46:26] [INFO] [WORD] target_path: .
+[2025-12-02 16:46:26] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:46:26] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:46:26] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:46:26] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:46:26] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:46:26] [INFO] [WORD] target_path: .
+[2025-12-02 16:46:26] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:46:26] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:46:26] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:46:26] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:46:26] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:46:26] [INFO] [WORD] target_path: .
+[2025-12-02 16:46:26] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:46:26] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:46:26] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:46:26] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:46:26] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:46:27] [INFO] [WORD] target_path: .
+[2025-12-02 16:46:33] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:47:23] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:47:34] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:47:35] [INFO] [GUI] 开始处理任务...
+[2025-12-02 16:47:35] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 16:47:35] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 16:47:35] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 16:47:35] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 16:47:35] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 16:47:35] [INFO] [GUI] 找到目录: .
+[2025-12-02 16:47:35] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 16:47:35] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 16:47:36] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 16:47:36] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 16:47:39] [INFO] [WORD] target_path: .
+[2025-12-02 16:47:39] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:47:39] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:47:39] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:47:39] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:47:39] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:47:39] [INFO] [WORD] target_path: .
+[2025-12-02 16:47:43] [INFO] [GUI] 请求取消任务处理...
+[2025-12-02 16:47:43] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:47:43] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:47:43] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:47:43] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:47:43] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:47:43] [INFO] [WORD] target_path: .
+[2025-12-02 16:47:43] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:47:43] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:47:43] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:47:43] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:47:43] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:47:43] [INFO] [WORD] target_path: .
+[2025-12-02 16:47:43] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:47:43] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:47:43] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:47:43] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:47:43] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:47:44] [INFO] [WORD] target_path: .
+[2025-12-02 16:47:44] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:47:44] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 16:47:44] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 16:47:44] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 16:47:44] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:47:44] [INFO] [WORD] target_path: .
+[2025-12-02 16:47:44] [INFO] [GUI] 请求取消任务处理...
+[2025-12-02 16:47:49] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 16:47:49] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:52:14] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:52:25] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:52:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:54:10] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 16:54:13] [INFO] [GUI] 开始处理任务...
+[2025-12-02 16:54:13] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 16:54:13] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 16:54:13] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 16:54:13] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 16:54:13] [WARNING] [PATH] 快捷方式 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk 未包含有效目标路径
+[2025-12-02 16:54:13] [INFO] [GUI] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 16:54:13] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 16:54:13] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 16:54:13] [WARNING] [PATH] 快捷方式 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk 未包含有效目标路径
+[2025-12-02 16:54:13] [INFO] [GUI] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 16:54:13] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 16:54:13] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 16:54:13] [INFO] [PATH1] 找到工作目录: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:13] [INFO] [GUI] 找到目录: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:13] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 16:54:13] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 16:54:13] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 16:54:13] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 16:54:16] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:16] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:16] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:16] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:16] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:16] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:17] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:17] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:17] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:17] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:17] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:17] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:17] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:17] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:17] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:17] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:17] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:17] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:17] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:17] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:17] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:17] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:17] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:17] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:17] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:18] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:18] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:18] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:18] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:18] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:18] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:18] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:18] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:18] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:18] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:18] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:18] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:18] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:18] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:18] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:18] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:18] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:18] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:18] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:18] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:18] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:18] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:18] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:19] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:19] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:19] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:19] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:19] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:19] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:19] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:19] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:20] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:20] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:20] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:20] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:20] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:20] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:20] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:20] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:20] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:20] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:20] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:20] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:20] [INFO] [GUI] 请求取消任务处理...
+[2025-12-02 16:54:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:21] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:21] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:21] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:21] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:21] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:21] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:21] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:21] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:21] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:21] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:21] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:21] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:22] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:22] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:22] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:22] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:22] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:22] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:22] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:22] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:22] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:22] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:22] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:22] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:22] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:22] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:22] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:23] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:23] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:23] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:23] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:23] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:23] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:23] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:23] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:23] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:24] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:24] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:24] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:24] [INFO] [WORD] target_path: \\cchnhzhfs03\s_data\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 16:54:24] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: '\\\\cchnhzhfs03\\s_data\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 16:54:24] [INFO] [WORD] 回退到原始方法
+[2025-12-02 16:54:27] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 16:59:04] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:10:34] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:10:39] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:10:42] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:12:13] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:12:17] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:12:17] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:12:17] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:12:17] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:12:17] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:12:23] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:12:24] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:12:24] [INFO] [GUI] 找到目录: .
+[2025-12-02 22:12:24] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:12:24] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:12:24] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:12:24] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 22:12:27] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:27] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:27] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:27] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:27] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:28] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:28] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:28] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:28] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:28] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:28] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:28] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:28] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:28] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:28] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:28] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:28] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:28] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:28] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:28] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:28] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:28] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:28] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:28] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:28] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:28] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:29] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:29] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:29] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:29] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:29] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:29] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:29] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:29] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:29] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:29] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:29] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:29] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:29] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:29] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:29] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:29] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:29] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:29] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:12:29] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:12:30] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:12:30] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:12:30] [INFO] [WORD] target_path: .
+[2025-12-02 22:12:31] [INFO] [GUI] 请求取消任务处理...
+[2025-12-02 22:12:37] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:17:09] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:20:09] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:20:56] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:20:57] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:20:58] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:20:58] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:20:58] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:20:58] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:21:03] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:21:03] [INFO] [PATH] 快捷方式属性: {'FullName': 'S:\\DATA\\HZ Engineer Documents\\PPT\\2025 Project shortcut\\250800780HZH-654986--Husky 5000lm Rechargeable? Focusing--Noise-SH PPT sub.lnk', 'TargetPath': '', 'Arguments': '', 'WorkingDirectory': '', 'Description': '', 'Hotkey': '', 'IconLocation': ',0', 'WindowStyle': 1, 'RelativePath': <bound method RelativePath of <COMObject <unknown>>>}
+[2025-12-02 22:21:03] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:21:03] [INFO] [GUI] 找到目录: .
+[2025-12-02 22:21:03] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:21:03] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:21:03] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:21:03] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 22:21:08] [INFO] [WORD] target_path: .
+[2025-12-02 22:21:08] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:21:08] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:21:09] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:21:09] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:21:09] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:21:09] [INFO] [WORD] target_path: .
+[2025-12-02 22:21:09] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:21:09] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:21:09] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:21:09] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:21:09] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:21:09] [INFO] [WORD] target_path: .
+[2025-12-02 22:21:09] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:21:09] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:21:09] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:21:09] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:21:09] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:21:09] [INFO] [WORD] target_path: .
+[2025-12-02 22:21:09] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:21:09] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:21:09] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:21:09] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:21:09] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:21:09] [INFO] [WORD] target_path: .
+[2025-12-02 22:21:09] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:21:09] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:21:09] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:21:09] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:21:09] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:21:10] [INFO] [WORD] target_path: .
+[2025-12-02 22:21:10] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:21:10] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:21:10] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:21:10] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:21:10] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:21:10] [INFO] [WORD] target_path: .
+[2025-12-02 22:21:10] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:21:10] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:21:10] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:21:10] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:21:10] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:21:10] [INFO] [WORD] target_path: .
+[2025-12-02 22:21:10] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:21:10] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:21:10] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:21:10] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:21:10] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:21:13] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:28:12] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:29:09] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:29:57] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:30:33] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:30:35] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:30:36] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:30:36] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:30:36] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:30:36] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:30:36] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:30:37] [INFO] [PATH] 快捷方式属性: {'FullName': 'S:\\DATA\\HZ Engineer Documents\\PPT\\2025 Project shortcut\\250800780HZH-654986--Husky 5000lm Rechargeable? Focusing--Noise-SH PPT sub.lnk', 'TargetPath': '', 'Arguments': '', 'WorkingDirectory': '', 'Description': '', 'Hotkey': '', 'IconLocation': ',0', 'WindowStyle': 1, 'RelativePath': <bound method RelativePath of <COMObject <unknown>>>}
+[2025-12-02 22:30:37] [INFO] [PATH] 通过 LinkInfo 解析到路径: DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable? Focusing--Noise-SH PPT sub
+[2025-12-02 22:30:37] [INFO] [PATH1] 找到工作目录: DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable? Focusing--Noise-SH PPT sub
+[2025-12-02 22:30:37] [INFO] [GUI] 找到目录: DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable? Focusing--Noise-SH PPT sub
+[2025-12-02 22:30:37] [WARNING] [FOLDER] 目标文件夹 DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable? Focusing--Noise-SH PPT sub 不存在，或该文件夹不是目录
+[2025-12-02 22:30:37] [INFO] [GUI] 任务 250800780HZH 的文件夹预检查失败
+[2025-12-02 22:30:37] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 22:30:37] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 22:30:37] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:30:38] [INFO] [PATH] 快捷方式属性: {'FullName': 'S:\\DATA\\HZ Engineer Documents\\PPT\\2025 Project shortcut\\250800781HZH-655007--Husky 2500lm Rechargeable? Focusing--Noise-SH PPT sub.lnk', 'TargetPath': '', 'Arguments': '', 'WorkingDirectory': '', 'Description': '', 'Hotkey': '', 'IconLocation': ',0', 'WindowStyle': 1, 'RelativePath': <bound method RelativePath of <COMObject <unknown>>>}
+[2025-12-02 22:30:38] [INFO] [PATH] 通过 LinkInfo 解析到路径: DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable? Focusing--Noise-SH PPT sub
+[2025-12-02 22:30:38] [INFO] [PATH1] 找到工作目录: DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable? Focusing--Noise-SH PPT sub
+[2025-12-02 22:30:38] [INFO] [GUI] 找到目录: DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable? Focusing--Noise-SH PPT sub
+[2025-12-02 22:30:38] [WARNING] [FOLDER] 目标文件夹 DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable? Focusing--Noise-SH PPT sub 不存在，或该文件夹不是目录
+[2025-12-02 22:30:38] [INFO] [GUI] 任务 250800781HZH 的文件夹预检查失败
+[2025-12-02 22:30:38] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 22:30:38] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 22:30:39] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 22:30:39] [INFO] [PATH] 快捷方式属性: {'FullName': 'S:\\DATA\\HZ Engineer Documents\\PPT\\2025 Project shortcut\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk', 'TargetPath': 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A', 'Arguments': '', 'WorkingDirectory': '', 'Description': 'Shortcut to 250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A', 'Hotkey': '', 'IconLocation': ',0', 'WindowStyle': 1, 'RelativePath': <bound method RelativePath of <COMObject <unknown>>>}
+[2025-12-02 22:30:39] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:30:39] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:30:39] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:30:39] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:30:39] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:30:39] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 22:30:43] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:30:44] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:30:44] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:30:44] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:30:44] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:30:44] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:30:44] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:30:44] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:30:44] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:30:45] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:30:45] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:30:45] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:30:45] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:30:48] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:33:22] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:34:22] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:34:25] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:34:26] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:34:29] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:34:31] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:34:33] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:34:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:34:37] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:34:43] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:35:03] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:35:05] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:35:05] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:35:05] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:35:05] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:35:05] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:35:06] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:35:06] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:35:06] [INFO] [GUI] 找到目录: .
+[2025-12-02 22:35:06] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:35:06] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:35:06] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:35:06] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 22:35:11] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:11] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:11] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:11] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:11] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:11] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:11] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:11] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:11] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:11] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:11] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:11] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:11] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:11] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:11] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:11] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:11] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:11] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:12] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:12] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:12] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:12] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:12] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:12] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:12] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:12] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:12] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:12] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:12] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:12] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:12] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:12] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:12] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:12] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:12] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:12] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:12] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:12] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:12] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:12] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:12] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:12] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:12] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:12] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:12] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:12] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:12] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:12] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:12] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:13] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:13] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:13] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:13] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:13] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:13] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:13] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:13] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:13] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:13] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:13] [INFO] [GUI] 请求取消任务处理...
+[2025-12-02 22:35:13] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:13] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:13] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:13] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:13] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:13] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:13] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:13] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:13] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:13] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:13] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:13] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:13] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:13] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:35:13] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:35:13] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:35:13] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:35:14] [INFO] [WORD] target_path: .
+[2025-12-02 22:35:18] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:36:06] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:36:10] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:36:14] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:36:26] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:36:28] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:36:28] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:36:28] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:36:28] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:36:28] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:36:28] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:36:28] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:36:29] [INFO] [GUI] target_path: .
+[2025-12-02 22:36:29] [INFO] [GUI] 找到目录: .
+[2025-12-02 22:36:29] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:36:29] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:36:29] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:36:29] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 22:36:33] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:33] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:33] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:33] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:33] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:33] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:33] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:33] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:33] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:33] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:33] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:33] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:33] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:33] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:33] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:33] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:33] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:33] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:33] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:33] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:34] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:34] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:34] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:34] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:34] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:34] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:34] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:34] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:34] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:34] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:34] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:34] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:34] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:34] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:34] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:34] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:34] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:34] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:34] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:34] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:34] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:34] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:34] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:34] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:34] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:34] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:34] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:34] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:34] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:34] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:34] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:35] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:35] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:35] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:35] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:35] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:35] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:35] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:35] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:36:35] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:36:35] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:36:35] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:36:35] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:36:35] [INFO] [WORD] target_path: .
+[2025-12-02 22:36:39] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:37:21] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:37:24] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:37:25] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:37:44] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:37:46] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:37:46] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:37:46] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:37:46] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:37:46] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:37:46] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:37:46] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:37:46] [INFO] [GUI] target_path: .
+[2025-12-02 22:37:46] [INFO] [GUI] 找到目录: .
+[2025-12-02 22:37:46] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:37:46] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:37:46] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:37:46] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 22:37:50] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:50] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:50] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:50] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:50] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:50] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:51] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:51] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:51] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:51] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:51] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:51] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:51] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:51] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:51] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:51] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:51] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:51] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:51] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:51] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:51] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:51] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:51] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:51] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:51] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:51] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:51] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:51] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:51] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:51] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:51] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:51] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:51] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:52] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:52] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:52] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:52] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:52] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:52] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:52] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:52] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:52] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:52] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:52] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:52] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:52] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:52] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:52] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:52] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:52] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:52] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:52] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:52] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:52] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:52] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:52] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:52] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:52] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:52] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:52] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:52] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:52] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:52] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:52] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:53] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:53] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:53] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:53] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:53] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:53] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:53] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:53] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:53] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:53] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:53] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:53] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:53] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:53] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:53] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:53] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:53] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:53] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:54] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:54] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:37:54] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:37:54] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:37:54] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:37:54] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:37:54] [INFO] [WORD] target_path: .
+[2025-12-02 22:37:57] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:38:44] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:38:45] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:38:50] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:38:52] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:38:54] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:39:19] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:39:22] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:39:22] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:39:22] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:39:22] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:39:22] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:39:22] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:39:22] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:39:22] [INFO] [GUI] target_path: .
+[2025-12-02 22:39:22] [INFO] [GUI] 处理过程中发生错误: 'WindowsPath' object has no attribute 'strip'
+[2025-12-02 22:39:37] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:39:39] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:39:42] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:39:44] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:39:55] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:39:58] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:40:03] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:40:09] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:41:33] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:41:57] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:42:09] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:42:10] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:42:11] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:42:11] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:42:11] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:42:11] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:42:15] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:42:15] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:42:15] [INFO] [GUI] target_path: .
+[2025-12-02 22:42:15] [INFO] [GUI] 找到目录: .
+[2025-12-02 22:42:15] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:42:15] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:42:15] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:42:15] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 22:42:19] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:19] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:19] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:19] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:19] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:19] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:19] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:19] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:19] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:19] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:19] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:20] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:20] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:20] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:20] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:20] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:20] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:20] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:20] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:20] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:20] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:20] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:20] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:20] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:20] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:20] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:20] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:20] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:20] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:20] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:20] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:20] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:21] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:21] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:21] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:21] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:21] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:21] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:21] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:21] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:21] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:21] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:21] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:21] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:21] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:22] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:22] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:22] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:22] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:22] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:22] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:22] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:22] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:22] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:22] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:22] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:22] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:22] [INFO] [WORD] 已删除现有的检查清单文件: .\E-filing checklist.docx
+[2025-12-02 22:42:22] [INFO] [WORD] 已复制默认检查清单文件到: E-filing checklist.docx
+[2025-12-02 22:42:22] [INFO] [WORD] 检查清单路径: E-filing checklist.docx
+[2025-12-02 22:42:22] [ERROR] [WORD] 优化检查清单设置失败: (-2147352567, 'Exception occurred.', (0, 'Microsoft Word', 'Sorry, we couldn\'t find your file. Was it moved, renamed, or deleted?\r ("C:\\WINDOWS\\...\\E-filing checklist.docx")', 'wdmain11.chm', 24654, -2146823114), None)
+[2025-12-02 22:42:22] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:42:23] [INFO] [WORD] target_path: .
+[2025-12-02 22:42:26] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:44:52] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:47:27] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:47:40] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:47:41] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:47:41] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:47:41] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:47:41] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:47:41] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:47:46] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:47:46] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:47:46] [INFO] [GUI] target_path: .
+[2025-12-02 22:47:46] [INFO] [GUI] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 22:47:46] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 22:47:46] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 22:47:47] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:47:48] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:47:48] [INFO] [GUI] target_path: .
+[2025-12-02 22:47:48] [INFO] [GUI] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 22:47:48] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 22:47:48] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 22:47:49] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 22:47:49] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:49] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:49] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:50] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:47:50] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:47:50] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:47:50] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 22:47:53] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:53] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:53] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:54] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:54] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:54] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:54] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:54] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:54] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:54] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:54] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:54] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:54] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:55] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:55] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:55] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:55] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:55] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:55] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:55] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:55] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:55] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:55] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:56] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:56] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:56] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:56] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:56] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:56] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:56] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:56] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:56] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:56] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:56] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:57] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:57] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:57] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:57] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:57] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:57] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:57] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:57] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:57] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:58] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:58] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:58] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:58] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:58] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:58] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:58] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:58] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:58] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:58] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:58] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:59] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:59] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:59] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:59] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:59] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:59] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:59] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:47:59] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:47:59] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:47:59] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:48:00] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:48:00] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:48:00] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:48:00] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:48:00] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:48:00] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:48:00] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:48:00] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:48:00] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:48:01] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:48:01] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:48:01] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:48:01] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:48:01] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:48:01] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:48:02] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:48:02] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:48:05] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:48:32] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:48:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:48:37] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:48:40] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:49:04] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:49:05] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:49:05] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:49:05] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:49:05] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:49:05] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:49:09] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:49:10] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:49:10] [INFO] [GUI] target_path: .
+[2025-12-02 22:49:10] [INFO] [GUI] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 22:49:10] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 22:49:10] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 22:49:11] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:49:11] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:49:11] [INFO] [GUI] target_path: .
+[2025-12-02 22:49:11] [INFO] [GUI] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 22:49:11] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 22:49:11] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 22:49:13] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 22:49:13] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:49:13] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:49:13] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:49:13] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:49:13] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:49:13] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:49:13] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 22:49:18] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:49:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:49:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:49:19] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:49:19] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:49:19] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:49:19] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:49:22] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:52:49] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:52:52] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:52:55] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:52:59] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:53:03] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:53:29] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:53:38] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:53:39] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:53:53] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:53:56] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:54:08] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:54:11] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:54:13] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:54:23] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:54:27] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:54:36] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:54:48] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:55:43] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:55:45] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:55:47] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:55:49] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:55:51] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:55:52] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:55:54] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:56:10] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:56:30] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:56:37] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:56:43] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:56:56] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 22:56:57] [INFO] [GUI] 开始处理任务...
+[2025-12-02 22:56:57] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 22:56:57] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 22:56:57] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 22:56:57] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 22:56:58] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:56:58] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:56:58] [INFO] [GUI] target_path: .
+[2025-12-02 22:56:58] [INFO] [GUI] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 22:56:58] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 22:56:58] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 22:56:58] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 22:56:58] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 22:56:59] [INFO] [GUI] target_path: .
+[2025-12-02 22:56:59] [INFO] [GUI] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 22:56:59] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 22:56:59] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 22:56:59] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 22:56:59] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:56:59] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:56:59] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:00] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 22:57:00] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 22:57:00] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 22:57:00] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 22:57:04] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:04] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:04] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:04] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:04] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:04] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:04] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:04] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:04] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:04] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:04] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:04] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:04] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:04] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:04] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:05] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:05] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:05] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:05] [INFO] [GUI] 请求取消任务处理...
+[2025-12-02 22:57:05] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:05] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:05] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:05] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:05] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:05] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:05] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:05] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:05] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:05] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:06] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:06] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:06] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:06] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:06] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:06] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:06] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:06] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:07] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:07] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:07] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:07] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 22:57:07] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 22:57:07] [INFO] [WORD] 回退到原始方法
+[2025-12-02 22:57:10] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:59:11] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:59:21] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:59:32] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:59:33] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 22:59:37] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:00:03] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:00:14] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 23:00:15] [INFO] [GUI] 开始处理任务...
+[2025-12-02 23:00:15] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 23:00:15] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 23:00:15] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 23:00:15] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 23:00:15] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:00:16] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:00:16] [INFO] [GUI] target_path: .
+[2025-12-02 23:00:16] [INFO] [GUI] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 23:00:16] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 23:00:16] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 23:00:16] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:00:16] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:00:16] [INFO] [GUI] target_path: .
+[2025-12-02 23:00:16] [INFO] [GUI] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 23:00:16] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 23:00:16] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 23:00:16] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:00:16] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:00:16] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:00:16] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:00:17] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:00:17] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:00:17] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:00:17] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 23:00:21] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:00:21] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:00:21] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:00:21] [INFO] [GUI] 250900266HZH检查列表写入完成
+[2025-12-02 23:00:21] [INFO] [GUI] 任务 250900266HZH 处理完成:结果为：完成
+[2025-12-02 23:00:21] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-02 23:00:21] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-02 23:00:21] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:00:21] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:00:21] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:00:21] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:00:22] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:00:22] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:00:22] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:00:22] [INFO] [GUI] 250901064HZH开始写入检查列表...
+[2025-12-02 23:00:26] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:00:26] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:00:26] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:00:26] [INFO] [GUI] 250901064HZH检查列表写入完成
+[2025-12-02 23:00:26] [INFO] [GUI] 任务 250901064HZH 处理完成:结果为：完成
+[2025-12-02 23:00:26] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-02 23:03:05] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:03:16] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:03:24] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:03:32] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:03:38] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:04:21] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:04:34] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:04:37] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:04:58] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:05:10] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 23:05:11] [INFO] [GUI] 开始处理任务...
+[2025-12-02 23:05:12] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 23:05:12] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 23:05:12] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 23:05:12] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 23:05:16] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:05:16] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:05:16] [INFO] [GUI] target_path: .
+[2025-12-02 23:05:16] [INFO] [GUI] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 23:05:16] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 23:05:16] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 23:05:18] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:05:18] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:05:18] [INFO] [GUI] target_path: .
+[2025-12-02 23:05:18] [INFO] [GUI] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 23:05:18] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 23:05:18] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 23:05:19] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:05:19] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:05:19] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:05:19] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:05:20] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:05:20] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:05:20] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:05:20] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 23:05:23] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:05:23] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:05:23] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:05:23] [INFO] [GUI] 250900266HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:05:23] [INFO] [GUI] 任务 250900266HZH 处理完成:结果为：失败
+[2025-12-02 23:05:23] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-02 23:05:23] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-02 23:05:25] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:05:25] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:05:25] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:05:25] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:05:25] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:05:25] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:05:25] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:05:25] [INFO] [GUI] 250901064HZH开始写入检查列表...
+[2025-12-02 23:05:29] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:05:29] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:05:29] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:05:29] [INFO] [GUI] 250901064HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:05:29] [INFO] [GUI] 任务 250901064HZH 处理完成:结果为：失败
+[2025-12-02 23:05:29] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-02 23:06:03] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:05] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:09] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:11] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:13] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:17] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:18] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:21] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:23] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:26] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:28] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:32] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:34] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:40] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:06:47] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:07:00] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 23:07:02] [INFO] [GUI] 开始处理任务...
+[2025-12-02 23:07:03] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 23:07:03] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 23:07:03] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 23:07:03] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 23:07:06] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:07:06] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:07:06] [INFO] [GUI] target_path: .
+[2025-12-02 23:07:06] [INFO] [GUI] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 23:07:06] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 23:07:06] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 23:07:08] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:07:08] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:07:08] [INFO] [GUI] target_path: .
+[2025-12-02 23:07:08] [INFO] [GUI] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 23:07:08] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 23:07:08] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 23:07:10] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:07:10] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:10] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:10] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:10] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:07:10] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:07:10] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:07:10] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 23:07:14] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:14] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:07:14] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:07:14] [INFO] [GUI] 250900266HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:07:14] [INFO] [GUI] 任务 250900266HZH 处理完成:结果为：失败
+[2025-12-02 23:07:14] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-02 23:07:14] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-02 23:07:16] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:07:16] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:16] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:16] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:16] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:07:16] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:07:16] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:07:16] [INFO] [GUI] 250901064HZH开始写入检查列表...
+[2025-12-02 23:07:20] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:20] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:07:20] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:07:20] [INFO] [GUI] 250901064HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:07:20] [INFO] [GUI] 任务 250901064HZH 处理完成:结果为：失败
+[2025-12-02 23:07:20] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-02 23:07:29] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:07:31] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:07:34] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:07:40] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:07:52] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 23:07:53] [INFO] [GUI] 开始处理任务...
+[2025-12-02 23:07:53] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 23:07:53] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 23:07:53] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 23:07:53] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 23:07:55] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:07:55] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:07:55] [INFO] [GUI] target_path: .
+[2025-12-02 23:07:55] [INFO] [GUI] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 23:07:55] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 23:07:55] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 23:07:56] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:07:56] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:07:56] [INFO] [GUI] target_path: .
+[2025-12-02 23:07:56] [INFO] [GUI] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 23:07:56] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 23:07:56] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 23:07:58] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:07:58] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:58] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:58] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:07:58] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:07:58] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:07:58] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:07:58] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 23:08:03] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:08:03] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:08:03] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:08:03] [INFO] [GUI] 250900266HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:08:03] [INFO] [GUI] 任务 250900266HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:08:03] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-02 23:08:03] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-02 23:08:05] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:08:05] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:08:05] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:08:05] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:08:05] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:08:05] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:08:05] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:08:05] [INFO] [GUI] 250901064HZH开始写入检查列表...
+[2025-12-02 23:08:09] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:08:09] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:08:09] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:08:09] [INFO] [GUI] 250901064HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:08:09] [INFO] [GUI] 任务 250901064HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:08:09] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-02 23:08:29] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:09:24] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:09:31] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:09:49] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:10:00] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:10:14] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 23:10:15] [INFO] [GUI] 开始处理任务...
+[2025-12-02 23:10:15] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 23:10:15] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 23:10:15] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 23:10:15] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 23:10:20] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:10:20] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:10:20] [INFO] [GUI] target_path: .
+[2025-12-02 23:10:20] [ERROR] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 23:10:20] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 23:10:20] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 23:10:21] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:10:22] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:10:22] [INFO] [GUI] target_path: .
+[2025-12-02 23:10:22] [ERROR] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 23:10:22] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 23:10:22] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 23:10:23] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:10:23] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:10:23] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:10:23] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:10:24] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:10:24] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:10:24] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:10:24] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 23:10:29] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:10:30] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:10:30] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:10:30] [ERROR] 250900266HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:10:30] [INFO] [GUI] 任务 250900266HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:10:30] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-02 23:10:30] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-02 23:10:31] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:10:31] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:10:32] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:10:32] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:10:32] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:10:32] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:10:32] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:10:32] [INFO] [GUI] 250901064HZH开始写入检查列表...
+[2025-12-02 23:10:35] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:10:35] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:10:35] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:10:35] [ERROR] 250901064HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:10:35] [INFO] [GUI] 任务 250901064HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:10:35] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-02 23:10:49] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:16:50] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:30:02] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:30:04] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:30:50] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:33:57] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:00] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:02] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:06] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:08] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:09] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:11] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:15] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:16] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:24] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:26] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:27] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:33] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:41] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:34:58] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 23:35:00] [INFO] [GUI] 开始处理任务...
+[2025-12-02 23:35:00] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 23:35:00] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 23:35:00] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 23:35:00] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 23:35:01] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:35:02] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:35:02] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:35:02] [INFO] [GUI] target_path: .
+[2025-12-02 23:35:02] [ERROR] 任务 250800780HZH 的工作目录未找到
+[2025-12-02 23:35:02] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 23:35:02] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 23:35:02] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:35:03] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:35:03] [INFO] [PATH1] 找到工作目录: 
+[2025-12-02 23:35:03] [INFO] [GUI] target_path: .
+[2025-12-02 23:35:03] [ERROR] 任务 250800781HZH 的工作目录未找到
+[2025-12-02 23:35:03] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 23:35:03] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 23:35:03] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:35:04] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:04] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:04] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:04] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:04] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:35:04] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:35:04] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:35:04] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 23:35:09] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:09] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:35:09] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:35:09] [ERROR] 250900266HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:35:09] [INFO] [GUI] 任务 250900266HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:35:09] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-02 23:35:09] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-02 23:35:09] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:35:09] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:09] [INFO] [PATH1] 找到工作目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:09] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:09] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:09] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:35:09] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:35:09] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:35:09] [INFO] [GUI] 250901064HZH开始写入检查列表...
+[2025-12-02 23:35:13] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:35:13] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:35:13] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:35:13] [ERROR] 250901064HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:35:13] [INFO] [GUI] 任务 250901064HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:35:13] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-02 23:36:32] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:36:33] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:36:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:36:40] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:36:43] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:36:48] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:37:02] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:37:14] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 23:37:15] [INFO] [GUI] 开始处理任务...
+[2025-12-02 23:37:15] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 23:37:15] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 23:37:15] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 23:37:16] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 23:37:16] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:37:16] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:16] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:16] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:17] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:37:17] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:37:17] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:37:17] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 23:37:23] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:23] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:23] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:23] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:23] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:23] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:23] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:23] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:23] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:24] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:24] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:24] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:24] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:24] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:24] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:24] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:24] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:24] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:25] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:25] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:25] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:25] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:25] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:25] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:25] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:25] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:25] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:25] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:25] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:25] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:26] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:26] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:26] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:26] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:26] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:26] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:26] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:26] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:26] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:26] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:27] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:27] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:27] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:27] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:27] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:27] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:27] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:27] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:27] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:27] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:27] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:27] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:28] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:28] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:28] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:28] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:28] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:28] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:28] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:28] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:28] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:28] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:28] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:28] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:29] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:29] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:29] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:37:29] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:37:29] [INFO] [WORD] 回退到原始方法
+[2025-12-02 23:37:33] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:38:11] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-02 23:38:29] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-02 23:38:30] [INFO] [GUI] 开始处理任务...
+[2025-12-02 23:38:30] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-02 23:38:30] [INFO] [GUI] 共计 4 个任务
+[2025-12-02 23:38:30] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-02 23:38:30] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-02 23:38:30] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:38:31] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:38:31] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:38:31] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:38:32] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:38:32] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:38:32] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:38:32] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-02 23:38:36] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:38:37] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:38:37] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:38:37] [ERROR] 250800780HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:38:37] [INFO] [GUI] 任务 250800780HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:38:37] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-02 23:38:37] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-02 23:38:37] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-02 23:38:37] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:38:37] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:38:37] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:38:37] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:38:37] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:38:37] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:38:37] [INFO] [GUI] 250800781HZH开始写入检查列表...
+[2025-12-02 23:38:41] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-02 23:38:41] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800781HZH-655007--Husky 2500lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-02 23:38:41] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:38:41] [ERROR] 250800781HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:38:41] [INFO] [GUI] 任务 250800781HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:38:41] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-02 23:38:41] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-02 23:38:41] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:38:42] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:38:42] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:38:42] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:38:42] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:38:42] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:38:42] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:38:42] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-02 23:38:45] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:38:45] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:38:45] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:38:45] [ERROR] 250900266HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:38:45] [INFO] [GUI] 任务 250900266HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:38:45] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-02 23:38:45] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-02 23:38:45] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-02 23:38:46] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:38:46] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:38:46] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:38:46] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-02 23:38:46] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-02 23:38:46] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-02 23:38:46] [INFO] [GUI] 250901064HZH开始写入检查列表...
+[2025-12-02 23:38:49] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-02 23:38:49] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-02 23:38:49] [ERROR] [WORD] 你没有写入权限
+[2025-12-02 23:38:49] [ERROR] 250901064HZH设置检查列表失败: 你没有写入权限
+[2025-12-02 23:38:49] [INFO] [GUI] 任务 250901064HZH 处理完成:结果为：无写入权限
+[2025-12-02 23:38:49] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-02 23:38:58] [INFO] [WORD] Word处理模块资源已清理

@@ -170,23 +170,25 @@ class ProjectFileChecker:
                     self.log(f"处理任务 {i+1}/{len(self.tasks)}: {task['job_no']}")
                     
                     # 获取工作目录
-                    target_path = get_working_folder_path(self.base_dir,self.team, task['job_no'])
+                    target_path = get_working_folder_path(self.base_dir,self.team, task['job_no'].strip())
+                    log_info(f"target_path: {target_path}", "GUI")
+                    s_status = '未找到目录' if target_path is None else ('快捷方式已损坏' if str(target_path).strip() == "." else '已处理')
                     result = {
                         'job_no': task['job_no'],
                         'job_creator': task['job_creator'],
                         'engineers': task['engineers'],
                         'target_path': str(target_path) if target_path is not None else None,
-                        'status': '未找到目录' if target_path is None else '已处理',
+                        'status': s_status,
                         'folders': {}
                     }
-                    if target_path is None:
-                        self.log(f"任务 {task['job_no']} 的工作目录未找到")
+                    if target_path is None or str(target_path).strip() == ".":
+                        log_error(f"任务 {task['job_no']} 的工作目录未找到")
                         data_manager.add_result(result)
                         webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
                         continue
                     self.log(f"找到目录: {target_path}")
                     if not folder_precheck(target_path, self.team):
-                        self.log(f"任务 {task['job_no']} 的文件夹预检查失败")
+                        log_error(f"任务 {task['job_no']} 的文件夹预检查失败")
                         result['status'] = '文件夹预检查失败'
                         data_manager.add_result(result)
                         webview.windows[0].evaluate_js(f'updateResults({json.dumps(data_manager.get_results())})')
@@ -215,8 +217,11 @@ class ProjectFileChecker:
                         self.log(f"{task['job_no']}检查列表写入完成")
                         result['status'] = '完成'
                     except Exception as e:
-                        self.log(f"{task['job_no']}设置检查列表失败: {e}")
-                        result['status'] = '失败'
+                        log_error(f"{task['job_no']}设置检查列表失败: {e}")
+                        if isinstance(e,PermissionError):
+                            result['status']='无写入权限'
+                        else:
+                            result['status'] = '失败'
                             
                     self.log(f"任务 {task['job_no']} 处理完成:结果为：{result['status']}")
                     
@@ -237,7 +242,7 @@ class ProjectFileChecker:
                 #data_manager.save_to_file()
                 
             except Exception as e:
-                self.log(f"处理过程中发生错误: {e}")
+                log_error(f"处理过程中发生错误: {e}")
             finally:
                 self.is_running = False
                 self.cancel_requested = False
@@ -624,15 +629,15 @@ class ProjectFileChecker:
                 # 使用pywinauto启动应用程序并连接
                 if automation.start_and_connect(efilling_tool_path):
                     
-                    print("E-filing工具启动成功，正在自动填入信息...")
-                    fill_success = automation.fill_information(self.base_dir,self.team,self.archive_path)
+                    #print("E-filing工具启动成功，正在自动填入信息...")
+                    #fill_success = automation.fill_information(self.base_dir,self.team,self.archive_path)
                     # 断开连接
                     automation.disconnect()
                     
-                    if fill_success:
-                        return {'success': True, 'message': 'E-filing工具启动成功并已自动填入信息'}
-                    else:
-                        return {'success': True, 'message': 'E-filing工具启动成功，但自动填入信息时遇到问题'}
+                    #if fill_success:
+                        #return {'success': True, 'message': 'E-filing工具启动成功并已自动填入信息'}
+                    #else:
+                        #return {'success': True, 'message': 'E-filing工具启动成功，但自动填入信息时遇到问题'}
                 else:
                     return {'success': False, 'message': 'E-filing工具启动失败或无法连接'}
                         
