@@ -4788,3 +4788,163 @@
 [2025-12-02 23:38:49] [INFO] [GUI] 任务 250901064HZH 处理完成:结果为：无写入权限
 [2025-12-02 23:38:49] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
 [2025-12-02 23:38:58] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 16:41:24] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-03 16:41:25] [INFO] [GUI] 开始处理任务...
+[2025-12-03 16:41:26] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-03 16:41:26] [INFO] [GUI] 共计 4 个任务
+[2025-12-03 16:41:26] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-03 16:41:26] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-03 16:41:32] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-03 16:41:33] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 16:41:33] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 16:41:33] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 16:41:33] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-03 16:41:33] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-03 16:41:33] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-03 16:41:33] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-03 16:41:37] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 16:41:37] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-03 16:41:37] [ERROR] [WORD] 你没有写入权限
+[2025-12-03 16:41:37] [ERROR] 250800780HZH设置检查列表失败: 你没有写入权限
+[2025-12-03 16:41:37] [INFO] [GUI] 任务 250800780HZH 处理完成:结果为：无写入权限
+[2025-12-03 16:41:37] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-03 16:41:37] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-03 16:41:42] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-03 16:41:43] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 16:41:43] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 16:41:43] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 16:41:43] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-03 16:41:43] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-03 16:41:43] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-03 16:41:43] [INFO] [GUI] 250800781HZH开始写入检查列表...
+[2025-12-03 16:41:46] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 16:41:47] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800781HZH-655007--Husky 2500lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-03 16:41:47] [ERROR] [WORD] 你没有写入权限
+[2025-12-03 16:41:47] [ERROR] 250800781HZH设置检查列表失败: 你没有写入权限
+[2025-12-03 16:41:47] [INFO] [GUI] 任务 250800781HZH 处理完成:结果为：无写入权限
+[2025-12-03 16:41:47] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-03 16:41:47] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-03 16:41:53] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-03 16:41:54] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-03 16:41:54] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-03 16:41:54] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-03 16:41:55] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-03 16:41:55] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-03 16:41:55] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-03 16:41:55] [INFO] [GUI] 250900266HZH开始写入检查列表...
+[2025-12-03 16:42:00] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-03 16:42:01] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-03 16:42:01] [ERROR] [WORD] 你没有写入权限
+[2025-12-03 16:42:01] [ERROR] 250900266HZH设置检查列表失败: 你没有写入权限
+[2025-12-03 16:42:01] [INFO] [GUI] 任务 250900266HZH 处理完成:结果为：无写入权限
+[2025-12-03 16:42:01] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-03 16:42:01] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-03 16:42:04] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-03 16:42:04] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-03 16:42:04] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-03 16:42:04] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-03 16:42:05] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-03 16:42:05] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-03 16:42:05] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-03 16:42:05] [INFO] [GUI] 250901064HZH开始写入检查列表...
+[2025-12-03 16:42:08] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\ISTA from 2019\Finished\2025\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A
+[2025-12-03 16:42:09] [ERROR] [WORD] 优化检查清单设置失败: [Errno 13] Permission denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\ISTA from 2019\\Finished\\2025\\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A\\E-filing checklist.docx'
+[2025-12-03 16:42:09] [ERROR] [WORD] 你没有写入权限
+[2025-12-03 16:42:09] [ERROR] 250901064HZH设置检查列表失败: 你没有写入权限
+[2025-12-03 16:42:09] [INFO] [GUI] 任务 250901064HZH 处理完成:结果为：无写入权限
+[2025-12-03 16:42:09] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-03 16:44:11] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 16:48:01] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:03:09] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:03:24] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:08:52] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-03 18:08:53] [INFO] [GUI] 开始处理任务...
+[2025-12-03 18:08:54] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-03 18:08:54] [INFO] [GUI] 共计 4 个任务
+[2025-12-03 18:08:54] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-03 18:08:54] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-03 18:08:56] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-03 18:08:56] [INFO] [PATH] Error processing shortcut S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk: module 'win32com.shell.shellcon' has no attribute 'SLR_NO_UI'
+[2025-12-03 18:08:57] [INFO] [GUI] target_path: None
+[2025-12-03 18:08:57] [ERROR] 任务 250800780HZH 的工作目录未找到
+[2025-12-03 18:08:57] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-03 18:08:57] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-03 18:08:59] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-03 18:08:59] [INFO] [PATH] Error processing shortcut S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk: module 'win32com.shell.shellcon' has no attribute 'SLR_NO_UI'
+[2025-12-03 18:09:00] [INFO] [GUI] target_path: None
+[2025-12-03 18:09:00] [ERROR] 任务 250800781HZH 的工作目录未找到
+[2025-12-03 18:09:00] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-03 18:09:00] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-03 18:09:02] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-03 18:09:03] [INFO] [PATH] Error processing shortcut S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk: module 'win32com.shell.shellcon' has no attribute 'SLR_NO_UI'
+[2025-12-03 18:09:03] [INFO] [GUI] target_path: None
+[2025-12-03 18:09:03] [ERROR] 任务 250900266HZH 的工作目录未找到
+[2025-12-03 18:09:03] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-03 18:09:03] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-03 18:09:08] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:09:12] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:09:29] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-03 18:09:30] [INFO] [GUI] 开始处理任务...
+[2025-12-03 18:09:30] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-03 18:09:30] [INFO] [GUI] 共计 4 个任务
+[2025-12-03 18:09:30] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-03 18:09:30] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-03 18:09:35] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-03 18:09:35] [INFO] [PATH] Error processing shortcut S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk: module 'win32com.shell.shellcon' has no attribute 'SLR_NO_UI'
+[2025-12-03 18:09:37] [INFO] [GUI] target_path: None
+[2025-12-03 18:09:37] [ERROR] 任务 250800780HZH 的工作目录未找到
+[2025-12-03 18:09:37] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-03 18:09:37] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-03 18:09:39] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-03 18:09:39] [INFO] [PATH] Error processing shortcut S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk: module 'win32com.shell.shellcon' has no attribute 'SLR_NO_UI'
+[2025-12-03 18:09:40] [INFO] [GUI] target_path: None
+[2025-12-03 18:09:40] [ERROR] 任务 250800781HZH 的工作目录未找到
+[2025-12-03 18:09:40] [INFO] [GUI] 处理任务 3/4: 250900266HZH
+[2025-12-03 18:09:40] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-03 18:09:44] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-03 18:09:44] [INFO] [PATH] Error processing shortcut S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250900266HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk: module 'win32com.shell.shellcon' has no attribute 'SLR_NO_UI'
+[2025-12-03 18:09:47] [INFO] [GUI] target_path: None
+[2025-12-03 18:09:47] [ERROR] 任务 250900266HZH 的工作目录未找到
+[2025-12-03 18:09:47] [INFO] [GUI] 处理任务 4/4: 250901064HZH
+[2025-12-03 18:09:47] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-03 18:09:49] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk
+[2025-12-03 18:09:50] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:09:50] [INFO] [PATH] Error processing shortcut S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250901064HZH--CVF61A--Air Purifier--Singfun--ISTA 6A.lnk: module 'win32com.shell.shellcon' has no attribute 'SLR_NO_UI'
+[2025-12-03 18:09:51] [INFO] [GUI] target_path: None
+[2025-12-03 18:09:51] [ERROR] 任务 250901064HZH 的工作目录未找到
+[2025-12-03 18:09:51] [INFO] [GUI] 所有任务处理完成，共处理 4 个任务
+[2025-12-03 18:10:00] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:10:13] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-03 18:10:14] [INFO] [GUI] 开始处理任务...
+[2025-12-03 18:10:14] [INFO] [GUI] 成功读取 4 个任务
+[2025-12-03 18:10:14] [INFO] [GUI] 共计 4 个任务
+[2025-12-03 18:10:14] [INFO] [GUI] 处理任务 1/4: 250800780HZH
+[2025-12-03 18:10:14] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800780HZH 对应的文件夹
+[2025-12-03 18:10:17] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-03 18:10:17] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 18:10:17] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 18:10:17] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 18:10:17] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-03 18:10:17] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-03 18:10:18] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-03 18:10:18] [INFO] [GUI] 250800780HZH开始写入检查列表...
+[2025-12-03 18:10:24] [INFO] [WORD] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800780HZH-654986--Husky 5000lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 18:10:24] [ERROR] [WORD] 优化检查清单设置失败: [WinError 5] Access is denied: 'S:\\DATA\\HZ Engineer Documents\\PPT\\Project\\THD\\Finished\\2025\\250800780HZH-654986--Husky 5000lm Rechargeable\xa0 Focusing--Noise-SH PPT sub\\E-filing checklist.docx'
+[2025-12-03 18:10:24] [ERROR] [WORD] 你没有写入权限
+[2025-12-03 18:10:24] [ERROR] 250800780HZH设置检查列表失败: 你没有写入权限
+[2025-12-03 18:10:24] [INFO] [GUI] 任务 250800780HZH 处理完成:结果为：无写入权限
+[2025-12-03 18:10:24] [INFO] [GUI] 处理任务 2/4: 250800781HZH
+[2025-12-03 18:10:24] [INFO] [PATH] 正在PPT快捷方式路径 S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-03 18:10:26] [INFO] [PATH] 找到快捷方式文件: S:\DATA\HZ Engineer Documents\PPT\2025 Project shortcut\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub.lnk
+[2025-12-03 18:10:26] [INFO] [PATH] 快捷方式目标路径: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 18:10:26] [INFO] [GUI] target_path: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 18:10:26] [INFO] [GUI] 找到目录: S:\DATA\HZ Engineer Documents\PPT\Project\THD\Finished\2025\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub
+[2025-12-03 18:10:26] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-03 18:10:26] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-03 18:10:26] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-03 18:10:26] [INFO] [GUI] 250800781HZH开始写入检查列表...
+[2025-12-03 18:10:33] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:24:23] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:24:26] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:24:27] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-03 18:24:32] [INFO] [WORD] Word处理模块资源已清理

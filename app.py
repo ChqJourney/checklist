@@ -22,7 +22,7 @@ if __name__ == "__main__":
         icon_path = os.path.join(current_dir, 'check.ico')
         # 创建窗口
         window = webview.create_window(
-            'Project File Checker V2.2',
+            'Project File Checker V2.4',
             url=html_url,
             js_api=api,
             width=1200,

@@ -1,9 +1,19 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+import sys
+import site
+import os
+pywin32_dir = os.path.join(site.getsitepackages()[0], "pywin32_system32")
+binaries = []
+if os.path.isdir(pywin32_dir):
+    binaries.append((pywin32_dir, "pywin32_system32"))
+else:
+    print(f"警告: 未找到 {pywin32_dir}")
+
 a = Analysis(
     ['app.py'],
     pathex=[],
-    binaries=[],
+    binaries=binaries,
     datas=[
         ('src/static', 'src/static'),  # 包含静态文件（HTML, CSS, JS）
         ('src/static/check.ico', '.'),    # 包含图标文件
@@ -14,8 +24,11 @@ a = Analysis(
         'openpyxl',  # pandas读取Excel文件需要
         'xlrd',      # 支持旧版Excel文件
         'win32com.client',
+        'win32timezone',
         'pywintypes',
         'pythoncom',
+        'win32com.shell',
+        'win32com.shell.shellcon',
         'webview',   # pywebview核心模块
         'webview.platforms.winforms',  # Windows平台支持
         'webview.platforms.edgechromium',  # Edge WebView2支持

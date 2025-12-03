@@ -8,7 +8,7 @@ import pythoncom
 from win32com.shell import shell, shellcon
 from pathlib import Path
 from urllib.parse import unquote
-from src.logger.logger import log_debug, log_info
+from src.logger.logger import log_debug, log_error, log_info
 
 
 def get_working_folder_path(base_dir, team, job_no):
@@ -112,7 +112,7 @@ def get_lnk_target_path(lnk_path):
         }
 
     except Exception as e:
-        print(f"Error processing {lnk_path}: {e}")
+        log_error(f"Error processing {lnk_path}: {e}")
         return None
     finally:
         # 释放COM
