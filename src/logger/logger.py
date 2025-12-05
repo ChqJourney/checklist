@@ -2,6 +2,7 @@
 全局日志管理器
 支持分级日志、前端显示、文件输出和控制台输出
 """
+import io
 import json
 import os
 import sys
@@ -9,6 +10,28 @@ import threading
 from datetime import datetime
 from typing import Callable, Optional
 from src.config.config_manager import get_system_config
+
+
+def _force_utf8_output():
+    """Ensure stdout/stderr use UTF-8 so logging不会因控制台编码失败"""
+    for stream_name in ("stdout", "stderr"):
+        stream = getattr(sys, stream_name, None)
+        if stream is None:
+            continue
+        try:
+            if hasattr(stream, "reconfigure"):
+                stream.reconfigure(encoding="utf-8", errors="replace")
+            else:
+                buffer = getattr(stream, "buffer", None)
+                if buffer is None:
+                    continue
+                wrapper = io.TextIOWrapper(buffer, encoding="utf-8", errors="replace", line_buffering=True)
+                setattr(sys, stream_name, wrapper)
+        except Exception:
+            continue
+
+
+_force_utf8_output()
 
 # 确保在 PyInstaller 环境中正确处理 Unicode
 def safe_print(text):

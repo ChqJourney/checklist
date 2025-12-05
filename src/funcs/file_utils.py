@@ -6,7 +6,7 @@ import os
 import glob
 from numpy import number
 from src.config.config_manager import ConfigManager, get_system_config, config_manager
-from src.logger.logger import log_warning
+from src.logger.logger import log_info, log_warning
 
 def folder_precheck(target_folder:str,team:str)-> bool:
     """
@@ -97,7 +97,7 @@ def detect_folders_status(working_folder_path, team, options_config):
     if team == 'PPT':
         for sub_folder_name in options_config.keys():
             sub_folder_path = os.path.join(working_folder_path, sub_folder_name)
-            print(f"检测文件夹: {sub_folder_path}")
+            log_info(f"检测文件夹: {sub_folder_path}","FILE")
             if not os.path.exists(sub_folder_path):
                 raise FileNotFoundError(f"{sub_folder_name} folder not found")
             if detect_folder_has_file(sub_folder_path):
@@ -110,20 +110,20 @@ def detect_folders_status(working_folder_path, team, options_config):
         # 遍历options_config中的每个属性，见system.json中的subFolderConfig下的options
         for sub_folder_name, option in options_config.items():
             sub_folder_path = os.path.join(working_folder_path, sub_folder_name)
-            print(f"检测文件夹: {sub_folder_path}: {option}")
+            log_info(f"检测文件夹: {sub_folder_path}: {option}", "FILE")
             sub_folder_exist = os.path.exists(sub_folder_path)
             # if not sub_folder_exist:
             #     print(f"{sub_folder_name} folder not found")
             #     result[sub_folder_name] = False
             if isinstance(option, int):
                 # 如果option是数字，表示需要检测的文件数量
-                print(f"当前option是数字: {option}")
+                log_info(f"当前option是数字: {option}", "FILE")
                 if not sub_folder_exist:
                     result[sub_folder_name] = False
                 else:
                     result[sub_folder_name] = detect_folder_has_file(sub_folder_path)
             elif isinstance(option, dict):
-                print(f"当前option是字典: {option}")
+                log_info(f"当前option是字典: {option}","FILE")
                 # 如果option是字典，遍历字典的每个key，在file_map中查找对应的文件名规则
                 file_map = get_system_config('file_map')
                 
@@ -161,7 +161,7 @@ def detect_folders_status(working_folder_path, team, options_config):
                             result[sub_folder_name][key] = False
             else:
                 # 如果option是其他类型，直接设置为False
-                print(f"当前option不是数字或字典: {option}")
+                log_warning(f"当前option不是数字或字典: {option}", "FILE")
                 result[sub_folder_name] = False
-    print(f"检测结果: {result}")
+    log_info(f"检测结果: {result}", "FILE")
     return result

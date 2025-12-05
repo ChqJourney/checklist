@@ -4948,3 +4948,321 @@
 [2025-12-03 18:24:26] [INFO] [WORD] Word处理模块资源已清理
 [2025-12-03 18:24:27] [INFO] [WORD] Word处理模块资源已清理
 [2025-12-03 18:24:32] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 15:04:26] [INFO] [GUI] 配置保存成功
+[2025-12-04 15:04:35] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-04 15:04:38] [INFO] [GUI] 开始处理任务...
+[2025-12-04 15:04:39] [INFO] [GUI] 成功读取 3 个任务
+[2025-12-04 15:04:39] [INFO] [GUI] 共计 3 个任务
+[2025-12-04 15:04:39] [INFO] [GUI] 处理任务 1/3: 250800781HZH
+[2025-12-04 15:04:39] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-04 15:04:39] [INFO] [PATH] 找到快捷方式文件: D:\OneDrive - Intertek\Desktop\shorts\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub - Shortcut.lnk
+[2025-12-04 15:04:39] [INFO] [PATH] 快捷方式目标路径: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 15:04:39] [INFO] [GUI] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 15:04:39] [INFO] [GUI] 找到目录: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 15:04:39] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-04 15:04:39] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-04 15:04:39] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-04 15:04:39] [INFO] [GUI] 250800781HZH开始写入检查列表...
+[2025-12-04 15:04:43] [INFO] [WORD] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 15:04:43] [INFO] [WORD] 已删除现有的检查清单文件: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 15:04:43] [INFO] [WORD] 已复制默认检查清单文件到: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 15:04:43] [INFO] [WORD] 检查清单路径: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 15:04:49] [INFO] [D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx] checklist 路径：
+[2025-12-04 15:04:49] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-04 15:04:49] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-04 15:04:49] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-04 15:04:50] [INFO] [WORD] 开始在checklist中填写文件状态，请稍候......
+[2025-12-04 15:04:53] [INFO] [WORD] 检查清单保存成功
+[2025-12-04 15:04:53] [INFO] [GUI] 250800781HZH检查列表写入完成
+[2025-12-04 15:04:53] [INFO] [GUI] 任务 250800781HZH 处理完成:结果为：完成
+[2025-12-04 15:04:53] [INFO] [GUI] 处理任务 2/3: 250900266HZH
+[2025-12-04 15:04:53] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-04 15:04:53] [INFO] [GUI] target_path: None
+[2025-12-04 15:04:53] [ERROR] 任务 250900266HZH 的工作目录未找到
+[2025-12-04 15:04:53] [INFO] [GUI] 处理任务 3/3: 250901064HZH
+[2025-12-04 15:04:53] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-04 15:04:53] [INFO] [GUI] target_path: None
+[2025-12-04 15:04:53] [ERROR] 任务 250901064HZH 的工作目录未找到
+[2025-12-04 15:04:53] [INFO] [GUI] 所有任务处理完成，共处理 3 个任务
+[2025-12-04 15:05:48] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:37:18] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:37:49] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:43:18] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:43:27] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:43:39] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:43:43] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:43:48] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:43:51] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:51:42] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 16:52:42] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:37:24] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-04 22:37:25] [INFO] [GUI] 开始处理任务...
+[2025-12-04 22:37:25] [INFO] [GUI] 成功读取 3 个任务
+[2025-12-04 22:37:25] [INFO] [GUI] 共计 3 个任务
+[2025-12-04 22:37:25] [INFO] [GUI] 处理任务 1/3: 250800781HZH
+[2025-12-04 22:37:25] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-04 22:37:25] [INFO] [PATH] 找到快捷方式文件: D:\OneDrive - Intertek\Desktop\shorts\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub - Shortcut.lnk
+[2025-12-04 22:37:25] [INFO] [PATH] 快捷方式目标路径: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 22:37:25] [INFO] [GUI] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 22:37:25] [INFO] [GUI] 找到目录: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 22:37:25] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-04 22:37:25] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-04 22:37:25] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-04 22:37:26] [INFO] [GUI] 250800781HZH开始写入检查列表...
+[2025-12-04 22:37:30] [INFO] [WORD] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 22:37:30] [INFO] [WORD] 已删除现有的检查清单文件: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 22:37:30] [INFO] [WORD] 已复制默认检查清单文件到: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 22:37:30] [INFO] [WORD] 检查清单路径: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 22:37:38] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-04 22:37:38] [WARNING] [WORD] 未找到工程师 Christina Ji 的签名图片
+[2025-12-04 22:37:38] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-04 22:37:38] [WARNING] [WORD] 未找到工程师 Sylvia Wang 的签名图片
+[2025-12-04 22:37:38] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-04 22:37:39] [INFO] [WORD] 开始在checklist中填写文件状态，请稍候......
+[2025-12-04 22:37:44] [INFO] [WORD] 检查清单保存成功
+[2025-12-04 22:37:44] [INFO] [GUI] 250800781HZH检查列表写入完成
+[2025-12-04 22:37:44] [INFO] [GUI] 任务 250800781HZH 处理完成:结果为：完成
+[2025-12-04 22:37:44] [INFO] [GUI] 处理任务 2/3: 250900266HZH
+[2025-12-04 22:37:44] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-04 22:37:44] [INFO] [GUI] target_path: None
+[2025-12-04 22:37:44] [ERROR] 任务 250900266HZH 的工作目录未找到
+[2025-12-04 22:37:44] [INFO] [GUI] 处理任务 3/3: 250901064HZH
+[2025-12-04 22:37:44] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-04 22:37:44] [INFO] [GUI] target_path: None
+[2025-12-04 22:37:44] [ERROR] 任务 250901064HZH 的工作目录未找到
+[2025-12-04 22:37:44] [INFO] [GUI] 所有任务处理完成，共处理 3 个任务
+[2025-12-04 22:38:07] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:51:23] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:51:32] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:51:38] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:51:40] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:51:43] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:51:48] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:51:59] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:00] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:03] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:04] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:09] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:10] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:15] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:19] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:25] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:33] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:41] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:46] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:52:48] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:54:58] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:55:10] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-04 22:56:21] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-04 22:56:22] [INFO] [GUI] 开始处理任务...
+[2025-12-04 22:56:22] [INFO] [GUI] 成功读取 3 个任务
+[2025-12-04 22:56:22] [INFO] [GUI] 共计 3 个任务
+[2025-12-04 22:56:22] [INFO] [GUI] 处理任务 1/3: 250800781HZH
+[2025-12-04 22:56:22] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-04 22:56:22] [INFO] [PATH] 找到快捷方式文件: D:\OneDrive - Intertek\Desktop\shorts\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub - Shortcut.lnk
+[2025-12-04 22:56:22] [INFO] [PATH] 快捷方式目标路径: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 22:56:22] [INFO] [GUI] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 22:56:22] [INFO] [GUI] 找到目录: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 22:56:22] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-04 22:56:22] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-04 22:56:22] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-04 22:56:22] [INFO] [GUI] 250800781HZH开始写入检查列表...
+[2025-12-04 22:56:27] [INFO] [WORD] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-04 22:56:27] [INFO] [WORD] 已删除现有的检查清单文件: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 22:56:27] [INFO] [WORD] 已复制默认检查清单文件到: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 22:56:27] [INFO] [WORD] 检查清单路径: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 22:56:36] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-04 22:56:36] [WARNING] [WORD] 未找到工程师 Christina Ji 的签名图片
+[2025-12-04 22:56:36] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-04 22:56:37] [WARNING] [WORD] 未找到工程师 Sylvia Wang 的签名图片
+[2025-12-04 22:56:37] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-04 22:56:37] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Quotation
+[2025-12-04 22:56:37] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Invoice
+[2025-12-04 22:56:37] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App
+[2025-12-04 22:56:37] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Others
+[2025-12-04 22:56:37] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record\Chemical
+[2025-12-04 22:56:37] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record
+[2025-12-04 22:56:37] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Tech\IM-RL-AW
+[2025-12-04 22:56:37] [ERROR] [WORD] 优化检查清单设置失败: Tech\IM-RL-AW folder not found
+[2025-12-04 22:56:37] [ERROR] [WORD] 找不到文件夹，请检查文件路径是否正确
+[2025-12-04 22:56:42] [WARNING] [WORD] 优化方法失败，回退到原方法: Tech\IM-RL-AW folder not found
+[2025-12-04 22:56:42] [INFO] [WORD] 已删除现有的检查清单文件: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 22:56:42] [INFO] [WORD] 已复制默认检查清单文件到: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-04 22:56:49] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-12-04 22:56:52] [WARNING] [WORD] 未找到工程师 Christina Ji 的签名图片
+[2025-12-04 22:56:52] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-04 22:56:54] [WARNING] [WORD] 未找到工程师 Sylvia Wang 的签名图片
+[2025-12-04 22:56:54] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-04 22:56:56] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Quotation
+[2025-12-04 22:56:56] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Invoice
+[2025-12-04 22:56:56] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App
+[2025-12-04 22:56:56] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Others
+[2025-12-04 22:56:56] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record\Chemical
+[2025-12-04 22:56:56] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record
+[2025-12-04 22:56:56] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Tech\IM-RL-AW
+[2025-12-04 22:56:56] [ERROR] [WORD] Error setting checklist: Tech\IM-RL-AW folder not found
+[2025-12-04 22:56:57] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-04 22:56:57] [ERROR] 250800781HZH设置检查列表失败: Tech\IM-RL-AW folder not found
+[2025-12-04 22:56:57] [INFO] [GUI] 任务 250800781HZH 处理完成:结果为：失败
+[2025-12-04 22:56:57] [INFO] [GUI] 处理任务 2/3: 250900266HZH
+[2025-12-04 22:56:57] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-04 22:56:57] [INFO] [GUI] target_path: None
+[2025-12-04 22:56:57] [ERROR] 任务 250900266HZH 的工作目录未找到
+[2025-12-04 22:56:57] [INFO] [GUI] 处理任务 3/3: 250901064HZH
+[2025-12-04 22:56:57] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-04 22:56:57] [INFO] [GUI] target_path: None
+[2025-12-04 22:56:57] [ERROR] 任务 250901064HZH 的工作目录未找到
+[2025-12-04 22:56:57] [INFO] [GUI] 所有任务处理完成，共处理 3 个任务
+[2025-12-05 09:10:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:11:29] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:11:31] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:11:32] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:11:34] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:11:41] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:11:47] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:12:03] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:12:06] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:12:12] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:12:16] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:12:18] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:12:21] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:12:23] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:12:25] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:12:41] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:13:17] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:13:20] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:13:21] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:13:24] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:13:31] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:13:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:13:37] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:14:13] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:14:14] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:14:31] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:17:18] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:17:22] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:17:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:17:44] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:18:25] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:18:27] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:18:34] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:18:35] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:18:39] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:19:25] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:19:30] [INFO] [WORD] Word处理模块资源已清理
+[2025-12-05 09:19:31] [INFO] [GUI] === ProjectFileChecker 初始化完成 ===
+[2025-12-05 09:19:31] [INFO] [GUI] === ProjectFileChecker 初始化完成 ===
+[2025-12-05 09:19:46] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-05 09:19:47] [INFO] [GUI] 开始处理任务...
+[2025-12-05 09:19:47] [INFO] [GUI] 成功读取 3 个任务
+[2025-12-05 09:19:47] [INFO] [GUI] 共计 3 个任务
+[2025-12-05 09:19:47] [INFO] [GUI] 处理任务 1/3: 250800781HZH
+[2025-12-05 09:19:47] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-05 09:19:47] [INFO] [PATH] 找到快捷方式文件: D:\OneDrive - Intertek\Desktop\shorts\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub - Shortcut.lnk
+[2025-12-05 09:19:47] [INFO] [PATH] 快捷方式目标路径: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-05 09:19:47] [INFO] [GUI] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-05 09:19:47] [INFO] [GUI] 找到目录: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-05 09:19:47] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-05 09:19:47] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-05 09:19:47] [INFO] [GUI] 250800781HZH开始写入检查列表...
+[2025-12-05 09:19:51] [INFO] [WORD] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-05 09:19:51] [INFO] [WORD] 已删除现有的检查清单文件: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-05 09:19:51] [INFO] [WORD] 已复制默认检查清单文件到: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-05 09:19:51] [INFO] [WORD] 检查清单路径: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-05 09:19:58] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-05 09:19:59] [WARNING] [WORD] 未找到工程师 Christina Ji 的签名图片
+[2025-12-05 09:19:59] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-05 09:20:00] [WARNING] [WORD] 未找到工程师 Sylvia Wang 的签名图片
+[2025-12-05 09:20:00] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-05 09:20:01] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Quotation
+[2025-12-05 09:20:01] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Invoice
+[2025-12-05 09:20:01] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App
+[2025-12-05 09:20:01] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Others
+[2025-12-05 09:20:01] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record\Chemical
+[2025-12-05 09:20:01] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record
+[2025-12-05 09:20:01] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Tech\IM-RL-AW
+[2025-12-05 09:20:01] [ERROR] [WORD] 优化检查清单设置失败: Tech\IM-RL-AW folder not found
+[2025-12-05 09:20:01] [ERROR] [WORD] 找不到文件夹，请检查文件路径是否正确
+[2025-12-05 09:20:06] [WARNING] [WORD] 优化方法失败，回退到原方法: Tech\IM-RL-AW folder not found
+[2025-12-05 09:20:06] [INFO] [WORD] 已删除现有的检查清单文件: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-05 09:20:06] [INFO] [WORD] 已复制默认检查清单文件到: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-05 09:20:11] [INFO] [WORD] 使用配置文件方法处理ActiveX控件
+[2025-12-05 09:20:13] [WARNING] [WORD] 未找到工程师 Christina Ji 的签名图片
+[2025-12-05 09:20:13] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-05 09:20:15] [WARNING] [WORD] 未找到工程师 Sylvia Wang 的签名图片
+[2025-12-05 09:20:15] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-05 09:20:17] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Quotation
+[2025-12-05 09:20:17] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Invoice
+[2025-12-05 09:20:17] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App
+[2025-12-05 09:20:17] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Others
+[2025-12-05 09:20:17] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record\Chemical
+[2025-12-05 09:20:17] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record
+[2025-12-05 09:20:17] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Tech\IM-RL-AW
+[2025-12-05 09:20:17] [ERROR] [WORD] Error setting checklist: Tech\IM-RL-AW folder not found
+[2025-12-05 09:20:17] [INFO] [WORD] 已终止 1 个Word进程
+[2025-12-05 09:20:17] [ERROR] 250800781HZH设置检查列表失败: Tech\IM-RL-AW folder not found
+[2025-12-05 09:20:17] [INFO] [GUI] 任务 250800781HZH 处理完成:结果为：失败
+[2025-12-05 09:20:17] [INFO] [GUI] 处理任务 2/3: 250900266HZH
+[2025-12-05 09:20:17] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-05 09:20:17] [INFO] [PATH] 没有找到对应的文件夹
+[2025-12-05 09:20:17] [INFO] [GUI] target_path: None
+[2025-12-05 09:20:17] [ERROR] 任务 250900266HZH 的工作目录未找到
+[2025-12-05 09:20:17] [INFO] [GUI] 处理任务 3/3: 250901064HZH
+[2025-12-05 09:20:17] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-05 09:20:17] [INFO] [PATH] 没有找到对应的文件夹
+[2025-12-05 09:20:17] [INFO] [GUI] target_path: None
+[2025-12-05 09:20:17] [ERROR] 任务 250901064HZH 的工作目录未找到
+[2025-12-05 09:20:17] [INFO] [GUI] 所有任务处理完成，共处理 3 个任务
+[2025-12-05 09:20:54] [INFO] [GUI] 已选择文件: task_list_sample(1).xlsx
+[2025-12-05 09:20:55] [INFO] [GUI] 开始处理任务...
+[2025-12-05 09:20:55] [INFO] [GUI] 成功读取 3 个任务
+[2025-12-05 09:20:55] [INFO] [GUI] 共计 3 个任务
+[2025-12-05 09:20:55] [INFO] [GUI] 处理任务 1/3: 250800781HZH
+[2025-12-05 09:20:55] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250800781HZH 对应的文件夹
+[2025-12-05 09:20:55] [INFO] [PATH] 找到快捷方式文件: D:\OneDrive - Intertek\Desktop\shorts\250800781HZH-655007--Husky 2500lm Rechargeable  Focusing--Noise-SH PPT sub - Shortcut.lnk
+[2025-12-05 09:20:55] [INFO] [PATH] 快捷方式目标路径: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-05 09:20:55] [INFO] [GUI] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-05 09:20:55] [INFO] [GUI] 找到目录: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-05 09:20:55] [INFO] [GUI] 开始检查子文件夹...
+[2025-12-05 09:20:55] [INFO] [GUI] 确保文件夹检查不受干扰,结束所有Word进程...
+[2025-12-05 09:20:55] [INFO] [GUI] 250800781HZH开始写入检查列表...
+[2025-12-05 09:20:57] [INFO] [WORD] target_path: D:\ONEDRI~1\Desktop\projects\250800~1
+[2025-12-05 09:20:57] [INFO] [WORD] 已删除现有的检查清单文件: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-05 09:20:57] [INFO] [WORD] 已复制默认检查清单文件到: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-05 09:20:57] [INFO] [WORD] 检查清单路径: D:\ONEDRI~1\Desktop\projects\250800~1\E-filing checklist.docx
+[2025-12-05 09:21:04] [INFO] [WORD] 使用优化配置文件方法处理ActiveX控件
+[2025-12-05 09:21:05] [WARNING] [WORD] 未找到工程师 Christina Ji 的签名图片
+[2025-12-05 09:21:05] [WARNING] [WORD] 未找到staff Christina Ji 的签名图片，使用默认图片
+[2025-12-05 09:21:06] [WARNING] [WORD] 未找到工程师 Sylvia Wang 的签名图片
+[2025-12-05 09:21:06] [WARNING] [WORD] 未找到staff Sylvia Wang 的签名图片，使用默认图片
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Quotation
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App\Invoice
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\App
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Others
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record\Chemical
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Test record
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Tech\IM-RL-AW
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Tech\DR
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Tech\Protocol
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Tech\Other
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Photo
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Report
+[2025-12-05 09:21:07] [INFO] [FILE] 检测文件夹: D:\ONEDRI~1\Desktop\projects\250800~1\Subcontract
+[2025-12-05 09:21:07] [INFO] [FILE] 检测结果: {'App\\Quotation': False, 'App\\Invoice': True, 'App': True, 'Others': False, 'Test record\\Chemical': False, 'Test record': False, 'Tech\\IM-RL-AW': False, 'Tech\\DR': False, 'Tech\\Protocol': False, 'Tech\\Other': False, 'Photo': False, 'Report': True, 'Subcontract': False}
+[2025-12-05 09:21:07] [INFO] [WORD] 开始在checklist中填写文件状态，请稍候......
+[2025-12-05 09:21:27] [INFO] [WORD] 检查清单保存成功
+[2025-12-05 09:21:27] [INFO] [GUI] 250800781HZH检查列表写入完成
+[2025-12-05 09:21:27] [INFO] [GUI] 任务 250800781HZH 处理完成:结果为：完成
+[2025-12-05 09:21:27] [INFO] [GUI] 处理任务 2/3: 250900266HZH
+[2025-12-05 09:21:27] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250900266HZH 对应的文件夹
+[2025-12-05 09:21:27] [INFO] [PATH] 没有找到对应的文件夹
+[2025-12-05 09:21:27] [INFO] [GUI] target_path: None
+[2025-12-05 09:21:27] [ERROR] 任务 250900266HZH 的工作目录未找到
+[2025-12-05 09:21:27] [INFO] [GUI] 处理任务 3/3: 250901064HZH
+[2025-12-05 09:21:27] [INFO] [PATH] 正在PPT快捷方式路径 D:\OneDrive - Intertek\Desktop\shorts 中查找工作号 250901064HZH 对应的文件夹
+[2025-12-05 09:21:27] [INFO] [PATH] 没有找到对应的文件夹
+[2025-12-05 09:21:27] [INFO] [GUI] target_path: None
+[2025-12-05 09:21:27] [ERROR] 任务 250901064HZH 的工作目录未找到
+[2025-12-05 09:21:27] [INFO] [GUI] 所有任务处理完成，共处理 3 个任务
+[2025-12-05 09:21:42] [INFO] [WORD] Word处理模块资源已清理

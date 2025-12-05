@@ -250,10 +250,10 @@ def get_signature_image(staff_name):
     """获取指定工程师的签名图片路径"""
     if not staff_name or not staff_name.strip():
         return None
-    
+
     signs_folder = Path.cwd() / 'signs'
     if not signs_folder.exists():
-        print(f"签名文件夹不存在: {signs_folder}")
+        log_warning(f"签名文件夹不存在: {signs_folder}", "WORD")
         return None
     
     # 支持多种图片格式
@@ -263,8 +263,8 @@ def get_signature_image(staff_name):
         image_path = signs_folder / f"{staff_name.strip()}{ext}"
         if image_path.exists():
             return str(image_path)
-    
-    print(f"未找到工程师 {staff_name} 的签名图片")
+
+    log_warning(f"未找到工程师 {staff_name} 的签名图片", "WORD")
     return None
 
 
@@ -314,9 +314,9 @@ def insert_image_in_cell(cell, image_path, width=80, height=20):
             shape.Top = 0    # 垂直位置
         else:
             raise Exception("No active shape found in the cell.")
-            
+
     except Exception as e:
-        print(f"Error inserting image in cell: {str(e)}")
+        log_error(f"Error inserting image in cell: {str(e)}", "WORD")
         raise
 
 
@@ -605,8 +605,7 @@ def set_option_cells_for_general(table, folder_status, option_config, table_inde
     for folder_name, option in option_config.items():
         # 优化：直接使用 in 操作符而不是 keys() 方法
         if folder_name not in folder_status:
-            print(f"folder {folder_name} not in folder_status {folder_status}")
-            log_warning(f"文件夹 {folder_name} 的状态未定义", "WORD")
+            log_warning(f"文件夹 {folder_name} 的状态未定义，当前状态为 {folder_status}", "WORD")
             continue
 
         status = folder_status[folder_name]
@@ -692,7 +691,7 @@ def set_checklist_optimized(task, target_path, team, subFolderConfig, use_config
         
         # 打开文档
         word_doc = word.Documents.Open(checklist_path)
-        log_info("checklist 路径：",checklist_path)
+        # log_info("checklist 路径：",checklist_path)
         # 文档级别的优化设置
         if hasattr(word_doc, 'TrackRevisions'):
             word_doc.TrackRevisions = False
@@ -737,6 +736,9 @@ def set_checklist_optimized(task, target_path, team, subFolderConfig, use_config
             log_error("你没有写入权限", "WORD")
             #抛出异常
             raise PermissionError("你没有写入权限")
+        if str(e).find("folder not found") >= 0:
+            log_error("找不到文件夹，请检查文件路径是否正确", "WORD")
+            raise e
         # 回退到原方法
         log_info("回退到原始方法", "WORD")
         if word_doc:

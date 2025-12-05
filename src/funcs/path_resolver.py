@@ -61,10 +61,9 @@ def get_working_folder_path_for_ppt(shortcuts_path, job_no):
                     log_info(f"找到工作目录: {target_path}", "PATH2")
                     return target_path
             except Exception as e:
-                print("error")
-                print(e)
+                log_error(str(e))
                 continue
-    print("没有找到对应的文件夹")
+    log_info("没有找到对应的文件夹", "PATH")
     return None
 
 def get_lnk_target_path(lnk_path):

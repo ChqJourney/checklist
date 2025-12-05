@@ -52,7 +52,7 @@ class ProjectFileChecker:
             
             # 设置全局日志的前端回调
             global_logger.set_frontend_callback(self._frontend_log_callback)
-            print("=== ProjectFileChecker 初始化完成 ===")
+            self.log("=== ProjectFileChecker 初始化完成 ===")
             
         except Exception as e:
             print(f"初始化过程中出现错误: {e}")
@@ -66,7 +66,7 @@ class ProjectFileChecker:
                 escaped_message = global_logger._escape_for_js(formatted_message)
                 webview.windows[0].evaluate_js(f'addLogWithLevel("{escaped_message}", "{level}")')
         except Exception as e:
-            print(f"前端日志显示失败: {e}")
+            self.log(f"前端日志显示失败: {e}")
             if webview.windows and len(webview.windows) > 0:
                 escaped_message = global_logger._escape_for_js(formatted_message)
                 webview.windows[0].evaluate_js(f'addLogWithLevel("{escaped_message}", "{level}")')
@@ -496,8 +496,8 @@ class ProjectFileChecker:
             config_base_dir = config_manager.get_base_dir()
             instance_base_dir = self.base_dir
             
-            print(f"配置管理器中的base_dir: '{config_base_dir}'")
-            print(f"实例中的base_dir: '{instance_base_dir}'")
+            self.log(f"配置管理器中的base_dir: '{config_base_dir}'")
+            self.log(f"实例中的base_dir: '{instance_base_dir}'")
             
             # 使用配置管理器中的值，因为它是最新的
             base_dir = config_base_dir
@@ -510,7 +510,6 @@ class ProjectFileChecker:
                 'base_dir': base_dir
             }
         except Exception as e:
-            print(f"获取基础目录异常: {e}")
             self.log(f"获取基础目录失败: {e}")
             return {'success': False, 'message': str(e)}
     
